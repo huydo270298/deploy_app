@@ -1,0 +1,22 @@
+.wrapper {
+  max-width: 663px;
+  margin: auto;
+  padding: 32px;
+  text-align: center;
+}
+
+.title {
+  margin-top: 28px;
+  font-size: 1.5rem;
+  line-height: 29px;
+  color: var(--black);
+}
+
+.note {
+  margin-top: 18px;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 19px;
+  color: #EC2525;
+}
