@@ -1,0 +1,51 @@
+.wrapper {
+    position: relative;
+}
+
+.btn {
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 19px;
+    padding: 16px 19px;
+    background: #DFDFDF;
+    text-align: left;
+    border-radius: 6px;
+
+    &:after {
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        background: url(../../assets/icons/icon_down.png);
+        content: '';
+    }
+}
+
+.option {
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.list {
+    padding: 10px 0;
+    background: var(--white);
+    border-radius: 6px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.13);
+}
+
+.item {
+    padding: 7px 16px;
+    line-height: 22px;
+    cursor: pointer;
+
+    &.active {
+        color: var(--white);
+        background: var(--primary2);
+    }
+}

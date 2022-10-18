@@ -12,8 +12,8 @@ const UserPage = () => {
 
   return (
     <div className={cx('wrapper')}>
-      <h2 className={cx('title')}>THÔNG TIN CÁ NHÂN</h2>
-      <p className={cx('note')}>Lưu ý: Nhập sai thông tin sẽ không thể được nhận giải</p>
+      <h2 className={cx('title')}>PERSONAL INFORMATION</h2>
+      <p className={cx('note')}>Note: You can not get the prize if the information is wrong</p>
       <FormUser onSubmit={handleSubmit} />
     </div>
   );

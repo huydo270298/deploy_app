@@ -1,25 +1,34 @@
 import classNames from 'classnames/bind';
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Select.module.scss';
 
 let cx = classNames.bind(styles);
 
-const Select = ({ currentValue, list }) => {
-  const handleClickSelect = () => {};
+const Select = ({ currentValue, list, onChange }) => {
+  const [openOption, setOpenOption] = useState(false)
+  const handleClickSelect = () => {
+    setOpenOption(!openOption)
+  };
   return (
     <div className={cx('wrapper')}>
-      <button type="button" onClick={handleClickSelect}>
+      <button type="button" className={cx('btn')} onClick={handleClickSelect}>
         {currentValue}
       </button>
-      <div className={cx('option')}>
+      {openOption && <div className={cx('option')}>
         <ul className={cx('list')}>
-          {/* {list.map((item, index) => (
-            <li key={index} className={cx('item')} onClick={onChange}>
+          {list.map((item, index) => (
+            <li
+              key={index}
+              className={cx('item', item === currentValue && 'active')}
+              onClick={() => {
+                onChange(item);
+                handleClickSelect()
+              }}>
               {item}
             </li>
-          ))} */}
+          ))}
         </ul>
-      </div>
+      </div>}
     </div>
   );
 };
