@@ -12,12 +12,16 @@
   flex: 1;
   gap: 9px;
 
-  & + .form {
+  &+.form {
     margin-top: 32px;
   }
 }
 
 .exchange {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
   font-size: 21px;
   line-height: 29px;
   font-weight: 700;
@@ -51,4 +55,11 @@
   border: 0;
   border-radius: 12px;
   cursor: pointer;
+}
+
+.icon_plate {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url(../../../assets/icons/icon_plate3.png);
 }

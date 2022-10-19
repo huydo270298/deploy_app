@@ -25,7 +25,10 @@ const PushModal = () => {
   }
   return (
     <div className={cx('wrapper')}>
-      <div className={cx('exchange')}>1USD = 500 </div>
+      <div className={cx('exchange')}>
+        1USD = 500
+        <i className={cx('icon_plate')}></i>
+      </div>
       <form className={cx('form_group')} onSubmit={handleSubmit}>
         <div className={cx('form')}>
           <div htmlFor="address" className={cx('label')}>

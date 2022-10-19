@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import { useState } from 'react';
 import Modal from '../../components/Modal';
-import VideoSection from '../../components/VideoSection';
+import VideoSection from '../components/VideoSection';
 import HelpModal from '../components/HelpModal';
 import PushModal from '../components/PushModal';
 import SpinModal from '../components/SpinModal';
@@ -48,26 +48,26 @@ const Homepage = () => {
           </button>
         </div>
       </div>
-      {openHelp && 
+      {openHelp &&
         <Modal onChange={handleCloseHelpModal} >
           <HelpModal />
         </Modal>
       }
 
-      {openSpin && 
+      {openSpin &&
         <Modal onChange={handleCloseSpinModal} >
           <SpinModal />
         </Modal>
       }
 
-      {openPush && 
+      {openPush &&
         <Modal onChange={handleClosePushModal} >
           <PushModal />
         </Modal>
       }
     </>
   )
-  
+
 };
 
 export default Homepage;

@@ -19,22 +19,48 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.btn {
-  display: flex;
-  align-items: center;
-  font-size: 1rem;
-  font-weight: bold;
-  color: var(--white);
-  font-family: 'Inter', sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  background: transparent;
-}
-
 .icon_user {
   display: inline-block;
   width: 28px;
   height: 28px;
   margin-right: 9px;
   background: url('../../assets/icons/icon_user.png');
+}
+
+.btn_group {
+  display: flex;
+  gap: 9px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--white);
+  border-radius: 12px;
+}
+
+.btn_user {
+  background: transparent;
+}
+
+.btn_login,
+.btn_register {
+  width: 145px;
+  height: 43px;
+}
+
+.btn_login {
+  background: var(--primary2);
+
+}
+
+.btn_register {
+  color: var(--primary);
+  background: var(--white);
 }

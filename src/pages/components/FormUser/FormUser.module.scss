@@ -6,7 +6,7 @@
   display: flex;
   gap: 7px;
 
-  & + .line {
+  &+.line {
     margin-top: 32px;
   }
 }

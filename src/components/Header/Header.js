@@ -10,10 +10,14 @@ const Header = () => {
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
         <h1 className={cx('logo')}>Logo</h1>
-        <Link to="/user" className={cx('btn')}>
+        <div className={cx('btn_group')}>
+          <Link to='/login' className={cx('btn', 'btn_login')}>Log in</Link>
+          <Link to='/register' className={cx('btn', 'btn_register')}>Sign Up</Link>
+        </div>
+        {/* <Link to="/user" className={cx('btn_user')}>
           <i className={cx('icon_user')}></i>
           PROFILE
-        </Link>
+        </Link> */}
       </div>
     </header>
   );

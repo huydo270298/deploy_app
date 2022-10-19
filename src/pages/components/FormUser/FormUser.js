@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import { useState } from 'react';
-import Select from '../Select';
+import Select from '../../../components/Select';
 
 import styles from './FormUser.module.scss';
 

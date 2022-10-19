@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import FormUser from '../../components/FormUser';
+import FormUser from '../components/FormUser';
 import styles from './UserPage.module.scss';
 
 let cx = classNames.bind(styles);
