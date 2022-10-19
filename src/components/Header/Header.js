@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header className={cx('wrapper')}>
       <div className={cx('inner')}>
-        <h1 className={cx('logo')}>221.VN</h1>
+        <h1 className={cx('logo')}>Logo</h1>
         <Link to="/user" className={cx('btn')}>
           <i className={cx('icon_user')}></i>
           Cá nhân
