@@ -12,7 +12,7 @@ const Header = () => {
         <h1 className={cx('logo')}>Logo</h1>
         <Link to="/user" className={cx('btn')}>
           <i className={cx('icon_user')}></i>
-          Cá nhân
+          PROFILE
         </Link>
       </div>
     </header>
