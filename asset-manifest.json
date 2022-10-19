@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/duythanh/static/css/main.5f4fd0f4.css",
+    "main.js": "/duythanh/static/js/main.f5f81640.js",
+    "index.html": "/duythanh/index.html",
+    "main.5f4fd0f4.css.map": "/duythanh/static/css/main.5f4fd0f4.css.map",
+    "main.f5f81640.js.map": "/duythanh/static/js/main.f5f81640.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f4fd0f4.css",
+    "static/js/main.f5f81640.js"
+  ]
+}
