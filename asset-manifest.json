@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/huydo270298/duythanh/static/css/main.2d0bab61.css",
+    "main.js": "/huydo270298/duythanh/static/js/main.eef7d076.js",
+    "index.html": "/huydo270298/duythanh/index.html",
+    "main.2d0bab61.css.map": "/huydo270298/duythanh/static/css/main.2d0bab61.css.map",
+    "main.eef7d076.js.map": "/huydo270298/duythanh/static/js/main.eef7d076.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2d0bab61.css",
+    "static/js/main.eef7d076.js"
+  ]
+}
