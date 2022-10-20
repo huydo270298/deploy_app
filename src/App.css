@@ -13,12 +13,12 @@ body {
   box-sizing: border-box;
 }
 
-:root {
+/* :root {
   --primary: #00023C;
   --primary2: #FF7A00;
   --white: #fff;
   --black: #000;
-}
+} */
 
 input,
 button {

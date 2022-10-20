@@ -18,7 +18,7 @@
   height: 59px;
   padding: 12px 24px;
   font-size: 18px;
-  color: var(--white);
+  color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   border: 1px solid transparent;
@@ -26,18 +26,18 @@
 }
 
 .get_spin {
-  background: var(--primary2);   
+  background: #FF7A00;   
 }
 
 .push {
-  background: var(--primary);
+  background: #00023C;
 }
 
 .add {
   font-size: 20px;
-  color: var(--black);
+  color: #000;
   background: transparent;
-  border-color: var(--black);
+  border-color: #000;
 }
 
 .icon_plate {
