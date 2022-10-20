@@ -1,10 +1,21 @@
 import axiosClient from './axiosClient';
 
 const userApi = {
-  save(data) {
-    const url = '/user';
-    return axiosClient.post(url, data);
+  register (data) {
+    const url = '/auth/local/register';
+    return axiosClient.post(url, data)
   },
+
+  login (data) {
+    const url = '/auth/local';
+    return axiosClient.post(url, data)
+  },
+
+  push (data) {
+    console.log(data);
+    const url = '/auth/local/push';
+    return axiosClient.post(url, data)
+  }
 };
 
 export default userApi;

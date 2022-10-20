@@ -6,13 +6,7 @@ import styles from './FormRegister.module.scss';
 
 let cx = classNames.bind(styles);
 
-const FormRegister = () => {
-  const defaultValues = {
-    name: '',
-    dateOfBirth: '',
-    phone: '',
-    address: '',
-  };
+const FormRegister = (props) => {
 
   const [name, setName] = useState('Nguyễn Văn Anh');
   const [pass, setPass] = useState('@a1245');
@@ -20,8 +14,20 @@ const FormRegister = () => {
   const [showPass, setShowPass] = useState(false);
   const [showConfPass, setShowConfPass] = useState(true);
 
-  const onSubmit = (e) => {
+  const defaultValues = {
+    username : '',
+    password: '',
+    email: 'huydo@gmail.com'
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    defaultValues.username = name;
+    defaultValues.password = pass;
+    const { onSubmit } = props;
+    if (onSubmit) {
+      await onSubmit(defaultValues);
+    }
   };
 
   const handleClickToggleShowPass = () => {
@@ -35,7 +41,7 @@ const FormRegister = () => {
   return (
     <div className={cx('wrapper')}>
       <h1 className={cx('title')}>SIGN UP</h1>
-      <form className={cx('form_group')} onSubmit={onSubmit}>
+      <form className={cx('form_group')} onSubmit={handleSubmit}>
         <div className={cx('form')}>
           <label htmlFor="identifier" className={cx('label')}>
             Usename
@@ -57,6 +63,7 @@ const FormRegister = () => {
             type={showPass ? "text" : "password"}
             className={cx('input')}
             defaultValue={pass}
+            autoComplete='on'
             onChange={(e) => setPass(e.target.value)}
           />
           <button type='button' className={cx('btn_toggle', showPass && 'show')} onClick={handleClickToggleShowPass}>
@@ -72,6 +79,7 @@ const FormRegister = () => {
             type={showConfPass ? "text" : "password"}
             className={cx('input')}
             defaultValue={confPass}
+            autoComplete='on'
             onChange={(e) => setConfPass(e.target.value)}
           />
           <button type='button' className={cx('btn_toggle', showConfPass && 'show')} onClick={handleClickToggleShowConfPass}>

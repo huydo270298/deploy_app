@@ -1,30 +1,51 @@
 import classNames from 'classnames/bind';
 import { useState } from 'react';
-import Select from '../../../components/Select';
+import Select from '../../../../components/Select';
 
 import styles from './FormUser.module.scss';
 
 let cx = classNames.bind(styles);
 
-const FormUser = () => {
+const FormUser = (props) => {
   const arrSex = ['Male', 'Female']
   const arrCountry = ['Việt Nam', 'Thái Lan', 'Singapore', 'Malaysia']
   const defaultValues = {
-    name: '',
+    username: '',
+    sex: '',
     dateOfBirth: '',
-    phone: '',
+    country: '',
+    city: '',
     address: '',
+    phone: '',
+    link: ''
   };
 
   const [name, setName] = useState('Nguyễn Văn Anh');
   const [sex, setSex] = useState(arrSex[0]);
+  const [birthday, setBirthday] = useState('');
   const [country, setCountry] = useState(arrCountry[0]);
   const [address, setAddress] = useState('No.12, Alley24, Đại Mỗ, Nam Từ Liêm');
   const [phone, setPhone] = useState('0345759994');
   const [link, setLink] = useState('http://abc');
 
-  const onSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const values = {
+      ...defaultValues,
+      username: name,
+      sex: sex,
+      dateOfBirth: birthday,
+      country: country,
+      city: country,
+      address: address,
+      phone: phone,
+      link: link,
+    }
+    defaultValues.username = name;
+    const { onSubmit } = props;
+    if (onSubmit) {
+      await onSubmit(values);
+    }
   };
 
   const handleChangeOptionSex = (value) => {
@@ -35,7 +56,7 @@ const FormUser = () => {
     setCountry(value)
   }
   return (
-    <form className={cx('form_group')} onSubmit={onSubmit}>
+    <form className={cx('form_group')} onSubmit={handleSubmit}>
       <div className={cx('line')}>
         <div className={cx('form')}>
           <label htmlFor="name" className={cx('label')}>
@@ -61,7 +82,14 @@ const FormUser = () => {
           <label htmlFor="dateOfBirth" className={cx('label')}>
             Date Of Birth
           </label>
-          <input id="dateOfBirth" type="text" placeholder="DD/MM/YY" className={cx('input')} />
+          <input 
+            id="dateOfBirth" 
+            type="text" 
+            placeholder="DD/MM/YY" 
+            className={cx('input')}
+            defaultValue={birthday}
+            onChange={(e) => setBirthday(e.target.value)}
+          />
         </div>
       </div>
       <div className={cx('line')}>

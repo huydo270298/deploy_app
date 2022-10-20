@@ -6,30 +6,36 @@ import styles from './FormLogin.module.scss';
 
 let cx = classNames.bind(styles);
 
-const FormUser = () => {
-  const defaultValues = {
-    name: '',
-    dateOfBirth: '',
-    phone: '',
-    address: '',
-  };
+const FormUser = (props) => {
 
   const [name, setName] = useState('Nguyễn Văn Anh');
   const [pass, setPass] = useState('@a1245');
   const [showPass, setShowPass] = useState(false);
 
-  const onSubmit = (e) => {
-    e.preventDefault();
+  const defaultValues = {
+    identifier : 'huydo@gmail.com',
+    username: '',
+    password: '',
   };
 
   const handleClickToggleShowPass = () => {
     setShowPass(!showPass)
   }
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    defaultValues.username = name;
+    defaultValues.password = pass;
+    const { onSubmit } = props;
+    if (onSubmit) {
+      await onSubmit(defaultValues);
+    }
+  };
+
   return (
     <div className={cx('wrapper')}>
       <h1 className={cx('title')}>LOG IN</h1>
-      <form className={cx('form_group')} onSubmit={onSubmit}>
+      <form className={cx('form_group')} onSubmit={handleSubmit}>
         <div className={cx('form')}>
           <label htmlFor="identifier" className={cx('label')}>
             Usename
@@ -51,6 +57,7 @@ const FormUser = () => {
             type={showPass ? "text" : "password"}
             className={cx('input')}
             defaultValue={pass}
+            autoComplete="on"
             onChange={(e) => setPass(e.target.value)}
           />
           <button type='button' className={cx('btn_toggle', showPass && 'show')} onClick={handleClickToggleShowPass}>
