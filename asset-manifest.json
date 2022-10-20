@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/duythanh/static/css/main.537408fa.css",
+    "main.css": "/duythanh/static/css/main.99cc624b.css",
     "main.js": "/duythanh/static/js/main.eef7d076.js",
     "index.html": "/duythanh/index.html",
-    "main.537408fa.css.map": "/duythanh/static/css/main.537408fa.css.map",
+    "main.99cc624b.css.map": "/duythanh/static/css/main.99cc624b.css.map",
     "main.eef7d076.js.map": "/duythanh/static/js/main.eef7d076.js.map"
   },
   "entrypoints": [
-    "static/css/main.537408fa.css",
+    "static/css/main.99cc624b.css",
     "static/js/main.eef7d076.js"
   ]
 }
