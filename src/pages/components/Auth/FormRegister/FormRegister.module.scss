@@ -82,3 +82,18 @@
   background-position: left 0 bottom 0;
   background-size: 100% 1px;
 }
+
+.error {
+  .input {
+    border: 1px solid #f33a58;
+  }
+}
+
+.message {
+  color: #f33a58;
+}
+
+.message_submit {
+  margin-top: 9px;
+  color: #f33a58;
+}

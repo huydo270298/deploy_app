@@ -12,6 +12,8 @@ const FormUser = (props) => {
   const [pass, setPass] = useState('@a1245');
   const [showPass, setShowPass] = useState(false);
 
+  const { message } = props
+
   const defaultValues = {
     identifier : 'huydo@gmail.com',
     username: '',
@@ -63,6 +65,7 @@ const FormUser = (props) => {
           <button type='button' className={cx('btn_toggle', showPass && 'show')} onClick={handleClickToggleShowPass}>
             <i className={cx('icon_eye')}></i>
           </button>
+          <p className={cx('message')}>{message.message}</p>
         </div>
         <button type="submit" className={cx('submit')}>
           LOG IN

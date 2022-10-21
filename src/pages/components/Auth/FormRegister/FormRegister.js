@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useForm } from 'react-hook-form'
 
 import styles from './FormRegister.module.scss';
 
@@ -8,25 +9,26 @@ let cx = classNames.bind(styles);
 
 const FormRegister = (props) => {
 
-  const [name, setName] = useState('Nguyễn Văn Anh');
-  const [pass, setPass] = useState('@a1245');
-  const [confPass, setConfPass] = useState('@a1245');
   const [showPass, setShowPass] = useState(false);
   const [showConfPass, setShowConfPass] = useState(true);
+  const { message } = props;
 
-  const defaultValues = {
-    username : '',
-    password: '',
-    email: 'huydo@gmail.com'
-  };
+  const {
+    register,
+    watch,
+    handleSubmit,
+    formState: { errors }
+  } = useForm({
+    defaultValues: {
+      username : '',
+      password: '',
+      email: 'huydo400@gmail.com'
+    }})
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    defaultValues.username = name;
-    defaultValues.password = pass;
+  const onSubmit = async (data) => {
     const { onSubmit } = props;
     if (onSubmit) {
-      await onSubmit(defaultValues);
+      await onSubmit(data);
     }
   };
 
@@ -38,23 +40,29 @@ const FormRegister = (props) => {
     setShowConfPass(!showConfPass)
   }
 
+  const password = useRef();
+  password.current = watch("password", "");
+
   return (
     <div className={cx('wrapper')}>
       <h1 className={cx('title')}>SIGN UP</h1>
-      <form className={cx('form_group')} onSubmit={handleSubmit}>
-        <div className={cx('form')}>
+      <form className={cx('form_group')} onSubmit={handleSubmit(onSubmit)}>
+        <div className={cx('form', errors.username && 'error')}>
           <label htmlFor="identifier" className={cx('label')}>
-            Usename
+            Username
           </label>
           <input
             id="identifier"
             type="text"
             className={cx('input')}
-            defaultValue={name}
-            onChange={(e) => setName(e.target.value)}
+            spellCheck={false}
+            {...register("username", {
+              required: 'You must specify a username',
+            })} 
           />
+          {errors.username && <p className={cx('message')}>{errors.username.message}</p>}
         </div>
-        <div className={cx('form')}>
+        <div className={cx('form', errors.password && 'error')}>
           <label htmlFor="password" className={cx('label')}>
             New Password
           </label>
@@ -62,15 +70,22 @@ const FormRegister = (props) => {
             id="password"
             type={showPass ? "text" : "password"}
             className={cx('input')}
-            defaultValue={pass}
+            spellCheck={false}
             autoComplete='on'
-            onChange={(e) => setPass(e.target.value)}
+            {...register('password', {
+              required: 'You must specify a password',
+              minLength: {
+                value: 6,
+                message: "Password must have at least 6 characters"
+              }
+            })}
           />
+          {errors.password && <p className={cx('message')}>{errors.password.message}</p>}
           <button type='button' className={cx('btn_toggle', showPass && 'show')} onClick={handleClickToggleShowPass}>
             <i className={cx('icon_eye')}></i>
           </button>
         </div>
-        <div className={cx('form')}>
+        <div className={cx('form', errors.conf_password && 'error')}>
           <label htmlFor="conf_password" className={cx('label')}>
             Confirm Password
           </label>
@@ -78,14 +93,19 @@ const FormRegister = (props) => {
             id="conf_password"
             type={showConfPass ? "text" : "password"}
             className={cx('input')}
-            defaultValue={confPass}
+            spellCheck={false}
             autoComplete='on'
-            onChange={(e) => setConfPass(e.target.value)}
+            ref={password}
+            {...register('conf_password', {
+              validate: value => value === password.current || "The passwords do not match"
+            })}
           />
           <button type='button' className={cx('btn_toggle', showConfPass && 'show')} onClick={handleClickToggleShowConfPass}>
             <i className={cx('icon_eye')}></i>
           </button>
+          {errors.conf_password && <p className={cx('message')}>{errors.conf_password.message}</p>}
         </div>
+        {message && <p className={cx('message_submit')}>{message}</p>}
         <button type="submit" className={cx('submit')}>
           Sign up
         </button>

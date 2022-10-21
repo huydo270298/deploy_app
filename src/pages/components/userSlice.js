@@ -33,7 +33,6 @@ export const login = createAsyncThunk(
 export const push = createAsyncThunk(
   'users/push',
   async (payload) => {
-    console.log('payload' ,payload);
     const data = await userApi.push(payload);
 
     //save data to local storage

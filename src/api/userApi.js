@@ -12,7 +12,6 @@ const userApi = {
   },
 
   push (data) {
-    console.log(data);
     const url = '/auth/local/push';
     return axiosClient.post(url, data)
   }
