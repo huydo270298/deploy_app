@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import ReactPlayer from 'react-player'
 
 import styles from './VideoSection.module.scss';
