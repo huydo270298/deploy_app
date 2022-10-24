@@ -9,14 +9,37 @@
   max-width: 1440px;
   margin: auto;
   padding: 33px 8.75% 34px;
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    gap: 22px;
+    padding: 18px 21px 25px;
+  }
+
+  &.loggedin {
+    flex-direction: row;
+
+    .link {
+      background-position: center left;
+    }
+  }
 }
 
 .logo {
-  font-size: 36px;
-  line-height: 54px;
-  font-weight: 700;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
+  width: 150px;
+  height: 44px;
+}
+
+.link {
+  display: block;
+  height: 100%;
+  background-image: url(../../assets/icons/logo.png);
+  background-repeat: no-repeat;
+  background-position: center left;
+
+  @media (max-width: 600px) {
+    background-position: center;
+  }
 }
 
 .icon_user {
@@ -30,6 +53,10 @@
 .btn_group {
   display: flex;
   gap: 9px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .btn {
@@ -53,6 +80,11 @@
 .btn_register {
   width: 145px;
   height: 43px;
+
+  @media (max-width: 600px) {
+    width: auto;
+    flex: 1;
+  }
 }
 
 .btn_login {

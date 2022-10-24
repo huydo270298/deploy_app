@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { unwrapResult } from '@reduxjs/toolkit';
 
 import FormLogin from '../components/Auth/FormLogin';
-import { login } from '../components/userSlice';
+import { login } from '../components/Auth/userSlice';
 import styles from './LoginPage.module.scss';
 import { useState } from 'react';
 import { useNavigate  } from 'react-router-dom';

@@ -12,8 +12,8 @@ const Header = () => {
   const isLoggedIn = !!loggedInUser.id;
   return (
     <header className={cx('wrapper')}>
-      <div className={cx('inner')}>
-        <h1 className={cx('logo')}>Logo</h1>
+      <div className={cx('inner', isLoggedIn && 'loggedin')}>
+        <h1 className={cx('logo')}><Link to='/' className={cx('link')} /></h1>
         {
           isLoggedIn && 
             <Link to="/user" className={cx('btn', 'btn_user')}>

@@ -7,6 +7,12 @@
   gap: 19px;
   margin-top: 40px;
   padding: 0 7.9167%;
+
+  @media (max-width: 600px) {
+    gap: 10px;
+    margin-top: 24px;
+    padding: 0 16px;
+  }
 }
 
 .btn {
@@ -23,6 +29,10 @@
   font-weight: bold;
   border: 1px solid transparent;
   border-radius: 12px;
+
+  @media (max-width: 600px) {
+    padding: 0;
+  }
 }
 
 .get_spin {
@@ -58,6 +68,11 @@
   font-weight: bold;
   background: linear-gradient(90deg, rgba(255, 244, 197, 0) 13.76%, #FFF4C5 38.59%, rgba(255, 244, 197, 0) 85.84%);
   border-radius: 2px;
+
+  @media (max-width: 600px) {
+    margin-top: 31px;
+    font-size: 24px;
+  }
 }
 
 .icon_cup {
@@ -66,11 +81,23 @@
   height: 82px;
   margin-right: 14px;
   background: url(../../assets/icons/icon_cup.png);
+
+  @media (max-width: 600px) {
+    width: 48px;
+    height: 48px;
+    margin-right: 8px;
+    background-size: cover;
+  }
 }
 
 .btn_help {
   margin-left: 28px;
+  font-size: 0;
   background: transparent;
+
+  @media (max-width: 600px) {
+    margin-left: 6px;
+  }
 }
 
 .icon_help {
@@ -78,4 +105,10 @@
   width: 40px;
   height: 40px;
   background: url(../../assets/icons/icon_help.png);
+
+  @media (max-width: 600px) {
+    width: 28px;
+    height: 28px;
+    background-size: cover;
+  }
 }

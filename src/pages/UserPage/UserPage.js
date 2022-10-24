@@ -4,7 +4,7 @@ import { unwrapResult } from '@reduxjs/toolkit';
 
 import FormUser from '../components/Auth/FormUser/FormUser';
 import styles from './UserPage.module.scss';
-import { push } from '../components/userSlice';
+import { push } from '../components/Auth/userSlice.js';
 
 let cx = classNames.bind(styles);
 

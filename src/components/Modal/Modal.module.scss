@@ -8,6 +8,7 @@
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
 }
 
 .inner {
@@ -17,9 +18,15 @@
   position: relative;
   min-height: 279px;
   width: 587px;
+  margin: 16px;
   padding: 60px 42.5px;
   background: #fff;
   border-radius: 20px;
+
+  @media (max-width: 600px) {
+    min-height: 260px;
+    padding: 16px;
+  }
 }
 
 .btn {
@@ -29,4 +36,12 @@
   width: 40px;
   height: 40px;
   background: url('../../assets/icons/icon_close.png');
+
+  @media (max-width: 600px) {
+    top: 14px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    background-size: cover; 
+  } 
 }

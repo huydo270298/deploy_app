@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { unwrapResult } from '@reduxjs/toolkit'
 
 import FormRegister from '../components/Auth/FormRegister';
-import { register } from '../components/userSlice';
+import { register } from '../components/Auth/userSlice.js';
 import styles from './RegisterPage.module.scss';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
