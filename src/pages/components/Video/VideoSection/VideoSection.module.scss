@@ -1,0 +1,37 @@
+.wrapper, 
+.video {
+  position: relative;
+}
+
+.video {
+  font-size: 0;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background: rgba(0,0,0,0.2);
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.title {
+  margin-top: 15px;
+  padding: 0 7.9167%;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+  font-weight: 500;
+
+  @media (max-width: 600px) {
+    padding: 0 16px;
+    font-size: 16px;
+    line-height: 19px;
+    
+  }
+}

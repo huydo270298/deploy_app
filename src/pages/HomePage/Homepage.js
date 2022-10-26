@@ -1,10 +1,10 @@
 import classNames from 'classnames/bind';
 import { useState } from 'react';
 import Modal from '../../components/Modal';
-import VideoSection from '../components/VideoSection';
 import HelpModal from '../components/HelpModal';
 import PushModal from '../components/PushModal';
 import SpinModal from '../components/SpinModal';
+import VideoSection from '../components/Video/VideoSection';
 import styles from './HomePage.module.scss';
 
 let cx = classNames.bind(styles);

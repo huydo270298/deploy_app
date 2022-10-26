@@ -1,16 +1,24 @@
 import classNames from 'classnames/bind';
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from './Select.module.scss';
+import useOutsideClick from '../../hooks/useOutsideClick'
 
 let cx = classNames.bind(styles);
 
-const Select = ({ currentValue, list, onChange }) => {
+const Select = ({ currentValue, list, onChange}) => {
   const [openOption, setOpenOption] = useState(false)
   const handleClickSelect = () => {
     setOpenOption(!openOption)
   };
+  
+  const elSelect = useRef(null);
+
+  useOutsideClick(elSelect, () => {
+    setOpenOption(false);
+  });
+  console.log(elSelect);
   return (
-    <div className={cx('wrapper')}>
+    <div className={cx('wrapper')} ref={elSelect} >
       <button type="button" className={cx('btn')} onClick={handleClickSelect}>
         {currentValue}
       </button>

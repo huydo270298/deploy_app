@@ -23,6 +23,7 @@ const PushModal = () => {
   const handleChangeOptionCard = (value) => {
     setCard(value)
   }
+
   return (
     <div className={cx('wrapper')}>
       <div className={cx('exchange')}>
