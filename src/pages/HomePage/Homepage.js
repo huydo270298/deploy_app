@@ -47,7 +47,7 @@ const Homepage = () => {
             <i className={cx('icon_help')}></i>
           </button>
         </div>
-      </div>
+      </div> 
       {openHelp &&
         <Modal onChange={handleCloseHelpModal} >
           <HelpModal />

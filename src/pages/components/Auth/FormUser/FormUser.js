@@ -20,13 +20,13 @@ const FormUser = (props) => {
     link: ''
   };
 
-  const [name, setName] = useState('Nguyễn Văn Anh');
+  const [name, setName] = useState('');
   const [sex, setSex] = useState(arrSex[0]);
   const [birthday, setBirthday] = useState('');
   const [country, setCountry] = useState(arrCountry[0]);
-  const [address, setAddress] = useState('No.12, Alley24, Đại Mỗ, Nam Từ Liêm');
-  const [phone, setPhone] = useState('0345759994');
-  const [link, setLink] = useState('http://abc');
+  const [address, setAddress] = useState('');
+  const [phone, setPhone] = useState('');
+  const [link, setLink] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();

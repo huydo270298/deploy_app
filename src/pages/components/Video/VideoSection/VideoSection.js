@@ -1,7 +1,7 @@
 import classNames from 'classnames/bind';
 import { useRef, useState } from 'react';
 import Controller from '../../Controller';
-import usePIP from "../../../../hooks/usePip";
+// import usePIP from "../../../../hooks/usePip";
 
 import styles from './VideoSection.module.scss';
 
@@ -32,19 +32,29 @@ const VideoSection = () => {
     })()
   }, []) */
 
-  const countRef = useRef(null);
+  const countSkipRef = useRef(null);
+  const countAlertRef = useRef(null);
   const [video, setVideo] = useState(0)
-  const [countdown, setCountdown] = useState(5);
+  const [countdownSkip, setCountdownSkip] = useState(5);
+  const [countdownAlert, setCountdownAlert] = useState(2);
   const [bookmark, setBookmark] = useState(false);
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
   const [isStart, setIsStart] = useState(false)
-  const handleCountdown = () => {
-    countRef.current = setInterval(() => {
-      setCountdown((countdown) => countdown - 1);
+  const handleCountdownSkip = () => {
+    countSkipRef.current = setInterval(() => {
+      setCountdownSkip((countdown) => countdown - 1);
     }, 1000);
 
-    countdown < 0 && clearInterval(countRef.current);
+    countdownSkip < 0 && clearInterval(countSkipRef.current);
+  }
+
+  const handleCountdownAlert = () => {
+    countAlertRef.current = setInterval(() => {
+      setCountdownAlert((countdown) => countdown - 1);
+    }, 1000);
+
+    countdownAlert < 0 && clearInterval(countAlertRef.current);
   }
 
   const handleClickBookMark = () => {
@@ -52,38 +62,43 @@ const VideoSection = () => {
   }
 
   const handleStart = () => {
-    handleCountdown();
+    handleCountdownSkip();
     setIsStart(true);
+  }
+
+  const handleLoadAlert = () => {
+    handleCountdownAlert()
+    setCountdownAlert(2);
   }
 
   const handlePrev = () => {
     setVideo(prev => prev - 1)
-    clearInterval(countRef.current);
-    setCountdown(5);
+    clearInterval(countSkipRef.current);
+    setCountdownSkip(5);
   }
 
   const handleNext = () => {
     setVideo(prev => prev + 1)
-    clearInterval(countRef.current);
-    setCountdown(5);
+    clearInterval(countSkipRef.current);
+    setCountdownSkip(5);
   }
 
   const videoElement = useRef();
-  const { togglePIP } = usePIP(videoElement);
+  // const { togglePIP } = usePIP(videoElement);
   videoElement.onProgress = (event) => {
     console.log(event);
   };
+
+  const handlePip = () => {
+    if (document.pictureInPictureElement) {
+      document.exitPictureInPicture();
+    } else if (document.pictureInPictureEnabled) {
+      videoElement.current.requestPictureInPicture();
+    }
+  }
   return (
     <div className={cx('wrapper')}>
       <div className={cx('video')}>
-        <iframe 
-          src='https://olafwempe.com/mp3/silence/silence.mp3' 
-          type='audio/mp3' 
-          allow='autoplay' 
-          id='audio' 
-          title='audio'
-          style={{'display': 'none'}}>
-        </iframe>
         <video
           muted
           src={listVideo[video].url}
@@ -91,22 +106,25 @@ const VideoSection = () => {
           // controls
           ref={videoElement}
           className={cx('box')}
-          onCanPlay ={handleStart}
+          onPlaying={handleStart}
+          onCanPlay={handleLoadAlert}
           onDurationChange = {(e) => {setDuration(e.target.duration)}}
           onTimeUpdate = {(e)=> {setPrograssValue(e.target.currentTime)}}
         />
         {isStart && <Controller 
           handlePrev={handlePrev}
           handleNext={handleNext}
-          handlePip={togglePIP}
+          // handlePip={togglePIP}
+          handlePip={handlePip}
           duration={duration}
           prograssValue={prograssValue}
           bookmark={bookmark}
           handleClickBookMark={handleClickBookMark}
           video={video}
           listVideo={listVideo}
-          countdown={countdown}
+          countdown={countdownSkip}
         />}
+        {countdownAlert >= 0 && <p className={cx('alert')}>Sorry! You have not won the prize yet</p>}
       </div >
       <p className={cx('title')}>{listVideo[video].title}</p>
     </div>

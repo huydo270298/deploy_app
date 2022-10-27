@@ -1,11 +1,16 @@
 .wrapper {
+  width: 100%;
+  max-height: calc(100vh - 64px);
+}
+
+.content {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 100%;
+  padding: 38px 0;
 
   @media (max-width: 600px) {
-    padding: 38px 26px;
+    gap: 16px;
   }
 }
 
@@ -18,6 +23,10 @@
 
   &+.form {
     margin-top: 32px;
+
+    @media (max-width: 600px) {
+      margin-top: 16px;
+    }
   }
 }
 
@@ -47,6 +56,13 @@
   line-height: 19px;
   background: #DFDFDF;
   border-radius: 6px;
+
+  &.textarea {
+    min-height: 130px;
+    border: 0;
+    outline: 0;
+    resize: none;
+  }
 }
 
 .submit {
@@ -66,4 +82,11 @@
   width: 28px;
   height: 28px;
   background: url(../../../assets/icons/icon_plate3.png);
+}
+
+.note {
+  font-size: 16px;
+  line-height: 22px;
+  color: #333;
+  font-family: 'Open Sans', sans-serif;
 }

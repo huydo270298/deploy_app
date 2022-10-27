@@ -16,7 +16,7 @@ const Select = ({ currentValue, list, onChange}) => {
   useOutsideClick(elSelect, () => {
     setOpenOption(false);
   });
-  console.log(elSelect);
+  
   return (
     <div className={cx('wrapper')} ref={elSelect} >
       <button type="button" className={cx('btn')} onClick={handleClickSelect}>
