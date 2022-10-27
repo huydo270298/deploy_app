@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import React, { useState } from 'react'
+import { PlateIcon } from '../../../assets/Icons';
 import Select from '../../../components/Select';
 import styles from './PushModal.module.scss';
 
@@ -29,7 +30,7 @@ const PushModal = () => {
       <div className={cx('content')}>
         <div className={cx('exchange')}>
           1USD = 500
-          <i className={cx('icon_plate')}></i>
+          <PlateIcon className={cx('icon_plate')} />
         </div>
         <form className={cx('form_group')} onSubmit={handleSubmit}>
           <div className={cx('form')}>

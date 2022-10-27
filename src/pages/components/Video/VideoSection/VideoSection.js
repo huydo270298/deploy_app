@@ -15,11 +15,11 @@ const VideoSection = () => {
     },
     {
       title: 'Lil Nas X - STAR WALKIN',
-      url: 'https://www.youtube.com/watch?v=kN0LtF9oWAk'
+      url: 'http://media.w3.org/2010/05/sintel/trailer.mp4'
     },
     {
       title: 'Awaken | Season 2019 Cinematic - League of Legends',
-      url: 'https://www.youtube.com/watch?v=zF5Ddo9JdpY'
+      url: 'https://ia802500.us.archive.org/35/items/three-legged-legs/3000kbs_starbucks.mp4'
     }
   ]
 
@@ -108,10 +108,10 @@ const VideoSection = () => {
           className={cx('box')}
           onPlaying={handleStart}
           onCanPlay={handleLoadAlert}
-          onDurationChange = {(e) => {setDuration(e.target.duration)}}
-          onTimeUpdate = {(e)=> {setPrograssValue(e.target.currentTime)}}
+          onDurationChange={(e) => { setDuration(e.target.duration) }}
+          onTimeUpdate={(e) => { setPrograssValue(e.target.currentTime) }}
         />
-        {isStart && <Controller 
+        {isStart && <Controller
           handlePrev={handlePrev}
           handleNext={handleNext}
           // handlePip={togglePIP}

@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { EyeHideIcon, EyeShowIcon } from '../../../../assets/Icons';
 
 import styles from './FormLogin.module.scss';
 
@@ -15,7 +16,7 @@ const FormUser = (props) => {
   const { message } = props
 
   const defaultValues = {
-    identifier : 'huydo@gmail.com',
+    identifier: 'huydo@gmail.com',
     username: '',
     password: '',
   };
@@ -62,8 +63,9 @@ const FormUser = (props) => {
             autoComplete="on"
             onChange={(e) => setPass(e.target.value)}
           />
-          <button type='button' className={cx('btn_toggle', showPass && 'show')} onClick={handleClickToggleShowPass}>
-            <i className={cx('icon_eye')}></i>
+          <button type='button' className={cx('btn_toggle')} onClick={handleClickToggleShowPass}>
+            {showPass ? <EyeShowIcon /> : <EyeHideIcon />}
+            {/* <i className={cx('icon_eye')}></i> */}
           </button>
           <p className={cx('message')}>{message.message}</p>
         </div>

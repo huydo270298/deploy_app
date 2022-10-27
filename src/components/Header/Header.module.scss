@@ -8,12 +8,12 @@
   justify-content: space-between;
   max-width: 1440px;
   margin: auto;
-  padding: 33px 8.75% 34px;
+  padding: 20px 8.75% 21px;
 
   @media (max-width: 600px) {
     flex-direction: column;
     gap: 22px;
-    padding: 18px 21px 25px;
+    padding: 18px 21px 20px;
   }
 
   &.loggedin {
@@ -22,40 +22,60 @@
     .link {
       background-position: center left;
     }
+
+    .btn_group {
+      @media (max-width: 600px) {
+        width: auto;
+      }
+    }
   }
 }
 
 .logo {
-  width: 150px;
-  height: 44px;
+  width: 200px;
+  height: 80px;
+  margin-right: auto;
+
+  @media (max-width: 600px) {
+    width: 150px;
+    height: 44px;
+  }
 }
 
 .link {
   display: block;
   height: 100%;
-  background-image: url(../../assets/icons/logo.png);
+  background-image: url(../../assets/logo.png);
   background-repeat: no-repeat;
   background-position: center left;
 
   @media (max-width: 600px) {
-    background-position: center;
+    background-image: url(../../assets/logo_m.png);
   }
-}
-
-.icon_user {
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  margin-right: 9px;
-  background: url('../../assets/icons/icon_user.png');
 }
 
 .btn_group {
   display: flex;
-  gap: 9px;
 
   @media (max-width: 600px) {
     width: 100%;
+  }
+
+  &.type {
+    gap: 36px;
+
+    @media (max-width: 600px) {
+      gap: 18px;
+
+      .btn {
+        gap: 0;
+        font-size: 0;
+      }
+    }
+  }
+
+  &.type2 {
+    gap: 9px;
   }
 }
 
@@ -63,6 +83,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 9px;
   font-size: 1rem;
   font-weight: bold;
   font-family: 'Inter', sans-serif;
@@ -72,9 +93,6 @@
   border-radius: 12px;
 }
 
-.btn_user {
-  background: transparent;
-}
 
 .btn_login,
 .btn_register {

@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind'
 import React, { useRef } from 'react'
+import { PipIcon, PlateIcon, PrevIcon, SaveActiveIcon, SaveIcon, SkipIcon } from '../../../assets/Icons'
 import styles from './Controller.module.scss'
 
 let cx = classNames.bind(styles)
@@ -7,33 +8,33 @@ let cx = classNames.bind(styles)
 const Controller = (props) => {
 
   const {
-          duration,
-          prograssValue, 
-          handlePrev, 
-          handleNext,
-          handlePip,
-          bookmark,
-          handleClickBookMark,
-          video,
-          listVideo,
-          countdown
-        } = props;
+    duration,
+    prograssValue,
+    handlePrev,
+    handleNext,
+    handlePip,
+    bookmark,
+    handleClickBookMark,
+    video,
+    listVideo,
+    countdown
+  } = props;
 
   const inputEl = useRef();
-  let currentThumb = prograssValue/duration*100 || 0;
+  let currentThumb = prograssValue / duration * 100 || 0;
   return (
     <div className={cx('wrapper')}>
-      <button type='button' className={cx('btn', 'bookmark', bookmark && 'active')} onClick={handleClickBookMark}>
-        <i className={cx('icon_bookmark')}></i>
+      <button type='button' className={cx('btn', 'bookmark')} onClick={handleClickBookMark}>
+        {bookmark ? <SaveActiveIcon className={cx('icon_bookmark')} /> : <SaveIcon className={cx('icon_bookmark')} />}
       </button>
       {/* <button type='button' className={cx('btn', 'prev', video === 0 && 'disable' )} onClick={handlePrev}>
         <i className={cx('icon_prev')}></i>
       </button> */}
-      { video !== (listVideo.length - 1) && 
+      {video !== (listVideo.length - 1) &&
         <button type='button' className={cx('skip', !(countdown >= 0) && 'active')} onClick={handleNext}>
           {countdown >= 0 ? `${countdown}s` : 'SKIP'}
-          <i className={cx('icon_plate')}></i>
-          <i className={cx('icon_skip')}></i>
+          <PlateIcon className={cx('icon', 'icon_plate')} />
+          <SkipIcon />
         </button>
       }
       <div className={cx('progress')}>
@@ -46,15 +47,15 @@ const Controller = (props) => {
           step={0.1}
           value={currentThumb.toFixed(2)}
           readOnly
-          style={{'backgroundSize': `${currentThumb}% 100%`}}
+          style={{ 'backgroundSize': `${currentThumb}% 100%` }}
         />
       </div>
       <div className={cx('group')}>
         <button type='button' className={cx('btn', video === 0 && 'disable')} onClick={handlePrev}>
-          <i className={cx('icon', 'icon_controller_prev')} />
+          <PrevIcon className={cx('icon')} />
         </button>
         <button type='button' className={cx('btn')} onClick={handlePip}>
-          <i className={cx('icon', 'icon_pip')} />
+          <PipIcon className={cx('icon')} />
         </button>
       </div>
     </div>

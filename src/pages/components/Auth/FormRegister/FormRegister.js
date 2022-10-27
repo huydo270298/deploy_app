@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form'
 
 import styles from './FormRegister.module.scss';
+import { EyeHideIcon, EyeShowIcon } from '../../../../assets/Icons';
 
 let cx = classNames.bind(styles);
 
 const FormRegister = (props) => {
 
   const [showPass, setShowPass] = useState(false);
-  const [showConfPass, setShowConfPass] = useState(true);
+  const [showConfPass, setShowConfPass] = useState(false);
   const { message } = props;
 
   const {
@@ -20,10 +21,11 @@ const FormRegister = (props) => {
     formState: { errors }
   } = useForm({
     defaultValues: {
-      username : '',
+      username: '',
       password: '',
       email: 'huydo400@gmail.com'
-    }})
+    }
+  })
 
   const onSubmit = async (data) => {
     const { onSubmit } = props;
@@ -58,7 +60,7 @@ const FormRegister = (props) => {
             spellCheck={false}
             {...register("username", {
               required: 'You must specify a username',
-            })} 
+            })}
           />
           {errors.username && <p className={cx('message')}>{errors.username.message}</p>}
         </div>
@@ -81,7 +83,8 @@ const FormRegister = (props) => {
             })}
           />
           {errors.password && <p className={cx('message')}>{errors.password.message}</p>}
-          <button type='button' className={cx('btn_toggle', showPass && 'show')} onClick={handleClickToggleShowPass}>
+          <button type='button' className={cx('btn_toggle')} onClick={handleClickToggleShowPass}>
+            {showPass ? <EyeShowIcon /> : <EyeHideIcon />}
             <i className={cx('icon_eye')}></i>
           </button>
         </div>
@@ -100,8 +103,8 @@ const FormRegister = (props) => {
               validate: value => value === password.current || "The passwords do not match"
             })}
           />
-          <button type='button' className={cx('btn_toggle', showConfPass && 'show')} onClick={handleClickToggleShowConfPass}>
-            <i className={cx('icon_eye')}></i>
+          <button type='button' className={cx('btn_toggle')} onClick={handleClickToggleShowConfPass}>
+            {showConfPass ? <EyeShowIcon /> : <EyeHideIcon />}
           </button>
           {errors.conf_password && <p className={cx('message')}>{errors.conf_password.message}</p>}
         </div>

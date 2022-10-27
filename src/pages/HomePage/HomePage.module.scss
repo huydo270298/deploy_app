@@ -1,6 +1,7 @@
 .wrapper {
   padding-bottom: 64px;
 }
+
 .group {
   display: flex;
   justify-content: center;
@@ -21,7 +22,7 @@
   justify-content: center;
   gap: 12px;
   flex: 1;
-  height: 59px;
+  min-height: 59px;
   padding: 12px 24px;
   font-size: 18px;
   color: #fff;
@@ -36,7 +37,7 @@
 }
 
 .get_spin {
-  background: #FF7A00;   
+  background: #FF7A00;
 }
 
 .push {
@@ -48,13 +49,6 @@
   color: #000;
   background: transparent;
   border-color: #000;
-}
-
-.icon_plate {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background: url(../../assets/icons/icon_plate.png);
 }
 
 .reward {
@@ -76,17 +70,11 @@
 }
 
 .icon_cup {
-  display: inline-block;
-  width: 82px;
-  height: 82px;
-  margin-right: 14px;
-  background: url(../../assets/icons/icon_cup.png);
 
   @media (max-width: 600px) {
     width: 48px;
     height: 48px;
     margin-right: 8px;
-    background-size: cover;
   }
 }
 
@@ -101,14 +89,17 @@
 }
 
 .icon_help {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background: url(../../assets/icons/icon_help.png);
 
   @media (max-width: 600px) {
     width: 28px;
     height: 28px;
-    background-size: cover;
+  }
+}
+
+.icon_plate {
+
+  @media (max-width: 600px) {
+    width: 25px;
+    height: 25px;
   }
 }

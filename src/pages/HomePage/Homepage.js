@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { useState } from 'react';
+import { CupIcon, HelpIcon, PlateIcon } from '../../assets/Icons';
 import Modal from '../../components/Modal';
 import HelpModal from '../components/HelpModal';
 import PushModal from '../components/PushModal';
@@ -38,16 +39,19 @@ const Homepage = () => {
         <div className={cx('group')}>
           <button type='button' className={cx('btn', 'get_spin')} onClick={handleOpenSpinModal}>Get more spin turns</button>
           <button type='button' className={cx('btn', 'push')} onClick={handleOpenPushModal} >Push Ads</button>
-          <button type='button' className={cx('btn', 'add')}>+1000<i className={cx('icon_plate')}></i></button>
-        </div>
-        <div className={cx('reward')}>
-          <i className={cx('icon_cup')}></i>
-          10.000 USD
-          <button className={cx('btn_help')} onClick={handleOpenHelpModal}>
-            <i className={cx('icon_help')}></i>
+          <button type='button' className={cx('btn', 'add')}>
+            +1000
+            <PlateIcon className={cx('icon_plate')} />
           </button>
         </div>
-      </div> 
+        <div className={cx('reward')}>
+          <CupIcon className={cx('icon_cup')} />
+          10.000 USD
+          <button className={cx('btn_help')} onClick={handleOpenHelpModal}>
+            <HelpIcon className={cx('icon_help')} />
+          </button>
+        </div>
+      </div>
       {openHelp &&
         <Modal onChange={handleCloseHelpModal} >
           <HelpModal />

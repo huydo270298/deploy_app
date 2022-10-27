@@ -29,52 +29,42 @@
   padding: 1.667% 4.584%;
 
   .btn {
-    position:static;
+    position: static;
     font-size: 0;
     background: transparent;
-  
-    & + .btn {
+
+    &+.btn {
       margin-left: 17.5%;
     }
   }
 
-  .icon_controller_prev {
-    background-image: url(../../../assets/icons/icon_controller_prev.png);
-  }
-  
   .icon_pause {
-    background-image: url(../../../assets/icons/icon_controller_pause.png);
+    // background-image: url(../../../assets/icons/icon_controller_pause.png);
   }
-  
+
   .icon_play {
-    background-image: url(../../../assets/icons/icon_controller_pip.png);
+    // background-image: url(../../../assets/icons/icon_controller_pip.png);
   }
-  
+
   .icon_pip {
-    background-image: url(../../../assets/icons/icon_controller_pip.png);
+    // background-image: url(../../../assets/icons/icon_controller_pip.png);
   }
 }
 
 .bookmark {
   top: 1.73%;
   left: 8.75%;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
 
   @media (max-width: 600px) {
     top: 16px;
     left: 16px;
+    width: 32px;
+    height: 32px;
   }
-
-  &.active {
-    .icon_bookmark {
-      background-image: url(../../../assets/icons/icon_bookmark_active.png);
-    }
-  }
-}
-
-.prev {
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
 }
 
 .skip {
@@ -163,7 +153,7 @@
         height: 12px;
         width: 12px;
       }
-    } 
+    }
 
     &::-moz-range-thumb {
       -webkit-appearance: none;
@@ -196,15 +186,10 @@
 }
 
 .icon_bookmark {
-  display: inline-block;
-  width: 66px;
-  height: 66px;
-  background-image: url(../../../assets/icons/icon_bookmark.png);
 
   @media (max-width: 600px) {
-    width: 32px;
-    height: 32px;
-    background-size: cover;
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -212,7 +197,7 @@
   display: inline-block;
   width: 77px;
   height: 77px;
-  background-image: url(../../../assets/icons/icon_prev.png);
+  // background-image: url(../../../assets/icons/icon_prev.png);
 
   @media (max-width: 600px) {
     width: 32px;
@@ -221,24 +206,10 @@
   }
 }
 
-.icon_skip {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-image: url(../../../assets/icons/icon_skip.png);
-}
-
 .icon_plate {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
   margin-left: 14px;
-  background-image: url(../../../assets/icons/icon_plate4.png);
 
   @media (max-width: 600px) {
-    width: 24px;
-    height: 24px;
     margin-left: 0;
-    background-size: cover;
   }
 }

@@ -45,13 +45,7 @@
   position: absolute;
   top: 46px;
   right: 23px;
-  width: 24px;
-  height: 24px;
-  background: url(../../../../assets/icons/icon_hide.png);
-
-  &.show {
-    background: url(../../../../assets/icons/icon_show.png);
-  }
+  background: transparent;
 }
 
 .submit {

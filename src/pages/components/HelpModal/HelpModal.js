@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import React from 'react'
+import { PlateIcon } from '../../../assets/Icons';
 import styles from './HelpModal.module.scss';
 
 let cx = classNames.bind(styles);
@@ -12,7 +13,8 @@ const HelpModal = () => {
         <li className={cx('item')}>2. The luckiest will be contacted and given the prize</li>
       </ul>
       <p className={cx('sub')}>
-        <i className={cx('icon_plate')}></i>
+        <PlateIcon />
+        {/* <i className={cx('icon_plate')}></i> */}
         : the numbers of spin turns
       </p>
     </div>
