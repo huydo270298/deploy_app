@@ -18,7 +18,7 @@ const Header = () => {
         {
           isLoggedIn &&
           <div className={cx('btn_group', 'type')}>
-            <Link to="/user" className={cx('btn', 'btn_save')}>
+            <Link to="/bookmarks" className={cx('btn', 'btn_save')}>
               <SaveIcon />
               SAVE
             </Link>

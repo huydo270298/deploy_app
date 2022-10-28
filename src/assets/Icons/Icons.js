@@ -197,3 +197,23 @@ export const EyeShowIcon = ({ width = '24px', height = '24px', className }) => (
         <path d="M11.9999 15C13.6568 15 14.9999 13.6569 14.9999 12C14.9999 10.3431 13.6568 9 11.9999 9C10.3431 9 8.99992 10.3431 8.99992 12C8.99992 13.6569 10.3431 15 11.9999 15Z" stroke="#4F4F4F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
 );
+
+export const ArrowBotIcon = ({ width = '20px', height = '20px', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <g clipPath="url(#clip0_141_547)">
+            <path d="M4 7L10 13L16 7" stroke="#4F4F4F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </g>
+        <defs>
+            <clipPath id="clip0_141_547">
+                <rect width="20" height="20" fill="white"/>
+            </clipPath>
+        </defs>
+    </svg>
+);

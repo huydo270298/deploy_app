@@ -7,6 +7,7 @@ import './App.css';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import { useSelector } from 'react-redux';
+import SavePage from './pages/SavePage';
 
 function App() {
   const login = useSelector(state => state.user.current)
@@ -19,7 +20,10 @@ function App() {
           {
             Object.values(login).length !== 0
               && 
-            <Route path="/user" element={<UserPage />} />
+            <>
+              <Route path="/user" element={<UserPage />} />
+              <Route path="/bookmarks" element={<SavePage />} />
+            </>
           }
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />

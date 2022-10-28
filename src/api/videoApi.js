@@ -2,9 +2,9 @@ import axiosClient from './axiosClient';
 
 const videoApi = {
   
-  getAll () {
+  async getAll(params) {
     const url = '/products';
-    return axiosClient.get(url)
+    return axiosClient.get(url, {params})
   }
 };
 

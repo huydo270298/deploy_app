@@ -2,6 +2,7 @@ import classNames from 'classnames/bind';
 import React, { useRef, useState } from 'react';
 import styles from './Select.module.scss';
 import useOutsideClick from '../../hooks/useOutsideClick'
+import { ArrowBotIcon } from '../../assets/Icons/Icons';
 
 let cx = classNames.bind(styles);
 
@@ -21,6 +22,7 @@ const Select = ({ currentValue, list, onChange}) => {
     <div className={cx('wrapper')} ref={elSelect} >
       <button type="button" className={cx('btn')} onClick={handleClickSelect}>
         {currentValue}
+        <ArrowBotIcon />
       </button>
       {openOption && <div className={cx('option')}>
         <ul className={cx('list')}>
