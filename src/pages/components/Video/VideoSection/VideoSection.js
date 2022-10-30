@@ -40,7 +40,6 @@ const VideoSection = () => {
   const [bookmark, setBookmark] = useState(false);
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
-  const [isStart, setIsStart] = useState(false)
   const handleCountdownSkip = () => {
     countSkipRef.current = setInterval(() => {
       setCountdownSkip((countdown) => countdown - 1);
@@ -63,7 +62,6 @@ const VideoSection = () => {
 
   const handleStart = () => {
     handleCountdownSkip();
-    setIsStart(true);
   }
 
   const handleLoadAlert = () => {
