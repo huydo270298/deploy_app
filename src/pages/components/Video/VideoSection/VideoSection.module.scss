@@ -1,4 +1,4 @@
-.wrapper, 
+.wrapper,
 .video {
   position: relative;
 }
@@ -11,7 +11,7 @@
   position: relative;
   width: 100%;
   z-index: 1;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
 
   iframe {
     position: absolute;
@@ -21,17 +21,21 @@
 }
 
 .title {
-  margin-top: 15px;
-  padding: 0 7.9167%;
-  font-size: 18px;
-  line-height: 22px;
-  color: #333;
+  position: absolute;
+  top: 5.557%;
+  left: 8.75%;
+  color: #fff;
+  font-size: 36px;
   font-weight: 500;
+  z-index: 2;
 
   @media (max-width: 600px) {
+    position: initial;
+    margin-top: 14px;
     padding: 0 16px;
     font-size: 16px;
     line-height: 19px;
+    color: #333;
   }
 }
 

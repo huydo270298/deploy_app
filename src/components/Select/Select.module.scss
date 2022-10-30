@@ -3,9 +3,6 @@
 }
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     font-size: 1rem;
     line-height: 19px;
@@ -17,18 +14,20 @@
 }
 
 .option {
+    overflow: auto;
     position: absolute;
     top: 58px;
     left: 0;
     width: 100%;
+    max-height: 238px;
     z-index: 1;
+    border-radius: 6px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.13);
 }
 
 .list {
     padding: 10px 0;
     background: #fff;
-    border-radius: 6px;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.13);
 }
 
 .item {
@@ -39,5 +38,18 @@
     &.active {
         color: #fff;
         background: #FF7A00;
+
+        &:hover {
+            background: #FF7A00;
+        }
     }
+
+    &:hover {
+        background: rgba(255, 122, 0, 0.2);
+    }
+}
+
+.icon_arrow {
+    position: absolute;
+    right: 19px;
 }

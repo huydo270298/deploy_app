@@ -1,7 +1,6 @@
 import classNames from 'classnames/bind';
 import { useRef, useState } from 'react';
 import Controller from '../../Controller';
-// import usePIP from "../../../../hooks/usePip";
 
 import styles from './VideoSection.module.scss';
 
@@ -35,6 +34,7 @@ const VideoSection = () => {
   const countSkipRef = useRef(null);
   const countAlertRef = useRef(null);
   const [video, setVideo] = useState(0)
+  const [autoPlay, setAutoPlay] = useState(false)
   const [countdownSkip, setCountdownSkip] = useState(5);
   const [countdownAlert, setCountdownAlert] = useState(2);
   const [bookmark, setBookmark] = useState(false);
@@ -83,6 +83,11 @@ const VideoSection = () => {
     setCountdownSkip(5);
   }
 
+  const handlePlay = () => {
+    setAutoPlay(true);
+    videoElement.current.play();
+  }
+
   const videoElement = useRef();
   // const { togglePIP } = usePIP(videoElement);
   videoElement.onProgress = (event) => {
@@ -100,9 +105,9 @@ const VideoSection = () => {
     <div className={cx('wrapper')}>
       <div className={cx('video')}>
         <video
-          muted
+          muted={false}
           src={listVideo[video].url}
-          autoPlay
+          autoPlay={autoPlay}
           // controls
           ref={videoElement}
           className={cx('box')}
@@ -111,19 +116,20 @@ const VideoSection = () => {
           onDurationChange={(e) => { setDuration(e.target.duration) }}
           onTimeUpdate={(e) => { setPrograssValue(e.target.currentTime) }}
         />
-        {isStart && <Controller
+        <Controller
           handlePrev={handlePrev}
           handleNext={handleNext}
-          // handlePip={togglePIP}
+          handlePlay={handlePlay}
           handlePip={handlePip}
           duration={duration}
           prograssValue={prograssValue}
           bookmark={bookmark}
           handleClickBookMark={handleClickBookMark}
           video={video}
+          play={autoPlay}
           listVideo={listVideo}
           countdown={countdownSkip}
-        />}
+        />
         {countdownAlert >= 0 && <p className={cx('alert')}>Sorry! You have not won the prize yet</p>}
       </div >
       <p className={cx('title')}>{listVideo[video].title}</p>

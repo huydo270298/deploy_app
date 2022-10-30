@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind'
 import React, { useRef } from 'react'
-import { PipIcon, PlateIcon, PrevIcon, SaveActiveIcon, SaveIcon, SkipIcon } from '../../../assets/Icons'
+import { PipIcon, PlateIcon, PlayIcon, PrevIcon, SaveActiveIcon, SaveIcon, SkipIcon } from '../../../assets/Icons'
 import styles from './Controller.module.scss'
 
 let cx = classNames.bind(styles)
@@ -12,10 +12,12 @@ const Controller = (props) => {
     prograssValue,
     handlePrev,
     handleNext,
+    handlePlay,
     handlePip,
     bookmark,
     handleClickBookMark,
     video,
+    play,
     listVideo,
     countdown
   } = props;
@@ -27,9 +29,9 @@ const Controller = (props) => {
       <button type='button' className={cx('btn', 'bookmark')} onClick={handleClickBookMark}>
         {bookmark ? <SaveActiveIcon className={cx('icon_bookmark')} /> : <SaveIcon className={cx('icon_bookmark')} />}
       </button>
-      {/* <button type='button' className={cx('btn', 'prev', video === 0 && 'disable' )} onClick={handlePrev}>
-        <i className={cx('icon_prev')}></i>
-      </button> */}
+      {!play && <button type='button' className={cx('btn', 'play')} onClick={handlePlay}>
+        <PlayIcon className={cx('icon_play')} />
+      </button>}
       {video !== (listVideo.length - 1) &&
         <button type='button' className={cx('skip', !(countdown >= 0) && 'active')} onClick={handleNext}>
           {countdown >= 0 ? `${countdown}s` : 'SKIP'}

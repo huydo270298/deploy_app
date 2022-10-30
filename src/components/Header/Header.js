@@ -5,6 +5,7 @@ import { useSelector } from 'react-redux';
 
 import styles from './Header.module.scss';
 import { SaveIcon, UserIcon } from '../../assets/Icons';
+import Countdown from '../../pages/components/Countdown';
 
 let cx = classNames.bind(styles);
 
@@ -15,6 +16,7 @@ const Header = () => {
     <header className={cx('wrapper')}>
       <div className={cx('inner', isLoggedIn && 'loggedin')}>
         <h1 className={cx('logo')}><Link to='/' className={cx('link')} ></Link></h1>
+        {isLoggedIn && <Countdown time={'2022-10-30 00:00:00'} />}
         {
           isLoggedIn &&
           <div className={cx('btn_group', 'type')}>

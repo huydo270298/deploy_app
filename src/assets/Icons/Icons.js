@@ -208,12 +208,25 @@ export const ArrowBotIcon = ({ width = '20px', height = '20px', className }) => 
         xmlns="http://www.w3.org/2000/svg"
     >
         <g clipPath="url(#clip0_141_547)">
-            <path d="M4 7L10 13L16 7" stroke="#4F4F4F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M4 7L10 13L16 7" stroke="#4F4F4F" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
         </g>
         <defs>
             <clipPath id="clip0_141_547">
-                <rect width="20" height="20" fill="white"/>
+                <rect width="20" height="20" fill="white" />
             </clipPath>
         </defs>
+    </svg>
+);
+
+export const PlayIcon = ({ width = '90px', height = '90px', className }) => (
+    <svg
+        className={className}
+        width={width}
+        height={height}
+        viewBox="0 0 90 90"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <path d="M19.6875 78.75C18.9416 78.75 18.2262 78.4537 17.6988 77.9262C17.1713 77.3988 16.875 76.6834 16.875 75.9375V14.0625C16.8751 13.5738 17.0025 13.0935 17.2448 12.669C17.487 12.2445 17.8356 11.8905 18.2564 11.6418C18.6771 11.3931 19.1554 11.2584 19.644 11.2508C20.1327 11.2433 20.6149 11.3632 21.0431 11.5988L77.2931 42.5363C77.7341 42.779 78.1018 43.1357 78.3579 43.5691C78.614 44.0025 78.7491 44.4966 78.7491 45C78.7491 45.5034 78.614 45.9976 78.3579 46.4309C78.1018 46.8643 77.7341 47.221 77.2931 47.4638L21.0431 78.4013C20.6279 78.6299 20.1615 78.7499 19.6875 78.75Z" fill="#FF7A00" />
     </svg>
 );

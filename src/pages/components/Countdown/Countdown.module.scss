@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    gap: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+
+
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+.num {
+    color: #FF7A00;
+}

@@ -1,5 +1,6 @@
+import axios from 'axios';
 import classNames from 'classnames/bind';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Select from '../../../../components/Select';
 
 import styles from './FormUser.module.scss';
@@ -8,7 +9,6 @@ let cx = classNames.bind(styles);
 
 const FormUser = (props) => {
   const arrSex = ['Male', 'Female']
-  const arrCountry = ['Việt Nam', 'Thái Lan', 'Singapore', 'Malaysia']
   const defaultValues = {
     username: '',
     sex: '',
@@ -23,7 +23,12 @@ const FormUser = (props) => {
   const [name, setName] = useState('');
   const [sex, setSex] = useState(arrSex[0]);
   const [birthday, setBirthday] = useState('');
-  const [country, setCountry] = useState(arrCountry[0]);
+  const [arrCountry, setArrCountry] = useState([])
+  const [country, setCountry] = useState('Vietnam');
+  const [arrCities, setArrCities] = useState()
+
+
+  const [city, setCity] = useState('Hanoi');
   const [address, setAddress] = useState('');
   const [phone, setPhone] = useState('');
   const [link, setLink] = useState('');
@@ -55,6 +60,31 @@ const FormUser = (props) => {
   const handleChangeOptionCountry = (value) => {
     setCountry(value)
   }
+
+  const handleChangeOptionCities = (value) => {
+    setCity(value)
+  }
+
+  // get add all Country
+  useEffect(() => {
+    axios({
+      method: 'get',
+      url: 'https://countriesnow.space/api/v0.1/countries',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+      .then((response) => {
+        setArrCountry(response.data.data);
+        setArrCities(response.data.data.filter((item) => {
+          return item.country === country
+        })[0]?.cities)
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, [country])
+
   return (
     <form className={cx('form_group')} onSubmit={handleSubmit}>
       <div className={cx('line')}>
@@ -76,16 +106,16 @@ const FormUser = (props) => {
           <div htmlFor="sex" className={cx('label')}>
             SEX
           </div>
-          <Select currentValue={sex} list={arrSex} onChange={handleChangeOptionSex} />
+          <Select currentValue={sex} arrayData={arrSex} onChange={handleChangeOptionSex} />
         </div>
         <div className={cx('form')}>
           <label htmlFor="dateOfBirth" className={cx('label')}>
             Date Of Birth
           </label>
-          <input 
-            id="dateOfBirth" 
-            type="text" 
-            placeholder="DD/MM/YY" 
+          <input
+            id="dateOfBirth"
+            type="text"
+            placeholder="DD/MM/YY"
             className={cx('input')}
             defaultValue={birthday}
             onChange={(e) => setBirthday(e.target.value)}
@@ -97,13 +127,13 @@ const FormUser = (props) => {
           <div htmlFor="address" className={cx('label')}>
             Country
           </div>
-          <Select currentValue={country} list={arrCountry} onChange={handleChangeOptionCountry} />
+          <Select currentValue={country} arrayData={arrCountry} onChange={handleChangeOptionCountry} />
         </div>
         <div className={cx('form')}>
           <div htmlFor="address" className={cx('label')}>
             City/Province
           </div>
-          <Select currentValue={country} list={arrCountry} onChange={handleChangeOptionCountry} />
+          <Select currentValue={city} nation={country} arrayData={arrCities} onChange={handleChangeOptionCities} />
         </div>
       </div>
       <div className={cx('line')}>

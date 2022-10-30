@@ -2,7 +2,7 @@ import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
 import videoApi from '../../api/videoApi'
 import styles from './SavePage.module.scss';
-import image from '../../assets/img_demo.png'; 
+import image from '../../assets/img_demo.png';
 
 let cx = classNames.bind(styles);
 
@@ -10,7 +10,8 @@ const SavePage = () => {
   const pageArr = [1, 2, 3, 4, 5]
   const [listVideo, setListVideo] = useState([])
   const [pageActive, setPageActive] = useState(2)
-// get add save videos
+
+  // get add save videos
   useEffect(() => {
     (
       async () => {
@@ -19,7 +20,7 @@ const SavePage = () => {
           _limit: 10
         });
         setListVideo(reponse);
-    })()
+      })()
   }, [])
 
   const handleClickPage = (item) => {
@@ -43,11 +44,11 @@ const SavePage = () => {
         </ul>
         <div className={cx('pagination')}>
           <ul>
-            { pageActive > 1 && <li className={cx('btn', 'prev')}>&lt;</li>}
+            {pageActive > 1 && <li className={cx('btn', 'prev')}>&lt;</li>}
             {pageArr.map((item) => (
-              <li key={item} className={cx('btn', pageActive === item && 'active' )} onClick={() => handleClickPage(item)} >{item}</li>
+              <li key={item} className={cx('btn', pageActive === item && 'active')} onClick={() => handleClickPage(item)} >{item}</li>
             ))}
-            { pageActive < pageArr.length && <li className={cx('btn', 'next')}>&gt;</li>}
+            {pageActive < pageArr.length && <li className={cx('btn', 'next')}>&gt;</li>}
           </ul>
         </div>
       </div>
