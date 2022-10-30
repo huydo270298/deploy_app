@@ -12,12 +12,14 @@
 
   @media (max-width: 600px) {
     flex-direction: column;
+    align-items: flex-start;
     gap: 22px;
     padding: 18px 21px 20px;
   }
 
   &.loggedin {
     flex-direction: row;
+    align-items: center;
 
     .link {
       background-position: center left;
