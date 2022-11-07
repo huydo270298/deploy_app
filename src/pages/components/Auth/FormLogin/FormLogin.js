@@ -9,14 +9,13 @@ let cx = classNames.bind(styles);
 
 const FormUser = (props) => {
 
-  const [name, setName] = useState('Nguyễn Văn Anh');
-  const [pass, setPass] = useState('@a1245');
+  const [name, setName] = useState('');
+  const [pass, setPass] = useState('');
   const [showPass, setShowPass] = useState(false);
 
   const { message } = props
 
   const defaultValues = {
-    identifier: 'huydo@gmail.com',
     username: '',
     password: '',
   };
@@ -67,7 +66,7 @@ const FormUser = (props) => {
             {showPass ? <EyeShowIcon /> : <EyeHideIcon />}
             {/* <i className={cx('icon_eye')}></i> */}
           </button>
-          <p className={cx('message')}>{message.message}</p>
+          <p className={cx('message')}>{message}</p>
         </div>
         <button type="submit" className={cx('submit')}>
           LOG IN

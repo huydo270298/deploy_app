@@ -20,25 +20,6 @@
   }
 }
 
-.title {
-  position: absolute;
-  top: 5.557%;
-  left: 8.75%;
-  color: #fff;
-  font-size: 36px;
-  font-weight: 500;
-  z-index: 2;
-
-  @media (max-width: 600px) {
-    position: initial;
-    margin-top: 14px;
-    padding: 0 16px;
-    font-size: 16px;
-    line-height: 19px;
-    color: #333;
-  }
-}
-
 .alert {
   position: absolute;
   top: 0;

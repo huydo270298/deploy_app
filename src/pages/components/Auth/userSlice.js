@@ -8,11 +8,11 @@ export const register = createAsyncThunk(
     const data = await userApi.register(payload);
 
     //save data to local storage
-    localStorage.setItem(StorageKeys.TOKEN, data.jwt);
-    localStorage.setItem(StorageKeys.USER, JSON.stringify(data.user));
+    // localStorage.setItem(StorageKeys.TOKEN, data.jwt);
+    localStorage.setItem(StorageKeys.USER, JSON.stringify(data.data));
 
     //return user data
-    return data.user;
+    return data;
   }
 )
 
@@ -22,38 +22,36 @@ export const login = createAsyncThunk(
     const data = await userApi.login(payload);
 
     //save data to local storage
-    localStorage.setItem(StorageKeys.TOKEN, data.jwt);
-    localStorage.setItem(StorageKeys.USER, JSON.stringify(data.user));
+    // localStorage.setItem(StorageKeys.TOKEN, data.jwt);
+    localStorage.setItem(StorageKeys.USER, JSON.stringify(data.data));
 
     //return user data
-    return data.user;
+    return data;
   }
 )
 
-export const push = createAsyncThunk(
-  'users/push',
+export const update = createAsyncThunk(
+  'users/update',
   async (payload) => {
-    const data = await userApi.push(payload);
-
-    //save data to local storage
-    localStorage.setItem(StorageKeys.USER, JSON.stringify(data.user));
+    const data = await userApi.put(payload);
+    console.log(data);
 
     //return user data
-    return data.user;
+    return data;
   }
 )
 
 const userSlice = createSlice({
   name: 'user',
   initialState: {
-    current: JSON.parse(localStorage.getItem(StorageKeys.USER)) || {},
+    current: {data: JSON.parse(localStorage.getItem(StorageKeys.USER))} || {},
     settings: {},
   },
   reducers: {
     logout(state) {
       //clear local storage
       localStorage.removeItem(StorageKeys.USER)
-      localStorage.removeItem(StorageKeys.TOKEN)
+      // localStorage.removeItem(StorageKeys.TOKEN)
 
       state.current = {};
     }

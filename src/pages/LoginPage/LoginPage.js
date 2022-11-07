@@ -1,6 +1,5 @@
 import classNames from 'classnames/bind';
 import { useDispatch } from 'react-redux';
-import { unwrapResult } from '@reduxjs/toolkit';
 
 import FormLogin from '../components/Auth/FormLogin';
 import { login } from '../components/Auth/userSlice';
@@ -21,8 +20,9 @@ const LoginPage = () => {
     try {
       const action = login(values);
       const resultAction = await dispatch(action);
-      const user = unwrapResult(resultAction);
-      if (user) {
+      if(resultAction.payload.code === '02') {
+        setMesError(resultAction.payload.message)
+      } else {
         return navigate("/");
       }
     } catch (error) {

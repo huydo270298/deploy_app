@@ -8,17 +8,18 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import { useSelector } from 'react-redux';
 import SavePage from './pages/SavePage';
+import AdminPage from './pages/AdminPage';
 
 function App() {
-  const login = useSelector(state => state.user.current)
-  
+  const login = useSelector(state => state.user.current.data);
+  const isLoggedIn = login && Object.keys(login).length > 0;
   return (
     <Router>
       <Routes>
         <Route element={<CommonLayout />}>
           <Route path="/" element={<HomePage />} />
           {
-            Object.values(login).length !== 0
+            isLoggedIn
               && 
             <>
               <Route path="/user" element={<UserPage />} />
@@ -27,6 +28,7 @@ function App() {
           }
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/admin" element={<AdminPage />} />
         </Route>
       </Routes>
     </Router>

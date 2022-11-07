@@ -130,7 +130,7 @@ const VideoSection = () => {
         />
         {countdownAlert >= 0 && <p className={cx('alert')}>Sorry! You have not won the prize yet</p>}
       </div >
-      <p className={cx('title')}>{listVideo[video].title}</p>
+      {/* <p className={cx('title')}>{listVideo[video].title}</p> */}
     </div>
   );
 };

@@ -6,21 +6,10 @@ import Select from '../../../components/Select';
 import styles from './SpinModal.module.scss';
 
 let cx = classNames.bind(styles);
-
-const SpinModal = () => {
-  const arrCard = ['Visa', 'ATM', 'Master']
-
-
-  const [card, setCard] = useState(arrCard[0]);
+  const SpinModal = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  }
-
-
-
-  const handleChangeOptionCard = (value) => {
-    setCard(value)
   }
 
   const [arrCountry, setArrCountry] = useState([])
@@ -59,18 +48,6 @@ const SpinModal = () => {
               Country
             </div>
             <Select currentValue={country} arrayData={arrCountry} onChange={handleChangeOptionCountry} />
-          </div>
-          <div className={cx('form')}>
-            <div htmlFor="address" className={cx('label')}>
-              Card
-            </div>
-            <Select currentValue={card} arrayData={arrCard} onChange={handleChangeOptionCard} />
-          </div>
-          <div className={cx('form')}>
-            <div htmlFor="address" className={cx('label')}>
-              Note
-            </div>
-            <textarea className={cx('input', 'textarea')} spellCheck='false'></textarea>
           </div>
         </form>
         <p className={cx('note')}>You need to leave information in the notes in case of asking for a transfer, we will contact you through the information provided.</p>

@@ -8,46 +8,49 @@ import styles from './FormUser.module.scss';
 let cx = classNames.bind(styles);
 
 const FormUser = (props) => {
+  const { onSubmit, info } = props;
+
+  console.log(info);
+
   const arrSex = ['Male', 'Female']
   const defaultValues = {
-    username: '',
     sex: '',
     dateOfBirth: '',
     country: '',
     city: '',
     address: '',
-    phone: '',
+    phoneNumber: '',
     link: ''
   };
 
-  const [name, setName] = useState('');
-  const [sex, setSex] = useState(arrSex[0]);
-  const [birthday, setBirthday] = useState('');
+  const [name, setName] = useState(info.fullName || '');
+  const [sex, setSex] = useState(info.sex || arrSex[0]);
+  const [birthday, setBirthday] = useState(info.dateOfBirth || '');
   const [arrCountry, setArrCountry] = useState([])
-  const [country, setCountry] = useState('Vietnam');
-  const [arrCities, setArrCities] = useState()
+  const [country, setCountry] = useState( info.country || 'Vietnam');
+  const [arrCities, setArrCities] = useState( )
 
 
-  const [city, setCity] = useState('Hanoi');
+  const [city, setCity] = useState(info.city || 'Hanoi');
   const [address, setAddress] = useState('');
-  const [phone, setPhone] = useState('');
-  const [link, setLink] = useState('');
+  const [phone, setPhone] = useState(info.phoneNumber || '');
+  const [link, setLink] = useState(info.link || '');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const values = {
       ...defaultValues,
-      username: name,
+      fullName: name,
       sex: sex,
       dateOfBirth: birthday,
       country: country,
-      city: country,
+      city: city,
       address: address,
-      phone: phone,
+      phoneNumber: phone,
       link: link,
     }
     defaultValues.username = name;
-    const { onSubmit } = props;
+    
     if (onSubmit) {
       await onSubmit(values);
     }

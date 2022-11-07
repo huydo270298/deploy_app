@@ -6,7 +6,7 @@ import { ArrowBotIcon } from '../../assets/Icons/Icons';
 
 let cx = classNames.bind(styles);
 
-const Select = ({ currentValue, arrayData, onChange }) => {
+const Select = ({ currentValue, arrayData, onChange, classNameButton, classNameWrapper }) => {
   const [openOption, setOpenOption] = useState(false)
 
   const handleClickSelect = () => {
@@ -20,8 +20,8 @@ const Select = ({ currentValue, arrayData, onChange }) => {
   });
 
   return (
-    <div className={cx('wrapper')} ref={elSelect} >
-      <button type="button" className={cx('btn')} onClick={handleClickSelect}>
+    <div className={cx('wrapper', classNameWrapper)} ref={elSelect} >
+      <button type="button" className={cx('btn', classNameButton)} onClick={handleClickSelect}>
         {currentValue}
         <ArrowBotIcon className={cx('icon_arrow')} />
       </button>

@@ -1,6 +1,5 @@
 import classNames from 'classnames/bind';
 import { useDispatch } from 'react-redux';
-import { unwrapResult } from '@reduxjs/toolkit'
 
 import FormRegister from '../components/Auth/FormRegister';
 import { register } from '../components/Auth/userSlice.js';
@@ -22,8 +21,9 @@ const RegisterPage = () => {
     try {
       const action = register(values);
       const resultAction = await dispatch(action);
-      const user = unwrapResult(resultAction);
-      if (user) {
+      if(resultAction.payload.code === '02') {
+        setMesError(resultAction.payload.message)
+      } else {
         return navigate("/");
       }
     } catch (error) {

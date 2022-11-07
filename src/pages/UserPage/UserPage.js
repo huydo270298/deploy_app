@@ -1,23 +1,39 @@
 import classNames from 'classnames/bind';
-import { useDispatch } from 'react-redux';
-import { unwrapResult } from '@reduxjs/toolkit';
+import { useDispatch, useSelector } from 'react-redux';
 
 import FormUser from '../components/Auth/FormUser/FormUser';
 import styles from './UserPage.module.scss';
-import { push } from '../components/Auth/userSlice.js';
+import { update } from '../components/Auth/userSlice.js';
+import { useEffect, useState } from 'react';
+import userApi from '../../api/userApi';
 
 let cx = classNames.bind(styles);
 
 const UserPage = () => {
 
+  const [info, setInfo] = useState({})
+  const id = useSelector(state => state.user.current.data.id)
+  useEffect(() => {
+    (
+      async () => {
+        try {
+          const result = await userApi.get(id);
+          setInfo(result)
+        } catch(error) {
+          console.log('Failed to fetch product', error);
+        }
+      }
+    )()
+  }, [id]);
   const dispatch = useDispatch();
 
   const handleSubmit = async(values) => {
     try {
-      const action = push(values);
+      const action = update(values);
       const resultAction = await dispatch(action);
-      const user = unwrapResult(resultAction);
-      console.log(user);
+      console.log(resultAction);
+      // const user = unwrapResult(resultAction);
+      // console.log(user);
     } catch (error) {
       console.log('error');
     }
@@ -27,7 +43,7 @@ const UserPage = () => {
     <div className={cx('wrapper')}>
       <h2 className={cx('title')}>PERSONAL INFORMATION</h2>
       <p className={cx('note')}>Note: You can not get the prize if the information is wrong</p>
-      <FormUser onSubmit={handleSubmit} />
+      <FormUser onSubmit={handleSubmit} info={info} />
     </div>
   );
 };

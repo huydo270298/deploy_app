@@ -22,8 +22,7 @@ const FormRegister = (props) => {
   } = useForm({
     defaultValues: {
       username: '',
-      password: '',
-      email: 'huydo400@gmail.com'
+      password: ''
     }
   })
 

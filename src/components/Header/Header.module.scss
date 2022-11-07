@@ -77,6 +77,23 @@
 
   &.type2 {
     gap: 9px;
+
+    .btn {
+      width: 145px;
+      height: 43px;
+      color: #00023C;
+      background: #fff;
+
+      &.active {
+        color: #fff;
+        background: #FF7A00;
+      }
+
+      @media (max-width: 600px) {
+        width: auto;
+        flex: 1;
+      }
+    }
   }
 }
 
@@ -92,26 +109,4 @@
   text-decoration: none;
   color: #fff;
   border-radius: 12px;
-}
-
-
-.btn_login,
-.btn_register {
-  width: 145px;
-  height: 43px;
-
-  @media (max-width: 600px) {
-    width: auto;
-    flex: 1;
-  }
-}
-
-.btn_login {
-  background: #FF7A00;
-
-}
-
-.btn_register {
-  color: #00023C;
-  background: #fff;
 }
