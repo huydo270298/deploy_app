@@ -44,7 +44,10 @@ export const update = createAsyncThunk(
 const userSlice = createSlice({
   name: 'user',
   initialState: {
-    current: {data: JSON.parse(localStorage.getItem(StorageKeys.USER))} || {},
+    current: {
+      data: JSON.parse(localStorage.getItem(StorageKeys.USER)),
+      // role: JSON.parse(localStorage.getItem(StorageKeys.USER.roleName))
+    } || {},
     settings: {},
   },
   reducers: {

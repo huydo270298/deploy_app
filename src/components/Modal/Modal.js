@@ -11,7 +11,6 @@ const Modal = ({ children, onChange }) => {
       <div className={cx('inner')}>
         <button type='button' className={cx('btn')} onClick={onChange}>
           <CloseIcon className={cx('icon_close')} />
-          {/* <i ></i> */}
         </button>
         {children}
       </div>

@@ -11,7 +11,7 @@ let cx = classNames.bind(styles);
 
 const Header = () => {
   const loggedInUser = useSelector(state => state.user.current.data);
-  const isLoggedIn = loggedInUser && Object.keys(loggedInUser).length > 0;
+  const isLoggedInUser = loggedInUser && Object.keys(loggedInUser).length > 0;
 
   const [active, setActive] = useState(0)
   const handleClick = (value) => {
@@ -19,11 +19,11 @@ const Header = () => {
   }
   return (
     <header className={cx('wrapper')}>
-      <div className={cx('inner', isLoggedIn && 'loggedin')}>
+      <div className={cx('inner', isLoggedInUser && 'loggedin')}>
         <h1 className={cx('logo')}><Link to='/' className={cx('link')} ></Link></h1>
-        {isLoggedIn && <Countdown time={'2022-10-30 00:00:00'} />}
+        {isLoggedInUser && <Countdown time={'2022-10-30 00:00:00'} />}
         {
-          isLoggedIn &&
+          isLoggedInUser &&
           <div className={cx('btn_group', 'type')}>
             <Link to="/bookmarks" className={cx('btn', 'btn_save')}>
               <SaveIcon />
@@ -37,7 +37,7 @@ const Header = () => {
         }
 
         {
-          !isLoggedIn &&
+          !isLoggedInUser &&
           <div className={cx('btn_group', 'type2')}>
             <Link to='/login' className={cx('btn', active === 0 && 'active')} onClick={() => handleClick(0)} >Log in</Link>
             <Link to='/register' className={cx('btn', active === 1 && 'active')} onClick={() => handleClick(1)}>Sign Up</Link>
