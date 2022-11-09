@@ -64,7 +64,6 @@ const FormUser = (props) => {
           />
           <button type='button' className={cx('btn_toggle')} onClick={handleClickToggleShowPass}>
             {showPass ? <EyeShowIcon /> : <EyeHideIcon />}
-            {/* <i className={cx('icon_eye')}></i> */}
           </button>
           <p className={cx('message')}>{message}</p>
         </div>

@@ -6,7 +6,7 @@ export const register = createAsyncThunk(
   'users/register',
   async (payload) => {
     const data = await userApi.register(payload);
-
+    
     //save data to local storage
     // localStorage.setItem(StorageKeys.TOKEN, data.jwt);
     localStorage.setItem(StorageKeys.USER, JSON.stringify(data.data));
@@ -20,10 +20,21 @@ export const login = createAsyncThunk(
   'users/login',
   async (payload) => {
     const data = await userApi.login(payload);
-
+    
     //save data to local storage
     // localStorage.setItem(StorageKeys.TOKEN, data.jwt);
-    localStorage.setItem(StorageKeys.USER, JSON.stringify(data.data));
+    localStorage.setItem(StorageKeys.AUTH, JSON.stringify(data.data));
+    const auth = JSON.parse(localStorage.getItem(StorageKeys.AUTH));
+    if (auth) {
+      auth.roleName === 'ADMIN' &&
+      localStorage.setItem(StorageKeys.ADMIN, JSON.stringify(data.data)); 
+      auth.roleName === 'USER' &&
+      localStorage.setItem(StorageKeys.USER, JSON.stringify(data.data));
+    } 
+
+    // if (data.data.roleName === 'ADMIN') {
+    //   localStorage.setItem(StorageKeys.ADMIN, JSON.stringify(data.data));
+    // }
 
     //return user data
     return data;
@@ -34,7 +45,6 @@ export const update = createAsyncThunk(
   'users/update',
   async (payload) => {
     const data = await userApi.put(payload);
-    console.log(data);
 
     //return user data
     return data;
@@ -42,18 +52,15 @@ export const update = createAsyncThunk(
 )
 
 const userSlice = createSlice({
-  name: 'user',
+  name: 'author',
   initialState: {
-    current: {
-      data: JSON.parse(localStorage.getItem(StorageKeys.USER)),
-      // role: JSON.parse(localStorage.getItem(StorageKeys.USER.roleName))
-    } || {},
-    settings: {},
+    user: JSON.parse(localStorage.getItem(StorageKeys.USER))?.id || null,
+    admin: JSON.parse(localStorage.getItem(StorageKeys.ADMIN))?.id || null,
   },
   reducers: {
     logout(state) {
       //clear local storage
-      localStorage.removeItem(StorageKeys.USER)
+      localStorage.removeItem(StorageKeys.AUTH)
       // localStorage.removeItem(StorageKeys.TOKEN)
 
       state.current = {};
@@ -61,10 +68,20 @@ const userSlice = createSlice({
   },
   extraReducers: {
     [register.fulfilled]: (state, action) => {
-      state.current = action.payload
+      console.log(action);
+      if (action.payload.data) {
+        state.user = action.payload.data.id
+      }
     },
     [login.fulfilled]: (state, action) => {
-      state.current = action.payload
+      
+      if (action.payload.data?.roleName === 'USER') {
+        state.user = action.payload.data.id
+      }
+
+      if (action.payload.data?.roleName === 'ADMIN') {
+        state.admin = action.payload.data.id
+      }
     },
   }
 });

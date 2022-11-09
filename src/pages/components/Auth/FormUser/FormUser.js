@@ -7,13 +7,11 @@ import styles from './FormUser.module.scss';
 
 let cx = classNames.bind(styles);
 
-const FormUser = (props) => {
-  const { onSubmit, info } = props;
-
-  console.log(info);
+const FormUser = ({ onSubmit, info }) => {
 
   const arrSex = ['Male', 'Female']
   const defaultValues = {
+    id: '',
     sex: '',
     dateOfBirth: '',
     country: '',
@@ -23,19 +21,28 @@ const FormUser = (props) => {
     link: ''
   };
 
-  const [name, setName] = useState(info.fullName || '');
-  const [sex, setSex] = useState(info.sex || arrSex[0]);
-  const [birthday, setBirthday] = useState(info.dateOfBirth || '');
+  const [name, setName] = useState('');
+  const [sex, setSex] = useState('');
+  const [birthday, setBirthday] = useState('');
   const [arrCountry, setArrCountry] = useState([])
-  const [country, setCountry] = useState( info.country || 'Vietnam');
+  const [country, setCountry] = useState('');
   const [arrCities, setArrCities] = useState( )
-
-
-  const [city, setCity] = useState(info.city || 'Hanoi');
+  const [city, setCity] = useState( '');
   const [address, setAddress] = useState('');
-  const [phone, setPhone] = useState(info.phoneNumber || '');
-  const [link, setLink] = useState(info.link || '');
+  const [phone, setPhone] = useState('');
+  const [link, setLink] = useState('');
 
+  useEffect(() => {
+    setName(info.fullName || '')
+    setSex(info.sex || 'Male')
+    setBirthday(info.dateOfBirth || '')
+    setCountry(info.country || 'Vietnam')
+    setCity(info.city || 'Hanoi')
+    setAddress(info.address || '')
+    setPhone(info.phoneNumber || '')
+    setLink(info.link || '')
+  }, [info])
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const values = {
@@ -48,6 +55,7 @@ const FormUser = (props) => {
       address: address,
       phoneNumber: phone,
       link: link,
+      id: info.id
     }
     defaultValues.username = name;
     

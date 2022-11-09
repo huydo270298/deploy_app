@@ -1,5 +1,8 @@
 import classNames from 'classnames/bind';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { useSelector } from 'react-redux';
+import spinApi from '../../../../api/spinApi';
+import videoApi from '../../../../api/videoApi';
 import Controller from '../../Controller';
 
 import styles from './VideoSection.module.scss';
@@ -7,39 +10,49 @@ import styles from './VideoSection.module.scss';
 let cx = classNames.bind(styles);
 
 const VideoSection = () => {
-  const listVideo = [
-    {
-      title: 'demo video',
-      url: 'https://ia800300.us.archive.org/17/items/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4'
-    },
-    {
-      title: 'Lil Nas X - STAR WALKIN',
-      url: 'http://media.w3.org/2010/05/sintel/trailer.mp4'
-    },
-    {
-      title: 'Awaken | Season 2019 Cinematic - League of Legends',
-      url: 'https://ia802500.us.archive.org/35/items/three-legged-legs/3000kbs_starbucks.mp4'
-    }
-  ]
+  const [video, setVideo] = useState([])
+  const [currentPlay, setCurrentPlay] = useState(0)
 
+  const idUser = useSelector(state => state.user.user)
   // get add video
-  /* useEffect(() => {
-    (
-      async () => {
-        const reponse = await videoApi.getAll();
-        console.log(reponse);
-    })()
-  }, []) */
+    useEffect(() => {
+      videoApi.getCategoryList()
+          .then((reponse) => {
+            // const id = reponse.data[0].id;
+            return reponse.data[0].id
+          })
+          .then ((id) => {
+            return videoApi.getCategoryItem(id)
+          })
+          .then ((reponse) => {
+            const listId = reponse.data.map((item) => {
+              return item.id
+            })
+            setVideo(listId);
+          })
+  }, [])
 
   const countSkipRef = useRef(null);
   const countAlertRef = useRef(null);
-  const [video, setVideo] = useState(0)
   const [autoPlay, setAutoPlay] = useState(false)
   const [countdownSkip, setCountdownSkip] = useState(5);
-  const [countdownAlert, setCountdownAlert] = useState(2);
+  const [countdownAlert, setCountdownAlert] = useState(3);
   const [bookmark, setBookmark] = useState(false);
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
+  const [resultSpin, setResultSpin] = useState(false)
+  
+  const handleSpin = () => {
+    spinApi.getResult(idUser)
+      .then((response) => {
+        if(response.data.result) {
+          return handleCountdownAlert()
+        }
+      })
+      
+      
+  }
+
   const handleCountdownSkip = () => {
     countSkipRef.current = setInterval(() => {
       setCountdownSkip((countdown) => countdown - 1);
@@ -49,11 +62,13 @@ const VideoSection = () => {
   }
 
   const handleCountdownAlert = () => {
+    
     countAlertRef.current = setInterval(() => {
+      setResultSpin(true)
       setCountdownAlert((countdown) => countdown - 1);
     }, 1000);
-
     countdownAlert < 0 && clearInterval(countAlertRef.current);
+    countdownAlert < 0 && setResultSpin(false);
   }
 
   const handleClickBookMark = () => {
@@ -64,21 +79,22 @@ const VideoSection = () => {
     handleCountdownSkip();
   }
 
-  const handleLoadAlert = () => {
-    handleCountdownAlert()
-    setCountdownAlert(2);
-  }
+  // const handleLoadAlert = () => {
+  //   handleCountdownAlert()
+  //   setCountdownAlert(3);
+  // }
 
   const handlePrev = () => {
-    setVideo(prev => prev - 1)
+    setCurrentPlay(prev => prev - 1)
     clearInterval(countSkipRef.current);
     setCountdownSkip(5);
   }
 
   const handleNext = () => {
-    setVideo(prev => prev + 1)
+    setCurrentPlay(prev => prev + 1)
     clearInterval(countSkipRef.current);
     setCountdownSkip(5);
+    handleSpin()
   }
 
   const handlePlay = () => {
@@ -87,7 +103,6 @@ const VideoSection = () => {
   }
 
   const videoElement = useRef();
-  // const { togglePIP } = usePIP(videoElement);
   videoElement.onProgress = (event) => {
     console.log(event);
   };
@@ -99,20 +114,21 @@ const VideoSection = () => {
       videoElement.current.requestPictureInPicture();
     }
   }
+
   return (
     <div className={cx('wrapper')}>
       <div className={cx('video')}>
         <video
           muted={false}
-          src={listVideo[video].url}
+          src={`http://103.187.168.186:8027/api/v1/video/stream/${video[currentPlay]}.mp4`}
           autoPlay={autoPlay}
           // controls
           ref={videoElement}
           className={cx('box')}
           onPlaying={handleStart}
-          onCanPlay={handleLoadAlert}
           onDurationChange={(e) => { setDuration(e.target.duration) }}
           onTimeUpdate={(e) => { setPrograssValue(e.target.currentTime) }}
+          onEnded={handleSpin}
         />
         <Controller
           handlePrev={handlePrev}
@@ -123,12 +139,12 @@ const VideoSection = () => {
           prograssValue={prograssValue}
           bookmark={bookmark}
           handleClickBookMark={handleClickBookMark}
-          video={video}
+          currentPlay={currentPlay}
           play={autoPlay}
-          listVideo={listVideo}
+          listVideo={video}
           countdown={countdownSkip}
         />
-        {countdownAlert >= 0 && <p className={cx('alert')}>Sorry! You have not won the prize yet</p>}
+        {resultSpin && <p className={cx('alert')}>Sorry! You have not won the prize yet</p>}
       </div >
       {/* <p className={cx('title')}>{listVideo[video].title}</p> */}
     </div>

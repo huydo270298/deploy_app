@@ -8,13 +8,13 @@ let cx = classNames.bind(styles);
 
 const AdminLayout = () => {
   let navigate = useNavigate();
-  const user = useSelector(state => state.user)
+  const admin = useSelector(state => state.user.admin)
 
   useEffect(()=> {
-    if(user?.current.data?.roleName !== 'ADMIN') {
+    if(!admin) {
       return navigate("/admin/login")
     }
-  },[user, navigate])
+  },[admin, navigate])
 
   return (
     <div className={cx('wrapper')}>

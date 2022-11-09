@@ -16,9 +16,9 @@ const Controller = (props) => {
     handlePip,
     bookmark,
     handleClickBookMark,
-    video,
     play,
     listVideo,
+    currentPlay,
     countdown
   } = props;
 
@@ -32,7 +32,7 @@ const Controller = (props) => {
       {!play && <button type='button' className={cx('btn', 'play')} onClick={handlePlay}>
         <PlayIcon className={cx('icon_play')} />
       </button>}
-      {video !== (listVideo.length - 1) &&
+      {currentPlay !== (listVideo.length - 1) &&
         <button type='button' className={cx('skip', !(countdown >= 0) && 'active')} onClick={handleNext}>
           {countdown >= 0 ? `${countdown}s` : 'SKIP'}
           <PlateIcon className={cx('icon', 'icon_plate')} />
@@ -53,7 +53,7 @@ const Controller = (props) => {
         />
       </div>
       <div className={cx('group')}>
-        <button type='button' className={cx('btn', video === 0 && 'disable')} onClick={handlePrev}>
+        <button type='button' className={cx('btn', currentPlay === 0 && 'disable')} onClick={handlePrev}>
           <PrevIcon className={cx('icon')} />
         </button>
         <button type='button' className={cx('btn')} onClick={handlePip}>

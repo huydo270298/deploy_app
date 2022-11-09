@@ -2,9 +2,19 @@ import axiosClient from './axiosClient';
 
 const videoApi = {
   
-  async getAll(params) {
+  getAll(params) {
     const url = '/api/v1/video/getList';
     return axiosClient.get(url, {params})
+  },
+
+  getCategoryList(params) {
+    const url = '/api/v1/category/getList';
+    return axiosClient.get(url, {params})
+  },
+
+  getCategoryItem(id) {
+    const url = `/api/v1/video/getByCategory/${id}`;
+    return axiosClient.get(url, {id})
   }
 };
 

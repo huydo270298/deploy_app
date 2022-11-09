@@ -20,6 +20,8 @@ const LoginPage = () => {
     try {
       const action = login(values);
       const resultAction = await dispatch(action);
+
+      console.log(resultAction);
       if(resultAction.payload.code === '02') {
         setMesError(resultAction.payload.message)
       } else {

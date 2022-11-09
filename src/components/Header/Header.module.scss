@@ -38,7 +38,7 @@
   height: 80px;
 
   @media (max-width: 600px) {
-    width: 150px;
+    width: 94px;
     height: 44px;
   }
 }
@@ -84,7 +84,7 @@
       color: #00023C;
       background: #fff;
 
-      &.active {
+      &.login {
         color: #fff;
         background: #FF7A00;
       }

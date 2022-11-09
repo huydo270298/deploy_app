@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
@@ -10,18 +10,15 @@ import Countdown from '../../pages/components/Countdown';
 let cx = classNames.bind(styles);
 
 const Header = () => {
-  const loggedInUser = useSelector(state => state.user.current.data);
-  const isLoggedInUser = loggedInUser && Object.keys(loggedInUser).length > 0;
+  const loggedInUser = useSelector(state => state.user.user);
+  const isLoggedInUser = !!loggedInUser;
 
-  const [active, setActive] = useState(0)
-  const handleClick = (value) => {
-    setActive(value)
-  }
   return (
     <header className={cx('wrapper')}>
-      <div className={cx('inner', isLoggedInUser && 'loggedin')}>
+      <div className={cx('inner', isLoggedInUser && 'loggedin'
+      )}>
         <h1 className={cx('logo')}><Link to='/' className={cx('link')} ></Link></h1>
-        {isLoggedInUser && <Countdown time={'2022-10-30 00:00:00'} />}
+        <Countdown time={'2022-11-10 00:00:00'} />
         {
           isLoggedInUser &&
           <div className={cx('btn_group', 'type')}>
@@ -34,13 +31,13 @@ const Header = () => {
               PROFILE
             </Link>
           </div>
-        }
+        } 
 
         {
           !isLoggedInUser &&
           <div className={cx('btn_group', 'type2')}>
-            <Link to='/login' className={cx('btn', active === 0 && 'active')} onClick={() => handleClick(0)} >Log in</Link>
-            <Link to='/register' className={cx('btn', active === 1 && 'active')} onClick={() => handleClick(1)}>Sign Up</Link>
+            <Link to='/login' className={cx('btn', 'login')} >Log in</Link>
+            <Link to='/register' className={cx('btn')}>Sign Up</Link>
           </div>
         }
       </div>

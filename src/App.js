@@ -8,16 +8,15 @@ import './App.css';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import AdminPage from './pages/AdminPage';
-import { useSelector } from 'react-redux';
 import SavePage from './pages/SavePage';
 import Login from './pages/components/Admin/Login';
 import Upload from './pages/components/Admin/Upload';
 import ListVideo from './pages/components/Admin/ListVideo';
+import { useSelector } from 'react-redux';
 
 function App() {
   
-  const loginUser = useSelector(state => state.user.current.data);
-  const isLoggedInUser = loginUser && Object.keys(loginUser).length > 0;
+  const isLoggedInUser = useSelector(state => state.user.user);
 
   return (
     <Router>

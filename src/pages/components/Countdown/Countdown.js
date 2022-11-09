@@ -1,31 +1,32 @@
 import classNames from 'classnames/bind';
-import { useEffect, useState } from 'react';
-import moment from 'moment';
+import { useEffect, useRef, useState } from 'react';
 import styles from './Countdown.module.scss';
 
 let cx = classNames.bind(styles);
 const Countdown = ({ time }) => {
-
-    const [hours, setHours] = useState(0);
-    const [minutes, setMinutes] = useState(0);
-    const [seconds, setSeconds] = useState(0);
+    const eventNow = Date.now();
+    const eventTime = new Date(time).getTime()
+    const secontCoudown = Math.floor((eventTime - eventNow)/1000);
+    const [duration, setDuration] = useState(secontCoudown);
+    
+    const countTimer = useRef(null);
 
     useEffect(() => {
-        setInterval(() => {
-            const now = moment();
-            const then = moment(time);
-            const countdown = moment(then - now);
-            setHours(countdown.format('HH'));
-            setMinutes(countdown.format('mm'));
-            setSeconds(countdown.format('ss'));
+        countTimer.current = setTimeout(() => {
+            setDuration((countdown) => countdown - 1);
         }, 1000);
-    }, [time]);
-
+    
+        duration < 0 && clearTimeout(countTimer.current);
+      return () => {
+        clearTimeout(countTimer.current);
+      }
+    }, [duration])
+    
     return (
         <div className={cx('wrapper')}>
             Officially active:
             <p className={cx('num')}>
-                {hours} : {minutes} : {seconds}
+                {new Date(duration * 1000).toISOString().substring(11, 19)}s
             </p>
         </div>
     )

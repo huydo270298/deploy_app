@@ -12,13 +12,13 @@ let cx = classNames.bind(styles);
 const UserPage = () => {
 
   const [info, setInfo] = useState({})
-  const id = useSelector(state => state.user.current.data.id)
+  const id = useSelector(state => state.user.user)
   useEffect(() => {
     (
       async () => {
         try {
           const result = await userApi.get(id);
-          setInfo(result)
+          setInfo(result.data)
         } catch(error) {
           console.log('Failed to fetch product', error);
         }
@@ -26,14 +26,13 @@ const UserPage = () => {
     )()
   }, [id]);
   const dispatch = useDispatch();
-
+  
   const handleSubmit = async(values) => {
     try {
       const action = update(values);
       const resultAction = await dispatch(action);
-      console.log(resultAction);
-      // const user = unwrapResult(resultAction);
-      // console.log(user);
+      resultAction.payload.code === '01' && alert('Update success')
+      
     } catch (error) {
       console.log('error');
     }
