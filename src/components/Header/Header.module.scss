@@ -5,7 +5,9 @@
 .inner {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 0 16px;
   max-width: 1440px;
   margin: auto;
   padding: 20px 8.75% 21px;
@@ -13,7 +15,7 @@
   @media (max-width: 600px) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 22px;
+    gap: 0 22px;
     padding: 18px 21px 20px;
   }
 
@@ -34,12 +36,16 @@
 }
 
 .logo {
-  width: 200px;
+  width: 163px;
   height: 80px;
 
   @media (max-width: 600px) {
     width: 94px;
     height: 44px;
+  }
+
+  @media (max-width: 472px) {
+    order: 1;
   }
 }
 
@@ -73,13 +79,17 @@
         font-size: 0;
       }
     }
+
+    @media (max-width: 472px) {
+      order: 2;
+    }
   }
 
   &.type2 {
     gap: 9px;
 
     .btn {
-      width: 145px;
+      width: 96px;
       height: 43px;
       color: #00023C;
       background: #fff;

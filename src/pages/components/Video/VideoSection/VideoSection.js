@@ -15,21 +15,21 @@ const VideoSection = () => {
 
   const idUser = useSelector(state => state.user.user)
   // get add video
-    useEffect(() => {
-      videoApi.getCategoryList()
-          .then((reponse) => {
-            // const id = reponse.data[0].id;
-            return reponse.data[0].id
-          })
-          .then ((id) => {
-            return videoApi.getCategoryItem(id)
-          })
-          .then ((reponse) => {
-            const listId = reponse.data.map((item) => {
-              return item.id
-            })
-            setVideo(listId);
-          })
+  useEffect(() => {
+    videoApi.getCategoryList()
+      .then((reponse) => {
+        // const id = reponse.data[0].id;
+        return reponse.data[0].id
+      })
+      .then((id) => {
+        return videoApi.getCategoryItem(id)
+      })
+      .then((reponse) => {
+        const listId = reponse.data.map((item) => {
+          return item.id
+        })
+        setVideo(listId);
+      })
   }, [])
 
   const countSkipRef = useRef(null);
@@ -41,16 +41,16 @@ const VideoSection = () => {
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
   const [resultSpin, setResultSpin] = useState(false)
-  
+
   const handleSpin = () => {
     spinApi.getResult(idUser)
       .then((response) => {
-        if(response.data.result) {
+        if (response.data.result) {
           return handleCountdownAlert()
         }
       })
-      
-      
+
+
   }
 
   const handleCountdownSkip = () => {
@@ -62,7 +62,7 @@ const VideoSection = () => {
   }
 
   const handleCountdownAlert = () => {
-    
+
     countAlertRef.current = setInterval(() => {
       setResultSpin(true)
       setCountdownAlert((countdown) => countdown - 1);

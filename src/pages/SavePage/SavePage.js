@@ -9,18 +9,27 @@ let cx = classNames.bind(styles);
 const SavePage = () => {
   const pageArr = [1, 2, 3, 4, 5]
   const [listVideo, setListVideo] = useState([])
-  const [pageActive, setPageActive] = useState(2)
+  const [pageActive, setPageActive] = useState(1)
 
   // get add save videos
   useEffect(() => {
-    (
-      async () => {
-        const reponse = await videoApi.getAll({
-          _start: 0,
-          _limit: 10
-        });
-        setListVideo(reponse);
-      })()
+    videoApi.getCategoryList()
+      .then((reponse) => {
+        // const id = reponse.data[0].id;
+        return reponse.data[0].id
+      })
+      .then((id) => {
+        return videoApi.getCategoryItem(id)
+      })
+      .then((reponse) => {
+        const listId = reponse.data.map((item) => {
+          return {
+            id: item.id,
+            title: item.videoName
+          }
+        })
+        setListVideo(listId);
+      })
   }, [])
 
   const handleClickPage = (item) => {
@@ -34,11 +43,8 @@ const SavePage = () => {
         <ul className={cx('list')}>
           {listVideo.map((video) => (
             <li key={video.id} className={cx('item')}>
-              {/* <img src={video.src} alt='' className={cx('img')} />
-              <p className={cx('name')}>{video.title}</p> */}
-
-              <img src={image} alt='' className={cx('img')} />
-              <p className={cx('name')}>How to make youtube thumbnail that work</p>
+              <img src={`http://103.187.168.186:8027/api/v1/video/thumbnail/${video.id}.png`} alt='' className={cx('img')} />
+              <p className={cx('name')}>{video.title}</p>
             </li>
           ))}
         </ul>
