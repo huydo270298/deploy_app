@@ -1,13 +1,15 @@
 import classNames from 'classnames/bind';
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { Link, Outlet, useNavigate } from 'react-router-dom';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import styles from './AdminLayout.module.scss';
 
 let cx = classNames.bind(styles);
 
 const AdminLayout = () => {
   let navigate = useNavigate();
+  const location = useLocation()
+  
   const admin = useSelector(state => state.user.admin)
 
   useEffect(()=> {
@@ -15,6 +17,12 @@ const AdminLayout = () => {
       return navigate("/admin/login")
     }
   },[admin, navigate])
+
+  useEffect(()=> {
+    if(location.pathname === '/admin') {
+      return navigate("/admin/dashboard")
+    }
+  },[navigate, location.pathname])
 
   return (
     <div className={cx('wrapper')}>

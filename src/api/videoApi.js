@@ -26,6 +26,12 @@ const videoApi = {
     const url = `/api/v1/video/thumbnail/${id}`;
     return axiosClient.get(url, { id })
   },
+
+  delete(id) {
+    const url = `/api/v1/video/delete/${id}`;
+    return axiosClient.delete(url, { id })
+  }
 };
+
 
 export default videoApi;

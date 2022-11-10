@@ -2,7 +2,6 @@ import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
 import videoApi from '../../api/videoApi'
 import styles from './SavePage.module.scss';
-import image from '../../assets/img_demo.png';
 
 let cx = classNames.bind(styles);
 

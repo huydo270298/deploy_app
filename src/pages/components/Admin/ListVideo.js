@@ -1,25 +1,26 @@
+import { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import { BinIcon, CloseIcon, PenIcon } from '../../../assets/Icons';
 import styles from './Admin.module.scss';
-import image from '../../../assets/img_demo.png';
-import { useEffect, useState } from 'react';
 import videoApi from '../../../api/videoApi';
 import Filter from './Filter';
+import Pagination from '../../../components/Pagination';
 
 let cx = classNames.bind(styles);
 
 const ListVideo = () => {
-  const [listVideo, setListVideo] = useState([])
-  const pageArr = [1, 2, 3, 4, 5]
-  const [pageActive, setPageActive] = useState(2)
+  const [video, setVideo] = useState([])
+  const [pagination, setPagination] = useState({
+    page: 0,
+    size: 0,
+    total: 0,
+  })
   const [toggleModal, setToggleModal] = useState(false)
+  const [videoCurrent, setVideoCurrent] = useState({id: 0, index: 0})
 
-  const handleClickPage = (item) => {
-    setPageActive(item)
-  }
-
-  const handleShowModal = () => {
+  const handleShowModal = (id, index) => {
     setToggleModal(true)
+    setVideoCurrent({id, index})
   }
 
   const handleCloseModal = () => {
@@ -28,28 +29,46 @@ const ListVideo = () => {
 
   // get all videos
   useEffect(() => {
-    (
-      async () => {
-        const reponse = await videoApi.getAll({
-          page: 1,
-          size: 0
+    videoApi.getAll()
+      .then((reponse) => {
+        setPagination({
+          page: reponse.page,
+          size: reponse.size,
+          total: reponse.total,
         });
-        setListVideo(reponse.data);
-      })()
+        return reponse.data
+      })
+      .then((reponse) => {
+        const listVideo = reponse.map((item) => {
+          return {
+            id: item.id,
+            title: item.videoName,
+          }
+        })
+        setVideo(listVideo);
+      })
   }, [])
-
+  
+  const handleDelete = () => {
+    videoApi.delete(videoCurrent.id)
+      .then (() => {
+        setToggleModal(false)
+        video.splice(videoCurrent.index, 1)
+      })
+      .then (() => {
+        setVideo(video)
+      })
+  }
   return (
     <div className={cx('content')}>
       <Filter />
       <ul className={cx('list')}>
-        {listVideo.map((video) => (
-          <li key={video.id} className={cx('item')}>
-            {/* <img src={video.src} alt='' className={cx('img')} />
-            <p className={cx('name')}>{video.title}</p> */}
+        {video.map((item) => (
+          <li key={item.id} className={cx('item')}>
             <div className={cx('img')}>
-              <img src={image} alt='' />
-              <div className={cx('dimmer')}>
-                <button type='button' className={cx('btn_control')} onClick={handleShowModal}>
+              <img src={`http://103.187.168.186:8027/api/v1/video/thumbnail/${item.id}.png`} alt='' />
+              <div className={cx('plaholder')}>
+                <button type='button' className={cx('btn_control')} onClick={() => handleShowModal(item.id)}>
                   <BinIcon />
                   Remove
                 </button>
@@ -59,33 +78,26 @@ const ListVideo = () => {
                 </button>
               </div>
             </div>
-            <p className={cx('name')}>How to make youtube thumbnail that work</p>
+            <p className={cx('name')}>{item.title}</p>
           </li>
         ))}
       </ul>
-      <div className={cx('pagination')}>
-        <ul>
-          {pageActive > 1 && <li className={cx('item', 'prev')}>&lt;</li>}
-          {pageArr.map((item) => (
-            <li key={item} className={cx('item', pageActive === item && 'active')} onClick={() => handleClickPage(item)} >{item}</li>
-          ))}
-          {pageActive < pageArr.length && <li className={cx('item', 'next')}>&gt;</li>}
-        </ul>
-      </div>
+      <Pagination page={1} />
+      
       { toggleModal &&
-            <div className={cx('dimmed')}>
-              <div className={cx('modal')}>
-                <button type='button' className={cx('btn_close')} onClick={handleCloseModal} >
-                  <CloseIcon />
-                </button>
-                <p className={cx('text')}>Are you sure you want to remove this video permantly?</p>
-                <div className={cx('group_btn')}>
-                  <button type='button' className={cx('btn', 'confirm')}>OK</button>
-                  <button type='button' className={cx('btn')} onClick={handleCloseModal} >Cancel</button>
-                </div>
-              </div>
-            </div>  
-          }
+        <div className={cx('dimmed')}>
+          <div className={cx('modal')}>
+            <button type='button' className={cx('btn_close')} onClick={handleCloseModal} >
+              <CloseIcon />
+            </button>
+            <p className={cx('text')}>Are you sure you want to remove this video permantly?</p>
+            <div className={cx('group_btn')}>
+              <button type='button' className={cx('btn', 'confirm')} onClick={handleDelete}>OK</button>
+              <button type='button' className={cx('btn')} onClick={handleCloseModal} >Cancel</button>
+            </div>
+          </div>
+        </div>   
+      }
     </div>
     
   )
