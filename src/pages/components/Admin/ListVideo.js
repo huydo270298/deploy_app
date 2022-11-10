@@ -59,6 +59,10 @@ const ListVideo = () => {
         setVideo(video)
       })
   }
+
+  const handlePagination = () => {
+    setToggleModal(false)
+  }
   return (
     <div className={cx('content')}>
       <Filter />
@@ -82,7 +86,7 @@ const ListVideo = () => {
           </li>
         ))}
       </ul>
-      <Pagination page={1} />
+      <Pagination page={pagination.page} totalPages={pagination.total} handlePagination={handlePagination } />
       
       { toggleModal &&
         <div className={cx('dimmed')}>
