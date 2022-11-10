@@ -27,11 +27,25 @@
       background-position: center left;
     }
 
+    .logo {
+      @media (max-width: 600px) {
+        order: 1;
+      }
+    }
+
     .btn_group {
       @media (max-width: 600px) {
         width: auto;
       }
+      
+      &.type {
+        @media (max-width: 600px) {
+          order: 2;
+        }
+      }
     }
+
+
   }
 }
 
@@ -45,7 +59,7 @@
   }
 
   @media (max-width: 472px) {
-    order: 1;
+    // order: 1;
   }
 }
 
@@ -80,13 +94,16 @@
       }
     }
 
-    @media (max-width: 472px) {
-      order: 2;
-    }
+    
   }
 
   &.type2 {
     gap: 9px;
+
+    @media (max-width: 600px) {
+      order: 3;
+      margin-top: 12px;
+    }
 
     .btn {
       width: 96px;
