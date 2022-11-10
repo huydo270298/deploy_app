@@ -1,16 +1,15 @@
-.pagination {
+.wrapper {
   margin: 6.106% 0;
 
   @media (max-width: 600px) {
     margin: 24px 0 32px;
   }
-
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-  }
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 
   .item {
     display: flex;

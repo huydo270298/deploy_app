@@ -14,7 +14,7 @@ const Pagination = ({ page, totalPages, handlePagination }) => {
                 onClick={() => handlePagination(page - 1)}
                 className={cx('item', 'prev')}
               >
-                {/* &lt; */}
+                &lt;
               </li>
             )}
             <li
@@ -105,7 +105,7 @@ const Pagination = ({ page, totalPages, handlePagination }) => {
                 onClick={() => handlePagination(page + 1)}
                 className={cx('item', 'next')}
               >
-                {/* &gt; */}
+                &gt;
               </li>
             )}
           </ul>

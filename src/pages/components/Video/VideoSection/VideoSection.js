@@ -49,8 +49,6 @@ const VideoSection = () => {
           return handleCountdownAlert()
         }
       })
-
-
   }
 
   const handleCountdownSkip = () => {

@@ -30,6 +30,11 @@ const videoApi = {
   delete(id) {
     const url = `/api/v1/video/delete/${id}`;
     return axiosClient.delete(url, { id })
+  },
+
+  upload(data) {
+    const url = '/api/v1/video/upload';
+    return axiosClient.post(url, data)
   }
 };
 

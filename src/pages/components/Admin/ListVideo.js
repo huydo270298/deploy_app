@@ -86,7 +86,7 @@ const ListVideo = () => {
           </li>
         ))}
       </ul>
-      <Pagination page={pagination.page} totalPages={pagination.total} handlePagination={handlePagination } />
+      {pagination.page > 1 && <Pagination page={pagination.page} totalPages={pagination.total} handlePagination={handlePagination } />}
       
       { toggleModal &&
         <div className={cx('dimmed')}>
