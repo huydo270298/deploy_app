@@ -11,7 +11,7 @@
   margin: auto;
   padding: 20px 8.75% 21px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     align-items: flex-start;
     gap: 22px;
@@ -23,7 +23,7 @@
   width: 200px;
   height: 80px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     width: 150px;
     height: 44px;
   }
@@ -36,7 +36,7 @@
   background-repeat: no-repeat;
   background-position: center left;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     background-image: url(../../assets/logo_m.png);
   }
 }

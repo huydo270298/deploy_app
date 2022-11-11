@@ -9,7 +9,7 @@
   gap: 32px;
   padding: 38px 0;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     gap: 16px;
   }
 }
@@ -24,7 +24,7 @@
   &+.form {
     margin-top: 32px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       margin-top: 16px;
     }
   }

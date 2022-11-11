@@ -8,7 +8,6 @@ import styles from './SavePage.module.scss';
 let cx = classNames.bind(styles);
 
 const SavePage = () => {
-  const pageArr = [1, 2, 3, 4, 5]
   const [listVideo, setListVideo] = useState([])
   const [pagination, setPagination] = useState({
     page: 0,
@@ -20,14 +19,12 @@ const SavePage = () => {
   useEffect(() => {
     videoApi.getCategoryList()
       .then((reponse) => {
-        // const id = reponse.data[0].id;
         return reponse.data[0].id
       })
       .then((id) => {
         return videoApi.getCategoryItem(id)
       })
       .then((reponse) => {
-        console.log(reponse);
         const listId = reponse.data.map((item) => {
           setPagination({
             page: reponse.data.page,
@@ -54,7 +51,7 @@ const SavePage = () => {
         <ul className={cx('list')}>
           {listVideo.map((video) => (
             <li key={video.id} className={cx('item')}>
-              <Link to={`/${video.id}`}>
+              <Link to={`/${video.id}`} className={cx('link')}>
                 <div className={cx('img')}>
                   <img src={`http://103.187.168.186:8027/api/v1/video/thumbnail/${video.id}.png`} alt='' />
                 </div>

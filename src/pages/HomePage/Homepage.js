@@ -1,5 +1,7 @@
 import classNames from 'classnames/bind';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+import videoApi from '../../api/videoApi';
 import { CupIcon, HelpIcon, PlateIcon } from '../../assets/Icons';
 import Modal from '../../components/Modal';
 import HelpModal from '../components/HelpModal';
@@ -16,6 +18,8 @@ const HomePage = () => {
   const [openSpin, setOpenSpin] = useState(false)
   const [openPush, setOpenPush] = useState(false)
   const [openMission, setOpenMission] = useState(false)
+  const [video, setVideo] = useState([])
+
   const handleOpenHelpModal = () => {
     setOpenHelp(true)
   }
@@ -41,10 +45,38 @@ const HomePage = () => {
   const handleCloseMisionModal = () => {
     setOpenMission(false)
   }
+
+  // get add video
+  useEffect(() => {
+    videoApi.getCategoryList()
+      .then((reponse) => {
+        return reponse.data[0].id
+      })
+      .then((id) => {
+        return videoApi.getCategoryItem(id)
+      })
+      .then((reponse) => {
+        const listId = reponse.data.map((item) => {
+          return item.id
+        })
+        setVideo(listId);
+      })
+  }, [])
+
+  const location = useLocation();
+  const navigate =  useNavigate()
+  useEffect(() => {
+    if(location.pathname === '/' && video.length>0) {
+      return navigate(`/${video[0]}`)
+    }
+  }, [location.pathname, navigate, video])
+  
+  console.log( );
+
   return (
     <>
       <div className={cx('wrapper')}>
-        <VideoSection />
+        <VideoSection video={video} idDefault={video[0]} />
         <div className={cx('group')}>
           <button type='button' className={cx('btn', 'get_spin')} onClick={handleOpenSpinModal}>Get more spin turns</button>
           <button type='button' className={cx('btn', 'push')} onClick={handleOpenPushModal} >Push Ads</button>

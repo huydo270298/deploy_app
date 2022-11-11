@@ -1,42 +1,23 @@
 import classNames from 'classnames/bind';
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
+import { useNavigate, useParams } from 'react-router-dom';
 import spinApi from '../../../../api/spinApi';
-import videoApi from '../../../../api/videoApi';
 import Controller from '../../Controller';
 
 import styles from './VideoSection.module.scss';
 
 let cx = classNames.bind(styles);
 
-const VideoSection = () => {
-  const [video, setVideo] = useState([])
-  const [currentPlay, setCurrentPlay] = useState(0)
+const VideoSection = ({video}) => {
 
   const idUser = useSelector(state => state.user.user)
-  // get add video
-  useEffect(() => {
-    videoApi.getCategoryList()
-      .then((reponse) => {
-        // const id = reponse.data[0].id;
-        return reponse.data[0].id
-      })
-      .then((id) => {
-        return videoApi.getCategoryItem(id)
-      })
-      .then((reponse) => {
-        const listId = reponse.data.map((item) => {
-          return item.id
-        })
-        setVideo(listId);
-      })
-  }, [])
+  const { id } = useParams()
 
   const countSkipRef = useRef(null);
   const countAlertRef = useRef(null);
   const [autoPlay, setAutoPlay] = useState(false)
   const [countdownSkip, setCountdownSkip] = useState(5);
-  const [countdownAlert, setCountdownAlert] = useState(3);
   const [bookmark, setBookmark] = useState(false);
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
@@ -60,13 +41,11 @@ const VideoSection = () => {
   }
 
   const handleCountdownAlert = () => {
-
-    countAlertRef.current = setInterval(() => {
-      setResultSpin(true)
-      setCountdownAlert((countdown) => countdown - 1);
-    }, 1000);
-    countdownAlert < 0 && clearInterval(countAlertRef.current);
-    countdownAlert < 0 && setResultSpin(false);
+    setResultSpin(true)
+    clearInterval(countAlertRef.current);
+    countAlertRef.current = setTimeout(() => {
+      setResultSpin(false)
+    }, 3000);
   }
 
   const handleClickBookMark = () => {
@@ -77,22 +56,27 @@ const VideoSection = () => {
     handleCountdownSkip();
   }
 
-  // const handleLoadAlert = () => {
-  //   handleCountdownAlert()
-  //   setCountdownAlert(3);
-  // }
+  const navigate =  useNavigate()
 
   const handlePrev = () => {
-    setCurrentPlay(prev => prev - 1)
-    clearInterval(countSkipRef.current);
-    setCountdownSkip(5);
+    video.forEach((item, index) => {
+      if(item === id && index > 0) {
+        clearInterval(countSkipRef.current);
+        setCountdownSkip(5);
+        return navigate(`/${video[index-1]}`)
+      } 
+    })
   }
 
   const handleNext = () => {
-    setCurrentPlay(prev => prev + 1)
-    clearInterval(countSkipRef.current);
-    setCountdownSkip(5);
-    handleSpin()
+    video.forEach((item, index) => {
+      if(item === id && index < video.length - 1) {
+        clearInterval(countSkipRef.current);
+        setCountdownSkip(5);
+        handleSpin()
+        return navigate(`/${video[index+1]}`)
+      } 
+    })
   }
 
   const handlePlay = () => {
@@ -102,7 +86,7 @@ const VideoSection = () => {
 
   const videoElement = useRef();
   videoElement.onProgress = (event) => {
-    console.log(event);
+    // console.log(event);
   };
 
   const handlePip = () => {
@@ -118,9 +102,8 @@ const VideoSection = () => {
       <div className={cx('video')}>
         <video
           muted={false}
-          src={`http://103.187.168.186:8027/api/v1/video/stream/${video[currentPlay]}.mp4`}
+          src={`http://103.187.168.186:8027/api/v1/video/stream/${id}.mp4`}
           autoPlay={autoPlay}
-          // controls
           ref={videoElement}
           className={cx('box')}
           onPlaying={handleStart}
@@ -137,14 +120,12 @@ const VideoSection = () => {
           prograssValue={prograssValue}
           bookmark={bookmark}
           handleClickBookMark={handleClickBookMark}
-          currentPlay={currentPlay}
           play={autoPlay}
           listVideo={video}
           countdown={countdownSkip}
         />
         {resultSpin && <p className={cx('alert')}>Sorry! You have not won the prize yet</p>}
       </div >
-      {/* <p className={cx('title')}>{listVideo[video].title}</p> */}
     </div>
   );
 };

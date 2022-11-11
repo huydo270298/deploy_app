@@ -9,7 +9,7 @@
   margin-top: 40px;
   padding: 0 7.9167%;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     gap: 10px;
     margin-top: 24px;
     padding: 0 16px;
@@ -31,7 +31,7 @@
   border: 1px solid transparent;
   border-radius: 12px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     padding: 0;
   }
 }
@@ -63,7 +63,7 @@
   background: linear-gradient(90deg, rgba(255, 244, 197, 0) 13.76%, #FFF4C5 38.59%, rgba(255, 244, 197, 0) 85.84%);
   border-radius: 2px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     margin-top: 31px;
     font-size: 24px;
   }
@@ -71,7 +71,7 @@
 
 .icon_cup {
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     width: 48px;
     height: 48px;
     margin-right: 8px;
@@ -83,14 +83,14 @@
   font-size: 0;
   background: transparent;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     margin-left: 6px;
   }
 }
 
 .icon_help {
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     width: 28px;
     height: 28px;
   }
@@ -98,7 +98,7 @@
 
 .icon_plate {
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     width: 25px;
     height: 25px;
   }

@@ -1,7 +1,7 @@
 .wrapper {
   margin: 6.106% 0;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     margin: 24px 0 32px;
   }
 }
@@ -22,7 +22,7 @@
     border-radius: 2px;
     background: #F2F2F2;
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       width: 32px;
       height: 32px;
       font-size: 16px;

@@ -49,7 +49,7 @@
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.7);
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     top: 16px;
     left: 16px;
     width: 32px;
@@ -66,7 +66,7 @@
   background: #fff;
   transform: translate(-50%, -50%);
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     padding: 5px 3px 5px 6px;
     ;
   }
@@ -86,7 +86,7 @@
   pointer-events: none;
   background: rgba(255, 255, 255, 0.2);
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     min-width: 106px;
     font-size: 14px;
     gap: 10px;
@@ -104,7 +104,7 @@
   width: 60px;
   height: 60px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     width: 24px;
     height: 24px;
     background-size: cover;
@@ -124,7 +124,7 @@
     background-image: linear-gradient(rgba(255, 122, 0, 0.8), rgba(255, 122, 0, 0.8));
     background-repeat: no-repeat;
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       height: 4px;
     }
 
@@ -154,7 +154,7 @@
       border-radius: 50%;
       background: #FF7A00;
 
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
         height: 12px;
         width: 12px;
       }
@@ -168,7 +168,7 @@
       border-radius: 50%;
       background: #ff4500;
 
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
         height: 12px;
         width: 12px;
       }
@@ -182,7 +182,7 @@
       border-radius: 50%;
       background: #ff4500;
 
-      @media (max-width: 600px) {
+      @media (max-width: 768px) {
         height: 12px;
         width: 12px;
       }
@@ -192,7 +192,7 @@
 
 .icon_bookmark {
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     width: 14px;
     height: 14px;
   }
@@ -203,7 +203,7 @@
   width: 77px;
   height: 77px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     width: 32px;
     height: 32px;
   }
@@ -212,13 +212,13 @@
 .icon_plate {
   margin-left: 14px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     margin-left: 0;
   }
 }
 
 .icon_play {
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     width: 28px;
     height: 28px;
   }

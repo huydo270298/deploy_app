@@ -6,7 +6,7 @@
   display: flex;
   gap: 7px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     gap: 16px;
   }
@@ -14,7 +14,7 @@
   &+.line {
     margin-top: 32px;
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       margin-top: 16px;
     }
   }
