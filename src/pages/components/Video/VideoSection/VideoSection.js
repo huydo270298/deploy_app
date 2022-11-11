@@ -26,7 +26,7 @@ const VideoSection = ({video}) => {
   const handleSpin = () => {
     spinApi.getResult(idUser)
       .then((response) => {
-        if (response.data.result) {
+        if (response.data?.result) {
           return handleCountdownAlert()
         }
       })

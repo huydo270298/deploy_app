@@ -33,14 +33,14 @@ const FormUser = ({ onSubmit, info }) => {
   const [link, setLink] = useState('');
 
   useEffect(() => {
-    setName(info.fullName || '')
-    setSex(info.sex || 'Male')
-    setBirthday(info.dateOfBirth || '')
-    setCountry(info.country || 'Vietnam')
-    setCity(info.city || 'Hanoi')
-    setAddress(info.address || '')
-    setPhone(info.phoneNumber || '')
-    setLink(info.link || '')
+    setName(info?.fullName || '')
+    setSex(info?.sex || 'Male')
+    setBirthday(info?.dateOfBirth || '')
+    setCountry(info?.country || 'Vietnam')
+    setCity(info?.city || 'Hanoi')
+    setAddress(info?.address || '')
+    setPhone(info?.phoneNumber || '')
+    setLink(info?.link || '')
   }, [info])
   
   const handleSubmit = async (e) => {
