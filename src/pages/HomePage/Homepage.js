@@ -11,7 +11,7 @@ import styles from './HomePage.module.scss';
 
 let cx = classNames.bind(styles);
 
-const Homepage = () => {
+const HomePage = () => {
   const [openHelp, setOpenHelp] = useState(false)
   const [openSpin, setOpenSpin] = useState(false)
   const [openPush, setOpenPush] = useState(false)
@@ -89,4 +89,4 @@ const Homepage = () => {
 
 };
 
-export default Homepage;
+export default HomePage;

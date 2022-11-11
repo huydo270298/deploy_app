@@ -61,7 +61,7 @@ const ListVideo = () => {
   }
 
   const handlePagination = () => {
-    setToggleModal(false)
+    // setToggleModal(false)
   }
   return (
     <div className={cx('content')}>

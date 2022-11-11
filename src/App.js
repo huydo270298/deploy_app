@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import CommonLayout from './layouts/CommonLayout';
 import AdminLayout from './layouts/AdminLayout';
-import HomePage from './pages/HomePage';
 import UserPage from './pages/UserPage';
 import './App.css';
 import LoginPage from './pages/LoginPage';
@@ -13,6 +12,7 @@ import Login from './pages/components/Admin/Login';
 import Upload from './pages/components/Admin/Upload';
 import ListVideo from './pages/components/Admin/ListVideo';
 import { useSelector } from 'react-redux';
+import HomePage from './pages/HomePage';
 
 function App() {
   
@@ -23,6 +23,7 @@ function App() {
       <Routes>
         <Route element={<CommonLayout />}>
           <Route path="/" element={<HomePage />} />
+          <Route path="/:id" element={<HomePage />} />
           {
             isLoggedInUser
               && 
