@@ -5,7 +5,7 @@ import videoApi from '../../api/videoApi';
 import { CupIcon, HelpIcon, PlateIcon } from '../../assets/Icons';
 import Modal from '../../components/Modal';
 import HelpModal from '../components/HelpModal';
-import MissionModal from '../components/MissionModal/MissionModal';
+import MissionModal from '../components/MissionModal';
 import PushModal from '../components/PushModal';
 import SpinModal from '../components/SpinModal';
 import VideoSection from '../components/Video/VideoSection';
@@ -64,14 +64,14 @@ const HomePage = () => {
   }, [])
 
   const location = useLocation();
-  const navigate =  useNavigate()
+  const navigate = useNavigate()
   useEffect(() => {
-    if(location.pathname === '/' && video.length>0) {
+    if (location.pathname === '/' && video.length > 0) {
       return navigate(`/${video[0]}`)
     }
   }, [location.pathname, navigate, video])
-  
-  console.log( );
+
+  console.log();
 
   return (
     <>

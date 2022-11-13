@@ -1,1 +1,2 @@
-export { default } from './HomePage.js'
+import HomePage from './HomePage'
+export default HomePage

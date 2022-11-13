@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import {useDropzone} from 'react-dropzone';
+import { useDropzone } from 'react-dropzone';
 import classNames from 'classnames/bind';
 import styles from './Admin.module.scss';
 import { UploadIcon } from '../../../assets/Icons';
@@ -13,7 +13,7 @@ const FormUpload = (props) => {
     videoName: '',
     videoDescription: '',
   }
-  const {getRootProps, getInputProps, open} = useDropzone({
+  const { getRootProps, getInputProps, open } = useDropzone({
     // Disable click and keydown behavior
     noClick: true,
     noKeyboard: true,
@@ -21,7 +21,7 @@ const FormUpload = (props) => {
       'video/*': ['.mp4']
     },
     onDrop: acceptedFiles => {
-      
+
       setFiles(acceptedFiles.map(file => Object.assign(file, {
         preview: URL.createObjectURL(file)
       })));
@@ -62,7 +62,7 @@ const FormUpload = (props) => {
       <h3 className={cx('tit')}>Video</h3>
       <div className={cx('cont')}>
         <div className={cx('file_box')}>
-          <div {...getRootProps({className: cx('area')})}>
+          <div {...getRootProps({ className: cx('area') })}>
             <input {...getInputProps()} />
             <p className={cx('txt')}>Drag and drop video file to upload</p>
             <button type="button" className={cx('btn_upload')} onClick={open}>
@@ -70,11 +70,11 @@ const FormUpload = (props) => {
               <UploadIcon />
             </button>
           </div>
-          {files.length>0 && <div className={cx('img_file')}>
+          {files.length > 0 && <div className={cx('img_file')}>
             {thumbs}
           </div>}
         </div>
-        
+
       </div>
       <h4 className={cx('tit')}>Video title</h4>
       <div className={cx('cont')}>
