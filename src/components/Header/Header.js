@@ -18,7 +18,7 @@ const Header = () => {
       <div className={cx('inner', isLoggedInUser && 'loggedin'
       )}>
         <h1 className={cx('logo')}><Link to='/' className={cx('link')} ></Link></h1>
-        <Countdown time={'2022-11-14 00:00:00'} />
+        <Countdown time={'2022-11-17 00:00:00'} />
         {
           isLoggedInUser &&
           <div className={cx('btn_group', 'type')}>

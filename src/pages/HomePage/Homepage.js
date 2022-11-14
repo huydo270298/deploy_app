@@ -1,5 +1,5 @@
 import classNames from 'classnames/bind';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import videoApi from '../../api/videoApi';
 import { CupIcon, HelpIcon, PlateIcon } from '../../assets/Icons';
@@ -71,7 +71,20 @@ const HomePage = () => {
     }
   }, [location.pathname, navigate, video])
 
-  console.log();
+  const countReward = useRef(null);
+
+  const [num, setNum] = useState(0);
+  useEffect(() => {
+    countReward.current = setInterval(() => {
+      setNum((countdown) => countdown + 1);
+    }, 200);
+
+    num > 10000000000000 && clearTimeout(countReward.current);
+    num > 10000000000000 && setNum(0);
+  return () => {
+    clearTimeout(countReward.current);
+  }
+}, [num])
 
   return (
     <>
@@ -87,7 +100,7 @@ const HomePage = () => {
         </div>
         <div className={cx('reward')}>
           <CupIcon className={cx('icon_cup')} />
-          10.000 USD
+          {num} USD
           <button className={cx('btn_help')} onClick={handleOpenHelpModal}>
             <HelpIcon className={cx('icon_help')} />
           </button>

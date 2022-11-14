@@ -1,8 +1,10 @@
 import classNames from 'classnames/bind';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom';
 import spinApi from '../../../../api/spinApi';
+import userApi from '../../../../api/userApi';
+import StorageKeys from '../../../../constants/storage-keys';
 import Controller from '../../Controller';
 
 import styles from './VideoSection.module.scss';
@@ -18,7 +20,8 @@ const VideoSection = ({video}) => {
   const countAlertRef = useRef(null);
   const [autoPlay, setAutoPlay] = useState(false)
   const [countdownSkip, setCountdownSkip] = useState(5);
-  const [bookmark, setBookmark] = useState(false);
+  const [bookmark, setBookmark] = useState(true);
+  const [listBookmark, setListBookmark] = useState([]);
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
   const [resultSpin, setResultSpin] = useState(false)
@@ -31,6 +34,21 @@ const VideoSection = ({video}) => {
         }
       })
   }
+
+  useEffect(() => {
+    userApi.get(idUser)
+      .then((res) => {
+        if (res.code === '01') {
+          setListBookmark(res.data.videoSaved)
+        }
+      })
+  
+  }, [idUser])
+
+  useEffect(() => {
+    listBookmark.includes(id) ? setBookmark(true) : setBookmark(false)
+  }, [id, listBookmark])
+  
 
   const handleCountdownSkip = () => {
     countSkipRef.current = setInterval(() => {
@@ -49,7 +67,12 @@ const VideoSection = ({video}) => {
   }
 
   const handleClickBookMark = () => {
-    setBookmark(!bookmark)
+    userApi.addVideo(idUser, id)
+      .then((res) => {
+        if (res.code === '01') {
+          setBookmark(!bookmark)
+        }
+      })
   }
 
   const handleStart = () => {
@@ -102,7 +125,7 @@ const VideoSection = ({video}) => {
       <div className={cx('video')}>
         <video
           muted={false}
-          src={`http://103.187.168.186:8027/api/v1/video/stream/${id}.mp4`}
+          src={`http://${StorageKeys.PATH}/api/v1/video/stream/${id}.mp4`}
           autoPlay={autoPlay}
           ref={videoElement}
           className={cx('box')}

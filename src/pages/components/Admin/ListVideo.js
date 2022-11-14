@@ -5,6 +5,7 @@ import styles from './Admin.module.scss';
 import videoApi from '../../../api/videoApi';
 import Filter from './Filter';
 import Pagination from '../../../components/Pagination';
+import StorageKeys from '../../../constants/storage-keys';
 
 let cx = classNames.bind(styles);
 
@@ -70,7 +71,7 @@ const ListVideo = () => {
         {video.map((item) => (
           <li key={item.id} className={cx('item')}>
             <div className={cx('img')}>
-              <img src={`http://103.187.168.186:8027/api/v1/video/thumbnail/${item.id}.png`} alt='' />
+              <img src={`http://${StorageKeys.PATH}/api/v1/video/thumbnail/${item.id}.png`} alt='' />
               <div className={cx('plaholder')}>
                 <button type='button' className={cx('btn_control')} onClick={() => handleShowModal(item.id)}>
                   <BinIcon />

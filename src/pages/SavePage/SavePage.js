@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import videoApi from '../../api/videoApi'
 import Pagination from '../../components/Pagination';
+import StorageKeys from '../../constants/storage-keys';
 import styles from './SavePage.module.scss';
 
 let cx = classNames.bind(styles);
@@ -53,7 +54,7 @@ const SavePage = () => {
             <li key={video.id} className={cx('item')}>
               <Link to={`/${video.id}`} className={cx('link')}>
                 <div className={cx('img')}>
-                  <img src={`http://103.187.168.186:8027/api/v1/video/thumbnail/${video.id}.png`} alt='' />
+                  <img src={`http://${StorageKeys.PATH}/api/v1/video/thumbnail/${video.id}.png`} alt='' />
                 </div>
                 <p className={cx('name')}>{video.title}</p>
               </Link>

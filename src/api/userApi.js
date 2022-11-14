@@ -19,6 +19,11 @@ const userApi = {
   get (id) {
     const url = `/api/v1/user/getById/${id}`;
     return axiosClient.get(url, {id})
+  },
+
+  addVideo (idUser, idVideo) {
+    const url = `/api/v1/user/addVideo/${idUser}/video/${idVideo}`;
+    return axiosClient.post(url, {idUser, idVideo})
   }
 };
 

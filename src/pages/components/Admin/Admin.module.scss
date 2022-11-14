@@ -282,6 +282,11 @@ h4.tit {
   font-weight: bold;
   background: #FF7A00;
   border-radius: 12px;
+
+  &.disabled {
+    pointer-events: none;
+    background: rgba(255, 122, 0, 0.8)
+  }
 }
 
 .form {
@@ -290,17 +295,11 @@ h4.tit {
 
 .file_box {
   position: relative;
+  height: 175px;
   font-size: 16px;
   color: #000;
   border-radius: 12px;
   background: #f2f2f2;
-
-  .area {
-    display: block;
-    width: 100%;
-    height: 175px;
-    // pointer-events: none;
-  }
 
   .txt {
     margin-left: 48px;
@@ -334,4 +333,33 @@ h4.tit {
 .img_thumb {
   width: 100%;
   height: 146px;
+}
+
+.file_inp {
+  display: none;
+}
+
+.progress {
+  overflow: hidden;
+  display: block;
+  height: 6px;
+  margin-top: 16px;
+  background: #aaa;
+  border-radius: 4px;
+}
+
+.progress_bar {
+  height: 6px;
+  background: #4aa1f3;
+}
+
+.file_message {
+  float: left;
+  height: 45px;
+  margin-top: 25px;
+  font-size: 16px;
+
+  &.error {
+    color: red;
+  }
 }
