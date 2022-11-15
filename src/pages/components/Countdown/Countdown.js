@@ -1,9 +1,11 @@
 import classNames from 'classnames/bind';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import styles from './Countdown.module.scss';
 
 let cx = classNames.bind(styles);
 const Countdown = ({ time }) => {
+    const { t } = useTranslation();
     const eventNow = Date.now();
     const eventTime = new Date(time).getTime()
     const secontCoudown = Math.floor((eventTime - eventNow)/1000);
@@ -28,7 +30,7 @@ const Countdown = ({ time }) => {
     let second = new Date(duration * 1000).toISOString().substring(17, 19);
     return (
         <div className={cx('wrapper')}>
-            Officially active:
+            {t('OFFICIALLY_ACTIVE')}:
             <p className={cx('num')}>
                 {/* {new Date(duration * 1000).toISOString().substring(11, 19)}s */}
                 {String(hour).padStart(2, 0)} : {minute.padStart(2, 0)} : {second.padStart(2, 0)}

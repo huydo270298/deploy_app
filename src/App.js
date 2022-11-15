@@ -22,10 +22,7 @@ function App() {
     <Router>
       <Routes>
         <Route element={<CommonLayout />}>
-          {['/', '/:id'].map((path, index) =>
-            <Route key={index} path={path} element={<HomePage />} />
-          )
-          }
+          <Route path='/' element={<HomePage />} />
           {
             isLoggedInUser
             &&

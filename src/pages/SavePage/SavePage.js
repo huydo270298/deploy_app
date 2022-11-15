@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import videoApi from '../../api/videoApi'
 import Pagination from '../../components/Pagination';
@@ -9,6 +10,8 @@ import styles from './SavePage.module.scss';
 let cx = classNames.bind(styles);
 
 const SavePage = () => {
+  const { t } = useTranslation();
+
   const [listVideo, setListVideo] = useState([])
   const [pagination, setPagination] = useState({
     page: 0,
@@ -47,7 +50,7 @@ const SavePage = () => {
 
   return (
     <div className={cx('wrapper')}>
-      <h2 className={cx('title')}>Saved Videos</h2>
+      <h2 className={cx('title')}>{t("SAVED_VIDEOS")}</h2>
       <div className={cx('content')}>
         <ul className={cx('list')}>
           {listVideo.map((video) => (

@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import { useEffect, useRef, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import videoApi from '../../api/videoApi';
 import { CupIcon, HelpIcon, PlateIcon } from '../../assets/Icons';
 import Modal from '../../components/Modal';
@@ -14,6 +14,8 @@ import styles from './HomePage.module.scss';
 let cx = classNames.bind(styles);
 
 const HomePage = () => {
+  const { t } = useTranslation();
+
   const [openHelp, setOpenHelp] = useState(false)
   const [openSpin, setOpenSpin] = useState(false)
   const [openPush, setOpenPush] = useState(false)
@@ -48,6 +50,7 @@ const HomePage = () => {
 
   // get add video
   useEffect(() => {
+    
     videoApi.getCategoryList()
       .then((reponse) => {
         return reponse.data[0].id
@@ -63,14 +66,6 @@ const HomePage = () => {
       })
   }, [])
 
-  const location = useLocation();
-  const navigate = useNavigate()
-  useEffect(() => {
-    if (location.pathname === '/' && video.length > 0) {
-      return navigate(`/${video[0]}`)
-    }
-  }, [location.pathname, navigate, video])
-
   const countReward = useRef(null);
 
   const [num, setNum] = useState(0);
@@ -81,18 +76,19 @@ const HomePage = () => {
 
     num > 10000000000000 && clearTimeout(countReward.current);
     num > 10000000000000 && setNum(0);
-  return () => {
-    clearTimeout(countReward.current);
-  }
-}, [num])
 
+    return () => {
+      clearTimeout(countReward.current);
+    }
+  }, [num])
+  
   return (
     <>
       <div className={cx('wrapper')}>
-        <VideoSection video={video} idDefault={video[0]} />
+        <VideoSection video={video} />
         <div className={cx('group')}>
-          <button type='button' className={cx('btn', 'get_spin')} onClick={handleOpenSpinModal}>Get more spin turns</button>
-          <button type='button' className={cx('btn', 'push')} onClick={handleOpenPushModal} >Push Ads</button>
+          <button type='button' className={cx('btn', 'get_spin')} onClick={handleOpenSpinModal}>{t("GET_MORE")}</button>
+          <button type='button' className={cx('btn', 'push')} onClick={handleOpenPushModal} >{t("PUSH_ADS")}</button>
           <button type='button' className={cx('btn', 'add')} onClick={handleOpenMissionModal} >
             +1000
             <PlateIcon className={cx('icon_plate')} />

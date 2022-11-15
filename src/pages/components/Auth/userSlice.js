@@ -68,7 +68,6 @@ const userSlice = createSlice({
   },
   extraReducers: {
     [register.fulfilled]: (state, action) => {
-      console.log(action);
       if (action.payload.data) {
         state.user = action.payload.data.id
       }

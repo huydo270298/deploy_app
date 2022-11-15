@@ -1,11 +1,13 @@
 import classNames from 'classnames/bind'
 import React, { useRef } from 'react'
+import { useTranslation } from 'react-i18next'
 import { PipIcon, PlateIcon, PlayIcon, PrevIcon, SaveActiveIcon, SaveIcon, SkipIcon } from '../../../assets/Icons'
 import styles from './Controller.module.scss'
 
 let cx = classNames.bind(styles)
 
 const Controller = (props) => {
+  const { t } = useTranslation();
 
   const {
     duration,
@@ -34,7 +36,7 @@ const Controller = (props) => {
       </button>}
       {currentPlay !== (listVideo.length - 1) &&
         <button type='button' className={cx('skip', !(countdown >= 0) && 'active')} onClick={handleNext}>
-          {countdown >= 0 ? `${countdown}s` : 'SKIP'}
+          {countdown >= 0 ? `${countdown}s` : t("SKIP")}
           <PlateIcon className={cx('icon', 'icon_plate')} />
           <SkipIcon />
         </button>

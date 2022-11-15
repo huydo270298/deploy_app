@@ -8,7 +8,6 @@ let cx = classNames.bind(styles);
 const Upload = () => {
 
   const handleSubmit = async(values) => {
-    // console.log(values);
     videoApi.upload(values)
       .then((response) => {
         if (response.data.result) {

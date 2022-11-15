@@ -75,7 +75,6 @@ const FormUpload = () => {
       if (validateFile(files[i])) {
         setSelectedFiles((prevArray) => [...prevArray, files[i]]);
         generateVideoThumbnails(files[i]).then((thumbs) => {
-          console.log(thumbs);
           setThumbnails(thumbs);
         });
         let name = files[i].name;

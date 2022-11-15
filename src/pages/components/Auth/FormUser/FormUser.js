@@ -1,6 +1,7 @@
 import axios from 'axios';
 import classNames from 'classnames/bind';
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Select from '../../../../components/Select';
 
 import styles from './FormUser.module.scss';
@@ -8,6 +9,7 @@ import styles from './FormUser.module.scss';
 let cx = classNames.bind(styles);
 
 const FormUser = ({ onSubmit, info }) => {
+  const { t } = useTranslation();
 
   const arrSex = ['Male', 'Female']
   const defaultValues = {
@@ -101,7 +103,7 @@ const FormUser = ({ onSubmit, info }) => {
       <div className={cx('line')}>
         <div className={cx('form')}>
           <label htmlFor="name" className={cx('label')}>
-            Full Name
+            {t("FULLNAME")}
           </label>
           <input
             id="name"
@@ -115,13 +117,13 @@ const FormUser = ({ onSubmit, info }) => {
       <div className={cx('line')}>
         <div className={cx('form')}>
           <div htmlFor="sex" className={cx('label')}>
-            SEX
+            {t("SEX")}
           </div>
           <Select currentValue={sex} arrayData={arrSex} onChange={handleChangeOptionSex} />
         </div>
         <div className={cx('form')}>
           <label htmlFor="dateOfBirth" className={cx('label')}>
-            Date Of Birth
+            {t("DATEOFBIRTH")}
           </label>
           <input
             id="dateOfBirth"
@@ -136,13 +138,13 @@ const FormUser = ({ onSubmit, info }) => {
       <div className={cx('line')}>
         <div className={cx('form')}>
           <div htmlFor="address" className={cx('label')}>
-            Country
+            {t("COUNTRY")}
           </div>
           <Select currentValue={country} arrayData={arrCountry} onChange={handleChangeOptionCountry} />
         </div>
         <div className={cx('form')}>
           <div htmlFor="address" className={cx('label')}>
-            City/Province
+            {t("CITY")}
           </div>
           <Select currentValue={city} nation={country} arrayData={arrCities} onChange={handleChangeOptionCities} />
         </div>
@@ -150,7 +152,7 @@ const FormUser = ({ onSubmit, info }) => {
       <div className={cx('line')}>
         <div className={cx('form')}>
           <label htmlFor="address" className={cx('label')}>
-            Address
+            {t("ADDRESS")}
           </label>
           <input
             name="address"
@@ -164,7 +166,7 @@ const FormUser = ({ onSubmit, info }) => {
       <div className={cx('line')}>
         <div className={cx('form')}>
           <label htmlFor="phone" className={cx('label')}>
-            Phone Number
+            {t("PHONE")}
           </label>
           <input
             name="phone"
@@ -176,7 +178,7 @@ const FormUser = ({ onSubmit, info }) => {
         </div>
         <div className={cx('form')}>
           <label htmlFor="link" className={cx('label')}>
-            Link &#40; Ex: Facebook,...&#41;
+            {t("LINK")} &#40; Facebook,...&#41;
           </label>
           <input
             name="link"
@@ -188,7 +190,7 @@ const FormUser = ({ onSubmit, info }) => {
         </div>
       </div>
       <button type="submit" className={cx('submit')}>
-        Save
+        {t("SAVE")}
       </button>
     </form>
   );

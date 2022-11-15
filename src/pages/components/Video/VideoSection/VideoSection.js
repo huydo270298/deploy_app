@@ -1,9 +1,10 @@
 import classNames from 'classnames/bind';
 import { useEffect, useRef, useState } from 'react';
-import { useSelector } from 'react-redux';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import spinApi from '../../../../api/spinApi';
 import userApi from '../../../../api/userApi';
+import { play } from '../../../../app/videoSlice';
 import StorageKeys from '../../../../constants/storage-keys';
 import Controller from '../../Controller';
 
@@ -12,9 +13,9 @@ import styles from './VideoSection.module.scss';
 let cx = classNames.bind(styles);
 
 const VideoSection = ({video}) => {
-
+  const dispatch = useDispatch();
   const idUser = useSelector(state => state.user.user)
-  const { id } = useParams()
+  const idVideo = useSelector(state=> state.video.videoId) || video[0]
 
   const countSkipRef = useRef(null);
   const countAlertRef = useRef(null);
@@ -25,6 +26,7 @@ const VideoSection = ({video}) => {
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
   const [resultSpin, setResultSpin] = useState(false)
+  const [videoPlay, setvideoPlay] = useState(idVideo)
 
   const handleSpin = () => {
     spinApi.getResult(idUser)
@@ -46,8 +48,24 @@ const VideoSection = ({video}) => {
   }, [idUser])
 
   useEffect(() => {
-    listBookmark.includes(id) ? setBookmark(true) : setBookmark(false)
-  }, [id, listBookmark])
+    try {
+      dispatch(play(idVideo));
+
+    } catch (error) {
+      console.log(error)
+    }
+  
+  }, [dispatch, idVideo])
+
+  useEffect(() => {
+    listBookmark.includes(idVideo) ? setBookmark(true) : setBookmark(false)
+  }, [idVideo, listBookmark])
+
+  useEffect(() => {
+    setvideoPlay(idVideo)
+  
+  }, [idVideo])
+  
   
 
   const handleCountdownSkip = () => {
@@ -67,7 +85,7 @@ const VideoSection = ({video}) => {
   }
 
   const handleClickBookMark = () => {
-    userApi.addVideo(idUser, id)
+    userApi.addVideo(idUser, idVideo)
       .then((res) => {
         if (res.code === '01') {
           setBookmark(!bookmark)
@@ -79,25 +97,23 @@ const VideoSection = ({video}) => {
     handleCountdownSkip();
   }
 
-  const navigate =  useNavigate()
-
   const handlePrev = () => {
     video.forEach((item, index) => {
-      if(item === id && index > 0) {
+      if(item === idVideo && index > 0) {
         clearInterval(countSkipRef.current);
         setCountdownSkip(5);
-        return navigate(`/${video[index-1]}`)
+        dispatch(play(video[index-1]))
       } 
     })
   }
 
   const handleNext = () => {
     video.forEach((item, index) => {
-      if(item === id && index < video.length - 1) {
+      if(item === idVideo && index < video.length - 1) {
         clearInterval(countSkipRef.current);
         setCountdownSkip(5);
         handleSpin()
-        return navigate(`/${video[index+1]}`)
+        dispatch(play(video[index+1]))
       } 
     })
   }
@@ -109,7 +125,7 @@ const VideoSection = ({video}) => {
 
   const videoElement = useRef();
   videoElement.onProgress = (event) => {
-    // console.log(event);
+    
   };
 
   const handlePip = () => {
@@ -119,13 +135,19 @@ const VideoSection = ({video}) => {
       videoElement.current.requestPictureInPicture();
     }
   }
+  
+  useEffect(() => {
+    localStorage.getItem('idVideo', idVideo || video[0])
+  })
 
+  
+  
   return (
     <div className={cx('wrapper')}>
       <div className={cx('video')}>
         <video
           muted={false}
-          src={`http://${StorageKeys.PATH}/api/v1/video/stream/${id}.mp4`}
+          src={`http://${StorageKeys.PATH}/api/v1/video/stream/${videoPlay}.mp4`}
           autoPlay={autoPlay}
           ref={videoElement}
           className={cx('box')}

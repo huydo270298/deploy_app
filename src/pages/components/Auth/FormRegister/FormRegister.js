@@ -5,10 +5,12 @@ import { useForm } from 'react-hook-form'
 
 import styles from './FormRegister.module.scss';
 import { EyeHideIcon, EyeShowIcon } from '../../../../assets/Icons';
+import { useTranslation } from 'react-i18next';
 
 let cx = classNames.bind(styles);
 
 const FormRegister = (props) => {
+  const { t } = useTranslation();
 
   const [showPass, setShowPass] = useState(false);
   const [showConfPass, setShowConfPass] = useState(false);
@@ -46,11 +48,11 @@ const FormRegister = (props) => {
 
   return (
     <div className={cx('wrapper')}>
-      <h1 className={cx('title')}>SIGN UP</h1>
+      <h1 className={cx('title')}>{t("SIGN_UP")}</h1>
       <form className={cx('form_group')} onSubmit={handleSubmit(onSubmit)}>
         <div className={cx('form', errors.username && 'error')}>
           <label htmlFor="identifier" className={cx('label')}>
-            Username
+          {t("USERNAME")}
           </label>
           <input
             id="identifier"
@@ -65,7 +67,7 @@ const FormRegister = (props) => {
         </div>
         <div className={cx('form', errors.password && 'error')}>
           <label htmlFor="password" className={cx('label')}>
-            New Password
+          {t("N_PASSWORD")}
           </label>
           <input
             id="password"
@@ -89,7 +91,7 @@ const FormRegister = (props) => {
         </div>
         <div className={cx('form', errors.conf_password && 'error')}>
           <label htmlFor="conf_password" className={cx('label')}>
-            Confirm Password
+          {t("C_PASSWORD")}
           </label>
           <input
             id="conf_password"
@@ -109,12 +111,12 @@ const FormRegister = (props) => {
         </div>
         {message && <p className={cx('message_submit')}>{message}</p>}
         <button type="submit" className={cx('submit')}>
-          Sign up
+          {t("SIGN_UP")}
         </button>
       </form>
       <p className={cx('sub')}>
-        Already have an account?&nbsp;
-        <Link to='/login' className={cx('link')}>Log In</Link>
+        {t("ALREADY_ACCOUNT")}&nbsp;
+        <Link to='/login' className={cx('link')}>{t("LOGIN")}</Link>
       </p>
     </div>
   );

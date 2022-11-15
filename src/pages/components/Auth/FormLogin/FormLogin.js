@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { EyeHideIcon, EyeShowIcon } from '../../../../assets/Icons';
 
@@ -8,6 +9,7 @@ import styles from './FormLogin.module.scss';
 let cx = classNames.bind(styles);
 
 const FormUser = (props) => {
+  const { t } = useTranslation();
 
   const [name, setName] = useState('');
   const [pass, setPass] = useState('');
@@ -36,11 +38,11 @@ const FormUser = (props) => {
 
   return (
     <div className={cx('wrapper')}>
-      <h1 className={cx('title')}>LOG IN</h1>
+      <h1 className={cx('title')}>{t("LOGIN")}</h1>
       <form className={cx('form_group')} onSubmit={handleSubmit}>
         <div className={cx('form')}>
           <label htmlFor="identifier" className={cx('label')}>
-            Usename
+            {t("USERNAME")}
           </label>
           <input
             id="identifier"
@@ -52,7 +54,7 @@ const FormUser = (props) => {
         </div>
         <div className={cx('form')}>
           <label htmlFor="password" className={cx('label')}>
-            Password
+            {t("PASSWORD")}
           </label>
           <input
             id="password"
@@ -68,12 +70,12 @@ const FormUser = (props) => {
           <p className={cx('message')}>{message}</p>
         </div>
         <button type="submit" className={cx('submit')}>
-          LOG IN
+          {t("LOGIN")}
         </button>
       </form >
       <p className={cx('sub')}>
-        Don’t have an account?&nbsp;
-        <Link to='/register' className={cx('link')}>Sign Up</Link>
+        {t("DONT_ACCOUNT")}&nbsp;
+        <Link to='/register' className={cx('link')}>{t("SIGN_UP")}</Link>
       </p>
     </div >
   );

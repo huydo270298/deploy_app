@@ -6,10 +6,12 @@ import styles from './UserPage.module.scss';
 import { update } from '../components/Auth/userSlice.js';
 import { useEffect, useState } from 'react';
 import userApi from '../../api/userApi';
+import { useTranslation } from 'react-i18next';
 
 let cx = classNames.bind(styles);
 
 const UserPage = () => {
+  const { t } = useTranslation();
 
   const [info, setInfo] = useState({})
   const id = useSelector(state => state.user.user)
@@ -40,8 +42,8 @@ const UserPage = () => {
 
   return (
     <div className={cx('wrapper')}>
-      <h2 className={cx('title')}>PERSONAL INFORMATION</h2>
-      <p className={cx('note')}>Note: You can not get the prize if the information is wrong</p>
+      <h2 className={cx('title')}>{t("PERSONAL_TIT")}</h2>
+      <p className={cx('note')}>{t("PERSONAL_NOTE")}</p>
       <FormUser onSubmit={handleSubmit} info={info} />
     </div>
   );
