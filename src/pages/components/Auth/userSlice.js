@@ -55,8 +55,9 @@ const userSlice = createSlice({
   reducers: {
     logout(state) {
       //clear local storage
-      localStorage.removeItem(StorageKeys.AUTH)
-      // localStorage.removeItem(StorageKeys.TOKEN)
+      localStorage.removeItem(StorageKeys.USER)
+      localStorage.removeItem(StorageKeys.ADMIN)
+      localStorage.removeItem(StorageKeys.TOKEN)
 
       state.current = {};
     }
@@ -64,17 +65,16 @@ const userSlice = createSlice({
   extraReducers: {
     [register.fulfilled]: (state, action) => {
       if (action.payload.data) {
-        state.user = action.payload.data.id
+        state.user = action.payload.data.userInfo.id
       }
     },
     [login.fulfilled]: (state, action) => {
-      console.log(action);
       if (action.payload.data?.userInfo.roleName === 'USER') {
         state.user = action.payload.data.userInfo.id
       }
 
       if (action.payload.data?.userInfo.roleName === 'ADMIN') {
-        state.admin = action.payload.userInfo.data.id
+        state.admin = action.payload.data.userInfo.id
       }
     },
   }

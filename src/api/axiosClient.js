@@ -4,22 +4,22 @@ import StorageKeys from '../constants/storage-keys';
 const axiosClient = axios.create({
   baseURL: `http://${StorageKeys.PATH}`,
   headers: {
-    'Content-Type': 'application/json',
-    'Authorization': `Bearer ${localStorage.getItem(StorageKeys.TOKEN) || null}`
+    'Content-Type': 'application/json'
   },
 });
 
 // Interceptors
 // Add a request interceptor
 axiosClient.interceptors.request.use(
-  function (config) {
-    // Do something before request is sent
+  async (config) => {
+    config.headers = {
+      Authorization: `Bearer ${localStorage.getItem(StorageKeys.TOKEN)}`,
+    };
     return config;
   },
-  function (error) {
-    // Do something with request error
-    return Promise.reject(error);
-  },
+  (error) => {
+    Promise.reject(error);
+  }
 );
 
 // Add a response interceptor

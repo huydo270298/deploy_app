@@ -28,7 +28,8 @@ const VideoSection = ({video}) => {
   const [videoPlay, setvideoPlay] = useState(idVideo)
 
   const handleSpin = () => {
-    spinApi.getResult(idUser)
+
+    idUser && spinApi.getResult(idUser)
       .then((response) => {
         if (response.data?.result) {
           return handleCountdownAlert()
@@ -37,8 +38,9 @@ const VideoSection = ({video}) => {
   }
 
   useEffect(() => {
-    userApi.get(idUser)
+    idUser && userApi.get(idUser)
       .then((res) => {
+        console.log(res);
         if (res.code === '01') {
           setListBookmark(res.data.videoSaved)
         }
@@ -46,26 +48,23 @@ const VideoSection = ({video}) => {
   
   }, [idUser])
 
-  useEffect(() => {
-    try {
-      dispatch(play(idVideo));
+  // useEffect(() => {
+  //   try {
+  //     dispatch(play(idVideo));
 
-    } catch (error) {
-      console.log(error)
-    }
+  //   } catch (error) {
+  //     console.log(error)
+  //   }
   
-  }, [dispatch, idVideo])
+  // }, [dispatch, idVideo])
 
   useEffect(() => {
     listBookmark.includes(idVideo) ? setBookmark(true) : setBookmark(false)
   }, [idVideo, listBookmark])
 
-  useEffect(() => {
-    setvideoPlay(idVideo)
-  
-  }, [idVideo])
-  
-  
+  // useEffect(() => {
+  //   setvideoPlay(idVideo)
+  // }, [idVideo])
 
   const handleCountdownSkip = () => {
     countSkipRef.current = setInterval(() => {
@@ -84,7 +83,7 @@ const VideoSection = ({video}) => {
   }
 
   const handleClickBookMark = () => {
-    userApi.addVideo(idUser, idVideo)
+    idUser && userApi.addVideo(idUser, idVideo)
       .then((res) => {
         if (res.code === '01') {
           setBookmark(!bookmark)
@@ -144,7 +143,7 @@ const VideoSection = ({video}) => {
   return (
     <div className={cx('wrapper')}>
       <div className={cx('video')}>
-        <video
+        {videoPlay && <video
           muted={false}
           src={`http://${StorageKeys.PATH}/api/v1/video/stream/${videoPlay}.mp4`}
           autoPlay={autoPlay}
@@ -154,7 +153,7 @@ const VideoSection = ({video}) => {
           onDurationChange={(e) => { setDuration(e.target.duration) }}
           onTimeUpdate={(e) => { setPrograssValue(e.target.currentTime) }}
           onEnded={handleSpin}
-        />
+        />}
         <Controller
           handlePrev={handlePrev}
           handleNext={handleNext}

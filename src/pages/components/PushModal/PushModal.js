@@ -11,7 +11,7 @@ const PushModal = () => {
   return (
     <div className={cx('wrapper')}>
       <div className={cx('exchange')}>1USD = 5000 {t("VIEWS")}</div>
-      <p className={cx('note')}>{t("CONTACT_EMAIL")} : <span className={cx('email')}>Abc@gmail.com</span></p>
+      <p className={cx('note')}>{t("CONTACT_EMAIL")} : <span className={cx('email')}>ngoduythanh2000@gmail.com</span></p>
     </div>
   )
 }

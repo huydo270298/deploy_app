@@ -23,8 +23,10 @@ const LoginPage = () => {
 
       if(resultAction.payload.code === '02') {
         setMesError(resultAction.payload.message)
-      } else {
+      } else if (resultAction.payload.data.userInfo.roleName === 'USER') {
         return navigate("/");
+      } else {
+        setMesError('Username or password incorrect.')
       }
     } catch (error) {
       setMesError(error)
