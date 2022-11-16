@@ -1,7 +1,6 @@
 import classNames from 'classnames/bind';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useNavigate } from 'react-router-dom';
 import spinApi from '../../../../api/spinApi';
 import userApi from '../../../../api/userApi';
 import { play } from '../../../../app/videoSlice';

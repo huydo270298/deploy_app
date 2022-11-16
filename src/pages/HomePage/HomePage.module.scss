@@ -103,3 +103,12 @@
     height: 25px;
   }
 }
+
+.num {
+  display: block;
+  width: 285px;
+
+  @media (max-width: 768px) {
+    width: 216px;
+  }
+}

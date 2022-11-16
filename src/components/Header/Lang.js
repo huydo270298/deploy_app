@@ -1,6 +1,6 @@
 export const Lang = [
   {
-    name: 'Arabic',
+    name: 'Amharic',
     id: 'ar'
   },
   {
@@ -72,151 +72,147 @@ export const Lang = [
     id: 'pt'
   },
   {
-    name: '',
+    name: 'Bulgarian',
     id: 'bg'
   },
   {
-    name: '',
+    name: 'Catalan',
     id: 'ca'
   },
   {
-    name: '',
+    name: 'Chechen',
     id: 'ce'
   },
   {
-    name: '',
+    name: 'Chewa',
     id: 'ny'
   },
   {
-    name: '',
+    name: 'Corsican',
     id: 'co'
   },
   {
-    name: '',
+    name: 'Haitian Creole',
     id: 'ht'
   },
   {
-    name: '',
+    name: 'Croatian',
     id: 'hr'
   },
   {
-    name: '',
+    name: 'Dhivehi',
     id: 'dv'
   },
   {
-    name: '',
-    id: 'iw'
-  },
-  {
-    name: '',
+    name: 'Dogri',
     id: 'doi'
   },
   {
-    name: '',
+    name: 'Danish',
     id: 'da'
   },
   {
-    name: '',
+    name: 'German',
     id: 'de'
   },
   {
-    name: '',
+    name: 'Estonian',
     id: 'et'
   },
   {
-    name: '',
+    name: 'Ewe',
     id: 'ee'
   },
   {
-    name: '',
+    name: 'Tagalog',
     id: 'tl'
   },
   {
-    name: '',
+    name: 'Frisian',
     id: 'fy'
   },
   {
-    name: '',
+    name: 'Scottish Gaelic',
     id: 'gd'
   },
   {
-    name: '',
+    name: 'Galician',
     id: 'gl'
   },
   {
-    name: '',
+    name: 'Georgian',
     id: 'ka'
   },
   {
-    name: '',
+    name: 'Guarani',
     id: 'gn'
   },
   {
-    name: '',
+    name: 'Gujarati',
     id: 'gu'
   },
   {
-    name: '',
+    name: 'Dutch',
     id: 'nl'
   },
   {
-    name: '',
+    name: 'Afrikaans',
     id: 'af'
   },
   {
-    name: '',
+    name: 'Korean',
     id: 'ko'
   },
   {
-    name: '',
+    name: 'Hausa',
     id: 'ha'
   },
   {
-    name: '',
+    name: 'Hawaiian',
     id: 'haw'
   },
   {
-    name: '',
+    name: 'Hindi',
     id: 'hi'
   },
   {
-    name: '',
+    name: 'Hmong',
     id: 'hmn'
   },
   {
-    name: '',
+    name: 'Hungarian',
     id: 'hu'
   },
   {
-    name: '',
+    name: 'Greek',
     id: 'el'
   },
   {
-    name: '',
+    name: 'Icelandic',
     id: 'is'
   },
   {
-    name: '',
+    name: 'Igbo',
     id: 'ig'
   },
   {
-    name: '',
-    id: 'il'
+    name: 'Ilokano',
+    id: 'ilo'
   },
   {
-    name: '',
+    name: 'Indonesian',
     id: 'id'
   },
   {
-    name: '',
+    name: 'Ireland',
     id: 'ga'
   },
   {
-    name: '',
+    name: 'Java',
     id: 'jw'
   },
   {
-    name: '',
+    name: 'Kannada',
     id: 'kn'
   },
   {
@@ -224,95 +220,311 @@ export const Lang = [
     id: 'kk'
   },
   {
-    name: '',
+    name: 'Kazakh',
     id: 'km'
   },
   {
-    name: '',
+    name: 'Kinyarwanda',
     id: 'rw'
   },
   {
-    name: '',
+    name: 'Konkani',
     id: 'gom'
   },
   {
-    name: '',
+    name: 'Krio',
     id: 'kri'
   },
   {
-    name: '',
+    name: 'Kurd (Kurmanji)',
     id: 'ku'
   },
   {
-    name: '',
+    name: 'Kurd (Sorani)',
     id: 'ckb'
   },
   {
-    name: '',
+    name: 'Kyrgyz',
     id: 'ky'
   },
   {
-    name: '',
+    name: 'Lao',
     id: 'lo'
   },
   {
-    name: '',
+    name: 'Latinh',
     id: 'la'
   },
   {
-    name: '',
+    name: 'Latvian',
     id: 'lv'
   },
   {
-    name: '',
+    name: 'Lingala',
     id: 'ln'
   },
   {
-    name: '',
+    name: 'Lithuanian',
     id: 'lt'
   },
   {
-    name: '',
+    name: 'Luganda',
     id: 'lg'
   },
   {
-    name: '',
+    name: 'Luxembourgish',
     id: 'lb'
   },
   {
-    name: '',
+    name: 'Malay',
     id: 'ms'
   },
   {
-    name: '',
+    name: 'Macedonian',
     id: 'mk'
   },
   {
-    name: '',
+    name: 'Maithili',
     id: 'mai'
   },
   {
-    name: '',
+    name: 'Malagasy',
     id: 'mg'
   },
   {
-    name: '',
+    name: 'Malayalam',
     id: 'ml'
   },
   {
-    name: '',
+    name: 'Maltese',
     id: 'mt'
   },
   {
-    name: '',
+    name: 'Maori',
     id: 'mi'
   },
   {
-    name: '',
+    name: 'Marathi',
     id: 'mr'
   },
   {
-    name: '',
-    id: 'mni'
+    name: 'Meiteilon (Manipuri)',
+    id: 'mni-Mtei'
   },
+  {
+    name: 'Mizo',
+    id: 'lus'
+  },
+  {
+    name: 'Mongolian',
+    id: 'mn'
+  },
+  {
+    name: 'Burmese',
+    id: 'my'
+  },
+  {
+    name: 'Norwegian',
+    id: 'no'
+  },
+  {
+    name: 'Nepali',
+    id: 'ne'
+  },
+  {
+    name: 'Russian',
+    id: 'ru'
+  },
+  {
+    name: 'Japanese',
+    id: 'ja'
+  },
+  {
+    name: 'Odia',
+    id: 'or'
+  },
+  {
+    name: 'Oromo',
+    id: 'om'
+  },
+  {
+    name: 'Pashto',
+    id: 'ps'
+  },
+  {
+    name: 'Sanskrit',
+    id: 'sa'
+  },
+  {
+    name: 'French',
+    id: 'fr'
+  },
+  {
+    name: 'Finnish',
+    id: 'fi'
+  },
+  {
+    name: 'Punjabi',
+    id: 'pa'
+  },
+  {
+    name: 'Quechua',
+    id: 'qu'
+  },
+  {
+    name: 'Esperanto',
+    id: 'eo'
+  },
+  {
+    name: 'Romanian',
+    id: 'ro'
+  },
+  {
+    name: 'Samoa',
+    id: 'sm'
+  },
+  {
+    name: 'Czech',
+    id: 'cs'
+  },
+  {
+    name: 'Northern Sotho',
+    id: 'nso'
+  },
+  {
+    name: 'Serbian (Cyrillic)',
+    id: 'sr'
+  },
+  {
+    name: 'Southern Sotho',
+    id: 'st'
+  },
+  {
+    name: 'Shona',
+    id: 'sn'
+  },
+  {
+    name: 'Sindhi',
+    id: 'sd'
+  },
+  {
+    name: 'Sinhala',
+    id: 'si'
+  },
+  {
+    name: 'Slovak',
+    id: 'sk'
+  },
+  {
+    name: 'Slovenian',
+    id: 'sl'
+  },
+  {
+    name: 'Somali',
+    id: 'so'
+  },
+  {
+    name: 'Sundanese',
+    id: 'su'
+  },
+  {
+    name: 'Swahili',
+    id: 'sw'
+  },
+  {
+    name: 'Tajik',
+    id: 'tg'
+  },
+  {
+    name: 'Tamil',
+    id: 'ta'
+  },
+  {
+    name: 'Tatar',
+    id: 'tt'
+  },
+  {
+    name: 'Spanish',
+    id: 'es'
+  },
+  {
+    name: 'Telugu',
+    id: 'te'
+  },
+  {
+    name: 'Thai',
+    id: 'th'
+  },
+  {
+    name: 'Turkish',
+    id: 'tr'
+  },
+  {
+    name: 'Swedish',
+    id: 'sv'
+  },
+  {
+    name: 'Tigrinya',
+    id: 'ti'
+  },
+  {
+    name: 'Chinese Simplified',
+    id: 'zh-CN'
+  },
+  {
+    name: 'Chinese Traditional',
+    id: 'zh-TW'
+  },
+  {
+    name: 'Tsonga',
+    id: 'ts'
+  },
+  {
+    name: 'Turkmen',
+    id: 'tk'
+  },
+  {
+    name: 'Akan',
+    id: 'ak'
+  },
+  {
+    name: 'Ukrainian',
+    id: 'uk'
+  },
+  {
+    name: 'Urdu',
+    id: 'ur'
+  },
+  {
+    name: 'Uyghur',
+    id: 'ug'
+  },
+  {
+    name: 'Uzbek',
+    id: 'uz'
+  },
+  {
+    name: 'Vietnamese',
+    id: 'vi'
+  },
+  {
+    name: 'Welsh',
+    id: 'cy'
+  },
+  {
+    name: 'Italian',
+    id: 'it'
+  },
+  {
+    name: 'Yiddish',
+    id: 'yi'
+  },
+  {
+    name: 'Yoruba',
+    id: 'yo'
+  },
+  {
+    name: 'Zulu',
+    id: 'zu'
+  }
 ]

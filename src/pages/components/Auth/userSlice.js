@@ -5,39 +5,34 @@ import StorageKeys from '../../../constants/storage-keys.js'
 export const register = createAsyncThunk(
   'users/register',
   async (payload) => {
-    const data = await userApi.register(payload);
+    const response = await userApi.register(payload);
     
     //save data to local storage
     // localStorage.setItem(StorageKeys.TOKEN, data.jwt);
-    localStorage.setItem(StorageKeys.USER, JSON.stringify(data.data));
+    if(response.code === '01') {
+      localStorage.setItem(StorageKeys.USER, JSON.stringify(response.data.userInfo));
+    }
 
     //return user data
-    return data;
+    return response;
   }
 )
 
 export const login = createAsyncThunk(
   'users/login',
   async (payload) => {
-    const data = await userApi.login(payload);
-    
+    const response = await userApi.login(payload);
     //save data to local storage
-    // localStorage.setItem(StorageKeys.TOKEN, data.jwt);
-    localStorage.setItem(StorageKeys.AUTH, JSON.stringify(data.data));
-    const auth = JSON.parse(localStorage.getItem(StorageKeys.AUTH));
-    if (auth) {
-      auth.roleName === 'ADMIN' &&
-      localStorage.setItem(StorageKeys.ADMIN, JSON.stringify(data.data)); 
-      auth.roleName === 'USER' &&
-      localStorage.setItem(StorageKeys.USER, JSON.stringify(data.data));
-    } 
-
-    // if (data.data.roleName === 'ADMIN') {
-    //   localStorage.setItem(StorageKeys.ADMIN, JSON.stringify(data.data));
-    // }
+    if(response.code === '01') {
+      localStorage.setItem(StorageKeys.TOKEN, response.data.accessToken);
+      response.data.userInfo.roleName === 'ADMIN' &&
+      localStorage.setItem(StorageKeys.ADMIN, JSON.stringify(response.data.userInfo)); 
+      response.data.userInfo.roleName === 'USER' &&
+      localStorage.setItem(StorageKeys.USER, JSON.stringify(response.data.userInfo));
+    }
 
     //return user data
-    return data;
+    return response;
   }
 )
 
@@ -73,13 +68,13 @@ const userSlice = createSlice({
       }
     },
     [login.fulfilled]: (state, action) => {
-      
-      if (action.payload.data?.roleName === 'USER') {
-        state.user = action.payload.data.id
+      console.log(action);
+      if (action.payload.data?.userInfo.roleName === 'USER') {
+        state.user = action.payload.data.userInfo.id
       }
 
-      if (action.payload.data?.roleName === 'ADMIN') {
-        state.admin = action.payload.data.id
+      if (action.payload.data?.userInfo.roleName === 'ADMIN') {
+        state.admin = action.payload.userInfo.data.id
       }
     },
   }

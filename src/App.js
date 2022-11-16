@@ -19,7 +19,7 @@ function App() {
   const isLoggedInUser = useSelector(state => state.user.user);
 
   return (
-    <Router>
+    <Router basename="/">
       <Routes>
         <Route element={<CommonLayout />}>
           <Route path='/' element={<HomePage />} />

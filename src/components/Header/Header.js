@@ -13,6 +13,7 @@ let cx = classNames.bind(styles);
 
 const Header = () => {
   const loggedInUser = useSelector(state => state.user.user);
+  
   const isLoggedInUser = !!loggedInUser;
 
   const { t, i18n } = useTranslation();

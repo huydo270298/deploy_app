@@ -5,6 +5,7 @@ const axiosClient = axios.create({
   baseURL: `http://${StorageKeys.PATH}`,
   headers: {
     'Content-Type': 'application/json',
+    'Authorization': `Bearer ${localStorage.getItem(StorageKeys.TOKEN) || null}`
   },
 });
 

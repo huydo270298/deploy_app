@@ -72,7 +72,7 @@ const HomePage = () => {
   useEffect(() => {
     countReward.current = setInterval(() => {
       setNum((countdown) => countdown + 1);
-    }, 200);
+    }, 4);
 
     num > 10000000000000 && clearTimeout(countReward.current);
     num > 10000000000000 && setNum(0);
@@ -96,7 +96,10 @@ const HomePage = () => {
         </div>
         <div className={cx('reward')}>
           <CupIcon className={cx('icon_cup')} />
-          {num} USD
+          <span className={cx('num')}>
+            {String(num).padStart(13, 0)} 
+          </span>
+          USD
           <button className={cx('btn_help')} onClick={handleOpenHelpModal}>
             <HelpIcon className={cx('icon_help')} />
           </button>

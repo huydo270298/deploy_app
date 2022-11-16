@@ -29,6 +29,7 @@
     }
 
     .logo {
+      margin-right: auto;
       @media (max-width: 768px) {
         order: 1;
       }
@@ -40,6 +41,8 @@
       }
       
       &.type {
+        margin-left: auto;
+
         @media (max-width: 768px) {
           order: 2;
         }
@@ -47,7 +50,13 @@
     }
 
     .btn_lang {
-      position: static;
+      position: relative;
+      top: 0;
+      right: 0;
+
+      @media (max-width: 768px) {
+        order: 4;
+      }
     }
   }
 }

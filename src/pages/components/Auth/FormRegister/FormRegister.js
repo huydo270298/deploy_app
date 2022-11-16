@@ -13,7 +13,6 @@ const FormRegister = (props) => {
   const { t } = useTranslation();
 
   const [showPass, setShowPass] = useState(false);
-  const [showConfPass, setShowConfPass] = useState(false);
   const { message } = props;
 
   const {
@@ -37,10 +36,6 @@ const FormRegister = (props) => {
 
   const handleClickToggleShowPass = () => {
     setShowPass(!showPass)
-  }
-
-  const handleClickToggleShowConfPass = () => {
-    setShowConfPass(!showConfPass)
   }
 
   const password = useRef();
@@ -88,26 +83,6 @@ const FormRegister = (props) => {
             {showPass ? <EyeShowIcon /> : <EyeHideIcon />}
             <i className={cx('icon_eye')}></i>
           </button>
-        </div>
-        <div className={cx('form', errors.conf_password && 'error')}>
-          <label htmlFor="conf_password" className={cx('label')}>
-          {t("C_PASSWORD")}
-          </label>
-          <input
-            id="conf_password"
-            type={showConfPass ? "text" : "password"}
-            className={cx('input')}
-            spellCheck={false}
-            autoComplete='on'
-            ref={password}
-            {...register('conf_password', {
-              validate: value => value === password.current || "The passwords do not match"
-            })}
-          />
-          <button type='button' className={cx('btn_toggle')} onClick={handleClickToggleShowConfPass}>
-            {showConfPass ? <EyeShowIcon /> : <EyeHideIcon />}
-          </button>
-          {errors.conf_password && <p className={cx('message')}>{errors.conf_password.message}</p>}
         </div>
         {message && <p className={cx('message_submit')}>{message}</p>}
         <button type="submit" className={cx('submit')}>

@@ -3,6 +3,6 @@ const StorageKeys = {
   AUTH: 'author',
   USER: 'user',
   ADMIN: 'admin',
-  TOKEN: 'access_token'
+  TOKEN: 'accessToken'
 }
 export default StorageKeys

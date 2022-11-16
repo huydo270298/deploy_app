@@ -78,7 +78,6 @@
   justify-content: flex-end;
   gap: 7px;
   min-width: 132px;
-  margin-bottom: 2.963%;
   padding: 11px 8px 9px 17px;
   font-size: 16px;
   font-weight: 700;
@@ -90,7 +89,6 @@
     min-width: 106px;
     font-size: 14px;
     gap: 10px;
-    margin-bottom: 16px;
     padding: 5px 10px;
   }
 
@@ -112,7 +110,10 @@
 }
 
 .progress {
-  width: 100%;
+  position: absolute;
+  bottom: -3px;
+  left: -1px;
+  right: -1px;
   font-size: 0;
 
   .input[type="range"] {
