@@ -13,8 +13,8 @@ let cx = classNames.bind(styles);
 
 const VideoSection = ({video}) => {
   const dispatch = useDispatch();
-  const idUser = useSelector(state => state.user.user)
-  const idVideo = useSelector(state=> state.video.videoId) || video.length > 0 ? video[0]?.id : null;
+  const idUser = useSelector(state => state.user.user);
+  const idVideo = useSelector(state=> state.video.videoId) || video[0]?.id;
   
   const countSkipRef = useRef(null);
   const countAlertRef = useRef(null);
@@ -25,10 +25,9 @@ const VideoSection = ({video}) => {
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
   const [resultSpin, setResultSpin] = useState(false)
-  const [videoPlay, setvideoPlay] = useState(idVideo)
+  const [videoPlay, setvideoPlay] = useState()
 
   const handleSpin = () => {
-
     idUser && spinApi.getResult(idUser)
       .then((response) => {
         if (response.data?.result) {
@@ -48,6 +47,11 @@ const VideoSection = ({video}) => {
   }, [idUser])
 
   useEffect(() => {
+    setvideoPlay(idVideo);
+    
+  },[idVideo])
+
+  useEffect(() => {
     try {
       dispatch(play(idVideo));
 
@@ -60,11 +64,6 @@ const VideoSection = ({video}) => {
   useEffect(() => {
     listBookmark.includes(idVideo) ? setBookmark(true) : setBookmark(false)
   }, [idVideo, listBookmark])
-
-  useEffect(() => {
-    setvideoPlay(idVideo);
-    
-  }, [idVideo])
 
   const handleCountdownSkip = () => {
     countSkipRef.current = setInterval(() => {
@@ -116,6 +115,8 @@ const VideoSection = ({video}) => {
     })
   }
 
+  
+
   const handlePlay = () => {
     setAutoPlay(true);
     videoElement.current.play();
@@ -141,19 +142,19 @@ const VideoSection = ({video}) => {
   return (
     <div className={cx('wrapper')}>
       <div className={cx('video')}>
-        <video
+        {videoPlay && <video
           muted={false}
           src={`http://${StorageKeys.PATH}/api/v1/video/stream/${videoPlay}.mp4`}
           autoPlay={autoPlay}
           ref={videoElement}
           autopictureinpicture='true'
-          preload='auto'
+          // preload='auto'
           className={cx('box')}
           onPlaying={handleStart}
           onDurationChange={(e) => { setDuration(e.target.duration) }}
           onTimeUpdate={(e) => { setPrograssValue(e.target.currentTime) }}
           onEnded={handleSpin}
-        />
+        />}
         <Controller
           handlePrev={handlePrev}
           handleNext={handleNext}

@@ -108,7 +108,7 @@ const FormUpload = () => {
       formData.append("video", validFiles[i]);
       formData.append("videoName", valueTitleVideo.current.value);
       formData.append("videoDescription", valueLinkVideo.current.value);
-      formData.append("idCategory", '636dd87278b7af19bb87a26b');
+      formData.append("idCategory", '63763ea761ea7a42deba7fad');
       axios
         .post(`http://${StorageKeys.PATH}/api/v1/video/upload` , formData,
         {

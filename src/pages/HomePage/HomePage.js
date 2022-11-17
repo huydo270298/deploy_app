@@ -53,7 +53,7 @@ const HomePage = () => {
     
     videoApi.getCategoryList()
       .then((reponse) => {
-        return reponse.data[0].id
+        return reponse.data[0]?.id
       })
       .then((id) => {
         return videoApi.getCategoryItem(id)

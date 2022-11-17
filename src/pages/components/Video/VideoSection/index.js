@@ -1,1 +1,2 @@
-export { default } from './VideoSection';
+import VideoSection from './VideoSection';
+export default VideoSection;

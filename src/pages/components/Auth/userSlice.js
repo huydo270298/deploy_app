@@ -10,6 +10,7 @@ export const register = createAsyncThunk(
     //save data to local storage
     // localStorage.setItem(StorageKeys.TOKEN, data.jwt);
     if(response.code === '01') {
+      localStorage.setItem(StorageKeys.TOKEN, response.data.accessToken);
       localStorage.setItem(StorageKeys.USER, JSON.stringify(response.data.userInfo));
     }
 
