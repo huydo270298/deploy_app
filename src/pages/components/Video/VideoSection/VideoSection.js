@@ -14,8 +14,8 @@ let cx = classNames.bind(styles);
 const VideoSection = ({video}) => {
   const dispatch = useDispatch();
   const idUser = useSelector(state => state.user.user)
-  const idVideo = useSelector(state=> state.video.videoId) || video[0]
-
+  const idVideo = useSelector(state=> state.video.videoId) || video[0].id
+  
   const countSkipRef = useRef(null);
   const countAlertRef = useRef(null);
   const [autoPlay, setAutoPlay] = useState(false)
@@ -40,7 +40,6 @@ const VideoSection = ({video}) => {
   useEffect(() => {
     idUser && userApi.get(idUser)
       .then((res) => {
-        console.log(res);
         if (res.code === '01') {
           setListBookmark(res.data.videoSaved)
         }
@@ -48,23 +47,24 @@ const VideoSection = ({video}) => {
   
   }, [idUser])
 
-  // useEffect(() => {
-  //   try {
-  //     dispatch(play(idVideo));
+  useEffect(() => {
+    try {
+      dispatch(play(idVideo));
 
-  //   } catch (error) {
-  //     console.log(error)
-  //   }
+    } catch (error) {
+      console.log(error)
+    }
   
-  // }, [dispatch, idVideo])
+  }, [dispatch, idVideo])
 
   useEffect(() => {
     listBookmark.includes(idVideo) ? setBookmark(true) : setBookmark(false)
   }, [idVideo, listBookmark])
 
-  // useEffect(() => {
-  //   setvideoPlay(idVideo)
-  // }, [idVideo])
+  useEffect(() => {
+    setvideoPlay(idVideo);
+    
+  }, [idVideo])
 
   const handleCountdownSkip = () => {
     countSkipRef.current = setInterval(() => {
@@ -97,21 +97,21 @@ const VideoSection = ({video}) => {
 
   const handlePrev = () => {
     video.forEach((item, index) => {
-      if(item === idVideo && index > 0) {
+      if(item.id === idVideo && index > 0) {
         clearInterval(countSkipRef.current);
         setCountdownSkip(5);
-        dispatch(play(video[index-1]))
+        dispatch(play(video[index-1].id))
       } 
     })
   }
 
   const handleNext = () => {
     video.forEach((item, index) => {
-      if(item === idVideo && index < video.length - 1) {
+      if(item.id === idVideo && index < video.length - 1) {
         clearInterval(countSkipRef.current);
         setCountdownSkip(5);
         handleSpin()
-        dispatch(play(video[index+1]))
+        dispatch(play(video[index+1].id))
       } 
     })
   }
@@ -135,7 +135,7 @@ const VideoSection = ({video}) => {
   }
   
   useEffect(() => {
-    localStorage.getItem('idVideo', idVideo || video[0])
+    localStorage.getItem('idVideo', idVideo || video[0].id)
   })
 
   
@@ -148,6 +148,8 @@ const VideoSection = ({video}) => {
           src={`http://${StorageKeys.PATH}/api/v1/video/stream/${videoPlay}.mp4`}
           autoPlay={autoPlay}
           ref={videoElement}
+          autopictureinpicture='true'
+          preload='auto'
           className={cx('box')}
           onPlaying={handleStart}
           onDurationChange={(e) => { setDuration(e.target.duration) }}
@@ -168,6 +170,17 @@ const VideoSection = ({video}) => {
           countdown={countdownSkip}
         />
         {resultSpin && <p className={cx('alert')}>Sorry! You have not won the prize yet</p>}
+        {video.map((item, index) => {
+          if(item.id === videoPlay) {
+            return (
+            <div key={index} className={cx('link_area')}>
+              <a href={`https://${item.link}`} className={cx('link')}>Visit advertiser link</a>
+            </div>
+            )
+          } else {
+            return '';
+          }
+        })}
       </div >
     </div>
   );

@@ -59,23 +59,25 @@ const HomePage = () => {
         return videoApi.getCategoryItem(id)
       })
       .then((reponse) => {
-        const listId = reponse.data.map((item) => {
-          return item.id
+        const list = reponse.data.map((item) => {
+          return {
+            link: item.videoDescription,
+            id: item.id,
+          }
         })
-        setVideo(listId);
+        setVideo(list);
       })
   }, [])
 
   const countReward = useRef(null);
 
-  const [num, setNum] = useState(0);
+  const [num, setNum] = useState(10000000000000);
   useEffect(() => {
     countReward.current = setInterval(() => {
-      setNum((countdown) => countdown + 2);
+      setNum((countdown) => countdown + 100);
     }, 1);
 
-    num > 10000000000000 && clearTimeout(countReward.current);
-    num > 10000000000000 && setNum(0);
+    num > 99999999999999 && clearTimeout(countReward.current);
 
     return () => {
       clearTimeout(countReward.current);
@@ -85,7 +87,7 @@ const HomePage = () => {
   return (
     <>
       <div className={cx('wrapper')}>
-        <VideoSection video={video} />
+        {video.length > 1 && <VideoSection video={video} />}
         <div className={cx('group')}>
           <button type='button' className={cx('btn', 'get_spin')} onClick={handleOpenSpinModal}>{t("GET_MORE")}</button>
           <button type='button' className={cx('btn', 'push')} onClick={handleOpenPushModal} >{t("PUSH_ADS")}</button>
@@ -97,9 +99,9 @@ const HomePage = () => {
         <div className={cx('reward')}>
           <CupIcon className={cx('icon_cup')} />
           <span className={cx('num')}>
-            {String(num).padStart(14, 0)} 
+            {num} 
           </span>
-          USD
+            USD
           <button className={cx('btn_help')} onClick={handleOpenHelpModal}>
             <HelpIcon className={cx('icon_help')} />
           </button>

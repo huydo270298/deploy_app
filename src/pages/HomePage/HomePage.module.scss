@@ -52,6 +52,7 @@
 }
 
 .reward {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +61,7 @@
   color: #FF9800;
   font-size: 32px;
   font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
   background: linear-gradient(90deg, rgba(255, 244, 197, 0) 13.76%, #FFF4C5 38.59%, rgba(255, 244, 197, 0) 85.84%);
   border-radius: 2px;
 
@@ -79,11 +81,14 @@
 }
 
 .btn_help {
-  margin-left: 28px;
+  margin-left: 16px;
   font-size: 0;
   background: transparent;
 
   @media (max-width: 768px) {
+    // position: absolute;
+    // top: -14px;
+    // right: 16px;
     margin-left: 6px;
   }
 }
@@ -106,9 +111,9 @@
 
 .num {
   display: block;
-  width: 305px;
+  width: 262px;
 
   @media (max-width: 768px) {
-    width: 230px;
+    width: 198px;
   }
 }

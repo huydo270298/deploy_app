@@ -13,7 +13,8 @@
     }
 
     @media (max-width: 530px) {
-        // order: 5;
+        width: 100%;
+        grid-area: 2 / 1 / 3 / 4;
     }
 }
 
