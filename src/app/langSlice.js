@@ -17,7 +17,7 @@ const langReducer = createSlice({
   reducers: {},
   extraReducers: {
     [change.fulfilled]: (state, action) => {
-      state.videoId = action.payload
+      state.current = action.payload
     },
   }
 });

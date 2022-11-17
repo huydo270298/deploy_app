@@ -100,9 +100,6 @@ const FormUpload = () => {
 
   const handleSubmit = async (e) => {
     let token = localStorage.getItem(StorageKeys.TOKEN);
-    let axiosConfig = {
-      
-    };
     e.preventDefault();
     setShowProgress(true);
     uploadRef.current.innerHTML = "File Uploading...";

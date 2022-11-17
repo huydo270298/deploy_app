@@ -1,13 +1,14 @@
 import classNames from 'classnames/bind';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useTranslation } from "react-i18next";
 
 import styles from './Header.module.scss';
 import { LangIcon, SaveIcon, UserIcon } from '../../assets/Icons';
 import Countdown from '../../pages/components/Countdown';
 import { Lang } from './Lang'
+import { change } from '../../app/langSlice';
 
 let cx = classNames.bind(styles);
 
@@ -17,9 +18,11 @@ const Header = () => {
   const isLoggedInUser = !!loggedInUser;
 
   const { t, i18n } = useTranslation();
-
+  const dispatch = useDispatch();
+  
   const handleChangeLang = (lang) => {
-    i18n.changeLanguage(lang)
+    i18n.changeLanguage(lang);
+    dispatch(change(lang))
   }
   
   const [openOption, setOpenOption] = useState(false)

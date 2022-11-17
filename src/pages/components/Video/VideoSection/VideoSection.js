@@ -14,7 +14,7 @@ let cx = classNames.bind(styles);
 const VideoSection = ({video}) => {
   const dispatch = useDispatch();
   const idUser = useSelector(state => state.user.user)
-  const idVideo = useSelector(state=> state.video.videoId) || video[0].id
+  const idVideo = useSelector(state=> state.video.videoId) || video.length > 0 ? video[0]?.id : null;
   
   const countSkipRef = useRef(null);
   const countAlertRef = useRef(null);
@@ -135,15 +135,13 @@ const VideoSection = ({video}) => {
   }
   
   useEffect(() => {
-    localStorage.getItem('idVideo', idVideo || video[0].id)
+    localStorage.getItem('idVideo', idVideo || video[0]?.id)
   })
-
-  
   
   return (
     <div className={cx('wrapper')}>
       <div className={cx('video')}>
-        {videoPlay && <video
+        <video
           muted={false}
           src={`http://${StorageKeys.PATH}/api/v1/video/stream/${videoPlay}.mp4`}
           autoPlay={autoPlay}
@@ -155,7 +153,7 @@ const VideoSection = ({video}) => {
           onDurationChange={(e) => { setDuration(e.target.duration) }}
           onTimeUpdate={(e) => { setPrograssValue(e.target.currentTime) }}
           onEnded={handleSpin}
-        />}
+        />
         <Controller
           handlePrev={handlePrev}
           handleNext={handleNext}

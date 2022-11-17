@@ -74,7 +74,7 @@ const HomePage = () => {
   const [num, setNum] = useState(10000000000000);
   useEffect(() => {
     countReward.current = setInterval(() => {
-      setNum((countdown) => countdown + 100);
+      setNum((countdown) => countdown + 9876 );
     }, 1);
 
     num > 99999999999999 && clearTimeout(countReward.current);
@@ -87,7 +87,7 @@ const HomePage = () => {
   return (
     <>
       <div className={cx('wrapper')}>
-        {video.length > 1 && <VideoSection video={video} />}
+        <VideoSection video={video} />
         <div className={cx('group')}>
           <button type='button' className={cx('btn', 'get_spin')} onClick={handleOpenSpinModal}>{t("GET_MORE")}</button>
           <button type='button' className={cx('btn', 'push')} onClick={handleOpenPushModal} >{t("PUSH_ADS")}</button>

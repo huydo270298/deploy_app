@@ -4,7 +4,6 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import userApi from '../../api/userApi';
-import videoApi from '../../api/videoApi'
 import { play } from '../../app/videoSlice';
 import Pagination from '../../components/Pagination';
 import StorageKeys from '../../constants/storage-keys';
