@@ -38,6 +38,7 @@ function App() {
           <Route path="/admin/dashboard" element={<AdminPage />} >
             <Route index element={<ListVideo />} />
             <Route path="/admin/dashboard/upload" element={<Upload />} />
+            <Route path="/admin/dashboard/update" element={<Upload />} />
           </Route>
           <Route path="/admin/login" element={<Login />} />
         </Route>

@@ -26,9 +26,7 @@ const FormUser = ({ onSubmit, info }) => {
   const [name, setName] = useState('');
   const [sex, setSex] = useState('');
   const [birthday, setBirthday] = useState('');
-  const [arrCountry, setArrCountry] = useState([])
   const [country, setCountry] = useState('');
-  const [arrCities, setArrCities] = useState( )
   const [city, setCity] = useState( '');
   const [address, setAddress] = useState('');
   const [phone, setPhone] = useState('');
@@ -70,14 +68,6 @@ const FormUser = ({ onSubmit, info }) => {
     setSex(value)
   }
 
-  const handleChangeOptionCountry = (value) => {
-    setCountry(value)
-  }
-
-  const handleChangeOptionCities = (value) => {
-    setCity(value)
-  }
-
   // get add all Country
   useEffect(() => {
     axios({
@@ -87,12 +77,6 @@ const FormUser = ({ onSubmit, info }) => {
         'Content-Type': 'application/json',
       }
     })
-      .then((response) => {
-        setArrCountry(response.data.data);
-        setArrCities(response.data.data.filter((item) => {
-          return item.country === country
-        })[0]?.cities)
-      })
       .catch(function (error) {
         console.log(error);
       });
@@ -110,6 +94,7 @@ const FormUser = ({ onSubmit, info }) => {
             type="text"
             className={cx('input')}
             defaultValue={name}
+            spellCheck={false}
             onChange={(e) => setName(e.target.value)}
           />
         </div>
@@ -131,22 +116,37 @@ const FormUser = ({ onSubmit, info }) => {
             placeholder="DD/MM/YY"
             className={cx('input')}
             defaultValue={birthday}
+            spellCheck={false}
             onChange={(e) => setBirthday(e.target.value)}
           />
         </div>
       </div>
       <div className={cx('line')}>
         <div className={cx('form')}>
-          <div htmlFor="address" className={cx('label')}>
+          <label htmlFor="country" className={cx('label')}>
             {t("COUNTRY")}
-          </div>
-          <Select currentValue={country} arrayData={arrCountry} onChange={handleChangeOptionCountry} />
+          </label>
+          <input
+            id="country"
+            type="text"
+            className={cx('input')}
+            defaultValue={country || 'Vietnamese'}
+            spellCheck={false}
+            onChange={(e) => setCountry(e.target.value)}
+          />
         </div>
         <div className={cx('form')}>
-          <div htmlFor="address" className={cx('label')}>
+          <label htmlFor="city" className={cx('label')}>
             {t("CITY")}
-          </div>
-          <Select currentValue={city} nation={country} arrayData={arrCities} onChange={handleChangeOptionCities} />
+          </label>
+          <input
+            id="city"
+            type="text"
+            className={cx('input')}
+            defaultValue={city || 'Hanoi'}
+            spellCheck={false}
+            onChange={(e) => setCity(e.target.value)}
+          />
         </div>
       </div>
       <div className={cx('line')}>
@@ -159,6 +159,7 @@ const FormUser = ({ onSubmit, info }) => {
             type="text"
             defaultValue={address}
             className={cx('input')}
+            spellCheck={false}
             onChange={(e) => setAddress(e.target.value)}
           />
         </div>
@@ -185,6 +186,7 @@ const FormUser = ({ onSubmit, info }) => {
             type="text"
             defaultValue={link}
             className={cx('input')}
+            spellCheck={false}
             onChange={(e) => setLink(e.target.value)}
           />
         </div>

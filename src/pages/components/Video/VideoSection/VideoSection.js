@@ -25,7 +25,6 @@ const VideoSection = ({video}) => {
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
   const [resultSpin, setResultSpin] = useState(false)
-  const [videoPlay, setvideoPlay] = useState()
 
   const handleSpin = () => {
     idUser && spinApi.getResult(idUser)
@@ -44,22 +43,7 @@ const VideoSection = ({video}) => {
         }
       })
   
-  }, [idUser])
-
-  useEffect(() => {
-    setvideoPlay(idVideo);
-    
-  },[idVideo])
-
-  useEffect(() => {
-    try {
-      dispatch(play(idVideo));
-
-    } catch (error) {
-      console.log(error)
-    }
-  
-  }, [dispatch, idVideo])
+  }, [dispatch, idUser])
 
   useEffect(() => {
     listBookmark.includes(idVideo) ? setBookmark(true) : setBookmark(false)
@@ -82,10 +66,17 @@ const VideoSection = ({video}) => {
   }
 
   const handleClickBookMark = () => {
-    idUser && userApi.addVideo(idUser, idVideo)
+    idUser && !bookmark && userApi.addVideo(idUser, idVideo)
       .then((res) => {
         if (res.code === '01') {
-          setBookmark(!bookmark)
+          setBookmark(true)
+        }
+      })
+
+    idUser && bookmark && userApi.removeVideo(idUser, idVideo)
+      .then((res) => {
+        if (res.code === '01') {
+          setBookmark(false)
         }
       })
   }
@@ -142,9 +133,9 @@ const VideoSection = ({video}) => {
   return (
     <div className={cx('wrapper')}>
       <div className={cx('video')}>
-        {videoPlay && <video
+        {idVideo && <video
           muted={false}
-          src={`http://${StorageKeys.PATH}/api/v1/video/stream/${videoPlay}.mp4`}
+          src={`http://${StorageKeys.PATH}/api/v1/video/stream/${idVideo}.mp4`}
           autoPlay={autoPlay}
           ref={videoElement}
           autopictureinpicture='true'
@@ -170,7 +161,7 @@ const VideoSection = ({video}) => {
         />
         {resultSpin && <p className={cx('alert')}>Sorry! You have not won the prize yet</p>}
         {video.map((item, index) => {
-          if(item.id === videoPlay) {
+          if(item.id === idVideo) {
             return (
             <div key={index} className={cx('link_area')}>
               <a href={`https://${item.link}`} className={cx('link')}>Visit advertiser link</a>

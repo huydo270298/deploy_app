@@ -2,7 +2,8 @@ import classNames from 'classnames/bind';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import qs from 'qs';
 import userApi from '../../api/userApi';
 import { play } from '../../app/videoSlice';
 import Pagination from '../../components/Pagination';
@@ -13,25 +14,37 @@ let cx = classNames.bind(styles);
 
 const SavePage = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const userId = useSelector(state => state.user.user)
+  const queryParams = qs.parse(location.search.slice(1, location.search.length));
 
+  const [pagination, setPagination] = useState({})
   const [listVideo, setListVideo] = useState([])
-  const [pagination, setPagination] = useState({
-    page: 0,
-    size: 0,
-    total: 0,
-  })
+  const [page, setPage] = useState(() => ({
+    ...queryParams,
+    page: Number.parseInt(queryParams.page) || 1,
+    size: Number.parseInt(queryParams.size) || 12,
+  }))
+
+  useEffect(() => {
+    navigate({
+      pathname: location.pathname,
+      search: qs.stringify(page)
+    });
+  }, [navigate, location.pathname, page])
 
   // get add save videos
   useEffect(() => {
      userApi.get(userId).then((res) => {
+      setPagination({
+        page: res.page,
+        size: res.size,
+        total: res.total,
+      });
       setListVideo(res.data.videoSaved);
      })
   }, [userId])
-
-  const handlePagination = () => {
-    // setToggleModal(false)
-  }
 
   const dispatch = useDispatch();
   const handlePlayVideo = (video) => {
@@ -42,6 +55,16 @@ const SavePage = () => {
       console.log(error)
     }
   }
+
+  const handlePagination = (page) => {
+    setPage((prevPage) => ({
+      ...prevPage,
+      page: page,
+    }))
+  }
+
+  let total = Math.ceil(pagination.total / pagination.size);
+
   return (
     <div className={cx('wrapper')}>
       <h2 className={cx('title')}>{t("SAVED_VIDEOS")}</h2>
@@ -49,7 +72,7 @@ const SavePage = () => {
         <ul className={cx('list')}>
           {listVideo.map((video,index) => (
             <li key={index} className={cx('item')}>
-              <Link to={`/`} className={cx('link')} onClick={() => handlePlayVideo(video)}>
+              <Link to={'/'} className={cx('link')} onClick={() => handlePlayVideo(video)}>
                 <div className={cx('img')}>
                   <img src={`http://${StorageKeys.PATH}/api/v1/video/thumbnail/${video}.png`} alt='' />
                 </div>
@@ -58,7 +81,7 @@ const SavePage = () => {
             </li>
           ))}
         </ul>
-        {pagination.page > 1 && <Pagination page={pagination.page} totalPages={pagination.total} handlePagination={handlePagination } />}
+        {pagination.total > 1 && <Pagination page={pagination.page} totalPages={total} handlePagination={handlePagination } />}
       </div>
     </div>
   );

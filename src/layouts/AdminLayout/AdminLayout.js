@@ -11,23 +11,20 @@ const AdminLayout = () => {
   const location = useLocation()
   
   const admin = useSelector(state => state.user.admin)
-
   useEffect(()=> {
     if(!admin) {
-      return navigate("/admin/login")
+      navigate("/admin/login")
+    } else if(location.pathname === '/admin') {
+      navigate("/admin/dashboard")
     }
-  },[admin, navigate])
-
-  useEffect(()=> {
-    if(location.pathname === '/admin') {
-      return navigate("/admin/dashboard")
-    }
-  },[navigate, location.pathname])
+  },[admin, navigate, location.pathname])
 
   return (
     <div className={cx('wrapper')}>
       <header className={cx('header')}>
-        <h1 className={cx('logo')}><Link to='/' className={cx('link')} ></Link></h1>
+        <div className={cx('inner')}>
+          <h1 className={cx('logo')}><Link to='/' className={cx('link')} ></Link></h1>
+        </div>
       </header>
       <main className={cx('container')}>
         <div className={cx('inner')}>

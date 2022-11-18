@@ -27,9 +27,9 @@ const videoApi = {
     return axiosClient.get(url, { id })
   },
 
-  delete(id) {
+  delete(id, configHeader) {
     const url = `/api/v1/video/delete/${id}`;
-    return axiosClient.delete(url, { id })
+    return axiosClient.delete(url)
   },
 
   upload(data) {
