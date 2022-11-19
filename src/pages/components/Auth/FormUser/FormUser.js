@@ -12,16 +12,6 @@ const FormUser = ({ onSubmit, info }) => {
   const { t } = useTranslation();
 
   const arrSex = ['Male', 'Female']
-  const defaultValues = {
-    id: '',
-    sex: '',
-    dateOfBirth: '',
-    country: '',
-    city: '',
-    address: '',
-    phoneNumber: '',
-    link: ''
-  };
 
   const [name, setName] = useState('');
   const [sex, setSex] = useState('');
@@ -46,7 +36,7 @@ const FormUser = ({ onSubmit, info }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const values = {
-      ...defaultValues,
+      // ...info,
       fullName: name,
       sex: sex,
       dateOfBirth: birthday,
@@ -57,7 +47,6 @@ const FormUser = ({ onSubmit, info }) => {
       link: link,
       id: info.id
     }
-    defaultValues.username = name;
     
     if (onSubmit) {
       await onSubmit(values);

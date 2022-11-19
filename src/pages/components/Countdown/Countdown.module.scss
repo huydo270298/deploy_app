@@ -1,14 +1,15 @@
 .wrapper {
     display: flex;
     align-items: center;
-    gap: 12px;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
+    margin-left: 16px;
 
     @media (max-width: 768px) {
         order: 2;
         min-width: 219px;
+        margin-left: 0;
         font-size: 16px;
     }
 
@@ -19,5 +20,6 @@
 }
 
 .num {
+    margin-left: 12px;
     color: #FF7A00;
 }

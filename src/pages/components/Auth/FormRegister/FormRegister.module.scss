@@ -19,10 +19,13 @@
   flex-direction: column;
   text-align: left;
   flex: 1;
-  gap: 9px;
 
   &+.form {
     margin-top: 39px;
+  }
+
+  .input {
+    margin-top: 9px;
   }
 }
 

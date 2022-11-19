@@ -24,8 +24,8 @@ export const login = createAsyncThunk(
   async (payload) => {
     const response = await userApi.login(payload);
     //save data to local storage
-    localStorage.setItem(StorageKeys.TOKEN, response.data.accessToken);
     if(response.code === '01') {
+      localStorage.setItem(StorageKeys.TOKEN, response.data.accessToken);
       if(response.data.userInfo.roleName === 'ADMIN') {
         localStorage.setItem(StorageKeys.ADMIN, JSON.stringify(response.data.userInfo))
       }
@@ -43,7 +43,7 @@ export const login = createAsyncThunk(
 export const update = createAsyncThunk(
   'users/update',
   async (payload) => {
-    const data = await userApi.put(payload);
+    const data = await userApi.putInfo(payload);
 
     //return user data
     return data;

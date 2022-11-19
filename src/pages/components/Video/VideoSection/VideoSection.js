@@ -25,18 +25,20 @@ const VideoSection = ({video}) => {
   const [prograssValue, setPrograssValue] = useState(0)
   const [duration, setDuration] = useState(0)
   const [resultSpin, setResultSpin] = useState(false)
+  const [messageSpin, setMessageSpin] = useState('')
 
   const handleSpin = () => {
-    idUser && spinApi.getResult(idUser)
+    spinApi.getResult(idUser)
       .then((response) => {
-        if (response.data?.result) {
-          return handleCountdownAlert()
-        }
+        let result = response.data.result;
+        result === 'Lose'? setMessageSpin('Sorry! You have not won the prize yet') : setMessageSpin('');
+
+        handleCountdownAlert();
       })
   }
 
   useEffect(() => {
-    idUser && userApi.get(idUser)
+    idUser && userApi.getInfo(idUser)
       .then((res) => {
         if (res.code === '01') {
           setListBookmark(res.data.videoSaved)
@@ -106,8 +108,6 @@ const VideoSection = ({video}) => {
     })
   }
 
-  
-
   const handlePlay = () => {
     setAutoPlay(true);
     videoElement.current.play();
@@ -135,7 +135,7 @@ const VideoSection = ({video}) => {
       <div className={cx('video')}>
         {idVideo && <video
           muted={false}
-          src={`http://${StorageKeys.PATH}/api/v1/video/stream/${idVideo}.mp4`}
+          src={`${StorageKeys.PATH}/api/v1/video/stream/${idVideo}.mp4`}
           autoPlay={autoPlay}
           ref={videoElement}
           autopictureinpicture='true'
@@ -145,6 +145,7 @@ const VideoSection = ({video}) => {
           onDurationChange={(e) => { setDuration(e.target.duration) }}
           onTimeUpdate={(e) => { setPrograssValue(e.target.currentTime) }}
           onEnded={handleSpin}
+          playsInline
         />}
         <Controller
           handlePrev={handlePrev}
@@ -159,7 +160,7 @@ const VideoSection = ({video}) => {
           listVideo={video}
           countdown={countdownSkip}
         />
-        {resultSpin && <p className={cx('alert')}>Sorry! You have not won the prize yet</p>}
+        {resultSpin && <p className={cx('alert')}>{messageSpin}</p>}
         {video.map((item, index) => {
           if(item.id === idVideo) {
             return (

@@ -8,7 +8,6 @@ import StorageKeys from '../../../constants/storage-keys';
 let cx = classNames.bind(styles);
 
 const Update = ({videoCurrent}) => {
-  console.log(videoCurrent);
   const valueTitleVideo = useRef('');
   const valueLinkVideo = useRef('');
   const fileInputRef = useRef();
@@ -23,7 +22,7 @@ const Update = ({videoCurrent}) => {
     setShowProgress(true);
     uploadRef.current.innerHTML = "File Uploading...";
     axios
-      .put(`http://${StorageKeys.PATH}/api/v1/video/update` , {
+      .put(`${StorageKeys.PATH}/api/v1/video/update` , {
         id: videoCurrent.id,
         videoName: valueTitleVideo.current.value,
         videoDescription: valueLinkVideo.current.value,
@@ -62,11 +61,11 @@ const Update = ({videoCurrent}) => {
             <p className={cx('txt')}>Drag and drop video file to upload</p>
             <button type="button" className={cx('btn_upload', 'disabled')} disabled>
               Upload video
-              <UploadIcon />
+              <UploadIcon className={cx('icon_upload')} />
             </button>
             <img
               className={cx('img_file')}
-              src={`http://${StorageKeys.PATH}/api/v1/video/thumbnail/${videoCurrent.id}.png`}
+              src={`${StorageKeys.PATH}/api/v1/video/thumbnail/${videoCurrent.id}.png`}
               alt=""
             />
           </div>

@@ -13,7 +13,7 @@ const HelpModal = () => {
         <li className={cx('item')}>2. The luckiest will be contacted and given the prize</li>
       </ul>
       <p className={cx('sub')}>
-        <PlateIcon />
+        <PlateIcon className={cx('icon_plate')} />
         {/* <i className={cx('icon_plate')}></i> */}
         : the numbers of spin turns
       </p>

@@ -7,6 +7,7 @@ import {
 } from "@rajesh896/video-thumbnails-generator";
 import { UploadIcon } from '../../../assets/Icons';
 import StorageKeys from '../../../constants/storage-keys';
+import categoryApi from '../../../api/categoryApi';
 
 let cx = classNames.bind(styles);
 
@@ -22,6 +23,7 @@ const Upload = () => {
   const [showProgress, setShowProgress] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
   const [thumbnails, setThumbnails] = useState([]);
+  const [categoryId, setCategoryId] = useState()
 
   useEffect(() => {
     let filteredArr = selectedFiles.reduce((acc, current) => {
@@ -79,6 +81,7 @@ const Upload = () => {
         });
         let name = files[i].name;
         valueTitleVideo.current.value = name.slice(0, name.length - 4)
+        setErrorMessage(null)
       } else {
         files[i]["invalid"] = true;
         setSelectedFiles((prevArray) => [...prevArray, files[i]]);
@@ -97,6 +100,13 @@ const Upload = () => {
     return true;
   };
 
+  useEffect(() => {
+    categoryApi.get().then((response)=> {
+      setCategoryId(response.data[0].id);
+    })
+  
+  }, [])
+
   const handleSubmit = async (e) => {
     let token = localStorage.getItem(StorageKeys.TOKEN);
     e.preventDefault();
@@ -107,9 +117,9 @@ const Upload = () => {
       formData.append("video", validFiles[i]);
       formData.append("videoName", valueTitleVideo.current.value);
       formData.append("videoDescription", valueLinkVideo.current.value);
-      formData.append("idCategory", '63763ea761ea7a42deba7fad');
+      formData.append("idCategory", categoryId);
       axios
-        .post(`http://${StorageKeys.PATH}/api/v1/video/upload` , formData,
+        .post(`${StorageKeys.PATH}/api/v1/video/upload` , formData,
         {
           headers: {
             'Content-Type': 'multipart/form-data',
@@ -127,7 +137,8 @@ const Upload = () => {
             }
           }
         })
-        .catch(() => {
+        .catch((error) => {
+
           progressRef.current.style.backgroundColor = "red";
         });
     }
@@ -154,7 +165,7 @@ const Upload = () => {
             <p className={cx('txt')}>Drag and drop video file to upload</p>
             <button type="button" className={cx('btn_upload')} onClick={fileInputClicked}>
               Upload video
-              <UploadIcon />
+              <UploadIcon className={cx('icon_upload')} />
             </button>
             {thumbnails.map((item, index) => {
               return (

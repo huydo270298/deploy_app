@@ -19,10 +19,10 @@ const UserPage = () => {
     (
       async () => {
         try {
-          const result = await userApi.get(id);
+          const result = await userApi.getInfo(id);
           setInfo(result.data)
         } catch(error) {
-          console.log('Failed to fetch product', error);
+          console.log('Failed to fetch user information', error);
         }
       }
     )()
@@ -33,6 +33,7 @@ const UserPage = () => {
     try {
       const action = update(values);
       const resultAction = await dispatch(action);
+      console.log(resultAction);
       resultAction.payload.code === '01' && alert('Update success')
       
     } catch (error) {

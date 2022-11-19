@@ -2,7 +2,7 @@ import axios from 'axios';
 import StorageKeys from '../constants/storage-keys';
 
 const axiosClient = axios.create({
-  baseURL: `http://${StorageKeys.PATH}`,
+  baseURL: `${StorageKeys.PATH}`,
   headers: {
     'Content-Type': 'application/json'
   },

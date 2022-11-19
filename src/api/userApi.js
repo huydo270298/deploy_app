@@ -11,14 +11,19 @@ const userApi = {
     return axiosClient.post(url, data)
   },
 
-  put (data) {
+  putInfo (data) {
     const url = '/api/v1/user/update';
     return axiosClient.put(url, data)
   },
 
-  get (id) {
+  getInfo (id) {
     const url = `/api/v1/user/getById/${id}`;
     return axiosClient.get(url, {id})
+  },
+
+  getVideoSave (id, params) {
+    const url = `/api/v1/video/getByUserId/${id}`;
+    return axiosClient.get(url, { params })
   },
 
   addVideo (idUser, idVideo) {

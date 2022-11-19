@@ -4,11 +4,9 @@
 
 .line {
   display: flex;
-  gap: 7px;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 16px;
   }
 
   &+.line {
@@ -25,7 +23,19 @@
   flex-direction: column;
   text-align: left;
   flex: 1;
-  gap: 9px;
+
+  & + .form {
+    margin-left: 7px;
+
+    @media (max-width: 768px) {
+      margin-top: 16px;
+      margin-left: 0;
+    }
+  }
+
+  .label + * {
+    margin-top: 9px;
+  }
 }
 
 .label {

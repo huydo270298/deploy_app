@@ -107,14 +107,14 @@ const ListVideo = () => {
         {video.map((item, index) => (
           <li key={item.id} className={cx('item')}>
             <div className={cx('img')}>
-              <img src={`http://${StorageKeys.PATH}/api/v1/video/thumbnail/${item.id}.png`} alt='' />
+              <img src={`${StorageKeys.PATH}/api/v1/video/thumbnail/${item.id}.png`} alt='' />
               <div className={cx('plaholder')}>
                 <button type='button' className={cx('btn_control')} onClick={() => handleShowModalDelete(item.id, index)}>
-                  <BinIcon />
+                  <BinIcon className={cx('icon_custom')} />
                   Remove
                 </button>
                 <button type='button' className={cx('btn_control')} onClick={() => handleShowModalUpdate(video[index])}>
-                  <PenIcon />
+                  <PenIcon className={cx('icon_custom')} />
                   Edit
                 </button>
               </div>

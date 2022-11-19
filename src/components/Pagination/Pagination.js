@@ -53,7 +53,7 @@ const Pagination = ({ page, totalPages, handlePagination }) => {
 
             {page !== 1 && page !== totalPages && (
               <li
-                onClick={() => handlePagination(page)}i
+                onClick={() => handlePagination(page)}
                 className={cx('item', 'active')}
               >
                 {page}
@@ -67,7 +67,7 @@ const Pagination = ({ page, totalPages, handlePagination }) => {
               >
                 {page + 1}
               </li>
-            )}
+            )} 
 
             {page === 1 && totalPages > 3 && (
               <li

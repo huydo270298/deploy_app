@@ -20,7 +20,6 @@ const LoginPage = () => {
     try {
       const action = login(values);
       const resultAction = await dispatch(action);
-
       if(resultAction.payload.code === '02') {
         setMesError(resultAction.payload.message)
       } else if (resultAction.payload.data.userInfo.roleName === 'USER') {

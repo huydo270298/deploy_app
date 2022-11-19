@@ -1,5 +1,5 @@
 const StorageKeys = {
-  PATH: '103.9.76.77:8027',
+  PATH: 'https://221.vn',
   AUTH: 'author',
   USER: 'user',
   ADMIN: 'admin',

@@ -38,7 +38,7 @@ const Controller = (props) => {
         <button type='button' className={cx('skip', !(countdown >= 0) && 'active')} onClick={handleNext}>
           {countdown >= 0 ? `${countdown}s` : t("SKIP")}
           <PlateIcon className={cx('icon', 'icon_plate')} />
-          <SkipIcon />
+          <SkipIcon className={cx('icon', 'icon_skip')} />
         </button>
       }
       <div className={cx('progress')}>

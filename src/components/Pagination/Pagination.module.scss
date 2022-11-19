@@ -9,7 +9,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
 
   .item {
     display: flex;
@@ -32,6 +31,10 @@
     &.active {
       color: #fff;
      background: #ED7101; 
+    }
+
+    & + .item {
+      margin-left: 4px;
     }
   }
 }

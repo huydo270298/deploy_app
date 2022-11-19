@@ -36,20 +36,20 @@ const SavePage = () => {
 
   // get add save videos
   useEffect(() => {
-     userApi.get(userId).then((res) => {
+     userApi.getVideoSave(userId, page).then((res) => {
       setPagination({
         page: res.page,
         size: res.size,
         total: res.total,
       });
-      setListVideo(res.data.videoSaved);
+      setListVideo(res.data);
      })
-  }, [userId])
+  }, [userId, page])
 
   const dispatch = useDispatch();
-  const handlePlayVideo = (video) => {
+  const handlePlayVideo = (id) => {
     try {
-      const action = play(video);
+      const action = play(id);
       dispatch(action);
     } catch (error) {
       console.log(error)
@@ -72,11 +72,11 @@ const SavePage = () => {
         <ul className={cx('list')}>
           {listVideo.map((video,index) => (
             <li key={index} className={cx('item')}>
-              <Link to={'/'} className={cx('link')} onClick={() => handlePlayVideo(video)}>
+              <Link to={'/'} className={cx('link')} onClick={() => handlePlayVideo(video.id)}>
                 <div className={cx('img')}>
-                  <img src={`http://${StorageKeys.PATH}/api/v1/video/thumbnail/${video}.png`} alt='' />
+                  <img src={`${StorageKeys.PATH}/api/v1/video/thumbnail/${video.id}.png`} alt='' />
                 </div>
-                <p className={cx('name')}>{video.title}</p>
+                {/* <p className={cx('name')}>{video.videoName}</p> */}
               </Link>
             </li>
           ))}
