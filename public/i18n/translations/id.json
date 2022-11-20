@@ -27,5 +27,16 @@
   "CITY": "Kota/Provinsi",
   "ADDRESS": "Alamat",
   "PHONE": "Nomor telepon",
-  "LINK": "Tautan"
+  "LINK": "Tautan",
+  "VISIT_LINK": "Kunjungi tautan pengiklan",
+  "AS_LOW_AS": "Serendah 100 juta USD",
+  "HELP_1": "1. Anda dapat bergabung dengan putaran secara gratis.",
+  "HELP_2": "2. Yang paling beruntung akan dihubungi dan diberikan hadiah",
+  "NUMBER_SPIN": "jumlah putaran putaran",
+  "INCORRECT": "Username atau password salah.",
+  "VALIDATION_USERNAME_REQUIRED": "Anda harus menentukan nama pengguna",
+  "USER_ALREADY": "Nama pengguna sudah ada di sistem.",
+  "VALIDATION_PASS_LENGTH": "Kata sandi harus memiliki minimal 6 karakter",
+  "VALIDATION_PASS_REQUIRED": "Anda harus menentukan kata sandi",
+  "UPDATE_SUCCESS": "Perbarui sukses"
 }

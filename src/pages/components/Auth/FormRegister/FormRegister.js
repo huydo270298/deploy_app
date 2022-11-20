@@ -55,7 +55,7 @@ const FormRegister = (props) => {
             className={cx('input')}
             spellCheck={false}
             {...register("username", {
-              required: 'You must specify a username',
+              required: t("VALIDATION_USERNAME_REQUIRED"),
             })}
           />
           {errors.username && <p className={cx('message')}>{errors.username.message}</p>}
@@ -71,10 +71,10 @@ const FormRegister = (props) => {
             spellCheck={false}
             autoComplete='on'
             {...register('password', {
-              required: 'You must specify a password',
+              required: t("VALIDATION_PASS_REQUIRED"),
               minLength: {
                 value: 6,
-                message: "Password must have at least 6 characters"
+                message: t("VALIDATION_PASS_LENGTH")
               }
             })}
           />
@@ -84,7 +84,7 @@ const FormRegister = (props) => {
             <i className={cx('icon_eye')}></i>
           </button>
         </div>
-        {message && <p className={cx('message_submit')}>{message}</p>}
+        {message && <p className={cx('message_submit')}>{message && t("USER_ALREADY")}</p>}
         <button type="submit" className={cx('submit')}>
           {t("SIGN_UP")}
         </button>

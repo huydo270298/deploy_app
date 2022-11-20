@@ -27,5 +27,16 @@
   "CITY": "Guta/Ruwa",
   "ADDRESS": "Kero",
   "PHONE": "Nhamba yenhare",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Shanyira chinongedzo chevashambadziri",
+  "AS_LOW_AS": "Yakaderera se100 miriyoni USD",
+  "HELP_1": "1. Unogona kujoina spin mahara.",
+  "HELP_2": "2. Ane rombo rakanaka achabatwa opihwa mubairo",
+  "NUMBER_SPIN": "nhamba dzekutenderera dzinotenderera",
+  "INCORRECT": "Username kana password zvisirizvo.",
+  "VALIDATION_USERNAME_REQUIRED": "Unofanira kutaura zita rekushandisa",
+  "USER_ALREADY": "Username ratovepo musystem.",
+  "VALIDATION_PASS_LENGTH": "Pasiwedhi rinofanirwa kunge riine mavara matanhatu",
+  "VALIDATION_PASS_REQUIRED": "Iwe unofanirwa kutsanangura password",
+  "UPDATE_SUCCESS": "Kuvandudza kubudirira"
 }

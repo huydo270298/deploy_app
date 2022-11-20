@@ -15,7 +15,7 @@
   "C_PASSWORD": "Potwierdź hasło",
   "DONT_ACCOUNT": "Nie masz konta?",
   "ALREADY_ACCOUNT": "Posiadasz już konto?",
-  "SKIP": "POMIJAĆ",
+  "SKIP": "Zakręć bonusem",
   "SAVE": "Ratować",
   "SAVED_VIDEOS": "Zapisane filmy",
   "PERSONAL_TIT": "Informacje osobiste",
@@ -27,5 +27,16 @@
   "CITY": "Miasto/Prowincja",
   "ADDRESS": "Adres zamieszkania",
   "PHONE": "Numer telefonu",
-  "LINK": "Połączyć"
+  "LINK": "Połączyć",
+  "VISIT_LINK": "Odwiedź link reklamodawcy",
+  "AS_LOW_AS": "Tak niskie, jak 100 milionów USD",
+  "HELP_1": "1. Możesz dołączyć do spinu za darmo.",
+  "HELP_2": "2. Skontaktujemy się z najszczęśliwszymi i otrzymamy nagrodę",
+  "NUMBER_SPIN": "liczby obrotów wirowania",
+  "INCORRECT": "Nazwa użytkownika lub hasło nieprawidłowe.",
+  "VALIDATION_USERNAME_REQUIRED": "Musisz podać nazwę użytkownika",
+  "USER_ALREADY": "Nazwa użytkownika już istnieje w systemie.",
+  "VALIDATION_PASS_LENGTH": "Hasło musi mieć co najmniej 6 znaków",
+  "VALIDATION_PASS_REQUIRED": "Musisz podać hasło",
+  "UPDATE_SUCCESS": "Sukces aktualizacji"
 }

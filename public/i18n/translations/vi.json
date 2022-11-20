@@ -14,7 +14,7 @@
   "N_PASSWORD": "Mật khẩu mới",
   "DONT_ACCOUNT": "Bạn chưa có tài khoản?",
   "ALREADY_ACCOUNT": "Bạn đã có tài khoản?",
-  "SKIP": "Bỏ qua",
+  "SKIP": "Tiền thưởng quay",
   "SAVE": "Lưu",
   "SAVED_VIDEOS": "Video đã lưu",
   "PERSONAL_TIT": "Thông tin cá nhân",
@@ -26,5 +26,16 @@
   "CITY": "Thành phố/Tỉnh",
   "ADDRESS": "Địa chỉ nhà",
   "PHONE": "Số điện thoại",
-  "LINK": "Liên kết"
+  "LINK": "Liên kết",
+  "VISIT_LINK": "Truy cập liên kết của nhà quảng cáo",
+  "AS_LOW_AS": "Thấp nhất là 100 triệu USD",
+  "HELP_1": "1. Bạn có thể tham gia vòng quay miễn phí.",
+  "HELP_2": "2. Người may mắn nhất sẽ được liên hệ và trao giải",
+  "NUMBER_SPIN": "số vòng quay",
+  "INCORRECT": "Tên đăng nhập hoặc mật khẩu không chính xác.",
+  "VALIDATION_USERNAME_REQUIRED": "Bạn phải chỉ định tên người dùng",
+  "USER_ALREADY": "Tên người dùng đã tồn tại trong hệ thống.",
+  "VALIDATION_PASS_LENGTH": "Mật khẩu phải có ít nhất 6 ký tự",
+  "VALIDATION_PASS_REQUIRED": "Bạn phải chỉ định một mật khẩu",
+  "UPDATE_SUCCESS": "Cập nhật thành công"
 }

@@ -27,5 +27,16 @@
   "CITY": "Cathair-bhaile / Roinn",
   "ADDRESS": "Seòladh",
   "PHONE": "Àireamh fòn",
-  "LINK": "Ceangal"
+  "LINK": "Ceangal",
+  "VISIT_LINK": "Tadhail air ceangal sanasachd",
+  "AS_LOW_AS": "Cho ìosal ri 100 millean dolar",
+  "HELP_1": "1. Faodaidh tu a dhol còmhla ris an snìomh an-asgaidh.",
+  "HELP_2": "2. Thèid fios a chur chun an fheadhainn as fortanach agus gheibh iad an duais",
+  "NUMBER_SPIN": "na h-àireamhan de thionndadh snìomh",
+  "INCORRECT": "Ainm-cleachdaidh no facal-faire ceàrr.",
+  "VALIDATION_USERNAME_REQUIRED": "Feumaidh tu ainm-cleachdaidh a shònrachadh",
+  "USER_ALREADY": "Tha ainm-cleachdaidh san t-siostam mu thràth.",
+  "VALIDATION_PASS_LENGTH": "Feumaidh co-dhiù 6 caractaran a bhith aig facal-faire",
+  "VALIDATION_PASS_REQUIRED": "Feumaidh tu facal-faire a shònrachadh",
+  "UPDATE_SUCCESS": "Luchdaich a-nuas soirbheachadh"
 }

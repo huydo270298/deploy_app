@@ -27,5 +27,16 @@
   "CITY": "Stad/provinsie",
   "ADDRESS": "Adres",
   "PHONE": "Telefoon nommer",
-  "LINK": "Skakel"
+  "LINK": "Skakel",
+  "VISIT_LINK": "Besoek adverteerderskakel",
+  "AS_LOW_AS": "So laag as 100 miljoen USD",
+  "HELP_1": "1. Jy kan gratis by die draai aansluit.",
+  "HELP_2": "2. Die gelukkigste sal gekontak word en die prys gegee word",
+  "NUMBER_SPIN": "die aantal draaibeurte",
+  "INCORRECT": "Gebruikersnaam of wagwoord is verkeerd.",
+  "VALIDATION_USERNAME_REQUIRED": "Jy moet 'n gebruikersnaam spesifiseer",
+  "USER_ALREADY": "Gebruikersnaam bestaan reeds in die stelsel.",
+  "VALIDATION_PASS_LENGTH": "Wagwoord moet ten minste 6 karakters hê",
+  "VALIDATION_PASS_REQUIRED": "Jy moet 'n wagwoord spesifiseer",
+  "UPDATE_SUCCESS": "Dateer sukses op"
 }

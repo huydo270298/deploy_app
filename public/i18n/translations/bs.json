@@ -27,5 +27,16 @@
   "CITY": "Grad/pokrajina",
   "ADDRESS": "Adresa",
   "PHONE": "Telefonski broj",
-  "LINK": "Veza"
+  "LINK": "Veza",
+  "VISIT_LINK": "Posjetite link oglašivača",
+  "AS_LOW_AS": "Čak 100 miliona USD",
+  "HELP_1": "1. Možete se pridružiti spinu besplatno.",
+  "HELP_2": "2. Najsretniji će biti kontaktirani i dodijeljena nagrada",
+  "NUMBER_SPIN": "broj okretaja spina",
+  "INCORRECT": "Korisničko ime ili lozinka je netačna.",
+  "VALIDATION_USERNAME_REQUIRED": "Morate navesti korisničko ime",
+  "USER_ALREADY": "Korisničko ime već postoji u sistemu.",
+  "VALIDATION_PASS_LENGTH": "Lozinka mora imati najmanje 6 znakova",
+  "VALIDATION_PASS_REQUIRED": "Morate navesti lozinku",
+  "UPDATE_SUCCESS": "Uspješno ažuriranje"
 }

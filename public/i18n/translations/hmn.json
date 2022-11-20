@@ -27,5 +27,16 @@
   "CITY": "Lub nroog/Zoo",
   "ADDRESS": "Chaw nyob",
   "PHONE": "Xov tooj",
-  "LINK": "Txuas"
+  "LINK": "Txuas",
+  "VISIT_LINK": "Mus saib advertiser link",
+  "AS_LOW_AS": "Tsawg li 100 lab USD",
+  "HELP_1": "1. Koj tuaj yeem koom nrog kev sib tw dawb.",
+  "HELP_2": "2. Tus muaj hmoo tshaj plaws yuav raug hu thiab muab khoom plig",
+  "NUMBER_SPIN": "tus naj npawb ntawm spin lem",
+  "INCORRECT": "Tus neeg siv lub npe lossis tus password tsis raug.",
+  "VALIDATION_USERNAME_REQUIRED": "Koj yuav tsum qhia tus neeg siv lub npe",
+  "USER_ALREADY": "Tus neeg siv lub npe twb muaj nyob hauv qhov system.",
+  "VALIDATION_PASS_LENGTH": "Tus password yuav tsum muaj tsawg kawg yog 6 tus cim",
+  "VALIDATION_PASS_REQUIRED": "Koj yuav tsum qhia tus password",
+  "UPDATE_SUCCESS": "Hloov tshiab ua tiav"
 }

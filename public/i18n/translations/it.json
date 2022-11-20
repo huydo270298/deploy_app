@@ -27,5 +27,16 @@
   "CITY": "Città/Provincia",
   "ADDRESS": "Indirizzo",
   "PHONE": "Numero di telefono",
-  "LINK": "Collegamento"
+  "LINK": "Collegamento",
+  "VISIT_LINK": "Visita il link dell'inserzionista",
+  "AS_LOW_AS": "A partire da 100 milioni di dollari",
+  "HELP_1": "1. Puoi partecipare al giro gratuitamente.",
+  "HELP_2": "2. Il più fortunato verrà contattato e consegnato il premio",
+  "NUMBER_SPIN": "il numero di giri di rotazione",
+  "INCORRECT": "Nome utente o password non corretti.",
+  "VALIDATION_USERNAME_REQUIRED": "Devi specificare un nome utente",
+  "USER_ALREADY": "Il nome utente esiste già nel sistema.",
+  "VALIDATION_PASS_LENGTH": "La password deve contenere almeno 6 caratteri",
+  "VALIDATION_PASS_REQUIRED": "Devi specificare una password",
+  "UPDATE_SUCCESS": "Aggiornamento riuscito"
 }

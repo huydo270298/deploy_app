@@ -27,5 +27,16 @@
   "CITY": "Umujyi / Intara",
   "ADDRESS": "Aderesi",
   "PHONE": "Numero ya terefone",
-  "LINK": "Ihuza"
+  "LINK": "Ihuza",
+  "VISIT_LINK": "Sura umurongo wamamaza",
+  "AS_LOW_AS": "Hafi ya miliyoni 100 USD",
+  "HELP_1": "1. Urashobora kwinjira muri spin kubuntu.",
+  "HELP_2": "2. Umunyamahirwe azabonana ahabwe igihembo",
+  "NUMBER_SPIN": "imibare ya spin ihinduka",
+  "INCORRECT": "Izina ryukoresha cyangwa ijambo ryibanga ntabwo aribyo.",
+  "VALIDATION_USERNAME_REQUIRED": "Ugomba kwerekana izina ukoresha",
+  "USER_ALREADY": "Izina ryukoresha rimaze kubaho muri sisitemu.",
+  "VALIDATION_PASS_LENGTH": "Ijambobanga rigomba kugira byibuze inyuguti 6",
+  "VALIDATION_PASS_REQUIRED": "Ugomba kwerekana ijambo ryibanga",
+  "UPDATE_SUCCESS": "Kuvugurura intsinzi"
 }

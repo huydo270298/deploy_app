@@ -27,5 +27,16 @@
   "CITY": "市/県",
   "ADDRESS": "住所",
   "PHONE": "電話番号",
-  "LINK": "リンク"
+  "LINK": "リンク",
+  "VISIT_LINK": "広告主のリンクにアクセス",
+  "AS_LOW_AS": "最低1億ドル",
+  "HELP_1": "1.無料でスピンに参加できます。",
+  "HELP_2": "2. 最も幸運な人には連絡があり、賞品が与えられます",
+  "NUMBER_SPIN": "スピンターン数",
+  "INCORRECT": "ユーザー名またはパスワードが間違っています。",
+  "VALIDATION_USERNAME_REQUIRED": "ユーザー名を指定する必要があります",
+  "USER_ALREADY": "ユーザー名はシステムに既に存在します。",
+  "VALIDATION_PASS_LENGTH": "パスワードは 6 文字以上にする必要があります",
+  "VALIDATION_PASS_REQUIRED": "パスワードを指定する必要があります",
+  "UPDATE_SUCCESS": "更新成功"
 }

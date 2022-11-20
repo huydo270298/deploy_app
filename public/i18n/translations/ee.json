@@ -27,5 +27,16 @@
   "CITY": "Du/Nutome",
   "ADDRESS": "Adrɛs",
   "PHONE": "Telefon Xexlẽdzesi",
-  "LINK": "Kadodo"
+  "LINK": "Kadodo",
+  "VISIT_LINK": "Yi boblodolawo ƒe kadodoa dzi",
+  "AS_LOW_AS": "Eƒe asi bɔbɔ abe USD miliɔn 100 ene",
+  "HELP_1": "1. Àte ŋu awɔ ɖeka kple spin la femaxee.",
+  "HELP_2": "2. Woaƒo ka na dzɔgbenyuitɔ wu eye woana fetua",
+  "NUMBER_SPIN": "xexlẽme siwo le spin ƒe tɔtrɔwo me",
+  "INCORRECT": "Zãla ƒe ŋkɔ alo nyagbe ɣaɣla mesɔ o.",
+  "VALIDATION_USERNAME_REQUIRED": "Ele be nàgblɔ zãla ƒe ŋkɔ",
+  "USER_ALREADY": "Zãla ƒe ŋkɔ le ɖoɖoa me xoxo.",
+  "VALIDATION_PASS_LENGTH": "Ele be ŋɔŋlɔdzesi 6 ya teti nanɔ nyagbea me",
+  "VALIDATION_PASS_REQUIRED": "Ele be nàgblɔ nyagbe aɖe",
+  "UPDATE_SUCCESS": "Update dzidzedzekpɔkpɔ"
 }

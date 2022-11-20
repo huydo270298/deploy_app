@@ -34,7 +34,7 @@ const UserPage = () => {
       const action = update(values);
       const resultAction = await dispatch(action);
       console.log(resultAction);
-      resultAction.payload.code === '01' && alert('Update success')
+      resultAction.payload.code === '01' && alert(t("UPDATE_SUCCESS"))
       
     } catch (error) {
       console.log('error');

@@ -27,5 +27,16 @@
   "CITY": "Ekibuga/Essaza",
   "ADDRESS": "Okwoogera eri",
   "PHONE": "Ennamba y'essimu",
-  "LINK": "Okuyunga"
+  "LINK": "Okuyunga",
+  "VISIT_LINK": "Kyalira link y'omulanga",
+  "AS_LOW_AS": "Nga wansi wa bukadde 100 USD",
+  "HELP_1": "1. Osobola okwegatta ku spin ku bwereere.",
+  "HELP_2": "2. Asinga omukisa ajja kutuukirirwa era aweebwe ekirabo",
+  "NUMBER_SPIN": "ennamba za spin turns",
+  "INCORRECT": "Erinnya ly'omukozesa oba ekigambo ky'okuyingira si kituufu.",
+  "VALIDATION_USERNAME_REQUIRED": "Olina okulaga erinnya ly'omukozesa",
+  "USER_ALREADY": "Erinnya ly'omukozesa lyaliwo dda mu nkola.",
+  "VALIDATION_PASS_LENGTH": "Password erina okuba n'ennukuta ezitakka wansi wa 6",
+  "VALIDATION_PASS_REQUIRED": "Olina okulaga ekigambo ky'okuyingira",
+  "UPDATE_SUCCESS": "Update obuwanguzi"
 }

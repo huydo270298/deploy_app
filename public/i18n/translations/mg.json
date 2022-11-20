@@ -27,5 +27,16 @@
   "CITY": "Tanàna/Faritany",
   "ADDRESS": "Adiresy",
   "PHONE": "Nomeraon-telefaona",
-  "LINK": "Rohy"
+  "LINK": "Rohy",
+  "VISIT_LINK": "Tsidiho ny rohy mpanao dokambarotra",
+  "AS_LOW_AS": "Hatramin'ny 100 tapitrisa USD",
+  "HELP_1": "1. Afaka miditra amin'ny spin maimaimpoana ianao.",
+  "HELP_2": "2. Ny tsara vintana dia hifandray ary homena ny loka",
+  "NUMBER_SPIN": "ny isan'ny mivadika",
+  "INCORRECT": "Diso ny anaran'ny mpampiasa na ny tenimiafina.",
+  "VALIDATION_USERNAME_REQUIRED": "Tsy maintsy manondro solon'anarana ianao",
+  "USER_ALREADY": "Anarana mpampiasa efa misy ao amin'ny rafitra.",
+  "VALIDATION_PASS_LENGTH": "Tsy maintsy manana tarehintsoratra 6 farafahakeliny ny tenimiafina",
+  "VALIDATION_PASS_REQUIRED": "Tsy maintsy mamaritra tenimiafina ianao",
+  "UPDATE_SUCCESS": "Fanavaozana ny fahombiazana"
 }

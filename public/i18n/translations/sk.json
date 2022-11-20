@@ -27,5 +27,16 @@
   "CITY": "Mesto/provincia",
   "ADDRESS": "Adresa",
   "PHONE": "Telefónne číslo",
-  "LINK": "Odkaz"
+  "LINK": "Odkaz",
+  "VISIT_LINK": "Navštívte odkaz inzerenta",
+  "AS_LOW_AS": "Až 100 miliónov USD",
+  "HELP_1": "1. Do roztočenia sa môžete zapojiť zadarmo.",
+  "HELP_2": "2. Najšťastnejší bude kontaktovaný a bude mu odovzdaná cena",
+  "NUMBER_SPIN": "počet otočení",
+  "INCORRECT": "Užívateľské meno alebo heslo je nesprávne.",
+  "VALIDATION_USERNAME_REQUIRED": "Musíte zadať používateľské meno",
+  "USER_ALREADY": "Používateľské meno už v systéme existuje.",
+  "VALIDATION_PASS_LENGTH": "Heslo musí mať aspoň 6 znakov",
+  "VALIDATION_PASS_REQUIRED": "Musíte zadať heslo",
+  "UPDATE_SUCCESS": "Aktualizácia bola úspešná"
 }

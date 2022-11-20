@@ -27,5 +27,16 @@
   "CITY": "Stad/provins",
   "ADDRESS": "Adress",
   "PHONE": "Telefonnummer",
-  "LINK": "Länk"
+  "LINK": "Länk",
+  "VISIT_LINK": "Besök annonsörslänken",
+  "AS_LOW_AS": "Så lite som 100 miljoner USD",
+  "HELP_1": "1. Du kan gå med i snurret gratis.",
+  "HELP_2": "2. Den lyckligaste kommer att kontaktas och få priset",
+  "NUMBER_SPIN": "antalet snurrvarv",
+  "INCORRECT": "Felaktigt användarnamn eller lösenord.",
+  "VALIDATION_USERNAME_REQUIRED": "Du måste ange ett användarnamn",
+  "USER_ALREADY": "Användarnamnet finns redan i systemet.",
+  "VALIDATION_PASS_LENGTH": "Lösenordet måste ha minst 6 tecken",
+  "VALIDATION_PASS_REQUIRED": "Du måste ange ett lösenord",
+  "UPDATE_SUCCESS": "Uppdateringen lyckades"
 }

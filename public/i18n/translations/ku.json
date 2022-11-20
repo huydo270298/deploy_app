@@ -27,5 +27,16 @@
   "CITY": "Bajar/Parêzgeh",
   "ADDRESS": "Navnîşan",
   "PHONE": "Jimare telefon",
-  "LINK": "Pêvek"
+  "LINK": "Pêvek",
+  "VISIT_LINK": "Serdana girêdana reklamkerê bikin",
+  "AS_LOW_AS": "Bi qasî 100 mîlyon dolar kêm e",
+  "HELP_1": "1. Hûn dikarin belaş beşdarî spin bibin.",
+  "HELP_2": "2. Yê herî bi şens dê têkilî bi wan re were dayîn û xelat were dayîn",
+  "NUMBER_SPIN": "hejmarên zivirîna spin",
+  "INCORRECT": "Navê bikarhêner an şîfreya çewt.",
+  "VALIDATION_USERNAME_REQUIRED": "Divê hûn navê bikarhênerek diyar bikin",
+  "USER_ALREADY": "Navê bikarhêner jixwe di pergalê de heye.",
+  "VALIDATION_PASS_LENGTH": "Divê şîfre herî kêm 6 tîpan hebin",
+  "VALIDATION_PASS_REQUIRED": "Divê hûn şîfreyek diyar bikin",
+  "UPDATE_SUCCESS": "Serkeftina nûvekirinê"
 }

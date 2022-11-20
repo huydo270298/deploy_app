@@ -27,5 +27,16 @@
   "CITY": "A'ai / Itumalo",
   "ADDRESS": "tuatusi",
   "PHONE": "Numera telefoni",
-  "LINK": "So'oga"
+  "LINK": "So'oga",
+  "VISIT_LINK": "Asiasi so'oga fa'asalalauga",
+  "AS_LOW_AS": "E tusa ma le 100 miliona USD",
+  "HELP_1": "1. E mafai ona e auai i le vili e aunoa ma se totogi.",
+  "HELP_2": "2. O le a fa'afeso'ota'i le tagata sili ona laki ma maua le fa'ailoga",
+  "NUMBER_SPIN": "o numera o vili liliu",
+  "INCORRECT": "Le sa'o le igoa fa'aoga po'o le fa'aupuga.",
+  "VALIDATION_USERNAME_REQUIRED": "E tatau ona e fa'ailoa se igoa ole igoa",
+  "USER_ALREADY": "O lo'o iai le igoa fa'aoga ile faiga.",
+  "VALIDATION_PASS_LENGTH": "E tatau ona i ai a itiiti mai 6 mataitusi upu faataga",
+  "VALIDATION_PASS_REQUIRED": "E tatau ona e fa'ailoaina se upu fa'aulutala",
+  "UPDATE_SUCCESS": "Fa'afouina manuia"
 }

@@ -27,5 +27,16 @@
   "CITY": "Kulanakauhale/Kalana",
   "ADDRESS": "Heluhelu",
   "PHONE": "Helu kelepona",
-  "LINK": "loulou"
+  "LINK": "loulou",
+  "VISIT_LINK": "E kipa i ka loulou hoʻolaha",
+  "AS_LOW_AS": "E like me ka 100 miliona USD",
+  "HELP_1": "1. Hiki iā ʻoe ke komo i ka milo no ka manuahi.",
+  "HELP_2": "2. E hoʻopili ʻia ka poʻe laki a hāʻawi ʻia ka makana",
+  "NUMBER_SPIN": "huli ka helu o ka milo",
+  "INCORRECT": "Ua hewa ka inoa hoʻohana a i ʻole ka ʻōlelo huna.",
+  "VALIDATION_USERNAME_REQUIRED": "Pono ʻoe e kuhikuhi i kahi mea hoʻohana",
+  "USER_ALREADY": "Aia ka inoa hoʻohana ma ka ʻōnaehana.",
+  "VALIDATION_PASS_LENGTH": "Pono ka ʻōlelo huna ma kahi o 6 mau huaʻōlelo",
+  "VALIDATION_PASS_REQUIRED": "Pono ʻoe e kuhikuhi i kahi ʻōlelo huna",
+  "UPDATE_SUCCESS": "Hōʻano hou i ka holomua"
 }

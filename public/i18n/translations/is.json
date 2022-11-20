@@ -27,5 +27,16 @@
   "CITY": "Borg/hérað",
   "ADDRESS": "Heimilisfang",
   "PHONE": "Símanúmer",
-  "LINK": "Tengill"
+  "LINK": "Tengill",
+  "VISIT_LINK": "Farðu á auglýsandatengil",
+  "AS_LOW_AS": "Allt að 100 milljónir USD",
+  "HELP_1": "1. Þú getur tekið þátt í snúningnum ókeypis.",
+  "HELP_2": "2. Haft verður samband við þá heppnustu og veitt verðlaun",
+  "NUMBER_SPIN": "fjölda snúninga",
+  "INCORRECT": "Notandanafn eða lykilorð rangt.",
+  "VALIDATION_USERNAME_REQUIRED": "Þú verður að tilgreina notendanafn",
+  "USER_ALREADY": "Notandanafn er þegar til í kerfinu.",
+  "VALIDATION_PASS_LENGTH": "Lykilorð verður að vera að minnsta kosti 6 stafir",
+  "VALIDATION_PASS_REQUIRED": "Þú verður að tilgreina lykilorð",
+  "UPDATE_SUCCESS": "Uppfærsla tókst"
 }

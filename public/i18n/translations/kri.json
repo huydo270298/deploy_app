@@ -27,5 +27,16 @@
   "CITY": "Siti/Prɔvins",
   "ADDRESS": "Adrɛs",
   "PHONE": "Fɔn Nɔmba",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Visit advatayz link",
+  "AS_LOW_AS": "As low as 100 miliɔn USD",
+  "HELP_1": "1. Yu kin jɔyn di spin fɔ fri.",
+  "HELP_2": "2. Dɛn go kɔntakt di wan we laki pas ɔl ɛn gi am di prayz",
+  "NUMBER_SPIN": "di nɔmba dɛn fɔ spin de tɔn",
+  "INCORRECT": "Yuz nem ɔ paswɔd nɔ kɔrɛkt.",
+  "VALIDATION_USERNAME_REQUIRED": "Yu fɔ sho wan yuz nem",
+  "USER_ALREADY": "Yuz nem dɔn ɔlrɛdi de na di sistɛm.",
+  "VALIDATION_PASS_LENGTH": "Paswɔd fɔ gɛt at le 6 aks",
+  "VALIDATION_PASS_REQUIRED": "Yu fɔ sho yu paswɔd",
+  "UPDATE_SUCCESS": "Update sakses"
 }

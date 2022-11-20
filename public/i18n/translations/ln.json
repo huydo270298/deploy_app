@@ -27,5 +27,16 @@
   "CITY": "Engumba/Etuka",
   "ADDRESS": "Adresi",
   "PHONE": "Nimero ya Telephone",
-  "LINK": "Lien"
+  "LINK": "Lien",
+  "VISIT_LINK": "Kotala lien ya mosali ya piblisite",
+  "AS_LOW_AS": "Na nse ya 100 millions USD",
+  "HELP_1": "1. Okoki kosangana na spin ofele.",
+  "HELP_2": "2. Bako contacter oyo aza na chance pe bakopesa bango prix",
+  "NUMBER_SPIN": "mituya ya ba tournant ya spin",
+  "INCORRECT": "Nkombo ya mosaleli to mot de passe ezali malamu te.",
+  "VALIDATION_USERNAME_REQUIRED": "Esengeli olakisa nkombo ya mosaleli",
+  "USER_ALREADY": "Nkombo ya mosaleli ezali déjà na système.",
+  "VALIDATION_PASS_LENGTH": "Mot de passe esengeli kozala na ba caractères ata 6",
+  "VALIDATION_PASS_REQUIRED": "Esengeli olakisaka mot de passe",
+  "UPDATE_SUCCESS": "Mikolo oyo elonga"
 }

@@ -27,5 +27,16 @@
   "CITY": "Kurow/Ɔmansin",
   "ADDRESS": "Adrɛse",
   "PHONE": "Telefon Nɔma",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Kɔ advertiser link so",
+  "AS_LOW_AS": "Ɛyɛ nea ɛba fam te sɛ USD ɔpepem 100",
+  "HELP_1": "1. Wubetumi akɔka spin no ho kwa.",
+  "HELP_2": "2. Wɔbɛka nea ɔwɔ anigye sen biara no ho nkɔmmɔ na wɔama no nkonimbo no",
+  "NUMBER_SPIN": "dodow a wɔde twitwiw nneɛma no dannan",
+  "INCORRECT": "Edin anaa asɛmfua a ɔde di dwuma no nyɛ nokware.",
+  "VALIDATION_USERNAME_REQUIRED": "Ɛsɛ sɛ wokyerɛ edin a wode bedi dwuma",
+  "USER_ALREADY": "Edin a ɔde di dwuma no wɔ nhyehyɛe no mu dedaw.",
+  "VALIDATION_PASS_LENGTH": "Anyɛ yiye koraa no, ɛsɛ sɛ password no nya nkyerɛwde 6",
+  "VALIDATION_PASS_REQUIRED": "Ɛsɛ sɛ wokyerɛ password bi",
+  "UPDATE_SUCCESS": "Update nkonimdi"
 }

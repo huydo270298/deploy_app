@@ -27,5 +27,16 @@
   "CITY": "Magaalada/Gobolka",
   "ADDRESS": "Cinwaanka",
   "PHONE": "Lambarka taleefanka",
-  "LINK": "Xiriirinta"
+  "LINK": "Xiriirinta",
+  "VISIT_LINK": "Booqo xiriiriyaha xayeysiiyaha",
+  "AS_LOW_AS": "In ka yar 100 milyan USD",
+  "HELP_1": "1. Waxaad ku biiri kartaa wareegga bilaashka ah.",
+  "HELP_2": "2. Qofka ugu nasiibka badan waa lala xidhiidhi doonaa oo la siin doonaa abaalmarinta",
+  "NUMBER_SPIN": "tirooyinka leexashada",
+  "INCORRECT": "Magaca isticmaale ama erayga sirta ah waa khalad.",
+  "VALIDATION_USERNAME_REQUIRED": "Waa inaad sheegtaa magaca isticmaalaha",
+  "USER_ALREADY": "Magaca isticmaale ayaa horey ugu jiray nidaamka.",
+  "VALIDATION_PASS_LENGTH": "Furaha sirta ah waa in uu lahaadaa ugu yaraan 6 xaraf",
+  "VALIDATION_PASS_REQUIRED": "Waa inaad sheegtaa furaha sirta ah",
+  "UPDATE_SUCCESS": "Cusbooneysii guusha"
 }

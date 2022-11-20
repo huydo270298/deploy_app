@@ -27,5 +27,16 @@
   "CITY": "市/省",
   "ADDRESS": "地址",
   "PHONE": "電話號碼",
-  "LINK": "關聯"
+  "LINK": "關聯",
+  "VISIT_LINK": "訪問廣告商鏈接",
+  "AS_LOW_AS": "低至1億美元",
+  "HELP_1": "1.您可以免費參加旋轉。",
+  "HELP_2": "2.將聯繫最幸運的人並給予獎品",
+  "NUMBER_SPIN": "自旋圈數",
+  "INCORRECT": "用戶名或密碼不正確。",
+  "VALIDATION_USERNAME_REQUIRED": "您必須指定用戶名",
+  "USER_ALREADY": "用戶名已存在於系統中。",
+  "VALIDATION_PASS_LENGTH": "密碼必須至少有 6 個字符",
+  "VALIDATION_PASS_REQUIRED": "您必須指定密碼",
+  "UPDATE_SUCCESS": "更新成功"
 }

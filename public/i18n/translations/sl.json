@@ -27,5 +27,16 @@
   "CITY": "Mesto/pokrajina",
   "ADDRESS": "Naslov",
   "PHONE": "Telefonska številka",
-  "LINK": "Povezava"
+  "LINK": "Povezava",
+  "VISIT_LINK": "Obiščite povezavo oglaševalca",
+  "AS_LOW_AS": "Že 100 milijonov USD",
+  "HELP_1": "1. Vrtenju se lahko pridružite brezplačno.",
+  "HELP_2": "2. Najsrečnejšega bomo kontaktirali in mu podelili nagrado",
+  "NUMBER_SPIN": "število vrtljajev",
+  "INCORRECT": "Uporabniško ime ali geslo ni pravilno.",
+  "VALIDATION_USERNAME_REQUIRED": "Določiti morate uporabniško ime",
+  "USER_ALREADY": "Uporabniško ime že obstaja v sistemu.",
+  "VALIDATION_PASS_LENGTH": "Geslo mora imeti vsaj 6 znakov",
+  "VALIDATION_PASS_REQUIRED": "Določiti morate geslo",
+  "UPDATE_SUCCESS": "Posodobitev je uspela"
 }

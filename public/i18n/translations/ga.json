@@ -27,5 +27,16 @@
   "CITY": "Cathair/Cúige",
   "ADDRESS": "Seoladh",
   "PHONE": "Uimhir teileafón",
-  "LINK": "Nasc"
+  "LINK": "Nasc",
+  "VISIT_LINK": "Tabhair cuairt ar an nasc fógróra",
+  "AS_LOW_AS": "Chomh híseal le 100 milliún USD",
+  "HELP_1": "1. Is féidir leat a bheith páirteach sa casadh saor in aisce.",
+  "HELP_2": "2. Déanfar teagmháil leis na daoine is mí-ádh agus tabharfar an duais dóibh",
+  "NUMBER_SPIN": "líon na n-casadh casadh",
+  "INCORRECT": "Ainm úsáideora nó pasfhocal mícheart.",
+  "VALIDATION_USERNAME_REQUIRED": "Ní mór duit ainm úsáideora a shonrú",
+  "USER_ALREADY": "Tá ainm úsáideora sa chóras cheana féin.",
+  "VALIDATION_PASS_LENGTH": "Caithfidh 6 charachtar ar a laghad a bheith ag pasfhocal",
+  "VALIDATION_PASS_REQUIRED": "Ní mór duit pasfhocal a shonrú",
+  "UPDATE_SUCCESS": "Rath a nuashonrú"
 }

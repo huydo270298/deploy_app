@@ -27,5 +27,16 @@
   "CITY": "Cidade/Provincia",
   "ADDRESS": "Enderezo",
   "PHONE": "Número de teléfono",
-  "LINK": "Ligazón"
+  "LINK": "Ligazón",
+  "VISIT_LINK": "Visita a ligazón do anunciante",
+  "AS_LOW_AS": "Tan baixo como 100 millóns de dólares",
+  "HELP_1": "1. Podes unirte ao xiro de balde.",
+  "HELP_2": "2. O máis afortunado será contactado e entregarase o premio",
+  "NUMBER_SPIN": "o número de xiros",
+  "INCORRECT": "Nome de usuario ou contrasinal incorrectos.",
+  "VALIDATION_USERNAME_REQUIRED": "Debes especificar un nome de usuario",
+  "USER_ALREADY": "O nome de usuario xa existe no sistema.",
+  "VALIDATION_PASS_LENGTH": "O contrasinal debe ter polo menos 6 caracteres",
+  "VALIDATION_PASS_REQUIRED": "Debes especificar un contrasinal",
+  "UPDATE_SUCCESS": "Actualización correcta"
 }

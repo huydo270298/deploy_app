@@ -27,5 +27,16 @@
   "CITY": "Dinas/Talaith",
   "ADDRESS": "Cyfeiriad",
   "PHONE": "Rhif ffôn",
-  "LINK": "Dolen"
+  "LINK": "Dolen",
+  "VISIT_LINK": "Ewch i'r ddolen hysbysebwr",
+  "AS_LOW_AS": "Mor isel â 100 miliwn o USD",
+  "HELP_1": "1. Gallwch ymuno â'r troelli am ddim.",
+  "HELP_2": "2. Cysylltir â'r rhai mwyaf ffodus a rhoddir y wobr iddynt",
+  "NUMBER_SPIN": "nifer y troadau sbin",
+  "INCORRECT": "Enw defnyddiwr neu gyfrinair yn anghywir.",
+  "VALIDATION_USERNAME_REQUIRED": "Rhaid i chi nodi enw defnyddiwr",
+  "USER_ALREADY": "Mae enw defnyddiwr eisoes yn bodoli yn y system.",
+  "VALIDATION_PASS_LENGTH": "Rhaid i'r cyfrinair gynnwys o leiaf 6 nod",
+  "VALIDATION_PASS_REQUIRED": "Rhaid i chi nodi cyfrinair",
+  "UPDATE_SUCCESS": "Diweddaru llwyddiant"
 }

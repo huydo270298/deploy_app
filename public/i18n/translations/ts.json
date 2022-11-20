@@ -27,5 +27,16 @@
   "CITY": "Doroba/Xifundzankulu",
   "ADDRESS": "Kherefu",
   "PHONE": "Nomboro ya Riqingho",
-  "LINK": "Hlanganisa"
+  "LINK": "Hlanganisa",
+  "VISIT_LINK": "Endzela xihlanganisi xa swinavetisi",
+  "AS_LOW_AS": "Ku fika ehansi ka 100 wa timiliyoni ta USD",
+  "HELP_1": "1. U nga joyina spin mahala.",
+  "HELP_2": "2. Lava nga na nkateko va ta tihlanganisiwa va nyikiwa sagwadi",
+  "NUMBER_SPIN": "tinomboro ta ku rhendzeleka ka swirhendzevutani",
+  "INCORRECT": "Vito ra mutirhisi kumbe phaswedi a swi lulamanga.",
+  "VALIDATION_USERNAME_REQUIRED": "U fanele ku boxa vito ra mutirhisi",
+  "USER_ALREADY": "Vito ra mutirhisi se ri kona eka sisiteme.",
+  "VALIDATION_PASS_LENGTH": "Phasiwedi yi fanele ku va na swihlawulekisi swa kwalomu ka 6",
+  "VALIDATION_PASS_REQUIRED": "U fanele ku boxa phaswedi",
+  "UPDATE_SUCCESS": "Update ku humelela"
 }

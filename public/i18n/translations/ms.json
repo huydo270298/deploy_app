@@ -27,5 +27,16 @@
   "CITY": "Bandar/Wilayah",
   "ADDRESS": "Alamat",
   "PHONE": "Nombor telefon",
-  "LINK": "Pautan"
+  "LINK": "Pautan",
+  "VISIT_LINK": "Lawati pautan pengiklan",
+  "AS_LOW_AS": "Serendah 100 juta USD",
+  "HELP_1": "1. Anda boleh menyertai putaran secara percuma.",
+  "HELP_2": "2. Yang bertuah akan dihubungi dan diberi hadiah",
+  "NUMBER_SPIN": "bilangan pusingan pusingan",
+  "INCORRECT": "Nama pengguna atau kata laluan salah.",
+  "VALIDATION_USERNAME_REQUIRED": "Anda mesti menentukan nama pengguna",
+  "USER_ALREADY": "Nama pengguna sudah wujud dalam sistem.",
+  "VALIDATION_PASS_LENGTH": "Kata laluan mesti mempunyai sekurang-kurangnya 6 aksara",
+  "VALIDATION_PASS_REQUIRED": "Anda mesti menentukan kata laluan",
+  "UPDATE_SUCCESS": "Kemas kini kejayaan"
 }

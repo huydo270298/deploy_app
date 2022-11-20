@@ -27,5 +27,16 @@
   "CITY": "Şehir/İl",
   "ADDRESS": "Adres",
   "PHONE": "Telefon numarası",
-  "LINK": "Bağlantı"
+  "LINK": "Bağlantı",
+  "VISIT_LINK": "Reklamveren bağlantısını ziyaret edin",
+  "AS_LOW_AS": "100 milyon USD kadar düşük",
+  "HELP_1": "1. Dönüşe ücretsiz olarak katılabilirsiniz.",
+  "HELP_2": "2. En şanslı olanla iletişime geçilecek ve ödül verilecektir.",
+  "NUMBER_SPIN": "dönüş sayısı",
+  "INCORRECT": "Kullanıcı adı veya şifre hatalı.",
+  "VALIDATION_USERNAME_REQUIRED": "Bir kullanıcı adı belirtmelisiniz",
+  "USER_ALREADY": "Kullanıcı adı zaten sistemde var.",
+  "VALIDATION_PASS_LENGTH": "Şifre en az 6 karakterden oluşmalıdır",
+  "VALIDATION_PASS_REQUIRED": "Bir şifre belirtmelisiniz",
+  "UPDATE_SUCCESS": "Güncelleme başarısı"
 }

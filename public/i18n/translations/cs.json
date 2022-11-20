@@ -27,5 +27,16 @@
   "CITY": "Město/provincie",
   "ADDRESS": "Adresa",
   "PHONE": "Telefonní číslo",
-  "LINK": "Odkaz"
+  "LINK": "Odkaz",
+  "VISIT_LINK": "Přejít na odkaz inzerenta",
+  "AS_LOW_AS": "Až 100 milionů USD",
+  "HELP_1": "1. Do roztočení se můžete zapojit zdarma.",
+  "HELP_2": "2. Nejšťastnější bude kontaktován a bude mu předána cena",
+  "NUMBER_SPIN": "počet otáček otočení",
+  "INCORRECT": "Nesprávné uživatelské jméno nebo heslo.",
+  "VALIDATION_USERNAME_REQUIRED": "Musíte zadat uživatelské jméno",
+  "USER_ALREADY": "Uživatelské jméno již v systému existuje.",
+  "VALIDATION_PASS_LENGTH": "Heslo musí mít alespoň 6 znaků",
+  "VALIDATION_PASS_REQUIRED": "Musíte zadat heslo",
+  "UPDATE_SUCCESS": "Aktualizace úspěšná"
 }

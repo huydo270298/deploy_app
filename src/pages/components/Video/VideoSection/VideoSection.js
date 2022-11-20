@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import spinApi from '../../../../api/spinApi';
 import userApi from '../../../../api/userApi';
@@ -12,6 +13,7 @@ import styles from './VideoSection.module.scss';
 let cx = classNames.bind(styles);
 
 const VideoSection = ({video}) => {
+  const { t } = useTranslation();
   const dispatch = useDispatch();
   const idUser = useSelector(state => state.user.user);
   const idVideo = useSelector(state=> state.video.videoId) || video[0]?.id;
@@ -28,13 +30,17 @@ const VideoSection = ({video}) => {
   const [messageSpin, setMessageSpin] = useState('')
 
   const handleSpin = () => {
-    spinApi.getResult(idUser)
-      .then((response) => {
-        let result = response.data.result;
-        result === 'Lose'? setMessageSpin('Sorry! You have not won the prize yet') : setMessageSpin('');
-
-        handleCountdownAlert();
-      })
+    if(idUser) {
+      spinApi.getResult(idUser)
+        .then((response) => {
+          let result = response.data.result;
+          result === 'Lose'? setMessageSpin('Sorry! You have not won the prize yet') : setMessageSpin('');
+        }  
+      );
+    } else {
+      setMessageSpin('Sorry! You have not won the prize yet');
+    }
+    handleCountdownAlert();
   }
 
   useEffect(() => {
@@ -165,7 +171,7 @@ const VideoSection = ({video}) => {
           if(item.id === idVideo) {
             return (
             <div key={index} className={cx('link_area')}>
-              <a href={`https://${item.link}`} className={cx('link')}>Visit advertiser link</a>
+              <a href={`${item.link}`} className={cx('link')}>{t("VISIT_LINK")}</a>
             </div>
             )
           } else {

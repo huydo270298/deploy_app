@@ -25,7 +25,7 @@ const ListVideo = () => {
   const [page, setPage] = useState(() => ({
     ...queryParams,
     page: Number.parseInt(queryParams.page) || 1,
-    size: Number.parseInt(queryParams.size) || 12,
+    size: Number.parseInt(queryParams.size) || 3,
   }))
 
   useEffect(() => {
@@ -73,7 +73,7 @@ const ListVideo = () => {
         })
         setVideo(listVideo);
       })
-  }, [page, toggleModalUpdate])
+  }, [page, toggleModalUpdate, video])
   let token = localStorage.getItem(StorageKeys.TOKEN);
   
   const headers= {
@@ -81,7 +81,6 @@ const ListVideo = () => {
       'My-Custom-Header': 'foobar'
     }
   const handleDelete = () => {
-    console.log(token);
     videoApi.delete(videoCurrent.id, headers)
       .then (() => {
         setToggleModalDelete(false)

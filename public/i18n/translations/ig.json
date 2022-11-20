@@ -27,5 +27,16 @@
   "CITY": "Obodo/Obodo",
   "ADDRESS": "Adreesị",
   "PHONE": "Nọmba ekwentị",
-  "LINK": "Njikọ"
+  "LINK": "Njikọ",
+  "VISIT_LINK": "Gaa na njikọ mgbasa ozi",
+  "AS_LOW_AS": "Dị ka 100 nde USD",
+  "HELP_1": "1. Ị nwere ike isonye na atụ ogho n'efu.",
+  "HELP_2": "2. A ga-akpọtụrụ ndị nwere chi ọma ma nye ya ihe nrite",
+  "NUMBER_SPIN": "ọnụọgụgụ nke ntụgharị ntụgharị",
+  "INCORRECT": "Aha njirimara ma ọ bụ paswọọdụ ezighi ezi.",
+  "VALIDATION_USERNAME_REQUIRED": "Ị ga-ezipụta aha njirimara",
+  "USER_ALREADY": "Aha njirimara adịlarị na sistemụ.",
+  "VALIDATION_PASS_LENGTH": "Okwuntughe ga-enwerịrị opekata mpe mkpụrụedemede 6",
+  "VALIDATION_PASS_REQUIRED": "Ị ga-ezipụta paswọọdụ",
+  "UPDATE_SUCCESS": "Melite ihe ịga nke ọma"
 }

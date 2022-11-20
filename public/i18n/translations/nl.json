@@ -27,5 +27,16 @@
   "CITY": "Stad/Provincie",
   "ADDRESS": "Adres",
   "PHONE": "Telefoonnummer",
-  "LINK": "Koppeling"
+  "LINK": "Koppeling",
+  "VISIT_LINK": "Bezoek de adverteerderslink",
+  "AS_LOW_AS": "Zo laag als 100 miljoen USD",
+  "HELP_1": "1. Je kunt gratis meedoen aan de spin.",
+  "HELP_2": "2. De gelukkigste wordt gecontacteerd en krijgt de prijs",
+  "NUMBER_SPIN": "het aantal draaibeurten",
+  "INCORRECT": "Gebruikersnaam of wachtwoord onjuist.",
+  "VALIDATION_USERNAME_REQUIRED": "U moet een gebruikersnaam opgeven",
+  "USER_ALREADY": "Gebruikersnaam bestaat al in het systeem.",
+  "VALIDATION_PASS_LENGTH": "Wachtwoord moet minimaal 6 tekens bevatten",
+  "VALIDATION_PASS_REQUIRED": "U moet een wachtwoord opgeven",
+  "UPDATE_SUCCESS": "Update succes"
 }

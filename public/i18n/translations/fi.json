@@ -27,5 +27,16 @@
   "CITY": "Kaupunki/maakunta",
   "ADDRESS": "Osoite",
   "PHONE": "Puhelinnumero",
-  "LINK": "Linkki"
+  "LINK": "Linkki",
+  "VISIT_LINK": "Vieraile mainostajan linkissä",
+  "AS_LOW_AS": "Niinkin alhainen kuin 100 miljoonaa USD",
+  "HELP_1": "1. Voit liittyä pyöräytykseen ilmaiseksi.",
+  "HELP_2": "2. Onnellisimpiin otetaan yhteyttä ja hänelle luovutetaan palkinto",
+  "NUMBER_SPIN": "pyörimiskierrosten määrät",
+  "INCORRECT": "Käyttäjätunnus tai salasana virheellinen.",
+  "VALIDATION_USERNAME_REQUIRED": "Sinun on määritettävä käyttäjätunnus",
+  "USER_ALREADY": "Käyttäjätunnus on jo järjestelmässä.",
+  "VALIDATION_PASS_LENGTH": "Salasanassa on oltava vähintään 6 merkkiä",
+  "VALIDATION_PASS_REQUIRED": "Sinun on määritettävä salasana",
+  "UPDATE_SUCCESS": "Päivityksen menestys"
 }

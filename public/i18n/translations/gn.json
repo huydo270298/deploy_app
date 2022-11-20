@@ -27,5 +27,16 @@
   "CITY": "Táva/Provincia",
   "ADDRESS": "Oñe'ẽ chupe",
   "PHONE": "Teléfono Número",
-  "LINK": "Joajuha"
+  "LINK": "Joajuha",
+  "VISIT_LINK": "Visita enlace anunciante rehegua",
+  "AS_LOW_AS": "Imbovyvéva 100 millones USD peve",
+  "HELP_1": "1. Ikatu reike pe giro-pe gratis.",
+  "HELP_2": "2. Oñecontacta umi afortunadovévape ha oñeme'êta jopói",
+  "NUMBER_SPIN": "umi papapy ojere giro rehegua",
+  "INCORRECT": "Pojoapy réra térã ñe’ẽñemi naiporãi.",
+  "VALIDATION_USERNAME_REQUIRED": "Emombe’uva’erã peteĩ puruhára réra",
+  "USER_ALREADY": "Pojoapy réra oĩma sistema-pe.",
+  "VALIDATION_PASS_LENGTH": "Ñe’ẽñemi oguerekova’erã 6 tai jepe",
+  "VALIDATION_PASS_REQUIRED": "Emombe’uva’erã peteĩ ñe’ẽñemi",
+  "UPDATE_SUCCESS": "Ombopyahu éxito"
 }

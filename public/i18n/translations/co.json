@@ -27,5 +27,16 @@
   "CITY": "Cità/Provincia",
   "ADDRESS": "Indirizzu",
   "PHONE": "Numeru di telefonu",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Visita u ligame di l'annunciatore",
+  "AS_LOW_AS": "Cum'è 100 milioni di USD",
+  "HELP_1": "1. Pudete unisce à u spin for free.",
+  "HELP_2": "2. U più furtunatu serà cuntattatu è datu u premiu",
+  "NUMBER_SPIN": "u numeru di spin turns",
+  "INCORRECT": "Username o password incorrecte.",
+  "VALIDATION_USERNAME_REQUIRED": "Avete da specificà un nome d'utilizatore",
+  "USER_ALREADY": "U nome d'utilizatore esiste digià in u sistema.",
+  "VALIDATION_PASS_LENGTH": "A password deve avè almenu 6 caratteri",
+  "VALIDATION_PASS_REQUIRED": "Avete da specificà una password",
+  "UPDATE_SUCCESS": "Actualizazione successu"
 }

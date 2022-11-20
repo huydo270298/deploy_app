@@ -27,5 +27,16 @@
   "CITY": "Grad/pokrajina",
   "ADDRESS": "Adresa",
   "PHONE": "Broj telefona",
-  "LINK": "Veza"
+  "LINK": "Veza",
+  "VISIT_LINK": "Posjetite vezu oglašivača",
+  "AS_LOW_AS": "Već od 100 milijuna USD",
+  "HELP_1": "1. Možete se pridružiti vrtnji besplatno.",
+  "HELP_2": "2. Najsretniji će biti kontaktiran i uručena nagrada",
+  "NUMBER_SPIN": "broj okretaja vrtnje",
+  "INCORRECT": "Korisničko ime ili lozinka netočni.",
+  "VALIDATION_USERNAME_REQUIRED": "Morate navesti korisničko ime",
+  "USER_ALREADY": "Korisničko ime već postoji u sustavu.",
+  "VALIDATION_PASS_LENGTH": "Lozinka mora imati najmanje 6 znakova",
+  "VALIDATION_PASS_REQUIRED": "Morate navesti lozinku",
+  "UPDATE_SUCCESS": "Ažuriranje uspješno"
 }

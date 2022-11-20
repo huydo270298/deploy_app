@@ -27,5 +27,16 @@
   "CITY": "Llaqta/Provincia",
   "ADDRESS": "Tarikuynin",
   "PHONE": "Teléfono Numero",
-  "LINK": "Tupana"
+  "LINK": "Tupana",
+  "VISIT_LINK": "Willakuqpa linkninta watukuy",
+  "AS_LOW_AS": "100 hunu USD hina pisilla",
+  "HELP_1": "1. Muyuchiymanqa mana qullqillapaqmi hukllawakuwaq.",
+  "HELP_2": "2. Aswan suerteyuq kaqwan rimanakuspa premiota qunqaku",
+  "NUMBER_SPIN": "chay yupaykuna muyuy muyuriq",
+  "INCORRECT": "Ruraqpa sutin utaq yaykuna rimay pantasqa.",
+  "VALIDATION_USERNAME_REQUIRED": "Ruraqpa sutintam ninayki",
+  "USER_ALREADY": "Ruwaqpa sutinqa llamkanapiqa kachkanñam.",
+  "VALIDATION_PASS_LENGTH": "Yaykuna rimayqa 6 qillqayuqmi kanan",
+  "VALIDATION_PASS_REQUIRED": "Yaykuna rimayta churanayki tiyan",
+  "UPDATE_SUCCESS": "Allinta musuqyachiy"
 }

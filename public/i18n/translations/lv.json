@@ -27,5 +27,16 @@
   "CITY": "Pilsēta/province",
   "ADDRESS": "Adrese",
   "PHONE": "Telefona numurs",
-  "LINK": "Saite"
+  "LINK": "Saite",
+  "VISIT_LINK": "Apmeklējiet reklāmdevēja saiti",
+  "AS_LOW_AS": "Tikai 100 miljoni USD",
+  "HELP_1": "1. Jūs varat pievienoties griezienam bez maksas.",
+  "HELP_2": "2. Ar laimīgāko sazināsies un saņems balvu",
+  "NUMBER_SPIN": "griešanās apgriezienu skaits",
+  "INCORRECT": "Lietotājvārds vai parole ir nepareiza.",
+  "VALIDATION_USERNAME_REQUIRED": "Jānorāda lietotājvārds",
+  "USER_ALREADY": "Lietotājvārds jau pastāv sistēmā.",
+  "VALIDATION_PASS_LENGTH": "Parolei jābūt vismaz 6 rakstzīmēm",
+  "VALIDATION_PASS_REQUIRED": "Jums jānorāda parole",
+  "UPDATE_SUCCESS": "Atjaunināšanas panākumi"
 }

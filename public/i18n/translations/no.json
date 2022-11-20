@@ -27,5 +27,16 @@
   "CITY": "By/provins",
   "ADDRESS": "Adresse",
   "PHONE": "Telefonnummer",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Besøk annonsørlinken",
+  "AS_LOW_AS": "Så lite som 100 millioner USD",
+  "HELP_1": "1. Du kan bli med på spinn gratis.",
+  "HELP_2": "2. De heldigste vil bli kontaktet og gitt premien",
+  "NUMBER_SPIN": "antall snurr",
+  "INCORRECT": "Brukenavn eller passord er feil.",
+  "VALIDATION_USERNAME_REQUIRED": "Du må spesifisere et brukernavn",
+  "USER_ALREADY": "Brukernavnet finnes allerede i systemet.",
+  "VALIDATION_PASS_LENGTH": "Passordet må ha minst 6 tegn",
+  "VALIDATION_PASS_REQUIRED": "Du må angi et passord",
+  "UPDATE_SUCCESS": "Oppdatering suksess"
 }

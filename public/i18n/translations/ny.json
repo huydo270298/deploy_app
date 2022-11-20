@@ -27,5 +27,16 @@
   "CITY": "Mzinda/Chigawo",
   "ADDRESS": "Adilesi",
   "PHONE": "Nambala yafoni",
-  "LINK": "Lumikizani"
+  "LINK": "Lumikizani",
+  "VISIT_LINK": "Pitani ku ulalo wotsatsa",
+  "AS_LOW_AS": "Pafupifupi 100 miliyoni USD",
+  "HELP_1": "1. Mutha kujowina sapota kwaulere.",
+  "HELP_2": "2. Ochita mwayi adzalumikizidwa ndikupatsidwa mphotho",
+  "NUMBER_SPIN": "manambala a ma spin amatembenuka",
+  "INCORRECT": "Dzina lolowera kapena mawu achinsinsi olakwika.",
+  "VALIDATION_USERNAME_REQUIRED": "Muyenera kutchula dzina lolowera",
+  "USER_ALREADY": "Dzina lolowera lilipo kale m'dongosolo.",
+  "VALIDATION_PASS_LENGTH": "Mawu achinsinsi ayenera kukhala ndi zilembo zosachepera 6",
+  "VALIDATION_PASS_REQUIRED": "Muyenera kufotokoza mawu achinsinsi",
+  "UPDATE_SUCCESS": "Kusintha bwino"
 }

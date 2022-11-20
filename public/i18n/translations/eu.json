@@ -15,7 +15,7 @@
   "C_PASSWORD": "pasahitza baieztatu",
   "DONT_ACCOUNT": "Ez al duzu konturik?",
   "ALREADY_ACCOUNT": "Kontu bat al duzu dagoeneko?",
-  "SKIP": "SALTATU",
+  "SKIP": "Spin bonusa",
   "SAVE": "Gorde",
   "SAVED_VIDEOS": "Gordetako bideoak",
   "PERSONAL_TIT": "Informazio pertsonala",
@@ -27,5 +27,16 @@
   "CITY": "Hiria/Probintzia",
   "ADDRESS": "Helbidea",
   "PHONE": "Telefono zenbakia",
-  "LINK": "Esteka"
+  "LINK": "Esteka",
+  "VISIT_LINK": "Bisitatu iragarlearen esteka",
+  "AS_LOW_AS": "100 milioi USD bezain gutxi",
+  "HELP_1": "1. Doan sar zaitezke biran.",
+  "HELP_2": "2. Zortetsuenarekin harremanetan jarriko da eta saria emango zaio",
+  "NUMBER_SPIN": "bira-bira kopuruak",
+  "INCORRECT": "Erabiltzaile izena edo pasahitza okerra.",
+  "VALIDATION_USERNAME_REQUIRED": "Erabiltzaile-izena zehaztu behar duzu",
+  "USER_ALREADY": "Erabiltzaile-izena dagoeneko badago sisteman.",
+  "VALIDATION_PASS_LENGTH": "Pasahitzak 6 karaktere izan behar ditu gutxienez",
+  "VALIDATION_PASS_REQUIRED": "Pasahitz bat zehaztu behar duzu",
+  "UPDATE_SUCCESS": "Eguneratu arrakasta"
 }

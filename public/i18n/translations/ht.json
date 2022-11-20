@@ -27,5 +27,16 @@
   "CITY": "Vil/pwovens",
   "ADDRESS": "Adrès",
   "PHONE": "Nimewo telefòn",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Vizite lyen piblisite",
+  "AS_LOW_AS": "Osi ba ke 100 milyon USD",
+  "HELP_1": "1. Ou ka rantre nan vire a gratis.",
+  "HELP_2": "2. Yo pral kontakte moun ki gen plis chans epi yo bay pri a",
+  "NUMBER_SPIN": "nimewo yo nan vire vire",
+  "INCORRECT": "Non itilizatè oswa modpas kòrèk.",
+  "VALIDATION_USERNAME_REQUIRED": "Ou dwe presize yon non itilizatè",
+  "USER_ALREADY": "Non itilizatè deja egziste nan sistèm nan.",
+  "VALIDATION_PASS_LENGTH": "Modpas dwe genyen omwen 6 karaktè",
+  "VALIDATION_PASS_REQUIRED": "Ou dwe presize yon modpas",
+  "UPDATE_SUCCESS": "Mizajou siksè"
 }

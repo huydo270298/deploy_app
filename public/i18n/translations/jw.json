@@ -27,5 +27,16 @@
   "CITY": "Kota/Propinsi",
   "ADDRESS": "alamat",
   "PHONE": "Nomer telpon",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Dolan maring link pengiklan",
+  "AS_LOW_AS": "Mung 100 yuta USD",
+  "HELP_1": "1. Sampeyan bisa nggabungake muter free .",
+  "HELP_2": "2. Sing paling begja bakal dikontak lan diwenehi hadiah",
+  "NUMBER_SPIN": "nomer giliran giliran",
+  "INCORRECT": "Jeneng pangguna utawa sandhi salah.",
+  "VALIDATION_USERNAME_REQUIRED": "Sampeyan kudu nemtokake jeneng panganggo",
+  "USER_ALREADY": "Jeneng pangguna wis ana ing sistem.",
+  "VALIDATION_PASS_LENGTH": "Tembung sandhi kudu paling sethithik 6 karakter",
+  "VALIDATION_PASS_REQUIRED": "Sampeyan kudu nemtokake sandhi",
+  "UPDATE_SUCCESS": "Sukses nganyari"
 }

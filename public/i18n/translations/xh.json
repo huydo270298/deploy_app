@@ -15,7 +15,7 @@
   "C_PASSWORD": "Ngqina iphasiwedi",
   "DONT_ACCOUNT": "Awunayo iakhawunti?",
   "ALREADY_ACCOUNT": "Ngaba sele unayo i-akhawunti?",
-  "SKIP": "SKIP",
+  "SKIP": "Spin ibhonasi",
   "SAVE": "Gcina",
   "SAVED_VIDEOS": "Iividiyo ezigciniweyo",
   "PERSONAL_TIT": "Inkcukacha zimntu",
@@ -27,5 +27,16 @@
   "CITY": "Isixeko/iPhondo",
   "ADDRESS": "Idilesi",
   "PHONE": "Inombolo yomnxeba",
-  "LINK": "Ikhonkco"
+  "LINK": "Ikhonkco",
+  "VISIT_LINK": "Ndwendwela ikhonkco lomthengisi",
+  "AS_LOW_AS": "Ngaphantsi kwe-100 yezigidi ze-USD",
+  "HELP_1": "1. Ungajoyina spin simahla.",
+  "HELP_2": "2. Kuya kuqhagamshelwana naye oyena mntu unethamsanqa aze anikwe ibhaso",
+  "NUMBER_SPIN": "amanani spin ujika",
+  "INCORRECT": "Igama lomsebenzisi okanye igama lokugqitha alichanekanga.",
+  "VALIDATION_USERNAME_REQUIRED": "Kufuneka uchaze igama lomsebenzisi",
+  "USER_ALREADY": "Igama lomsebenzisi sele likhona kwisixokelelwano.",
+  "VALIDATION_PASS_LENGTH": "Igama lokugqithisa kufuneka libenamagama ama-6 ubuncinane",
+  "VALIDATION_PASS_REQUIRED": "Kufuneka ucacise igama lokugqithisa",
+  "UPDATE_SUCCESS": "Hlaziya impumelelo"
 }

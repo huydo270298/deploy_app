@@ -27,5 +27,16 @@
   "CITY": "Város/Tartomány",
   "ADDRESS": "Cím",
   "PHONE": "Telefonszám",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Látogassa meg a hirdető linkjét",
+  "AS_LOW_AS": "Akár 100 millió USD",
+  "HELP_1": "1. Ingyenesen csatlakozhatsz a pörgetéshez.",
+  "HELP_2": "2. A legszerencsésebbel felvesszük a kapcsolatot és átadjuk a díjat",
+  "NUMBER_SPIN": "a centrifugálási fordulatok száma",
+  "INCORRECT": "Helytelen felhasználónév vagy jelszó.",
+  "VALIDATION_USERNAME_REQUIRED": "Meg kell adnia egy felhasználónevet",
+  "USER_ALREADY": "A felhasználónév már létezik a rendszerben.",
+  "VALIDATION_PASS_LENGTH": "A jelszónak legalább 6 karakterből kell állnia",
+  "VALIDATION_PASS_REQUIRED": "Meg kell adnia egy jelszót",
+  "UPDATE_SUCCESS": "Frissítés sikeres"
 }

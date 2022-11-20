@@ -27,5 +27,16 @@
   "CITY": "Lungsod/Probinsya",
   "ADDRESS": "Address",
   "PHONE": "Numero sa Telepono",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Bisitaha ang link sa advertiser",
+  "AS_LOW_AS": "Ingon ka ubos sa 100 milyon nga USD",
+  "HELP_1": "1. Mahimo kang moapil sa spin nga libre.",
+  "HELP_2": "2. Ang labing swerte makontak ug mahatagan sa premyo",
+  "NUMBER_SPIN": "ang gidaghanon sa spin turns",
+  "INCORRECT": "Ang username o password sayop.",
+  "VALIDATION_USERNAME_REQUIRED": "Kinahanglan nimong itakda ang usa ka username",
+  "USER_ALREADY": "Ang username anaa na sa sistema.",
+  "VALIDATION_PASS_LENGTH": "Ang password kinahanglan adunay labing menos 6 ka karakter",
+  "VALIDATION_PASS_REQUIRED": "Kinahanglan nimong itakda ang usa ka password",
+  "UPDATE_SUCCESS": "Pag-update sa kalampusan"
 }

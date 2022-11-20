@@ -27,5 +27,16 @@
   "CITY": "Lungsod/Lalawigan",
   "ADDRESS": "Address",
   "PHONE": "Numero ng telepono",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Bisitahin ang link ng advertiser",
+  "AS_LOW_AS": "Kasing baba ng 100 milyong USD",
+  "HELP_1": "1. Maaari kang sumali sa spin nang libre.",
+  "HELP_2": "2. Ang pinakamaswerteng makontak at bibigyan ng premyo",
+  "NUMBER_SPIN": "ang mga bilang ng pag-ikot",
+  "INCORRECT": "Mali ang username o password.",
+  "VALIDATION_USERNAME_REQUIRED": "Dapat kang tumukoy ng username",
+  "USER_ALREADY": "Umiiral na ang username sa system.",
+  "VALIDATION_PASS_LENGTH": "Dapat mayroong hindi bababa sa 6 na character ang password",
+  "VALIDATION_PASS_REQUIRED": "Dapat kang tumukoy ng password",
+  "UPDATE_SUCCESS": "I-update ang tagumpay"
 }

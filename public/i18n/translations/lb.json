@@ -27,5 +27,16 @@
   "CITY": "Stad / Provënz",
   "ADDRESS": "Adress",
   "PHONE": "Telefonsnummer",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Besicht Annonceur Link",
+  "AS_LOW_AS": "Sou niddereg wéi 100 Milliounen USD",
+  "HELP_1": "1. Dir kënnt matmaachen fräi spin .",
+  "HELP_2": "2. Déi glécklechst gëtt kontaktéiert an de Präis kritt",
+  "NUMBER_SPIN": "d'Zuelen vun spin verwandelt",
+  "INCORRECT": "Benotzernumm oder Passwuert falsch.",
+  "VALIDATION_USERNAME_REQUIRED": "Dir musst e Benotzernumm uginn",
+  "USER_ALREADY": "Benotzernumm existéiert schonn am System.",
+  "VALIDATION_PASS_LENGTH": "Passwuert muss mindestens 6 Zeechen hunn",
+  "VALIDATION_PASS_REQUIRED": "Dir musst e Passwuert uginn",
+  "UPDATE_SUCCESS": "Update Erfolleg"
 }

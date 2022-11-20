@@ -27,5 +27,16 @@
   "CITY": "Khawpui/Province",
   "ADDRESS": "Chenna hmun",
   "PHONE": "Phone Number a ni",
-  "LINK": "Zawm"
+  "LINK": "Zawm",
+  "VISIT_LINK": "Advertiser link ah hian lut la",
+  "AS_LOW_AS": "USD maktaduai 100 vel pawh a tlawm",
+  "HELP_1": "1. Spin ah hian a thlawnin i join thei ang.",
+  "HELP_2": "2. A vannei berte biak an ni ang a, lawmman pek an ni ang",
+  "NUMBER_SPIN": "spin turn zat te",
+  "INCORRECT": "Username emaw password emaw a dik lo.",
+  "VALIDATION_USERNAME_REQUIRED": "Username i tarlang tur a ni",
+  "USER_ALREADY": "Username chu system ah a awm tawh.",
+  "VALIDATION_PASS_LENGTH": "Password ah hian character 6 tal a awm tur a ni",
+  "VALIDATION_PASS_REQUIRED": "Password i specify tur a ni",
+  "UPDATE_SUCCESS": "Update hlawhtlinna"
 }

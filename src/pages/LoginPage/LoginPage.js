@@ -14,21 +14,26 @@ const LoginPage = () => {
   let navigate = useNavigate();
 
   const dispatch = useDispatch();
-  const [mesError, setMesError] = useState('')
+  const [mesError, setMesError] = useState(false)
 
   const handleSubmit = async(values) => {
     try {
       const action = login(values);
       const resultAction = await dispatch(action);
-      if(resultAction.payload.code === '02') {
-        setMesError(resultAction.payload.message)
-      } else if (resultAction.payload.data.userInfo.roleName === 'USER') {
+      if (resultAction.payload.data.userInfo.roleName === 'USER') {
         return navigate("/");
       } else {
-        setMesError('Username or password incorrect.')
+        setMesError(true)
       }
+      // if(resultAction.payload.code === '02') {
+      //   setMesError(resultAction.payload.message)
+      // } else if (resultAction.payload.data.userInfo.roleName === 'USER') {
+      //   return navigate("/");
+      // } else {
+      //   setMesError('Username or password incorrect.')
+      // }
     } catch (error) {
-      setMesError(error)
+      setMesError(true)
     }
   }
 

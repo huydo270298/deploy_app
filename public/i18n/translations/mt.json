@@ -27,5 +27,16 @@
   "CITY": "Belt/Provinċja",
   "ADDRESS": "Indirizz",
   "PHONE": "Numru tat-telefon",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Żur il-link min jirreklama",
+  "AS_LOW_AS": "Baxx daqs 100 miljun USD",
+  "HELP_1": "1. Tista 'tingħaqad mal-spin b'xejn.",
+  "HELP_2": "2. L-iktar ixxurtjati jiġu kkuntattjati u jingħataw il-premju",
+  "NUMBER_SPIN": "in-numri ta 'dawriet ta' spin",
+  "INCORRECT": "Username jew password mhux korretti.",
+  "VALIDATION_USERNAME_REQUIRED": "Trid tispeċifika username",
+  "USER_ALREADY": "L-isem tal-utent diġà jeżisti fis-sistema.",
+  "VALIDATION_PASS_LENGTH": "Il-password għandu jkollha mill-inqas 6 karattri",
+  "VALIDATION_PASS_REQUIRED": "Trid tispeċifika password",
+  "UPDATE_SUCCESS": "Aġġorna suċċess"
 }

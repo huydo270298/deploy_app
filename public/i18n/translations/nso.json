@@ -27,5 +27,16 @@
   "CITY": "Motse/Provense",
   "ADDRESS": "Aterese",
   "PHONE": "Nomoro ya Mogala",
-  "LINK": "Amanya"
+  "LINK": "Amanya",
+  "VISIT_LINK": "Etela kgokagano ya mmapatši",
+  "AS_LOW_AS": "E le tlase e le 100 milione USD",
+  "HELP_1": "1. O ka tsenela spin mahala.",
+  "HELP_2": "2. Yo a nago le mahlatse o tla ikgokaganya le yena gomme a fiwa moputso",
+  "NUMBER_SPIN": "dipalo tsa spin retelehela",
+  "INCORRECT": "Leina la mosediriši goba phasewete ga se ya nepagala.",
+  "VALIDATION_USERNAME_REQUIRED": "O swanetše go laetša leina la mosediriši",
+  "USER_ALREADY": "Leina la mosediriši le šetše le le gona ka tshepedišong.",
+  "VALIDATION_PASS_LENGTH": "Phasewete e swanetše go ba le bonyane ditlhaka tše 6",
+  "VALIDATION_PASS_REQUIRED": "O swanetše go laetša phasewete",
+  "UPDATE_SUCCESS": "Update katlego"
 }

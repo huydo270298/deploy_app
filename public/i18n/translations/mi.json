@@ -27,5 +27,16 @@
   "CITY": "Taone/Powini",
   "ADDRESS": "Wāhitau",
   "PHONE": "Tau Waea",
-  "LINK": "Hononga"
+  "LINK": "Hononga",
+  "VISIT_LINK": "Tirohia te hononga panui",
+  "AS_LOW_AS": "He iti rawa te 100 miriona USD",
+  "HELP_1": "1. Ka taea e koe te uru atu ki te miro mo te kore utu.",
+  "HELP_2": "2. Ka whakapā atu ki te hunga waimarie ka whakawhiwhia te taonga",
+  "NUMBER_SPIN": "ka huri nga tau o te miro",
+  "INCORRECT": "He he te ingoa kaiwhakamahi, kupuhipa ranei.",
+  "VALIDATION_USERNAME_REQUIRED": "Me tohu e koe he ingoa kaiwhakamahi",
+  "USER_ALREADY": "Ko te ingoa kaiwhakamahi kei roto i te punaha.",
+  "VALIDATION_PASS_LENGTH": "Kia 6 neke atu nga tohu o te kupuhipa",
+  "VALIDATION_PASS_REQUIRED": "Me tohu e koe he kupuhipa",
+  "UPDATE_SUCCESS": "Whakahou angitu"
 }

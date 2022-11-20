@@ -27,5 +27,16 @@
   "CITY": "Şäher / welaýat",
   "ADDRESS": "Salgysy",
   "PHONE": "Telefon belgisi",
-  "LINK": "Baglanyşyk"
+  "LINK": "Baglanyşyk",
+  "VISIT_LINK": "Mahabat berijiniň baglanyşygyna giriň",
+  "AS_LOW_AS": "100 million ABŞ dollary",
+  "HELP_1": "1. Aýlanmaga mugt goşulyp bilersiňiz.",
+  "HELP_2": "2. Iň bagtly adamlar bilen habarlaşylar we baýrak gowşurylar",
+  "NUMBER_SPIN": "öwrümleriň sany",
+  "INCORRECT": "Ulanyjy ady ýa-da parol nädogry.",
+  "VALIDATION_USERNAME_REQUIRED": "Ulanyjy adyny görkezmeli",
+  "USER_ALREADY": "Ulanyjy ady ulgamda eýýäm bar.",
+  "VALIDATION_PASS_LENGTH": "Parol azyndan 6 simwoldan ybarat bolmaly",
+  "VALIDATION_PASS_REQUIRED": "Paroly görkezmeli",
+  "UPDATE_SUCCESS": "Üstünligi täzeläň"
 }

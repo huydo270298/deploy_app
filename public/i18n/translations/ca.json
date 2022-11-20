@@ -27,5 +27,16 @@
   "CITY": "Ciutat/província",
   "ADDRESS": "adreça",
   "PHONE": "Número de telèfon",
-  "LINK": "Enllaç"
+  "LINK": "Enllaç",
+  "VISIT_LINK": "Visiteu l'enllaç de l'anunciant",
+  "AS_LOW_AS": "Tan baix com 100 milions de dòlars",
+  "HELP_1": "1. Pots unir-te al gir gratuïtament.",
+  "HELP_2": "2. Es posarà en contacte amb els més afortunats i es lliurarà el premi",
+  "NUMBER_SPIN": "el nombre de girs",
+  "INCORRECT": "Nom d'usuari o clau d'accés incorrecte.",
+  "VALIDATION_USERNAME_REQUIRED": "Heu d'especificar un nom d'usuari",
+  "USER_ALREADY": "El nom d'usuari ja existeix al sistema.",
+  "VALIDATION_PASS_LENGTH": "La contrasenya ha de tenir almenys 6 caràcters",
+  "VALIDATION_PASS_REQUIRED": "Heu d'especificar una contrasenya",
+  "UPDATE_SUCCESS": "Actualització correcta"
 }

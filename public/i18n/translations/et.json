@@ -27,5 +27,16 @@
   "CITY": "Linn/provints",
   "ADDRESS": "Aadress",
   "PHONE": "Telefoninumber",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Külastage reklaamija linki",
+  "AS_LOW_AS": "Nii vähe kui 100 miljonit USD",
+  "HELP_1": "1. Keerutusega saab liituda tasuta.",
+  "HELP_2": "2. Õnnelikumaga võetakse ühendust ja antakse auhind",
+  "NUMBER_SPIN": "pöörlemiste arvud",
+  "INCORRECT": "Kasutajanimi või parool on vale.",
+  "VALIDATION_USERNAME_REQUIRED": "Peate määrama kasutajanime",
+  "USER_ALREADY": "Kasutajanimi on süsteemis juba olemas.",
+  "VALIDATION_PASS_LENGTH": "Parool peab koosnema vähemalt 6 tähemärgist",
+  "VALIDATION_PASS_REQUIRED": "Peate määrama parooli",
+  "UPDATE_SUCCESS": "Värskenduse edu"
 }

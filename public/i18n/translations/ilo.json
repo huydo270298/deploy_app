@@ -27,5 +27,16 @@
   "CITY": "Siudad/Probinsia",
   "ADDRESS": "Pagtataengan",
   "PHONE": "Numero ti Telepono",
-  "LINK": "Inaig"
+  "LINK": "Inaig",
+  "VISIT_LINK": "Bisitaen ti link ti advertiser",
+  "AS_LOW_AS": "Kas iti nababa a 100 milion USD",
+  "HELP_1": "1. Mabalinmo ti makikadua iti spin a libre.",
+  "HELP_2": "2. Makontak ti nagasat ken maited ti premio",
+  "NUMBER_SPIN": "dagiti numero ti spin turn",
+  "INCORRECT": "Di umiso ti username wenno password.",
+  "VALIDATION_USERNAME_REQUIRED": "Masapul nga ikeddengmo ti nagan ti agar-aramat",
+  "USER_ALREADY": "Ti nagan ti agar-aramat ket addan iti sistema.",
+  "VALIDATION_PASS_LENGTH": "Masapul nga addaan ti password iti di kumurang nga 6 a karakter",
+  "VALIDATION_PASS_REQUIRED": "Masapul nga ikeddengmo ti password",
+  "UPDATE_SUCCESS": "Update ti balligi"
 }

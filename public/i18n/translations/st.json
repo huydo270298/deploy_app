@@ -27,5 +27,16 @@
   "CITY": "Motse/Porofense",
   "ADDRESS": "Aterese",
   "PHONE": "Nomoro ea mohala",
-  "LINK": "Sehokelo"
+  "LINK": "Sehokelo",
+  "VISIT_LINK": "Etela sehokelo sa babapatsi",
+  "AS_LOW_AS": "Ka tlase ho limilione tse 100 tsa USD",
+  "HELP_1": "1. U ka ikopanya le spin mahala.",
+  "HELP_2": "2. Ho tla iteanya le ba lehlohonolo ka ho fetisisa 'me ba fuoe moputso",
+  "NUMBER_SPIN": "lipalo tsa ho thinya",
+  "INCORRECT": "Username kapa password e fosahetse.",
+  "VALIDATION_USERNAME_REQUIRED": "U tlameha ho hlakisa lebitso la mosebelisi",
+  "USER_ALREADY": "Username e se e ntse e le teng tsamaisong.",
+  "VALIDATION_PASS_LENGTH": "Lekunutu le tlameha ho ba le bonyane litlhaku tse 6",
+  "VALIDATION_PASS_REQUIRED": "O tlameha ho hlakisa phasewete",
+  "UPDATE_SUCCESS": "Katleho ea ntlafatso"
 }

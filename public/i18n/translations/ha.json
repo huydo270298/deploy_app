@@ -27,5 +27,16 @@
   "CITY": "Birni/Lardi",
   "ADDRESS": "Adireshi",
   "PHONE": "Lambar tarho",
-  "LINK": "mahada"
+  "LINK": "mahada",
+  "VISIT_LINK": "Ziyarci mahaɗin mai talla",
+  "AS_LOW_AS": "Kasa da dala miliyan 100",
+  "HELP_1": "1. Kuna iya shiga cikin spins kyauta.",
+  "HELP_2": "2. Za a tuntubi wanda ya fi kowa sa'a a ba shi kyautar",
+  "NUMBER_SPIN": "lambobi na juya juya",
+  "INCORRECT": "Sunan mai amfani ko kalmar sirri ba daidai ba.",
+  "VALIDATION_USERNAME_REQUIRED": "Dole ne ku saka sunan mai amfani",
+  "USER_ALREADY": "Sunan mai amfani ya riga ya wanzu a cikin tsarin.",
+  "VALIDATION_PASS_LENGTH": "Dole ne kalmar wucewa ta kasance tana da aƙalla haruffa 6",
+  "VALIDATION_PASS_REQUIRED": "Dole ne ku saka kalmar sirri",
+  "UPDATE_SUCCESS": "Sabunta nasara"
 }

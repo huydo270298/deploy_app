@@ -27,5 +27,16 @@
   "CITY": "ከተማ/ኣውራጃ",
   "ADDRESS": "አድራሻ",
   "PHONE": "ቁጽሪ ተሌፎን።",
-  "LINK": "ሊንክ"
+  "LINK": "ሊንክ",
+  "VISIT_LINK": "ኣብ ኣድቨርታይዘር ሊንክ ተወከሱ",
+  "AS_LOW_AS": "ክሳብ 100 ሚልዮን ዶላር ዝበጽሕ ትሑት ዋጋ",
+  "HELP_1": "1. ኣብቲ ስፒን ብነጻ ክትጽንበሩ ትኽእሉ ኢኹም።",
+  "HELP_2": "2. እቲ ዕድለኛ ዝኾነ ርክብ ብምግባር ሽልማት ይወሃቦ",
+  "NUMBER_SPIN": "ቁጽሪ ናይ ስፒን መጠወሪታት",
+  "INCORRECT": "ስም ተጠቃሚ ወይ ምልክት ቃል ጌጋ እዩ።",
+  "VALIDATION_USERNAME_REQUIRED": "ስም ተጠቃሚ ክትገልጽ ኣለካ",
+  "USER_ALREADY": "ስም ተጠቃሚ ድሮ ኣብቲ ስርዓት ኣሎ።",
+  "VALIDATION_PASS_LENGTH": "ፓስዎርድ እንተወሓደ 6 ፊደላት ክህልዎ ኣለዎ።",
+  "VALIDATION_PASS_REQUIRED": "ፓስዎርድ ክትገልጽ ኣለካ",
+  "UPDATE_SUCCESS": "ዓወት ኣዘምንዎ።"
 }

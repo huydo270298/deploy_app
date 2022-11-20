@@ -27,5 +27,16 @@
   "CITY": "Shahar/viloyat",
   "ADDRESS": "Manzil",
   "PHONE": "Telefon raqami",
-  "LINK": "Havola"
+  "LINK": "Havola",
+  "VISIT_LINK": "Reklama beruvchi havolasiga tashrif buyuring",
+  "AS_LOW_AS": "100 million dollargacha",
+  "HELP_1": "1. Spinga bepul qo'shilishingiz mumkin.",
+  "HELP_2": "2. Eng omadlisi bilan bog'lanib, sovg'a beriladi",
+  "NUMBER_SPIN": "aylanishlarning soni",
+  "INCORRECT": "Foydalanuvchi nomi yoki parol noto'g'ri.",
+  "VALIDATION_USERNAME_REQUIRED": "Siz foydalanuvchi nomini ko'rsatishingiz kerak",
+  "USER_ALREADY": "Tizimda foydalanuvchi nomi allaqachon mavjud.",
+  "VALIDATION_PASS_LENGTH": "Parol kamida 6 ta belgidan iborat bo'lishi kerak",
+  "VALIDATION_PASS_REQUIRED": "Parolni ko'rsatishingiz kerak",
+  "UPDATE_SUCCESS": "Muvaffaqiyatli yangilanish"
 }

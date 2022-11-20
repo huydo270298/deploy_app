@@ -27,5 +27,16 @@
   "CITY": "Miestas/Provincija",
   "ADDRESS": "Adresas",
   "PHONE": "Telefono numeris",
-  "LINK": "Nuoroda"
+  "LINK": "Nuoroda",
+  "VISIT_LINK": "Apsilankykite reklamuotojo nuorodoje",
+  "AS_LOW_AS": "Net 100 milijonų USD",
+  "HELP_1": "1. Galite prisijungti prie sukimo nemokamai.",
+  "HELP_2": "2. Su laimingiausiu bus susisiekta ir jam bus įteiktas prizas",
+  "NUMBER_SPIN": "sukimosi apsisukimų skaičius",
+  "INCORRECT": "Neteisingas vartotojo vardas arba slaptažodis.",
+  "VALIDATION_USERNAME_REQUIRED": "Turite nurodyti vartotojo vardą",
+  "USER_ALREADY": "Vartotojo vardas jau yra sistemoje.",
+  "VALIDATION_PASS_LENGTH": "Slaptažodį turi sudaryti bent 6 simboliai",
+  "VALIDATION_PASS_REQUIRED": "Turite nurodyti slaptažodį",
+  "UPDATE_SUCCESS": "Sėkmės atnaujinimas"
 }

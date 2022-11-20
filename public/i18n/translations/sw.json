@@ -27,5 +27,16 @@
   "CITY": "Jiji/Mkoa",
   "ADDRESS": "Anwani",
   "PHONE": "Nambari ya simu",
-  "LINK": "Kiungo"
+  "LINK": "Kiungo",
+  "VISIT_LINK": "Tembelea kiungo cha mtangazaji",
+  "AS_LOW_AS": "Chini kama dola milioni 100",
+  "HELP_1": "1. Unaweza kujiunga na spin bila malipo.",
+  "HELP_2": "2. Mwenye bahati atawasiliana na kupewa zawadi",
+  "NUMBER_SPIN": "nambari za zamu za spin",
+  "INCORRECT": "Jina la mtumiaji au nenosiri sio sahihi.",
+  "VALIDATION_USERNAME_REQUIRED": "Lazima ubainishe jina la mtumiaji",
+  "USER_ALREADY": "Jina la mtumiaji tayari lipo kwenye mfumo.",
+  "VALIDATION_PASS_LENGTH": "Nenosiri lazima liwe na angalau vibambo 6",
+  "VALIDATION_PASS_REQUIRED": "Lazima ubainishe nenosiri",
+  "UPDATE_SUCCESS": "Sasisha mafanikio"
 }

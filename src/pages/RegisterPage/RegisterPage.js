@@ -14,7 +14,7 @@ const RegisterPage = () => {
   let navigate = useNavigate();
 
   const dispatch = useDispatch();
-  const [mesError, setMesError] = useState(null)
+  const [mesError, setMesError] = useState(false)
 
   const handleSubmit = async(values) => {
     
@@ -22,12 +22,12 @@ const RegisterPage = () => {
       const action = register(values);
       const resultAction = await dispatch(action);
       if(resultAction.payload.code === '02') {
-        setMesError(resultAction.payload.message)
+        setMesError(true)
       } else {
         return navigate("/");
       }
     } catch (error) {
-      setMesError(error.message);
+      setMesError(true)
     }
   }
 

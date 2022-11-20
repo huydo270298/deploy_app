@@ -106,7 +106,7 @@ const HomePage = () => {
             <HelpIcon className={cx('icon_help')} />
           </button>
         </div>
-        <p className={cx('note')}>As low as 100 million USD</p>
+        <p className={cx('note')}>{t("AS_LOW_AS")}</p>
       </div>
       {openHelp &&
         <Modal onChange={handleCloseHelpModal} >

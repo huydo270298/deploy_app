@@ -27,5 +27,16 @@
   "CITY": "市/省",
   "ADDRESS": "地址",
   "PHONE": "电话号码",
-  "LINK": "关联"
+  "LINK": "关联",
+  "VISIT_LINK": "访问广告商链接",
+  "AS_LOW_AS": "低至1亿美元",
+  "HELP_1": "1.您可以免费参加旋转。",
+  "HELP_2": "2.将联系最幸运的人并给予奖品",
+  "NUMBER_SPIN": "自旋圈数",
+  "INCORRECT": "用户名或密码不正确。",
+  "VALIDATION_USERNAME_REQUIRED": "您必须指定用户名",
+  "USER_ALREADY": "用户名已存在于系统中。",
+  "VALIDATION_PASS_LENGTH": "密码必须至少有 6 个字符",
+  "VALIDATION_PASS_REQUIRED": "您必须指定密码",
+  "UPDATE_SUCCESS": "更新成功"
 }

@@ -27,5 +27,16 @@
   "CITY": "Oraș/Provinție",
   "ADDRESS": "Abordare",
   "PHONE": "Număr de telefon",
-  "LINK": "Legătură"
+  "LINK": "Legătură",
+  "VISIT_LINK": "Accesați linkul agentului de publicitate",
+  "AS_LOW_AS": "Până la 100 de milioane USD",
+  "HELP_1": "1. Vă puteți înscrie gratuit la rotire.",
+  "HELP_2": "2. Cei mai norocoși vor fi contactați și vor primi premiul",
+  "NUMBER_SPIN": "numărul de spire",
+  "INCORRECT": "Nume de utilizator sau parolă greșită.",
+  "VALIDATION_USERNAME_REQUIRED": "Trebuie să specificați un nume de utilizator",
+  "USER_ALREADY": "Numele de utilizator există deja în sistem.",
+  "VALIDATION_PASS_LENGTH": "Parola trebuie să aibă cel puțin 6 caractere",
+  "VALIDATION_PASS_REQUIRED": "Trebuie să specificați o parolă",
+  "UPDATE_SUCCESS": "Actualizare reușită"
 }

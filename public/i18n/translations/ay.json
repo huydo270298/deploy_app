@@ -15,7 +15,7 @@
   "C_PASSWORD": "Contraseña ukar chiqañchaña",
   "DONT_ACCOUNT": "¿Janiw mä cuentanïktati?",
   "ALREADY_ACCOUNT": "¿Nayratpach mä cuentanïtati?",
-  "SKIP": "WILLIKIPAÑA",
+  "SKIP": "Bono de giro ukax mä jach’a uñacht’äwiwa",
   "SAVE": "Imaña",
   "SAVED_VIDEOS": "Videonak imatäki ukanaka",
   "PERSONAL_TIT": "Jaqina yatiyawipa",
@@ -27,5 +27,16 @@
   "CITY": "Marka/Provincia",
   "ADDRESS": "Tiriksyuna",
   "PHONE": "Teléfono Jakhuwi",
-  "LINK": "Waythapi"
+  "LINK": "Waythapi",
+  "VISIT_LINK": "Uñt’ayasiñatakix link ukaruw mantasma",
+  "AS_LOW_AS": "Kunjamakitix 100 millones USD ukha qullqiw utji",
+  "HELP_1": "1. Jumax inakiw spin ukarux mantasma.",
+  "HELP_2": "2. Suerteni jaqinakaruxa jawst’atarakiniwa ukatxa premio churatarakiniwa",
+  "NUMBER_SPIN": "uka jakhunakax turkakipt’atawa",
+  "INCORRECT": "Usuario suti jan ukax contraseña ukax janiw walïkiti.",
+  "VALIDATION_USERNAME_REQUIRED": "Mä apnaqiri suti uñacht’ayañawa",
+  "USER_ALREADY": "Usuario sutix sistema ukanx nayratpach utji.",
+  "VALIDATION_PASS_LENGTH": "Contraseña ukax 6 chimpunïñapawa",
+  "VALIDATION_PASS_REQUIRED": "Ukaxa mä contraseña uñacht’ayañawa",
+  "UPDATE_SUCCESS": "Jichha pachax suma sarantäwi"
 }

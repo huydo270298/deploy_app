@@ -27,5 +27,16 @@
   "CITY": "Stadt/Provinz",
   "ADDRESS": "Adresse",
   "PHONE": "Telefonnummer",
-  "LINK": "Verknüpfung"
+  "LINK": "Verknüpfung",
+  "VISIT_LINK": "Besuchen Sie den Werbetreibenden-Link",
+  "AS_LOW_AS": "So niedrig wie 100 Millionen USD",
+  "HELP_1": "1. Sie können kostenlos am Spin teilnehmen.",
+  "HELP_2": "2. Die Glücklichsten werden kontaktiert und erhalten den Preis",
+  "NUMBER_SPIN": "die Anzahl der Drehungen",
+  "INCORRECT": "Benutzername oder Passwort falsch.",
+  "VALIDATION_USERNAME_REQUIRED": "Sie müssen einen Benutzernamen angeben",
+  "USER_ALREADY": "Benutzername existiert bereits im System.",
+  "VALIDATION_PASS_LENGTH": "Das Passwort muss mindestens 6 Zeichen lang sein",
+  "VALIDATION_PASS_REQUIRED": "Sie müssen ein Passwort angeben",
+  "UPDATE_SUCCESS": "Erfolg aktualisieren"
 }

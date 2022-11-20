@@ -27,5 +27,16 @@
   "CITY": "Magaalaa/Godina",
   "ADDRESS": "Teessoo",
   "PHONE": "Lakkoofsa Bilbilaa",
-  "LINK": "Hidhata"
+  "LINK": "Hidhata",
+  "VISIT_LINK": "Link beeksisaa daawwadhaa",
+  "AS_LOW_AS": "Hanga USD miliyoona 100 gadi",
+  "HELP_1": "1. Spin bilisaan join gochuu dandeessu.",
+  "HELP_2": "2. Kan carraa qabu quunnamee badhaasni ni kennamaaf",
+  "NUMBER_SPIN": "lakkoofsota garagalcha ispiin",
+  "INCORRECT": "Maqaan fayyadamaa ykn jecha icciitii sirrii miti.",
+  "VALIDATION_USERNAME_REQUIRED": "Maqaa fayyadamaa ifteessuu qabda",
+  "USER_ALREADY": "Maqaan fayyadamaa duraan sirna keessa jira.",
+  "VALIDATION_PASS_LENGTH": "Password yoo xiqqaate arfiilee 6 qabaachuu qaba",
+  "VALIDATION_PASS_REQUIRED": "Jecha icciitii ifteessuu qabda",
+  "UPDATE_SUCCESS": "Milkaa'ina haaromsuu"
 }

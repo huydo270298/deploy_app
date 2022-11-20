@@ -15,7 +15,7 @@
   "C_PASSWORD": "Konfirmo fjalëkalimin",
   "DONT_ACCOUNT": "Nuk keni një llogari?",
   "ALREADY_ACCOUNT": "Posedoni një llogari?",
-  "SKIP": "KAQ",
+  "SKIP": "Bonus rrotullimi",
   "SAVE": "Ruaj",
   "SAVED_VIDEOS": "Videot e ruajtura",
   "PERSONAL_TIT": "Informata personale",
@@ -27,5 +27,16 @@
   "CITY": "Qyteti/Provinca",
   "ADDRESS": "Adresë",
   "PHONE": "Numri i telefonit",
-  "LINK": "Lidhje"
+  "LINK": "Lidhje",
+  "VISIT_LINK": "Vizitoni lidhjen e reklamuesit",
+  "AS_LOW_AS": "Deri në 100 milionë dollarë",
+  "HELP_1": "1. Mund t'i bashkoheni rrotullimit falas.",
+  "HELP_2": "2. Më me fat do të kontaktohet dhe do t'i jepet çmimi",
+  "NUMBER_SPIN": "numrat e rrotullimeve të rrotullimit",
+  "INCORRECT": "Emri i përdoruesit ose fjalëkalimi është i pasaktë.",
+  "VALIDATION_USERNAME_REQUIRED": "Ju duhet të specifikoni një emër përdoruesi",
+  "USER_ALREADY": "Emri i përdoruesit ekziston tashmë në sistem.",
+  "VALIDATION_PASS_LENGTH": "Fjalëkalimi duhet të ketë të paktën 6 karaktere",
+  "VALIDATION_PASS_REQUIRED": "Duhet të specifikoni një fjalëkalim",
+  "UPDATE_SUCCESS": "Përditësimi i suksesshëm"
 }

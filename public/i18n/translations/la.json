@@ -27,5 +27,16 @@
   "CITY": "Urbs / Province",
   "ADDRESS": "Oratio",
   "PHONE": "Numerus telephonicus",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Visita venditator link",
+  "AS_LOW_AS": "Ut humilis quam C decies USD",
+  "HELP_1": "1. nent iungere potes gratis.",
+  "HELP_2": "2. Felicissimus contingetur et donatus",
+  "NUMBER_SPIN": "numerorum nent vices",
+  "INCORRECT": "Username vel tessera falsa.",
+  "VALIDATION_USERNAME_REQUIRED": "Nomen usoris notandum est",
+  "USER_ALREADY": "Nomen usoris iam exstat in systemate.",
+  "VALIDATION_PASS_LENGTH": "Password debet habere saltem VI characters",
+  "VALIDATION_PASS_REQUIRED": "You must not specificare",
+  "UPDATE_SUCCESS": "Update victoria"
 }

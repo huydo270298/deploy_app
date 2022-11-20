@@ -27,5 +27,16 @@
   "CITY": "Ilu / Agbegbe",
   "ADDRESS": "Adirẹsi",
   "PHONE": "Nomba fonu",
-  "LINK": "Ọna asopọ"
+  "LINK": "Ọna asopọ",
+  "VISIT_LINK": "Ṣabẹwo ọna asopọ olupolowo",
+  "AS_LOW_AS": "Bi kekere bi 100 million USD",
+  "HELP_1": "1. O le da awọn omo ere free .",
+  "HELP_2": "2. Awọn orire julọ yoo kan si ati fun ni ẹbun naa",
+  "NUMBER_SPIN": "awọn nọmba ti omo ere",
+  "INCORRECT": "Orukọ olumulo tabi ọrọ igbaniwọle ti ko tọ.",
+  "VALIDATION_USERNAME_REQUIRED": "O gbọdọ pato orukọ olumulo kan",
+  "USER_ALREADY": "Orukọ olumulo ti wa tẹlẹ ninu eto naa.",
+  "VALIDATION_PASS_LENGTH": "Ọrọigbaniwọle gbọdọ ni o kere ju awọn ohun kikọ 6",
+  "VALIDATION_PASS_REQUIRED": "O gbọdọ pato ọrọ igbaniwọle kan",
+  "UPDATE_SUCCESS": "Aṣeyọri imudojuiwọn"
 }

@@ -14,7 +14,7 @@
   "N_PASSWORD": "New Password",
   "DONT_ACCOUNT": "Don’t have an account?",
   "ALREADY_ACCOUNT": "Already have an account?",
-  "SKIP": "SKIP",
+  "SKIP": "Spin bonus",
   "SAVE": "Save",
   "SAVED_VIDEOS": "Saved Videos",
   "PERSONAL_TIT": "Personal information",
@@ -26,5 +26,16 @@
   "CITY": "City/Province",
   "ADDRESS": "Address",
   "PHONE": "Phone Number",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Visit advertiser link",
+  "AS_LOW_AS": "As low as 100 million USD",
+  "HELP_1": "1. You can join the spin for free.",
+  "HELP_2": "2. The luckiest will be contacted and given the prize",
+  "NUMBER_SPIN": "the numbers of spin turns",
+  "INCORRECT": "Username or password incorrect.",
+  "VALIDATION_USERNAME_REQUIRED": "You must specify a username",
+  "USER_ALREADY": "Username already exists in the system.",
+  "VALIDATION_PASS_LENGTH": "Password must have at least 6 characters",
+  "VALIDATION_PASS_REQUIRED": "You must specify a password",
+  "UPDATE_SUCCESS": "Update success"
 }

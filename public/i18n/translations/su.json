@@ -27,5 +27,16 @@
   "CITY": "Kota / Propinsi",
   "ADDRESS": "Alamat",
   "PHONE": "Nomer telepon",
-  "LINK": "Tumbu"
+  "LINK": "Tumbu",
+  "VISIT_LINK": "Didatangan link pangiklan",
+  "AS_LOW_AS": "Sahenteuna 100 juta USD",
+  "HELP_1": "1. Anjeun tiasa gabung spin haratis.",
+  "HELP_2": "2. Anu paling untung bakal dikontak sareng dipasihan hadiah",
+  "NUMBER_SPIN": "angka spin péngkolan",
+  "INCORRECT": "Ngaran pamaké atawa sandi salah.",
+  "VALIDATION_USERNAME_REQUIRED": "Anjeun kudu nangtukeun ngaran pamaké",
+  "USER_ALREADY": "Ngaran pamaké geus aya dina sistem.",
+  "VALIDATION_PASS_LENGTH": "Sandi kedah gaduh sahenteuna 6 karakter",
+  "VALIDATION_PASS_REQUIRED": "Anjeun kudu nangtukeun kecap akses",
+  "UPDATE_SUCCESS": "Ngamutahirkeun kasuksésan"
 }

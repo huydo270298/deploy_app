@@ -15,7 +15,7 @@
   "C_PASSWORD": "የይለፍ ቃል አረጋግጥ",
   "DONT_ACCOUNT": "መለያ የለህም?",
   "ALREADY_ACCOUNT": "መለያ አለህ?",
-  "SKIP": "ዝለል",
+  "SKIP": "ፈተለ ጉርሻ",
   "SAVE": "አስቀምጥ",
   "SAVED_VIDEOS": "የተቀመጡ ቪዲዮዎች",
   "PERSONAL_TIT": "የግል መረጃ",
@@ -27,5 +27,16 @@
   "CITY": "ከተማ/ አውራጃ",
   "ADDRESS": "አድራሻ",
   "PHONE": "ስልክ ቁጥር",
-  "LINK": "አገናኝ"
+  "LINK": "አገናኝ",
+  "VISIT_LINK": "የአስተዋዋቂ አገናኝን ይጎብኙ",
+  "AS_LOW_AS": "እስከ 100 ሚሊዮን ዶላር ዝቅተኛ",
+  "HELP_1": "1. በነጻ ማዞሪያውን መቀላቀል ይችላሉ.",
+  "HELP_2": "2. እድለኞች ተገናኝተው ሽልማቱን ይሰጣሉ",
+  "NUMBER_SPIN": "የማዞሪያዎቹ ቁጥሮች",
+  "INCORRECT": "የተጠቃሚ ስም ወይም የይለፍ ቃል የተሳሳተ ነው።",
+  "VALIDATION_USERNAME_REQUIRED": "የተጠቃሚ ስም መጥቀስ አለብህ",
+  "USER_ALREADY": "የተጠቃሚ ስም አስቀድሞ በስርዓቱ ውስጥ አለ።",
+  "VALIDATION_PASS_LENGTH": "የይለፍ ቃል ቢያንስ 6 ቁምፊዎች ሊኖሩት ይገባል።",
+  "VALIDATION_PASS_REQUIRED": "የይለፍ ቃል መግለጽ አለብህ",
+  "UPDATE_SUCCESS": "ስኬትን አዘምን"
 }

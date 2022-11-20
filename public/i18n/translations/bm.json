@@ -15,7 +15,7 @@
   "C_PASSWORD": "A’ ye Password dafa",
   "DONT_ACCOUNT": "I t’a fɛ ka jatebɔsɛbɛn sɔrɔ wa?",
   "ALREADY_ACCOUNT": "I ye jatebɔsɛbɛn sɔrɔ kaban wa?",
-  "SKIP": "KA LASOGO",
+  "SKIP": "Bonus min bɛ kɛ ni spin ye",
   "SAVE": "Ka mara",
   "SAVED_VIDEOS": "Wideyo minnu maralen bɛ",
   "PERSONAL_TIT": "Mɔgɔ yɛrɛ ka kunnafoniw",
@@ -27,5 +27,16 @@
   "CITY": "Dugu/marabolo",
   "ADDRESS": "Dagayɔrɔ",
   "PHONE": "Telefɔni nimɔrɔ",
-  "LINK": "Ka tugu"
+  "LINK": "Ka tugu",
+  "VISIT_LINK": "Aw ye taa piblisitekɛla ka ladɛrɛsi lajɛ",
+  "AS_LOW_AS": "A ka dɔgɔ ni miliyɔn 100 ye USD",
+  "HELP_1": "1. Aw bɛ se ka fara spin kan fu.",
+  "HELP_2": "2. Mɔgɔ minnu ye hɛrɛ sɔrɔ, olu bɛna ɲɔgɔn sɔrɔ, ka sara di u ma",
+  "NUMBER_SPIN": "spin jiginni hakɛw",
+  "INCORRECT": "Baarakɛla tɔgɔ walima tɔgɔlasɛbɛn ma bɛn.",
+  "VALIDATION_USERNAME_REQUIRED": "Aw ka kan ka baarakɛla tɔgɔ dɔ jira",
+  "USER_ALREADY": "Baarakɛla tɔgɔ bɛ sɔrɔ sistɛmu kɔnɔ kaban.",
+  "VALIDATION_PASS_LENGTH": "Password ka kan ka kɛ ni taamasiyɛn 6 ye a dɔgɔyalenba la",
+  "VALIDATION_PASS_REQUIRED": "Aw ka kan ka tɔgɔlasɛbɛn dɔ jira",
+  "UPDATE_SUCCESS": "Update ɲɛtaa"
 }

@@ -27,5 +27,16 @@
   "CITY": "Cidade/Província",
   "ADDRESS": "Endereço",
   "PHONE": "Número de telefone",
-  "LINK": "Link"
+  "LINK": "Link",
+  "VISIT_LINK": "Visite o link do anunciante",
+  "AS_LOW_AS": "Tão baixo quanto 100 milhões de dólares",
+  "HELP_1": "1. Você pode entrar no giro gratuitamente.",
+  "HELP_2": "2. O mais sortudo será contactado e atribuído o prémio",
+  "NUMBER_SPIN": "o número de voltas de rotação",
+  "INCORRECT": "Nome de usuário ou senha incorretos.",
+  "VALIDATION_USERNAME_REQUIRED": "Você deve especificar um nome de usuário",
+  "USER_ALREADY": "O nome de usuário já existe no sistema.",
+  "VALIDATION_PASS_LENGTH": "A senha deve ter pelo menos 6 caracteres",
+  "VALIDATION_PASS_REQUIRED": "Você deve especificar uma senha",
+  "UPDATE_SUCCESS": "Atualização feita com sucesso"
 }
