@@ -108,3 +108,30 @@
     margin-top: 16px;
   }
 }
+
+.bank {
+  margin-top: 32px;
+  font-size: 18px;
+  line-height: 24px;
+
+  dl {
+    display: flex;
+    align-items: center;
+
+    & + dl {
+      margin-top: 24px;
+    }
+  }
+
+  dt {
+    color: #FF7A00;
+
+    & ~ dd {
+      margin-left: 12px;
+    }
+  }
+
+  .icon_paypal {
+    vertical-align: top;
+  }
+}

@@ -25,7 +25,7 @@ const ListVideo = () => {
   const [page, setPage] = useState(() => ({
     ...queryParams,
     page: Number.parseInt(queryParams.page) || 1,
-    size: Number.parseInt(queryParams.size) || 3,
+    size: Number.parseInt(queryParams.size) || 12,
   }))
 
   useEffect(() => {

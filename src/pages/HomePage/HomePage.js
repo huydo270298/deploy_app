@@ -74,7 +74,7 @@ const HomePage = () => {
   const [num, setNum] = useState(10000000000000);
   useEffect(() => {
     countReward.current = setInterval(() => {
-      setNum((countdown) => countdown + 9871 );
+      setNum((countdown) => countdown + 5321 );
     }, 1);
 
     num > 99999999999999 && clearTimeout(countReward.current);
@@ -106,7 +106,7 @@ const HomePage = () => {
             <HelpIcon className={cx('icon_help')} />
           </button>
         </div>
-        <p className={cx('note')}>{t("AS_LOW_AS")}</p>
+        {/* <p className={cx('note')}>{t("AS_LOW_AS")}</p> */}
       </div>
       {openHelp &&
         <Modal onChange={handleCloseHelpModal} >
