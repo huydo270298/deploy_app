@@ -1,4 +1,3 @@
-import axios from 'axios';
 import classNames from 'classnames/bind';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -23,16 +22,16 @@ const FormUser = ({ onSubmit, info }) => {
   const [link, setLink] = useState('');
 
   useEffect(() => {
-    setName(info?.fullName || '')
-    setSex(info?.sex || 'Male')
-    setBirthday(info?.dateOfBirth || '')
-    setCountry(info?.country || 'Vietnam')
-    setCity(info?.city || 'Hanoi')
-    setAddress(info?.address || '')
-    setPhone(info?.phoneNumber || '')
-    setLink(info?.link || '')
+    setName(info?.fullName)
+    setSex(info?.sex)
+    setBirthday(info?.dateOfBirth)
+    setCountry(info?.country)
+    setCity(info?.city)
+    setAddress(info?.address)
+    setPhone(info?.phoneNumber)
+    setLink(info?.link)
   }, [info])
-  
+  console.log(city);
   const handleSubmit = async (e) => {
     e.preventDefault();
     const values = {
@@ -58,18 +57,18 @@ const FormUser = ({ onSubmit, info }) => {
   }
 
   // get add all Country
-  useEffect(() => {
-    axios({
-      method: 'get',
-      url: 'https://countriesnow.space/api/v0.1/countries',
-      headers: {
-        'Content-Type': 'application/json',
-      }
-    })
-      .catch(function (error) {
-        console.log(error);
-      });
-  }, [country])
+  // useEffect(() => {
+  //   axios({
+  //     method: 'get',
+  //     url: 'https://countriesnow.space/api/v0.1/countries',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     }
+  //   })
+  //     .catch(function (error) {
+  //       console.log(error);
+  //     });
+  // }, [country])
 
   return (
     <form className={cx('form_group')} onSubmit={handleSubmit}>

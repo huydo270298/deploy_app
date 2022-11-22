@@ -39,6 +39,11 @@ const userApi = {
   getAll (params) {
     const url = `/api/v1/user/getList`;
     return axiosClient.get(url, {params})
+  },
+
+  delete (id) {
+    const url = `/api/v1/user/delete/${id}`;
+    return axiosClient.delete(url)
   }
 };
 

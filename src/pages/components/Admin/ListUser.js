@@ -1,14 +1,12 @@
 import { useEffect, useState } from 'react';
 import classNames from 'classnames/bind';
 import qs from 'qs';
-import { BinIcon, CloseIcon, PenIcon } from '../../../assets/Icons';
+import { CloseIcon } from '../../../assets/Icons';
 import styles from './Admin.module.scss';
-import videoApi from '../../../api/videoApi';
 import Filter from './Filter';
 import Pagination from '../../../components/Pagination';
 import StorageKeys from '../../../constants/storage-keys';
 import { useLocation, useNavigate } from 'react-router-dom';
-import Update from './Update';
 import userApi from '../../../api/userApi';
 
 let cx = classNames.bind(styles);
@@ -36,15 +34,16 @@ const ListUser = () => {
     });
   }, [navigate, location.pathname, page])
 
-  const handleShowModalDelete = (id, index) => {
+  const handleShowModalDelete = (item) => {
     setToggleModalDelete(true)
-    setUserCurrent({id, index})
+    setUserCurrent(item)
   }
 
-  const handleShowModalDetail = (video) => {
+  const handleShowModalDetail = (item) => {
     setToggleModalDetail(true)
-    setUserCurrent(video)
+    setUserCurrent(item)
   }
+
   const handleCloseModalDelete = () => {
     setToggleModalDelete(false)
   }
@@ -65,14 +64,8 @@ const ListUser = () => {
         return reponse.data
       })
       .then((reponse) => {
-        console.log(reponse);
         const listUser = reponse.map((item) => {
-          return {
-            id: item.id,
-            username: item.username,
-            phone: item.phoneNumber,
-            link: item.link,
-          }
+          return item
         })
         setUser(listUser);
       })
@@ -134,8 +127,8 @@ const ListUser = () => {
                 <td>{item.phone}</td>
                 <td>{item.link ? <a href={item.link} className={cx('link')}>{item.link}</a> : ''}</td>
                 <td>
-                  <button type='button' className={cx('view_details')} onClick={handleShowModalDetail}>View details</button>
-                  <button type='button' className={cx('btn_delete')} onClick={handleShowModalDelete}>Delete</button>
+                  <button type='button' className={cx('view_details')} onClick={() => handleShowModalDetail(item)}>View details</button>
+                  <button type='button' className={cx('btn_delete')} onClick={() => handleShowModalDelete(item)}>Delete</button>
                 </td>
               </tr>
             ))}
@@ -151,7 +144,7 @@ const ListUser = () => {
             <button type='button' className={cx('btn_close')} onClick={handleCloseModalDelete} >
               <CloseIcon />
             </button>
-            <p className={cx('text')}>Are you sure you want to remove this video permantly?</p>
+            <p className={cx('text')}>Are you sure you want to delete this user permantly?</p>
             <div className={cx('group_btn')}>
               <button type='button' className={cx('btn', 'confirm')} onClick={handleDelete}>OK</button>
               <button type='button' className={cx('btn')} onClick={handleCloseModalDelete} >Cancel</button>
@@ -162,11 +155,47 @@ const ListUser = () => {
 
       { toggleModalDetail &&
         <div className={cx('dimmed')}>
-          <div className={cx('modal', 'update')}>
+          <div className={cx('modal', 'info')}>
             <button type='button' className={cx('btn_close')} onClick={handleCloseModalUpdate} >
               <CloseIcon />
             </button>
-            <Update videoCurrent={userCurrent} />
+            <div className={cx('info_area')}>
+              <h2 className={cx('tit')}>Personal Information</h2>
+              <div className={cx('info_box')}>
+                <dl>
+                  <dt>Full Name</dt>
+                  <dd>{userCurrent.fullName}</dd>
+                </dl>
+                <dl>
+                  <dt>Sex</dt>
+                  <dd>{userCurrent.sex}</dd>
+                </dl>
+                <dl>
+                  <dt>Date Of Birth</dt>
+                  <dd>{userCurrent.dateOfBirth}</dd>
+                </dl>
+                <dl>
+                  <dt>Country</dt>
+                  <dd>{userCurrent.country}</dd>
+                </dl>
+                <dl>
+                  <dt>City/Province</dt>
+                  <dd>{userCurrent.city}</dd>
+                </dl>
+                <dl>
+                  <dt>Address</dt>
+                  <dd>{userCurrent.address}</dd>
+                </dl>
+                <dl>
+                  <dt>Phone Number</dt>
+                  <dd>{userCurrent.fullName}</dd>
+                </dl>
+                <dl>
+                  <dt>Link ( Ex: Facebook,...)</dt>
+                  <dd>{userCurrent.link}</dd>
+                </dl>
+              </div>
+            </div>
           </div>
         </div>   
       }

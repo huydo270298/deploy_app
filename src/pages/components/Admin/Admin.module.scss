@@ -17,7 +17,7 @@
 }
 
 .menu {
-  width: 337px;
+  width: 313px;
   padding: 29px 23px;
   border: 1px solid #E0E0E0;
   border-radius: 12px;
@@ -118,15 +118,15 @@
 }
 
 .item {
-  width: calc((100% - 36px) / 4);
+  width: 25%;
   padding: 20px 6px;
 
   @media (max-width: 1200px) {
-    width: calc((100% - 24px)/3);
+    width: 33.3333%;
   }
 
   @media (max-width: 768px) {
-    width: calc((100% - 12px)/2);
+    width: 50%;
     padding: 12px 6px;
   }
 
@@ -250,6 +250,11 @@ h4.tit {
 
   &.update {
     min-width: 800px;
+    text-align: left;
+  }
+
+  &.info {
+    min-width: 600px;
     text-align: left;
   }
 }
@@ -420,6 +425,7 @@ h4.tit {
 }
 
 .user_area {
+  overflow-x: scroll;
   margin-top: 32px;
 
   table {
@@ -430,7 +436,7 @@ h4.tit {
   }
 
   thead {
-    td {
+    th {
       color: #00023B;
       font-weight: bold;
     }
@@ -445,6 +451,7 @@ h4.tit {
   td {
     color: #333;
     text-align: center;
+    white-space: nowrap;
   }
 
   th, td {
@@ -485,5 +492,29 @@ h4.tit {
     font-size: 16px;
     color: #fff;
     border-radius: 6px;
+  }
+}
+
+.info_box {
+  margin-top: 23px;
+
+  dl {
+    display: flex;
+    align-items: center;
+
+    & + dl {
+      margin-top: 16px;
+    }
+  }
+
+  dt {
+    width: 172px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  dd {
+    margin-left: 27px;
+    color: #333;
   }
 }
