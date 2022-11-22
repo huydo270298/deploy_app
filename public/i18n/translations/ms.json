@@ -38,5 +38,6 @@
   "USER_ALREADY": "Nama pengguna sudah wujud dalam sistem.",
   "VALIDATION_PASS_LENGTH": "Kata laluan mesti mempunyai sekurang-kurangnya 6 aksara",
   "VALIDATION_PASS_REQUIRED": "Anda mesti menentukan kata laluan",
-  "UPDATE_SUCCESS": "Kemas kini kejayaan"
+  "UPDATE_SUCCESS": "Kemas kini kejayaan",
+  "LOST": "Maaf! Anda belum memenangi hadiah lagi"
 }

@@ -38,5 +38,6 @@
   "USER_ALREADY": "Aha njirimara adịlarị na sistemụ.",
   "VALIDATION_PASS_LENGTH": "Okwuntughe ga-enwerịrị opekata mpe mkpụrụedemede 6",
   "VALIDATION_PASS_REQUIRED": "Ị ga-ezipụta paswọọdụ",
-  "UPDATE_SUCCESS": "Melite ihe ịga nke ọma"
+  "UPDATE_SUCCESS": "Melite ihe ịga nke ọma",
+  "LOST": "Ndo! Ị nwetabeghị ihe nrite ahụ"
 }

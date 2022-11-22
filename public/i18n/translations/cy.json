@@ -38,5 +38,6 @@
   "USER_ALREADY": "Mae enw defnyddiwr eisoes yn bodoli yn y system.",
   "VALIDATION_PASS_LENGTH": "Rhaid i'r cyfrinair gynnwys o leiaf 6 nod",
   "VALIDATION_PASS_REQUIRED": "Rhaid i chi nodi cyfrinair",
-  "UPDATE_SUCCESS": "Diweddaru llwyddiant"
+  "UPDATE_SUCCESS": "Diweddaru llwyddiant",
+  "LOST": "Sori! Nid ydych wedi ennill y wobr eto"
 }

@@ -38,5 +38,6 @@
   "USER_ALREADY": "Sunan mai amfani ya riga ya wanzu a cikin tsarin.",
   "VALIDATION_PASS_LENGTH": "Dole ne kalmar wucewa ta kasance tana da aƙalla haruffa 6",
   "VALIDATION_PASS_REQUIRED": "Dole ne ku saka kalmar sirri",
-  "UPDATE_SUCCESS": "Sabunta nasara"
+  "UPDATE_SUCCESS": "Sabunta nasara",
+  "LOST": "Yi hakuri! Ba ku ci kyautar ba tukuna"
 }

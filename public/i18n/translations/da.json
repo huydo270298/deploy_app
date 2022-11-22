@@ -38,5 +38,6 @@
   "USER_ALREADY": "Brugernavn findes allerede i systemet.",
   "VALIDATION_PASS_LENGTH": "Adgangskoden skal have mindst 6 tegn",
   "VALIDATION_PASS_REQUIRED": "Du skal angive en adgangskode",
-  "UPDATE_SUCCESS": "Opdatering succes"
+  "UPDATE_SUCCESS": "Opdatering succes",
+  "LOST": "Undskyld! Du har ikke vundet prisen endnu"
 }

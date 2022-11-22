@@ -38,5 +38,6 @@
   "USER_ALREADY": "Aia ka inoa hoʻohana ma ka ʻōnaehana.",
   "VALIDATION_PASS_LENGTH": "Pono ka ʻōlelo huna ma kahi o 6 mau huaʻōlelo",
   "VALIDATION_PASS_REQUIRED": "Pono ʻoe e kuhikuhi i kahi ʻōlelo huna",
-  "UPDATE_SUCCESS": "Hōʻano hou i ka holomua"
+  "UPDATE_SUCCESS": "Hōʻano hou i ka holomua",
+  "LOST": "E kala mai iaʻu! ʻAʻole ʻoe i lanakila i ka makana"
 }

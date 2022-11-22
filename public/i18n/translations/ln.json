@@ -38,5 +38,6 @@
   "USER_ALREADY": "Nkombo ya mosaleli ezali déjà na système.",
   "VALIDATION_PASS_LENGTH": "Mot de passe esengeli kozala na ba caractères ata 6",
   "VALIDATION_PASS_REQUIRED": "Esengeli olakisaka mot de passe",
-  "UPDATE_SUCCESS": "Mikolo oyo elonga"
+  "UPDATE_SUCCESS": "Mikolo oyo elonga",
+  "LOST": "Bolimbisi! Olongi naino mbano yango te"
 }

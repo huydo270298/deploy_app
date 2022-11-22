@@ -38,5 +38,6 @@
   "USER_ALREADY": "Dzina lolowera lilipo kale m'dongosolo.",
   "VALIDATION_PASS_LENGTH": "Mawu achinsinsi ayenera kukhala ndi zilembo zosachepera 6",
   "VALIDATION_PASS_REQUIRED": "Muyenera kufotokoza mawu achinsinsi",
-  "UPDATE_SUCCESS": "Kusintha bwino"
+  "UPDATE_SUCCESS": "Kusintha bwino",
+  "LOST": "Pepani! Simunapambanebe mphoto"
 }

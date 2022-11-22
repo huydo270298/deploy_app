@@ -38,5 +38,6 @@
   "USER_ALREADY": "사용자 이름이 시스템에 이미 존재합니다.",
   "VALIDATION_PASS_LENGTH": "비밀번호는 6자 이상이어야 합니다.",
   "VALIDATION_PASS_REQUIRED": "비밀번호를 지정해야 합니다.",
-  "UPDATE_SUCCESS": "업데이트 성공"
+  "UPDATE_SUCCESS": "업데이트 성공",
+  "LOST": "죄송합니다! 당신은 아직 상을 받지 못했습니다"
 }

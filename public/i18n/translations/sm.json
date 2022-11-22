@@ -38,5 +38,6 @@
   "USER_ALREADY": "O lo'o iai le igoa fa'aoga ile faiga.",
   "VALIDATION_PASS_LENGTH": "E tatau ona i ai a itiiti mai 6 mataitusi upu faataga",
   "VALIDATION_PASS_REQUIRED": "E tatau ona e fa'ailoaina se upu fa'aulutala",
-  "UPDATE_SUCCESS": "Fa'afouina manuia"
+  "UPDATE_SUCCESS": "Fa'afouina manuia",
+  "LOST": "Malie! E te le'i manumalo i le fa'ailoga"
 }

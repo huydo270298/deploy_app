@@ -38,5 +38,6 @@
   "USER_ALREADY": "Izina ryukoresha rimaze kubaho muri sisitemu.",
   "VALIDATION_PASS_LENGTH": "Ijambobanga rigomba kugira byibuze inyuguti 6",
   "VALIDATION_PASS_REQUIRED": "Ugomba kwerekana ijambo ryibanga",
-  "UPDATE_SUCCESS": "Kuvugurura intsinzi"
+  "UPDATE_SUCCESS": "Kuvugurura intsinzi",
+  "LOST": "Ihangane! Ntabwo watsindiye igihembo"
 }

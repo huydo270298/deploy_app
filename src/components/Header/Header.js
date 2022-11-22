@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 
 import styles from './Header.module.scss';
 import { LangIcon, SaveIcon, UserIcon } from '../../assets/Icons';
-import Countdown from '../../pages/components/Countdown';
+// import Countdown from '../../pages/components/Countdown';
 import { Lang } from './Lang'
 import { change } from '../../app/langSlice';
 
@@ -37,7 +37,7 @@ const Header = () => {
       <div className={cx('inner', isLoggedInUser && 'loggedin'
       )}>
         <h1 className={cx('logo')}><Link to='/' className={cx('link')} ></Link></h1>
-        <Countdown time={'2022-11-23 15:00:00'} />
+        {/* <Countdown time={'2022-11-23 15:00:00'} /> */}
         {
           isLoggedInUser &&
           <div className={cx('btn_group', 'type')}>

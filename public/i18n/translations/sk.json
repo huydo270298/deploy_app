@@ -38,5 +38,6 @@
   "USER_ALREADY": "Používateľské meno už v systéme existuje.",
   "VALIDATION_PASS_LENGTH": "Heslo musí mať aspoň 6 znakov",
   "VALIDATION_PASS_REQUIRED": "Musíte zadať heslo",
-  "UPDATE_SUCCESS": "Aktualizácia bola úspešná"
+  "UPDATE_SUCCESS": "Aktualizácia bola úspešná",
+  "LOST": "Prepáč! Cenu ste ešte nevyhrali"
 }

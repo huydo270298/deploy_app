@@ -38,5 +38,6 @@
   "USER_ALREADY": "Jeneng pangguna wis ana ing sistem.",
   "VALIDATION_PASS_LENGTH": "Tembung sandhi kudu paling sethithik 6 karakter",
   "VALIDATION_PASS_REQUIRED": "Sampeyan kudu nemtokake sandhi",
-  "UPDATE_SUCCESS": "Sukses nganyari"
+  "UPDATE_SUCCESS": "Sukses nganyari",
+  "LOST": "Nuwun sewu! Sampeyan durung menang hadiah"
 }

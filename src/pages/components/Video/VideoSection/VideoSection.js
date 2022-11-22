@@ -34,11 +34,11 @@ const VideoSection = ({video}) => {
       spinApi.getResult(idUser)
         .then((response) => {
           let result = response.data.result;
-          result === 'Lose'? setMessageSpin('Sorry! You have not won the prize yet') : setMessageSpin('');
+          result === 'Lose'? setMessageSpin(t("LOST")) : setMessageSpin('');
         }  
       );
     } else {
-      setMessageSpin('Sorry! You have not won the prize yet');
+      setMessageSpin(t("LOST"));
     }
     handleCountdownAlert();
   }

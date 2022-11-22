@@ -38,5 +38,6 @@
   "USER_ALREADY": "Username ratovepo musystem.",
   "VALIDATION_PASS_LENGTH": "Pasiwedhi rinofanirwa kunge riine mavara matanhatu",
   "VALIDATION_PASS_REQUIRED": "Iwe unofanirwa kutsanangura password",
-  "UPDATE_SUCCESS": "Kuvandudza kubudirira"
+  "UPDATE_SUCCESS": "Kuvandudza kubudirira",
+  "LOST": "Ndine hurombo! Hausati wahwina mubairo"
 }

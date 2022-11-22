@@ -38,5 +38,6 @@
   "USER_ALREADY": "Maqaan fayyadamaa duraan sirna keessa jira.",
   "VALIDATION_PASS_LENGTH": "Password yoo xiqqaate arfiilee 6 qabaachuu qaba",
   "VALIDATION_PASS_REQUIRED": "Jecha icciitii ifteessuu qabda",
-  "UPDATE_SUCCESS": "Milkaa'ina haaromsuu"
+  "UPDATE_SUCCESS": "Milkaa'ina haaromsuu",
+  "LOST": "Dhiifama! Hanga ammaatti badhaasa kana hin injifanne"
 }

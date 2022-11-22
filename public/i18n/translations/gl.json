@@ -38,5 +38,6 @@
   "USER_ALREADY": "O nome de usuario xa existe no sistema.",
   "VALIDATION_PASS_LENGTH": "O contrasinal debe ter polo menos 6 caracteres",
   "VALIDATION_PASS_REQUIRED": "Debes especificar un contrasinal",
-  "UPDATE_SUCCESS": "Actualización correcta"
+  "UPDATE_SUCCESS": "Actualización correcta",
+  "LOST": "Sentímolo! Aínda non gañaches o premio"
 }

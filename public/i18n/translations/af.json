@@ -38,5 +38,6 @@
   "USER_ALREADY": "Gebruikersnaam bestaan reeds in die stelsel.",
   "VALIDATION_PASS_LENGTH": "Wagwoord moet ten minste 6 karakters hê",
   "VALIDATION_PASS_REQUIRED": "Jy moet 'n wagwoord spesifiseer",
-  "UPDATE_SUCCESS": "Dateer sukses op"
+  "UPDATE_SUCCESS": "Dateer sukses op",
+  "LOST": "Jammer! Jy het nog nie die prys gewen nie"
 }

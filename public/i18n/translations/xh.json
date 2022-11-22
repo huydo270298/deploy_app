@@ -38,5 +38,6 @@
   "USER_ALREADY": "Igama lomsebenzisi sele likhona kwisixokelelwano.",
   "VALIDATION_PASS_LENGTH": "Igama lokugqithisa kufuneka libenamagama ama-6 ubuncinane",
   "VALIDATION_PASS_REQUIRED": "Kufuneka ucacise igama lokugqithisa",
-  "UPDATE_SUCCESS": "Hlaziya impumelelo"
+  "UPDATE_SUCCESS": "Hlaziya impumelelo",
+  "LOST": "Uxolo! Awukaphumeleli ibhaso okwangoku"
 }

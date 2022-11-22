@@ -38,5 +38,6 @@
   "USER_ALREADY": "Kasutajanimi on süsteemis juba olemas.",
   "VALIDATION_PASS_LENGTH": "Parool peab koosnema vähemalt 6 tähemärgist",
   "VALIDATION_PASS_REQUIRED": "Peate määrama parooli",
-  "UPDATE_SUCCESS": "Värskenduse edu"
+  "UPDATE_SUCCESS": "Värskenduse edu",
+  "LOST": "Vabandust! Te pole veel auhinda võitnud"
 }

@@ -38,5 +38,6 @@
   "USER_ALREADY": "Brukernavnet finnes allerede i systemet.",
   "VALIDATION_PASS_LENGTH": "Passordet må ha minst 6 tegn",
   "VALIDATION_PASS_REQUIRED": "Du må angi et passord",
-  "UPDATE_SUCCESS": "Oppdatering suksess"
+  "UPDATE_SUCCESS": "Oppdatering suksess",
+  "LOST": "Unnskyld! Du har ikke vunnet premien ennå"
 }

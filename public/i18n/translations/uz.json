@@ -38,5 +38,6 @@
   "USER_ALREADY": "Tizimda foydalanuvchi nomi allaqachon mavjud.",
   "VALIDATION_PASS_LENGTH": "Parol kamida 6 ta belgidan iborat bo'lishi kerak",
   "VALIDATION_PASS_REQUIRED": "Parolni ko'rsatishingiz kerak",
-  "UPDATE_SUCCESS": "Muvaffaqiyatli yangilanish"
+  "UPDATE_SUCCESS": "Muvaffaqiyatli yangilanish",
+  "LOST": "Kechirasiz! Siz hali sovrinni qo'lga kiritmadingiz"
 }

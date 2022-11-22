@@ -38,5 +38,6 @@
   "USER_ALREADY": "የተጠቃሚ ስም አስቀድሞ በስርዓቱ ውስጥ አለ።",
   "VALIDATION_PASS_LENGTH": "የይለፍ ቃል ቢያንስ 6 ቁምፊዎች ሊኖሩት ይገባል።",
   "VALIDATION_PASS_REQUIRED": "የይለፍ ቃል መግለጽ አለብህ",
-  "UPDATE_SUCCESS": "ስኬትን አዘምን"
+  "UPDATE_SUCCESS": "ስኬትን አዘምን",
+  "LOST": "አዝናለሁ! እስካሁን ሽልማቱን አላሸነፍክም።"
 }

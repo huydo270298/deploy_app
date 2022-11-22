@@ -38,5 +38,6 @@
   "USER_ALREADY": "အသုံးပြုသူအမည်သည် စနစ်တွင်ရှိပြီးဖြစ်သည်။",
   "VALIDATION_PASS_LENGTH": "စကားဝှက်တွင် အနည်းဆုံး စာလုံး 6 လုံးရှိရမည်။",
   "VALIDATION_PASS_REQUIRED": "စကားဝှက်တစ်ခု သတ်မှတ်ရပါမည်။",
-  "UPDATE_SUCCESS": "Update အောင်မြင်ပါစေ။"
+  "UPDATE_SUCCESS": "Update အောင်မြင်ပါစေ။",
+  "LOST": "ဆောရီး! မင်းဆုမရသေးဘူး။"
 }

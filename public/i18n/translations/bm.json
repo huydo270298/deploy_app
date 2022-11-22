@@ -38,5 +38,6 @@
   "USER_ALREADY": "Baarakɛla tɔgɔ bɛ sɔrɔ sistɛmu kɔnɔ kaban.",
   "VALIDATION_PASS_LENGTH": "Password ka kan ka kɛ ni taamasiyɛn 6 ye a dɔgɔyalenba la",
   "VALIDATION_PASS_REQUIRED": "Aw ka kan ka tɔgɔlasɛbɛn dɔ jira",
-  "UPDATE_SUCCESS": "Update ɲɛtaa"
+  "UPDATE_SUCCESS": "Update ɲɛtaa",
+  "LOST": "Hakɛto! I ma o sara sɔrɔ fɔlɔ"
 }

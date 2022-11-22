@@ -38,5 +38,6 @@
   "USER_ALREADY": "Ang username anaa na sa sistema.",
   "VALIDATION_PASS_LENGTH": "Ang password kinahanglan adunay labing menos 6 ka karakter",
   "VALIDATION_PASS_REQUIRED": "Kinahanglan nimong itakda ang usa ka password",
-  "UPDATE_SUCCESS": "Pag-update sa kalampusan"
+  "UPDATE_SUCCESS": "Pag-update sa kalampusan",
+  "LOST": "Sorry! Wala ka pa nakadaog sa premyo"
 }

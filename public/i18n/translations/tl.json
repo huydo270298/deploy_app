@@ -38,5 +38,6 @@
   "USER_ALREADY": "Umiiral na ang username sa system.",
   "VALIDATION_PASS_LENGTH": "Dapat mayroong hindi bababa sa 6 na character ang password",
   "VALIDATION_PASS_REQUIRED": "Dapat kang tumukoy ng password",
-  "UPDATE_SUCCESS": "I-update ang tagumpay"
+  "UPDATE_SUCCESS": "I-update ang tagumpay",
+  "LOST": "Paumanhin! Hindi ka pa nanalo ng premyo"
 }

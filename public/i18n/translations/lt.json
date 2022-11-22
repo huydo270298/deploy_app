@@ -38,5 +38,6 @@
   "USER_ALREADY": "Vartotojo vardas jau yra sistemoje.",
   "VALIDATION_PASS_LENGTH": "Slaptažodį turi sudaryti bent 6 simboliai",
   "VALIDATION_PASS_REQUIRED": "Turite nurodyti slaptažodį",
-  "UPDATE_SUCCESS": "Sėkmės atnaujinimas"
+  "UPDATE_SUCCESS": "Sėkmės atnaujinimas",
+  "LOST": "Atsiprašau! Jūs dar nelaimėjote prizo"
 }

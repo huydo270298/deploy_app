@@ -38,5 +38,6 @@
   "USER_ALREADY": "Il nome utente esiste già nel sistema.",
   "VALIDATION_PASS_LENGTH": "La password deve contenere almeno 6 caratteri",
   "VALIDATION_PASS_REQUIRED": "Devi specificare una password",
-  "UPDATE_SUCCESS": "Aggiornamento riuscito"
+  "UPDATE_SUCCESS": "Aggiornamento riuscito",
+  "LOST": "Scusate! Non hai ancora vinto il premio"
 }

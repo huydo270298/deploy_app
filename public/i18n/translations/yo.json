@@ -38,5 +38,6 @@
   "USER_ALREADY": "Orukọ olumulo ti wa tẹlẹ ninu eto naa.",
   "VALIDATION_PASS_LENGTH": "Ọrọigbaniwọle gbọdọ ni o kere ju awọn ohun kikọ 6",
   "VALIDATION_PASS_REQUIRED": "O gbọdọ pato ọrọ igbaniwọle kan",
-  "UPDATE_SUCCESS": "Aṣeyọri imudojuiwọn"
+  "UPDATE_SUCCESS": "Aṣeyọri imudojuiwọn",
+  "LOST": "Ma binu! O ko tii gba ere naa sibẹsibẹ"
 }

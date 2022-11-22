@@ -38,5 +38,6 @@
   "USER_ALREADY": "Nomen usoris iam exstat in systemate.",
   "VALIDATION_PASS_LENGTH": "Password debet habere saltem VI characters",
   "VALIDATION_PASS_REQUIRED": "You must not specificare",
-  "UPDATE_SUCCESS": "Update victoria"
+  "UPDATE_SUCCESS": "Update victoria",
+  "LOST": "Ignosce! Praemium tamen non vicisse"
 }

@@ -38,5 +38,6 @@
   "USER_ALREADY": "Tá ainm úsáideora sa chóras cheana féin.",
   "VALIDATION_PASS_LENGTH": "Caithfidh 6 charachtar ar a laghad a bheith ag pasfhocal",
   "VALIDATION_PASS_REQUIRED": "Ní mór duit pasfhocal a shonrú",
-  "UPDATE_SUCCESS": "Rath a nuashonrú"
+  "UPDATE_SUCCESS": "Rath a nuashonrú",
+  "LOST": "Tá brón orm! Níl an duais buaite agat fós"
 }

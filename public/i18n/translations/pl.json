@@ -38,5 +38,6 @@
   "USER_ALREADY": "Nazwa użytkownika już istnieje w systemie.",
   "VALIDATION_PASS_LENGTH": "Hasło musi mieć co najmniej 6 znaków",
   "VALIDATION_PASS_REQUIRED": "Musisz podać hasło",
-  "UPDATE_SUCCESS": "Sukces aktualizacji"
+  "UPDATE_SUCCESS": "Sukces aktualizacji",
+  "LOST": "Przepraszam! Nie wygrałeś jeszcze nagrody"
 }

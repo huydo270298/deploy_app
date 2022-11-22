@@ -38,5 +38,6 @@
   "USER_ALREADY": "اسم المستخدم موجود بالفعل في النظام.",
   "VALIDATION_PASS_LENGTH": "يجب أن تحتوي كلمة المرور على 6 أحرف على الأقل",
   "VALIDATION_PASS_REQUIRED": "يجب عليك تحديد كلمة مرور",
-  "UPDATE_SUCCESS": "نجاح التحديث"
+  "UPDATE_SUCCESS": "نجاح التحديث",
+  "LOST": "آسف! لم تفز بالجائزة بعد"
 }

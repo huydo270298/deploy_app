@@ -38,5 +38,6 @@
   "USER_ALREADY": "Leina la mosediriši le šetše le le gona ka tshepedišong.",
   "VALIDATION_PASS_LENGTH": "Phasewete e swanetše go ba le bonyane ditlhaka tše 6",
   "VALIDATION_PASS_REQUIRED": "O swanetše go laetša phasewete",
-  "UPDATE_SUCCESS": "Update katlego"
+  "UPDATE_SUCCESS": "Update katlego",
+  "LOST": "Ke maswabi! Ga se wa thopa sefoka go fihla ga bjale"
 }

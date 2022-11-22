@@ -38,5 +38,6 @@
   "USER_ALREADY": "Username chu system ah a awm tawh.",
   "VALIDATION_PASS_LENGTH": "Password ah hian character 6 tal a awm tur a ni",
   "VALIDATION_PASS_REQUIRED": "Password i specify tur a ni",
-  "UPDATE_SUCCESS": "Update hlawhtlinna"
+  "UPDATE_SUCCESS": "Update hlawhtlinna",
+  "LOST": "Tihpalh! Lawmman i la dawng lo"
 }

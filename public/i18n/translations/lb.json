@@ -38,5 +38,6 @@
   "USER_ALREADY": "Benotzernumm existéiert schonn am System.",
   "VALIDATION_PASS_LENGTH": "Passwuert muss mindestens 6 Zeechen hunn",
   "VALIDATION_PASS_REQUIRED": "Dir musst e Passwuert uginn",
-  "UPDATE_SUCCESS": "Update Erfolleg"
+  "UPDATE_SUCCESS": "Update Erfolleg",
+  "LOST": "Et deet mir leed! Dir hutt de Präis nach net gewonnen"
 }

@@ -38,5 +38,6 @@
   "USER_ALREADY": "ስም ተጠቃሚ ድሮ ኣብቲ ስርዓት ኣሎ።",
   "VALIDATION_PASS_LENGTH": "ፓስዎርድ እንተወሓደ 6 ፊደላት ክህልዎ ኣለዎ።",
   "VALIDATION_PASS_REQUIRED": "ፓስዎርድ ክትገልጽ ኣለካ",
-  "UPDATE_SUCCESS": "ዓወት ኣዘምንዎ።"
+  "UPDATE_SUCCESS": "ዓወት ኣዘምንዎ።",
+  "LOST": "ይሓዝን! ክሳብ ሕጂ ሽልማት ኣይረኸብኩምን።"
 }

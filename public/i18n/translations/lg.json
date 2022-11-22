@@ -38,5 +38,6 @@
   "USER_ALREADY": "Erinnya ly'omukozesa lyaliwo dda mu nkola.",
   "VALIDATION_PASS_LENGTH": "Password erina okuba n'ennukuta ezitakka wansi wa 6",
   "VALIDATION_PASS_REQUIRED": "Olina okulaga ekigambo ky'okuyingira",
-  "UPDATE_SUCCESS": "Update obuwanguzi"
+  "UPDATE_SUCCESS": "Update obuwanguzi",
+  "LOST": "Nsonyiwa! Tonnawangula kirabo"
 }

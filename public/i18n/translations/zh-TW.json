@@ -38,5 +38,6 @@
   "USER_ALREADY": "用戶名已存在於系統中。",
   "VALIDATION_PASS_LENGTH": "密碼必須至少有 6 個字符",
   "VALIDATION_PASS_REQUIRED": "您必須指定密碼",
-  "UPDATE_SUCCESS": "更新成功"
+  "UPDATE_SUCCESS": "更新成功",
+  "LOST": "對不起！您還沒有中獎"
 }

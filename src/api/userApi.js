@@ -34,6 +34,11 @@ const userApi = {
   removeVideo (idUser, idVideo) {
     const url = `/api/v1/user/removeVideo/${idUser}/video/${idVideo}`;
     return axiosClient.post(url, {idUser, idVideo})
+  },
+
+  getAll (params) {
+    const url = `/api/v1/user/getList`;
+    return axiosClient.get(url, {params})
   }
 };
 

@@ -38,5 +38,6 @@
   "USER_ALREADY": "Magaca isticmaale ayaa horey ugu jiray nidaamka.",
   "VALIDATION_PASS_LENGTH": "Furaha sirta ah waa in uu lahaadaa ugu yaraan 6 xaraf",
   "VALIDATION_PASS_REQUIRED": "Waa inaad sheegtaa furaha sirta ah",
-  "UPDATE_SUCCESS": "Cusbooneysii guusha"
+  "UPDATE_SUCCESS": "Cusbooneysii guusha",
+  "LOST": "Waan ka xumahay! Wali ma aadan ku guuleysan abaalmarinta"
 }

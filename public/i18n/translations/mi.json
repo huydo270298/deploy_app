@@ -38,5 +38,6 @@
   "USER_ALREADY": "Ko te ingoa kaiwhakamahi kei roto i te punaha.",
   "VALIDATION_PASS_LENGTH": "Kia 6 neke atu nga tohu o te kupuhipa",
   "VALIDATION_PASS_REQUIRED": "Me tohu e koe he kupuhipa",
-  "UPDATE_SUCCESS": "Whakahou angitu"
+  "UPDATE_SUCCESS": "Whakahou angitu",
+  "LOST": "Aroha mai! Kaore ano koe i riro i te taonga"
 }

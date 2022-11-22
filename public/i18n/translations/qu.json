@@ -38,5 +38,6 @@
   "USER_ALREADY": "Ruwaqpa sutinqa llamkanapiqa kachkanñam.",
   "VALIDATION_PASS_LENGTH": "Yaykuna rimayqa 6 qillqayuqmi kanan",
   "VALIDATION_PASS_REQUIRED": "Yaykuna rimayta churanayki tiyan",
-  "UPDATE_SUCCESS": "Allinta musuqyachiy"
+  "UPDATE_SUCCESS": "Allinta musuqyachiy",
+  "LOST": "Llakikunim! Manaraqmi chay premiotaqa ganarqankichu"
 }

@@ -38,5 +38,6 @@
   "USER_ALREADY": "Uporabniško ime že obstaja v sistemu.",
   "VALIDATION_PASS_LENGTH": "Geslo mora imeti vsaj 6 znakov",
   "VALIDATION_PASS_REQUIRED": "Določiti morate geslo",
-  "UPDATE_SUCCESS": "Posodobitev je uspela"
+  "UPDATE_SUCCESS": "Posodobitev je uspela",
+  "LOST": "Oprostite! Nagrade še niste prejeli"
 }

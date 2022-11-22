@@ -38,5 +38,6 @@
   "USER_ALREADY": "Ngaran pamaké geus aya dina sistem.",
   "VALIDATION_PASS_LENGTH": "Sandi kedah gaduh sahenteuna 6 karakter",
   "VALIDATION_PASS_REQUIRED": "Anjeun kudu nangtukeun kecap akses",
-  "UPDATE_SUCCESS": "Ngamutahirkeun kasuksésan"
+  "UPDATE_SUCCESS": "Ngamutahirkeun kasuksésan",
+  "LOST": "Hampura! Anjeun teu acan meunang hadiah"
 }

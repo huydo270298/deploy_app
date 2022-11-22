@@ -38,5 +38,6 @@
   "USER_ALREADY": "Ti nagan ti agar-aramat ket addan iti sistema.",
   "VALIDATION_PASS_LENGTH": "Masapul nga addaan ti password iti di kumurang nga 6 a karakter",
   "VALIDATION_PASS_REQUIRED": "Masapul nga ikeddengmo ti password",
-  "UPDATE_SUCCESS": "Update ti balligi"
+  "UPDATE_SUCCESS": "Update ti balligi",
+  "LOST": "Pasensya! Saanmo pay a nangabak iti premio"
 }

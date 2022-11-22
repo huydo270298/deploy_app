@@ -38,5 +38,6 @@
   "USER_ALREADY": "Vito ra mutirhisi se ri kona eka sisiteme.",
   "VALIDATION_PASS_LENGTH": "Phasiwedi yi fanele ku va na swihlawulekisi swa kwalomu ka 6",
   "VALIDATION_PASS_REQUIRED": "U fanele ku boxa phaswedi",
-  "UPDATE_SUCCESS": "Update ku humelela"
+  "UPDATE_SUCCESS": "Update ku humelela",
+  "LOST": "Ku tisola! A wu si wina sagwadi"
 }

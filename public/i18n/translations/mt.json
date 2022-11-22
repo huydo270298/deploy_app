@@ -38,5 +38,6 @@
   "USER_ALREADY": "L-isem tal-utent diġà jeżisti fis-sistema.",
   "VALIDATION_PASS_LENGTH": "Il-password għandu jkollha mill-inqas 6 karattri",
   "VALIDATION_PASS_REQUIRED": "Trid tispeċifika password",
-  "UPDATE_SUCCESS": "Aġġorna suċċess"
+  "UPDATE_SUCCESS": "Aġġorna suċċess",
+  "LOST": "Jiddispjacini! Għadek ma rbaħtx il-premju"
 }

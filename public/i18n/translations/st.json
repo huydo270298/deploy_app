@@ -38,5 +38,6 @@
   "USER_ALREADY": "Username e se e ntse e le teng tsamaisong.",
   "VALIDATION_PASS_LENGTH": "Lekunutu le tlameha ho ba le bonyane litlhaku tse 6",
   "VALIDATION_PASS_REQUIRED": "O tlameha ho hlakisa phasewete",
-  "UPDATE_SUCCESS": "Katleho ea ntlafatso"
+  "UPDATE_SUCCESS": "Katleho ea ntlafatso",
+  "LOST": "Tšoarelo! Ha o so hape moputso"
 }

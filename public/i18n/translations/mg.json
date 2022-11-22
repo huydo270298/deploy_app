@@ -38,5 +38,6 @@
   "USER_ALREADY": "Anarana mpampiasa efa misy ao amin'ny rafitra.",
   "VALIDATION_PASS_LENGTH": "Tsy maintsy manana tarehintsoratra 6 farafahakeliny ny tenimiafina",
   "VALIDATION_PASS_REQUIRED": "Tsy maintsy mamaritra tenimiafina ianao",
-  "UPDATE_SUCCESS": "Fanavaozana ny fahombiazana"
+  "UPDATE_SUCCESS": "Fanavaozana ny fahombiazana",
+  "LOST": "Miala tsiny! Mbola tsy nahazo ny loka ianao"
 }

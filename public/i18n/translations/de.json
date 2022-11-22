@@ -38,5 +38,6 @@
   "USER_ALREADY": "Benutzername existiert bereits im System.",
   "VALIDATION_PASS_LENGTH": "Das Passwort muss mindestens 6 Zeichen lang sein",
   "VALIDATION_PASS_REQUIRED": "Sie müssen ein Passwort angeben",
-  "UPDATE_SUCCESS": "Erfolg aktualisieren"
+  "UPDATE_SUCCESS": "Erfolg aktualisieren",
+  "LOST": "Es tut uns leid! Sie haben den Preis noch nicht gewonnen"
 }

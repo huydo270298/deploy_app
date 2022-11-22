@@ -38,5 +38,6 @@
   "USER_ALREADY": "Notandanafn er þegar til í kerfinu.",
   "VALIDATION_PASS_LENGTH": "Lykilorð verður að vera að minnsta kosti 6 stafir",
   "VALIDATION_PASS_REQUIRED": "Þú verður að tilgreina lykilorð",
-  "UPDATE_SUCCESS": "Uppfærsla tókst"
+  "UPDATE_SUCCESS": "Uppfærsla tókst",
+  "LOST": "Því miður! Þú hefur ekki enn unnið verðlaunin"
 }

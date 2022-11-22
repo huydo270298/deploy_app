@@ -13,6 +13,7 @@ import Upload from './pages/components/Admin/Upload';
 import ListVideo from './pages/components/Admin/ListVideo';
 import HomePage from './pages/HomePage';
 import './App.css';
+import ListUser from './pages/components/Admin/ListUser';
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
             <Route index element={<ListVideo />} />
             <Route path="/admin/dashboard/upload" element={<Upload />} />
             <Route path="/admin/dashboard/update" element={<Upload />} />
+            <Route path="/admin/dashboard/user" element={<ListUser />} />
           </Route>
           <Route path="/admin/login" element={<Login />} />
         </Route>

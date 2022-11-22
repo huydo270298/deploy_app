@@ -38,5 +38,6 @@
   "USER_ALREADY": "Yuz nem dɔn ɔlrɛdi de na di sistɛm.",
   "VALIDATION_PASS_LENGTH": "Paswɔd fɔ gɛt at le 6 aks",
   "VALIDATION_PASS_REQUIRED": "Yu fɔ sho yu paswɔd",
-  "UPDATE_SUCCESS": "Update sakses"
+  "UPDATE_SUCCESS": "Update sakses",
+  "LOST": "Sɔri! Yu nɔ win di prayz yet"
 }

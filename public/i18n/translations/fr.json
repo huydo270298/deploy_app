@@ -38,5 +38,6 @@
   "USER_ALREADY": "Le nom d'utilisateur existe déjà dans le système.",
   "VALIDATION_PASS_LENGTH": "Le mot de passe doit comporter au moins 6 caractères",
   "VALIDATION_PASS_REQUIRED": "Vous devez spécifier un mot de passe",
-  "UPDATE_SUCCESS": "Mise à jour réussie"
+  "UPDATE_SUCCESS": "Mise à jour réussie",
+  "LOST": "Pardon! Vous n'avez pas encore gagné le prix"
 }

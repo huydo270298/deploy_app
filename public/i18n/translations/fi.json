@@ -38,5 +38,6 @@
   "USER_ALREADY": "Käyttäjätunnus on jo järjestelmässä.",
   "VALIDATION_PASS_LENGTH": "Salasanassa on oltava vähintään 6 merkkiä",
   "VALIDATION_PASS_REQUIRED": "Sinun on määritettävä salasana",
-  "UPDATE_SUCCESS": "Päivityksen menestys"
+  "UPDATE_SUCCESS": "Päivityksen menestys",
+  "LOST": "Anteeksi! Et ole vielä voittanut palkintoa"
 }

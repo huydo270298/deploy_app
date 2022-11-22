@@ -37,5 +37,6 @@
   "USER_ALREADY": "Tên người dùng đã tồn tại trong hệ thống.",
   "VALIDATION_PASS_LENGTH": "Mật khẩu phải có ít nhất 6 ký tự",
   "VALIDATION_PASS_REQUIRED": "Bạn phải chỉ định một mật khẩu",
-  "UPDATE_SUCCESS": "Cập nhật thành công"
+  "UPDATE_SUCCESS": "Cập nhật thành công",
+  "LOST": "Xin lỗi! Bạn chưa giành được giải thưởng"
 }

@@ -38,5 +38,6 @@
   "USER_ALREADY": "Tha ainm-cleachdaidh san t-siostam mu thràth.",
   "VALIDATION_PASS_LENGTH": "Feumaidh co-dhiù 6 caractaran a bhith aig facal-faire",
   "VALIDATION_PASS_REQUIRED": "Feumaidh tu facal-faire a shònrachadh",
-  "UPDATE_SUCCESS": "Luchdaich a-nuas soirbheachadh"
+  "UPDATE_SUCCESS": "Luchdaich a-nuas soirbheachadh",
+  "LOST": "Duilich! Chan eil thu air an duais a bhuannachadh fhathast"
 }

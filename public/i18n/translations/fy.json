@@ -38,5 +38,6 @@
   "USER_ALREADY": "Brûkersnamme bestiet al yn it systeem.",
   "VALIDATION_PASS_LENGTH": "Wachtwurd moat op syn minst 6 karakters hawwe",
   "VALIDATION_PASS_REQUIRED": "Jo moatte in wachtwurd opjaan",
-  "UPDATE_SUCCESS": "Update súkses"
+  "UPDATE_SUCCESS": "Update súkses",
+  "LOST": "Sorry! Jo hawwe de priis noch net wûn"
 }

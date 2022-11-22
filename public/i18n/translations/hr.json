@@ -38,5 +38,6 @@
   "USER_ALREADY": "Korisničko ime već postoji u sustavu.",
   "VALIDATION_PASS_LENGTH": "Lozinka mora imati najmanje 6 znakova",
   "VALIDATION_PASS_REQUIRED": "Morate navesti lozinku",
-  "UPDATE_SUCCESS": "Ažuriranje uspješno"
+  "UPDATE_SUCCESS": "Ažuriranje uspješno",
+  "LOST": "Oprosti! Još niste osvojili nagradu"
 }

@@ -38,5 +38,6 @@
   "USER_ALREADY": "Erabiltzaile-izena dagoeneko badago sisteman.",
   "VALIDATION_PASS_LENGTH": "Pasahitzak 6 karaktere izan behar ditu gutxienez",
   "VALIDATION_PASS_REQUIRED": "Pasahitz bat zehaztu behar duzu",
-  "UPDATE_SUCCESS": "Eguneratu arrakasta"
+  "UPDATE_SUCCESS": "Eguneratu arrakasta",
+  "LOST": "Barkatu! Oraindik ez duzu saria irabazi"
 }

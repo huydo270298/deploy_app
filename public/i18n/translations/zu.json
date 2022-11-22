@@ -38,5 +38,6 @@
   "USER_ALREADY": "Igama lomsebenzisi selivele likhona ohlelweni.",
   "VALIDATION_PASS_LENGTH": "Iphasiwedi kumele okungenani ibe nezinhlamvu eziyisi-6",
   "VALIDATION_PASS_REQUIRED": "Kufanele ucacise iphasiwedi",
-  "UPDATE_SUCCESS": "Buyekeza impumelelo"
+  "UPDATE_SUCCESS": "Buyekeza impumelelo",
+  "LOST": "Uxolo! Awukawunqobi umklomelo"
 }

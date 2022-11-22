@@ -38,5 +38,6 @@
   "USER_ALREADY": "सिस्टम मे प्रयोक्ता नाम पहिने सँ मौजूद अछि.",
   "VALIDATION_PASS_LENGTH": "पासवर्ड मे कम स कम 6 अक्षर हेबाक चाही",
   "VALIDATION_PASS_REQUIRED": "अहाँकेँ पासवर्ड निर्दिष्ट करबाक चाही",
-  "UPDATE_SUCCESS": "सफलता अपडेट करब"
+  "UPDATE_SUCCESS": "सफलता अपडेट करब",
+  "LOST": ""
 }

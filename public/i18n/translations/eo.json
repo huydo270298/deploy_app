@@ -38,5 +38,6 @@
   "USER_ALREADY": "Uzantnomo jam ekzistas en la sistemo.",
   "VALIDATION_PASS_LENGTH": "Pasvorto devas havi almenaŭ 6 signojn",
   "VALIDATION_PASS_REQUIRED": "Vi devas specifi pasvorton",
-  "UPDATE_SUCCESS": "Sukceso de ĝisdatigo"
+  "UPDATE_SUCCESS": "Sukceso de ĝisdatigo",
+  "LOST": "Pardonu! Vi ankoraŭ ne gajnis la premion"
 }

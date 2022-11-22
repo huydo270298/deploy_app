@@ -38,5 +38,6 @@
   "USER_ALREADY": "Emri i përdoruesit ekziston tashmë në sistem.",
   "VALIDATION_PASS_LENGTH": "Fjalëkalimi duhet të ketë të paktën 6 karaktere",
   "VALIDATION_PASS_REQUIRED": "Duhet të specifikoni një fjalëkalim",
-  "UPDATE_SUCCESS": "Përditësimi i suksesshëm"
+  "UPDATE_SUCCESS": "Përditësimi i suksesshëm",
+  "LOST": "Na vjen keq! Nuk e keni fituar ende çmimin"
 }

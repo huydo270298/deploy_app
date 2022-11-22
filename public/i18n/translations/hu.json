@@ -38,5 +38,6 @@
   "USER_ALREADY": "A felhasználónév már létezik a rendszerben.",
   "VALIDATION_PASS_LENGTH": "A jelszónak legalább 6 karakterből kell állnia",
   "VALIDATION_PASS_REQUIRED": "Meg kell adnia egy jelszót",
-  "UPDATE_SUCCESS": "Frissítés sikeres"
+  "UPDATE_SUCCESS": "Frissítés sikeres",
+  "LOST": "Sajnálom! Még nem nyerte el a díjat"
 }

@@ -418,3 +418,72 @@ h4.tit {
     color: red;
   }
 }
+
+.user_area {
+  margin-top: 32px;
+
+  table {
+    width: 100%;
+    background: #E0E0E0;
+    border-collapse: collapse;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  thead {
+    td {
+      color: #00023B;
+      font-weight: bold;
+    }
+  }
+
+  tr {
+    height: 48px;
+    
+    border-bottom: 7px solid #fff;
+  }
+
+  td {
+    color: #333;
+    text-align: center;
+  }
+
+  th, td {
+    padding: 8px 12px;
+    line-height: 18px;
+  }
+
+  th ~ th,
+  td ~ td {
+    background-image: linear-gradient(#828282, #828282);
+    background-size: 1px 32px;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+
+  .link {
+    display: block;
+    overflow: hidden;
+    width: 469px;
+    white-space: nowrap;
+    color: #004DA8;
+    font-weight: 600;
+    text-overflow: ellipsis;
+  }
+
+  .view_details {
+    width: 156px;
+    color: #FF7A00;
+    font-weight: 600;
+    font-size: 16px;
+    background: transparent;
+    text-decoration: underline;
+  }
+
+  .btn_delete {
+    padding: 5px 17px;
+    background: #EF2525;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 6px;
+  }
+}

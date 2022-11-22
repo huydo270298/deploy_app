@@ -9,19 +9,20 @@ import Pagination from '../../../components/Pagination';
 import StorageKeys from '../../../constants/storage-keys';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Update from './Update';
+import userApi from '../../../api/userApi';
 
 let cx = classNames.bind(styles);
 
-const ListVideo = () => {
+const ListUser = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const queryParams = qs.parse(location.search.slice(1, location.search.length));
 
-  const [video, setVideo] = useState([])
+  const [user, setUser] = useState([])
   const [pagination, setPagination] = useState({})
   const [toggleModalDelete, setToggleModalDelete] = useState(false)
-  const [toggleModalUpdate, setToggleModalUpdate] = useState(false)
-  const [videoCurrent, setVideoCurrent] = useState({})
+  const [toggleModalDetail, setToggleModalDetail] = useState(false)
+  const [userCurrent, setUserCurrent] = useState({})
   const [page, setPage] = useState(() => ({
     ...queryParams,
     page: Number.parseInt(queryParams.page) || 1,
@@ -37,24 +38,24 @@ const ListVideo = () => {
 
   const handleShowModalDelete = (id, index) => {
     setToggleModalDelete(true)
-    setVideoCurrent({id, index})
+    setUserCurrent({id, index})
   }
 
-  const handleShowModalUpdate = (video) => {
-    setToggleModalUpdate(true)
-    setVideoCurrent(video)
+  const handleShowModalDetail = (video) => {
+    setToggleModalDetail(true)
+    setUserCurrent(video)
   }
   const handleCloseModalDelete = () => {
     setToggleModalDelete(false)
   }
 
   const handleCloseModalUpdate = () => {
-    setToggleModalUpdate(false);
+    setToggleModalDetail(false);
   }
 
   // get all videos
   useEffect(() => {
-    videoApi.getAll(page)
+    userApi.getAll(page)
       .then((reponse) => {
         setPagination({
           page: reponse.page,
@@ -64,16 +65,18 @@ const ListVideo = () => {
         return reponse.data
       })
       .then((reponse) => {
-        const listVideo = reponse.map((item) => {
+        console.log(reponse);
+        const listUser = reponse.map((item) => {
           return {
             id: item.id,
-            title: item.videoName,
-            link: item.videoDescription,
+            username: item.username,
+            phone: item.phoneNumber,
+            link: item.link,
           }
         })
-        setVideo(listVideo);
+        setUser(listUser);
       })
-  }, [page, toggleModalUpdate, toggleModalDelete])
+  }, [page, toggleModalDetail, toggleModalDelete])
   let token = localStorage.getItem(StorageKeys.TOKEN);
   
   const headers= {
@@ -81,13 +84,13 @@ const ListVideo = () => {
       'My-Custom-Header': 'foobar'
     }
   const handleDelete = () => {
-    videoApi.delete(videoCurrent.id, headers)
+    userApi.delete(userCurrent.id, headers)
       .then (() => {
         setToggleModalDelete(false)
-        video.splice(videoCurrent.index, 1)
+        user.splice(userCurrent.index, 1)
       })
       .then (() => {
-        setVideo(video)
+        setUser(user)
       })
   }
 
@@ -101,27 +104,45 @@ const ListVideo = () => {
   let total = Math.ceil(pagination.total / pagination.size);
   return (
     <div className={cx('content')}>
-      <Filter />
-      <ul className={cx('list')}>
-        {video.map((item, index) => (
-          <li key={item.id} className={cx('item')}>
-            <div className={cx('img')}>
-              <img src={`${StorageKeys.PATH}/api/v1/video/thumbnail/${item.id}.png`} alt='' />
-              <div className={cx('plaholder')}>
-                <button type='button' className={cx('btn_control')} onClick={() => handleShowModalDelete(item.id, index)}>
-                  <BinIcon className={cx('icon_custom')} />
-                  Remove
-                </button>
-                <button type='button' className={cx('btn_control')} onClick={() => handleShowModalUpdate(video[index])}>
-                  <PenIcon className={cx('icon_custom')} />
-                  Edit
-                </button>
-              </div>
-            </div>
-            <p className={cx('name')}>{item.title}</p>
-          </li>
-        ))}
-      </ul>
+      <Filter placeholder={'Username / ID'}/>
+      <div className={cx('user_area')}>
+        <table>
+          <colgroup>
+            <col style={{'width': '72px'}}/>
+            <col style={{'width': '241px'}}/>
+            <col style={{'width': '270px'}}/>
+            <col style={{'width': '150px'}}/>
+            <col/>
+            <col style={{'width': '269px'}}/>
+          </colgroup>
+          <thead>
+            <tr>
+              <th>Order</th>
+              <th>ID</th>
+              <th>User Name</th>
+              <th>Phone number</th>
+              <th>Link</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {user.map((item, index) => (
+              <tr key={item.id} className={cx('tr')}>
+                <td>{index + 1}</td>
+                <td>{item.id}</td>
+                <td>{item.username}</td>
+                <td>{item.phone}</td>
+                <td>{item.link ? <a href={item.link} className={cx('link')}>{item.link}</a> : ''}</td>
+                <td>
+                  <button type='button' className={cx('view_details')} onClick={handleShowModalDetail}>View details</button>
+                  <button type='button' className={cx('btn_delete')} onClick={handleShowModalDelete}>Delete</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        
+      </div>
       {pagination.total > 1 && <Pagination page={pagination.page} totalPages={total} handlePagination={handlePagination } />}
       
       { toggleModalDelete &&
@@ -139,13 +160,13 @@ const ListVideo = () => {
         </div>   
       }
 
-      { toggleModalUpdate &&
+      { toggleModalDetail &&
         <div className={cx('dimmed')}>
           <div className={cx('modal', 'update')}>
             <button type='button' className={cx('btn_close')} onClick={handleCloseModalUpdate} >
               <CloseIcon />
             </button>
-            <Update videoCurrent={videoCurrent} />
+            <Update videoCurrent={userCurrent} />
           </div>
         </div>   
       }
@@ -154,4 +175,4 @@ const ListVideo = () => {
   )
 }
 
-export default ListVideo
+export default ListUser
