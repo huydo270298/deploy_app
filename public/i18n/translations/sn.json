@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Pasiwedhi rinofanirwa kunge riine mavara matanhatu",
   "VALIDATION_PASS_REQUIRED": "Iwe unofanirwa kutsanangura password",
   "UPDATE_SUCCESS": "Kuvandudza kubudirira",
-  "LOST": "Ndine hurombo! Hausati wahwina mubairo"
+  "LOST": "Ndine hurombo! Hausati wahwina mubairo",
+  "LINK_SHARE": "Yako yekutumira link kuti uwedzere chiyero chekukunda", 
+  "COPY_LINK": "Copy link"
 }

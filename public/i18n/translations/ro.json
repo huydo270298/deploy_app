@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Parola trebuie să aibă cel puțin 6 caractere",
   "VALIDATION_PASS_REQUIRED": "Trebuie să specificați o parolă",
   "UPDATE_SUCCESS": "Actualizare reușită",
-  "LOST": "Îmi pare rău! Încă nu ai câștigat premiul"
+  "LOST": "Îmi pare rău! Încă nu ai câștigat premiul",
+  "LINK_SHARE": "Link-ul dvs. de recomandare pentru a crește rata de câștig", 
+  "COPY_LINK": "Copiază legătură"
 }

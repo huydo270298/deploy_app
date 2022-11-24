@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Fjalëkalimi duhet të ketë të paktën 6 karaktere",
   "VALIDATION_PASS_REQUIRED": "Duhet të specifikoni një fjalëkalim",
   "UPDATE_SUCCESS": "Përditësimi i suksesshëm",
-  "LOST": "Na vjen keq! Nuk e keni fituar ende çmimin"
+  "LOST": "Na vjen keq! Nuk e keni fituar ende çmimin",
+  "LINK_SHARE": "Lidhja juaj e referimit për të rritur normën e fitimit", 
+  "COPY_LINK": "Kopjo lidhjen"
 }

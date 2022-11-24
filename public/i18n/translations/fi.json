@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Salasanassa on oltava vähintään 6 merkkiä",
   "VALIDATION_PASS_REQUIRED": "Sinun on määritettävä salasana",
   "UPDATE_SUCCESS": "Päivityksen menestys",
-  "LOST": "Anteeksi! Et ole vielä voittanut palkintoa"
+  "LOST": "Anteeksi! Et ole vielä voittanut palkintoa",
+  "LINK_SHARE": "Viittauslinkkisi kasvattaaksesi voittoprosenttia", 
+  "COPY_LINK": "Kopioi linkki"
 }

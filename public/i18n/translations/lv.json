@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Parolei jābūt vismaz 6 rakstzīmēm",
   "VALIDATION_PASS_REQUIRED": "Jums jānorāda parole",
   "UPDATE_SUCCESS": "Atjaunināšanas panākumi",
-  "LOST": "Atvainojiet! Jūs vēl neesat ieguvis balvu"
+  "LOST": "Atvainojiet! Jūs vēl neesat ieguvis balvu",
+  "LINK_SHARE": "Jūsu novirzīšanas saite, lai palielinātu laimestu līmeni", 
+  "COPY_LINK": "Kopēt saiti"
 }

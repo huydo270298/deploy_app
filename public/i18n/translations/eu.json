@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Pasahitzak 6 karaktere izan behar ditu gutxienez",
   "VALIDATION_PASS_REQUIRED": "Pasahitz bat zehaztu behar duzu",
   "UPDATE_SUCCESS": "Eguneratu arrakasta",
-  "LOST": "Barkatu! Oraindik ez duzu saria irabazi"
+  "LOST": "Barkatu! Oraindik ez duzu saria irabazi",
+  "LINK_SHARE": "Zure erreferentzia esteka irabazlearen tasa handitzeko", 
+  "COPY_LINK": "Kopiatu esteka"
 }

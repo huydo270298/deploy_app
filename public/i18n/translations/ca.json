@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "La contrasenya ha de tenir almenys 6 caràcters",
   "VALIDATION_PASS_REQUIRED": "Heu d'especificar una contrasenya",
   "UPDATE_SUCCESS": "Actualització correcta",
-  "LOST": "Ho sento! Encara no has guanyat el premi"
+  "LOST": "Ho sento! Encara no has guanyat el premi",
+  "LINK_SHARE": "El vostre enllaç de referència per augmentar la taxa de guanyadors",
+  "COPY_LINK": "Copia l'enllaç"
 }

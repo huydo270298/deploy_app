@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Divê şîfre herî kêm 6 tîpan hebin",
   "VALIDATION_PASS_REQUIRED": "Divê hûn şîfreyek diyar bikin",
   "UPDATE_SUCCESS": "Serkeftina nûvekirinê",
-  "LOST": "Bibore! Te hê xelat negirtiye"
+  "LOST": "Bibore! Te hê xelat negirtiye",
+  "LINK_SHARE": "Zencîreya weya referansê ji bo zêdekirina rêjeya serketinê", 
+  "COPY_LINK": "Girêdanê kopî bikin"
 }

@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Wachtwoord moet minimaal 6 tekens bevatten",
   "VALIDATION_PASS_REQUIRED": "U moet een wachtwoord opgeven",
   "UPDATE_SUCCESS": "Update succes",
-  "LOST": "Sorry! Je hebt de prijs nog niet gewonnen"
+  "LOST": "Sorry! Je hebt de prijs nog niet gewonnen",
+  "LINK_SHARE": "Uw verwijzingslink om het winstpercentage te verhogen", 
+  "COPY_LINK": "Kopieer link"
 }

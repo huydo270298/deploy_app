@@ -71,13 +71,17 @@ const HomePage = () => {
 
   const countReward = useRef(null);
 
-  const [num, setNum] = useState(10000000000000);
+
+  const [num, setNum] = useState(() => {
+    return Math.floor(Date.now()/1000)*100 + 100820737304000;
+  });
+  
   useEffect(() => {
     countReward.current = setInterval(() => {
-      setNum((countdown) => countdown + 5321 );
-    }, 1);
+      setNum((countdown) => countdown + 1 );
+    }, 10);
 
-    num > 99999999999999 && clearTimeout(countReward.current);
+    num > 999999999999999 && clearTimeout(countReward.current);
 
     return () => {
       clearTimeout(countReward.current);

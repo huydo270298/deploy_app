@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Anyɛ yiye koraa no, ɛsɛ sɛ password no nya nkyerɛwde 6",
   "VALIDATION_PASS_REQUIRED": "Ɛsɛ sɛ wokyerɛ password bi",
   "UPDATE_SUCCESS": "Update nkonimdi",
-  "LOST": "Kafra! Wonnya nnyaa nkonimbo no"
+  "LOST": "Kafra! Wonnya nnyaa nkonimbo no",
+  "LINK_SHARE": "Wo referral link no na ama nkonimdi dodow no akɔ soro",
+  "COPY_LINK": "Kɔpi link no"
 }

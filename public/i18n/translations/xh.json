@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Igama lokugqithisa kufuneka libenamagama ama-6 ubuncinane",
   "VALIDATION_PASS_REQUIRED": "Kufuneka ucacise igama lokugqithisa",
   "UPDATE_SUCCESS": "Hlaziya impumelelo",
-  "LOST": "Uxolo! Awukaphumeleli ibhaso okwangoku"
+  "LOST": "Uxolo! Awukaphumeleli ibhaso okwangoku",
+  "LINK_SHARE": "Ikhonkco lakho lokudlulisela ukunyusa izinga lokuphumelela", 
+  "COPY_LINK": "Khuphela ikhonkco"
 }

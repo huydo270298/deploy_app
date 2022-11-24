@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Slaptažodį turi sudaryti bent 6 simboliai",
   "VALIDATION_PASS_REQUIRED": "Turite nurodyti slaptažodį",
   "UPDATE_SUCCESS": "Sėkmės atnaujinimas",
-  "LOST": "Atsiprašau! Jūs dar nelaimėjote prizo"
+  "LOST": "Atsiprašau! Jūs dar nelaimėjote prizo",
+  "LINK_SHARE": "Jūsų nukreipimo nuoroda, kad padidintumėte laimėjimo procentą", 
+  "COPY_LINK": "Nukopijuoti nuorodą"
 }

@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "A password deve avè almenu 6 caratteri",
   "VALIDATION_PASS_REQUIRED": "Avete da specificà una password",
   "UPDATE_SUCCESS": "Actualizazione successu",
-  "LOST": "Scusa! Ùn avete ancu vintu u premiu"
+  "LOST": "Scusa! Ùn avete ancu vintu u premiu",
+  "LINK_SHARE": "U vostru ligame di riferimentu per aumentà a tarifa vincente",
+  "COPY_LINK": "Copia u ligame"
 }

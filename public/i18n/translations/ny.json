@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Mawu achinsinsi ayenera kukhala ndi zilembo zosachepera 6",
   "VALIDATION_PASS_REQUIRED": "Muyenera kufotokoza mawu achinsinsi",
   "UPDATE_SUCCESS": "Kusintha bwino",
-  "LOST": "Pepani! Simunapambanebe mphoto"
+  "LOST": "Pepani! Simunapambanebe mphoto",
+  "LINK_SHARE": "Ulalo wanu wotumizira kuti muwonjezere mtengo wopambana", 
+  "COPY_LINK": "Koperani ulalo"
 }

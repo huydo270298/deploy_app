@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Pasvorto devas havi almenaŭ 6 signojn",
   "VALIDATION_PASS_REQUIRED": "Vi devas specifi pasvorton",
   "UPDATE_SUCCESS": "Sukceso de ĝisdatigo",
-  "LOST": "Pardonu! Vi ankoraŭ ne gajnis la premion"
+  "LOST": "Pardonu! Vi ankoraŭ ne gajnis la premion",
+  "LINK_SHARE": "Via referenca ligo por pliigi la gajnan indicon",
+  "COPY_LINK": "Kopiu ligilon"
 }

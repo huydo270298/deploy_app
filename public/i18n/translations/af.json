@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Wagwoord moet ten minste 6 karakters hê",
   "VALIDATION_PASS_REQUIRED": "Jy moet 'n wagwoord spesifiseer",
   "UPDATE_SUCCESS": "Dateer sukses op",
-  "LOST": "Jammer! Jy het nog nie die prys gewen nie"
+  "LOST": "Jammer! Jy het nog nie die prys gewen nie",
+  "LINK_SHARE": "Jou verwysingsskakel om die wenkoers te verhoog",
+  "COPY_LINK": "Kopieer skakel"
 }

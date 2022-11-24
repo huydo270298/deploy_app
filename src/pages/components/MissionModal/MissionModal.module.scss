@@ -1,8 +1,13 @@
+.wrapper {
+  flex: 1;
+}
+
 .tit {
   font-size: 21px;
   line-height: 29px;
   font-weight: bold;
   color: #333;
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -10,4 +15,25 @@
   height: 100px;
   margin-top: 32px;
 
+  li {
+    display: flex;
+
+    span {
+      display: inline-block;
+      margin-right: 12px;
+    }
+
+    .btn_copy {
+      white-space: nowrap;
+      padding: 8px 12px;
+      border-radius: 6px;
+      color: #333;
+      font-weight: 600;
+
+      &:active {
+        background: #FF9800;
+        color: #fff;
+      }
+    }
+  }
 }

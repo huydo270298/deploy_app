@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "密碼必須至少有 6 個字符",
   "VALIDATION_PASS_REQUIRED": "您必須指定密碼",
   "UPDATE_SUCCESS": "更新成功",
-  "LOST": "對不起！您還沒有中獎"
+  "LOST": "對不起！您還沒有中獎",
+  "LINK_SHARE": "您的推薦鏈接提高中獎率", 
+  "COPY_LINK": "複製鏈接"
 }

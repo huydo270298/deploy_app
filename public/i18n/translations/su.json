@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Sandi kedah gaduh sahenteuna 6 karakter",
   "VALIDATION_PASS_REQUIRED": "Anjeun kudu nangtukeun kecap akses",
   "UPDATE_SUCCESS": "Ngamutahirkeun kasuksésan",
-  "LOST": "Hampura! Anjeun teu acan meunang hadiah"
+  "LOST": "Hampura! Anjeun teu acan meunang hadiah",
+  "LINK_SHARE": "Tumbu rujukan anjeun pikeun ngaronjatkeun laju unggul", 
+  "COPY_LINK": "Nyalin tautan"
 }

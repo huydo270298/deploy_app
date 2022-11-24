@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "O contrasinal debe ter polo menos 6 caracteres",
   "VALIDATION_PASS_REQUIRED": "Debes especificar un contrasinal",
   "UPDATE_SUCCESS": "Actualización correcta",
-  "LOST": "Sentímolo! Aínda non gañaches o premio"
+  "LOST": "Sentímolo! Aínda non gañaches o premio",
+  "LINK_SHARE": "A túa ligazón de referencia para aumentar a taxa de vitorias", 
+  "COPY_LINK": "Copiar ligazón"
 }

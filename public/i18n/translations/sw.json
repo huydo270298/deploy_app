@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Nenosiri lazima liwe na angalau vibambo 6",
   "VALIDATION_PASS_REQUIRED": "Lazima ubainishe nenosiri",
   "UPDATE_SUCCESS": "Sasisha mafanikio",
-  "LOST": "Pole! Bado hujashinda tuzo"
+  "LOST": "Pole! Bado hujashinda tuzo",
+  "LINK_SHARE": "Kiungo chako cha rufaa ili kuongeza kiwango cha ushindi", 
+  "COPY_LINK": "Nakili kiungo"
 }

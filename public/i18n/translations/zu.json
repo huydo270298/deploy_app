@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Iphasiwedi kumele okungenani ibe nezinhlamvu eziyisi-6",
   "VALIDATION_PASS_REQUIRED": "Kufanele ucacise iphasiwedi",
   "UPDATE_SUCCESS": "Buyekeza impumelelo",
-  "LOST": "Uxolo! Awukawunqobi umklomelo"
+  "LOST": "Uxolo! Awukawunqobi umklomelo",
+  "LINK_SHARE": "Isixhumanisi sakho sokudlulisela ukukhulisa izinga lokuwina", 
+  "COPY_LINK": "Kopisha isixhumanisi"
 }

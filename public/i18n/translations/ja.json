@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "パスワードは 6 文字以上にする必要があります",
   "VALIDATION_PASS_REQUIRED": "パスワードを指定する必要があります",
   "UPDATE_SUCCESS": "更新成功",
-  "LOST": "ごめん！ あなたはまだ賞品を獲得していません"
+  "LOST": "ごめん！ あなたはまだ賞品を獲得していません",
+  "LINK_SHARE": "勝率を上げるための紹介リンク",
+   "COPY_LINK": "リンクをコピーする"
 }

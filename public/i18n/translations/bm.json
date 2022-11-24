@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Password ka kan ka kɛ ni taamasiyɛn 6 ye a dɔgɔyalenba la",
   "VALIDATION_PASS_REQUIRED": "Aw ka kan ka tɔgɔlasɛbɛn dɔ jira",
   "UPDATE_SUCCESS": "Update ɲɛtaa",
-  "LOST": "Hakɛto! I ma o sara sɔrɔ fɔlɔ"
+  "LOST": "Hakɛto! I ma o sara sɔrɔ fɔlɔ",
+  "LINK_SHARE": "Aw ka referral link ka dɔ fara se sɔrɔli hakɛ kan",
+  "COPY_LINK": "Kopi ladɛrɛsi"
 }

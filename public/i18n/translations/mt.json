@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Il-password għandu jkollha mill-inqas 6 karattri",
   "VALIDATION_PASS_REQUIRED": "Trid tispeċifika password",
   "UPDATE_SUCCESS": "Aġġorna suċċess",
-  "LOST": "Jiddispjacini! Għadek ma rbaħtx il-premju"
+  "LOST": "Jiddispjacini! Għadek ma rbaħtx il-premju",
+  "LINK_SHARE": "Il-link tar-referenza tiegħek biex iżżid ir-rata rebbieħa", 
+  "COPY_LINK": "Ikkopja l-link"
 }

@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Pono ka ʻōlelo huna ma kahi o 6 mau huaʻōlelo",
   "VALIDATION_PASS_REQUIRED": "Pono ʻoe e kuhikuhi i kahi ʻōlelo huna",
   "UPDATE_SUCCESS": "Hōʻano hou i ka holomua",
-  "LOST": "E kala mai iaʻu! ʻAʻole ʻoe i lanakila i ka makana"
+  "LOST": "E kala mai iaʻu! ʻAʻole ʻoe i lanakila i ka makana",
+  "LINK_SHARE": "ʻO kāu loulou referral e hoʻonui i ka helu lanakila", 
+  "COPY_LINK": "E kope i ka loulou"
 }

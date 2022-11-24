@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Okwuntughe ga-enwerịrị opekata mpe mkpụrụedemede 6",
   "VALIDATION_PASS_REQUIRED": "Ị ga-ezipụta paswọọdụ",
   "UPDATE_SUCCESS": "Melite ihe ịga nke ọma",
-  "LOST": "Ndo! Ị nwetabeghị ihe nrite ahụ"
+  "LOST": "Ndo! Ị nwetabeghị ihe nrite ahụ",
+  "LINK_SHARE": "Njikọ ntụnye aka gị ka ịbawanye ọnụego mmeri", 
+  "COPY_LINK": "Detuo njikọ"
 }

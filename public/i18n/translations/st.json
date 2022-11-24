@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Lekunutu le tlameha ho ba le bonyane litlhaku tse 6",
   "VALIDATION_PASS_REQUIRED": "O tlameha ho hlakisa phasewete",
   "UPDATE_SUCCESS": "Katleho ea ntlafatso",
-  "LOST": "Tšoarelo! Ha o so hape moputso"
+  "LOST": "Tšoarelo! Ha o so hape moputso",
+  "LINK_SHARE": "Sehokelo sa hau sa boipiletso ho eketsa sekhahla sa ba hapileng", 
+  "COPY_LINK": "Kopitsa sehokelo"
 }

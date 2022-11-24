@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Parol kamida 6 ta belgidan iborat bo'lishi kerak",
   "VALIDATION_PASS_REQUIRED": "Parolni ko'rsatishingiz kerak",
   "UPDATE_SUCCESS": "Muvaffaqiyatli yangilanish",
-  "LOST": "Kechirasiz! Siz hali sovrinni qo'lga kiritmadingiz"
+  "LOST": "Kechirasiz! Siz hali sovrinni qo'lga kiritmadingiz",
+  "LINK_SHARE": "G'alaba stavkasini oshirish uchun sizning havolangiz", 
+  "COPY_LINK": "Havolani nusxalash"
 }

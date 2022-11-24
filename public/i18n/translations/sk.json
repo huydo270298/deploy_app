@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Heslo musí mať aspoň 6 znakov",
   "VALIDATION_PASS_REQUIRED": "Musíte zadať heslo",
   "UPDATE_SUCCESS": "Aktualizácia bola úspešná",
-  "LOST": "Prepáč! Cenu ste ešte nevyhrali"
+  "LOST": "Prepáč! Cenu ste ešte nevyhrali",
+  "LINK_SHARE": "Váš odkaz na odporúčanie na zvýšenie výhernej miery", 
+  "COPY_LINK": "Skopírovať odkaz"
 }

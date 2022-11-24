@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Şifre en az 6 karakterden oluşmalıdır",
   "VALIDATION_PASS_REQUIRED": "Bir şifre belirtmelisiniz",
   "UPDATE_SUCCESS": "Güncelleme başarısı",
-  "LOST": "Afedersiniz! Henüz ödülü kazanmadınız"
+  "LOST": "Afedersiniz! Henüz ödülü kazanmadınız",
+  "LINK_SHARE": "Kazanma oranını artırmak için tavsiye bağlantınız", 
+  "COPY_LINK": "Bağlantıyı kopyala"
 }

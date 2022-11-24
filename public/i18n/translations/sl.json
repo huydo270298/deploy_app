@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Geslo mora imeti vsaj 6 znakov",
   "VALIDATION_PASS_REQUIRED": "Določiti morate geslo",
   "UPDATE_SUCCESS": "Posodobitev je uspela",
-  "LOST": "Oprostite! Nagrade še niste prejeli"
+  "LOST": "Oprostite! Nagrade še niste prejeli",
+  "LINK_SHARE": "Vaša referenčna povezava za povečanje zmagovalne stopnje", 
+  "COPY_LINK": "Kopiraj povezavo"
 }

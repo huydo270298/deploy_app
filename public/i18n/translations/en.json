@@ -38,5 +38,7 @@
   "VALIDATION_PASS_LENGTH": "Password must have at least 6 characters",
   "VALIDATION_PASS_REQUIRED": "You must specify a password",
   "UPDATE_SUCCESS": "Update success",
-  "LOST": "Sorry! You have not won the prize yet"
+  "LOST": "Sorry! You have not won the prize yet",
+  "LINK_SHARE": "Your referral link to increase the winning rate",
+  "COPY_LINK": "Copy link"
 }

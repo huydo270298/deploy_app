@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "A senha deve ter pelo menos 6 caracteres",
   "VALIDATION_PASS_REQUIRED": "Você deve especificar uma senha",
   "UPDATE_SUCCESS": "Atualização feita com sucesso",
-  "LOST": "Desculpe! Você ainda não ganhou o prêmio"
+  "LOST": "Desculpe! Você ainda não ganhou o prêmio",
+  "LINK_SHARE": "Seu link de referência para aumentar a taxa de vitórias", 
+  "COPY_LINK": "Link de cópia"
 }

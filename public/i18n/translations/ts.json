@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Phasiwedi yi fanele ku va na swihlawulekisi swa kwalomu ka 6",
   "VALIDATION_PASS_REQUIRED": "U fanele ku boxa phaswedi",
   "UPDATE_SUCCESS": "Update ku humelela",
-  "LOST": "Ku tisola! A wu si wina sagwadi"
+  "LOST": "Ku tisola! A wu si wina sagwadi",
+  "LINK_SHARE": "Xihlanganisi xa wena xa referral ku engetela mpimo wa ku hlula", 
+  "COPY_LINK": "Kopa xihlanganisi"
 }

@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Phasewete e swanetše go ba le bonyane ditlhaka tše 6",
   "VALIDATION_PASS_REQUIRED": "O swanetše go laetša phasewete",
   "UPDATE_SUCCESS": "Update katlego",
-  "LOST": "Ke maswabi! Ga se wa thopa sefoka go fihla ga bjale"
+  "LOST": "Ke maswabi! Ga se wa thopa sefoka go fihla ga bjale",
+  "LINK_SHARE": "Kgokagano ya gago ya go fetišetša go oketša seelo sa go fenya", 
+  "COPY_LINK": "Khopiša kgokagano"
 }

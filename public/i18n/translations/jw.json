@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Tembung sandhi kudu paling sethithik 6 karakter",
   "VALIDATION_PASS_REQUIRED": "Sampeyan kudu nemtokake sandhi",
   "UPDATE_SUCCESS": "Sukses nganyari",
-  "LOST": "Nuwun sewu! Sampeyan durung menang hadiah"
+  "LOST": "Nuwun sewu! Sampeyan durung menang hadiah",
+  "LINK_SHARE": "Link rujukan sampeyan kanggo nambah tarif menang", 
+  "COPY_LINK": "Nyalin pranala"
 }

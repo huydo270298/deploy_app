@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "La contraseña debe tener al menos 6 caracteres",
   "VALIDATION_PASS_REQUIRED": "Debe especificar una contraseña",
   "UPDATE_SUCCESS": "Actualización exitosa",
-  "LOST": "¡Lo siento! Aún no has ganado el premio."
+  "LOST": "¡Lo siento! Aún no has ganado el premio.",
+  "LINK_SHARE": "Su enlace de referencia para aumentar la tasa ganadora",
+  "COPY_LINK": "Copiar link"
 }

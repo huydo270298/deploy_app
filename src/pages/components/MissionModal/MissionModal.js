@@ -12,7 +12,10 @@ const MissionModal = () => {
     <div className={cx('wrapper')}>
       <h3 className={cx('tit')}>{t("MISSION_LIST")}</h3>
       <ul className={cx('list')}>
-        <li></li>
+        <li>
+          <span>{t("LINK_SHARE")}</span>
+          <button className={cx('btn_copy')} onClick={() => navigator.clipboard.writeText('https://221.vn')}>{t("COPY_LINK")}</button>
+        </li>
       </ul>
     </div>
   )

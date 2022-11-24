@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Rhaid i'r cyfrinair gynnwys o leiaf 6 nod",
   "VALIDATION_PASS_REQUIRED": "Rhaid i chi nodi cyfrinair",
   "UPDATE_SUCCESS": "Diweddaru llwyddiant",
-  "LOST": "Sori! Nid ydych wedi ennill y wobr eto"
+  "LOST": "Sori! Nid ydych wedi ennill y wobr eto",
+  "LINK_SHARE": "Eich cyswllt atgyfeirio i gynyddu'r gyfradd fuddugol",
+  "COPY_LINK": "Copïo dolen"
 }

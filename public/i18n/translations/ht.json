@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Modpas dwe genyen omwen 6 karaktè",
   "VALIDATION_PASS_REQUIRED": "Ou dwe presize yon modpas",
   "UPDATE_SUCCESS": "Mizajou siksè",
-  "LOST": "Padon! Ou poko genyen pri a"
+  "LOST": "Padon! Ou poko genyen pri a",
+  "LINK_SHARE": "Lyen referans ou pou ogmante pousantaj genyen an", 
+  "COPY_LINK": "Kopi lyen"
 }

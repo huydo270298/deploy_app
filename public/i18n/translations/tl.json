@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Dapat mayroong hindi bababa sa 6 na character ang password",
   "VALIDATION_PASS_REQUIRED": "Dapat kang tumukoy ng password",
   "UPDATE_SUCCESS": "I-update ang tagumpay",
-  "LOST": "Paumanhin! Hindi ka pa nanalo ng premyo"
+  "LOST": "Paumanhin! Hindi ka pa nanalo ng premyo",
+  "LINK_SHARE": "Ang iyong referral link para tumaas ang winning rate", 
+  "COPY_LINK": "Kopyahin ang link"
 }

@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "密码必须至少有 6 个字符",
   "VALIDATION_PASS_REQUIRED": "您必须指定密码",
   "UPDATE_SUCCESS": "更新成功",
-  "LOST": "对不起！您还没有中奖"
+  "LOST": "对不起！您还没有中奖",
+  "LINK_SHARE": "您的推荐链接提高中奖率", 
+  "COPY_LINK": "复制链接"
 }

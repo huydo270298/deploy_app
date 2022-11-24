@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "비밀번호는 6자 이상이어야 합니다.",
   "VALIDATION_PASS_REQUIRED": "비밀번호를 지정해야 합니다.",
   "UPDATE_SUCCESS": "업데이트 성공",
-  "LOST": "죄송합니다! 당신은 아직 상을 받지 못했습니다"
+  "LOST": "죄송합니다! 당신은 아직 상을 받지 못했습니다",
+  "LINK_SHARE": "승률을 높이는 추천인 링크", 
+  "COPY_LINK": "링크 복사"
 }

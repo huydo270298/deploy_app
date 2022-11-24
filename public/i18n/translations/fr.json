@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Le mot de passe doit comporter au moins 6 caractères",
   "VALIDATION_PASS_REQUIRED": "Vous devez spécifier un mot de passe",
   "UPDATE_SUCCESS": "Mise à jour réussie",
-  "LOST": "Pardon! Vous n'avez pas encore gagné le prix"
+  "LOST": "Pardon! Vous n'avez pas encore gagné le prix",
+  "LINK_SHARE": "Votre lien de parrainage pour augmenter le taux de gain", 
+  "COPY_LINK": "Copier le lien"
 }

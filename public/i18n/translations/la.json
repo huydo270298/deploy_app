@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Password debet habere saltem VI characters",
   "VALIDATION_PASS_REQUIRED": "You must not specificare",
   "UPDATE_SUCCESS": "Update victoria",
-  "LOST": "Ignosce! Praemium tamen non vicisse"
+  "LOST": "Ignosce! Praemium tamen non vicisse",
+  "LINK_SHARE": "Tua deferre link ut crescat victricis rate", 
+  "COPY_LINK": "Effingo link"
 }

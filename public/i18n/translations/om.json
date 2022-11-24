@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Password yoo xiqqaate arfiilee 6 qabaachuu qaba",
   "VALIDATION_PASS_REQUIRED": "Jecha icciitii ifteessuu qabda",
   "UPDATE_SUCCESS": "Milkaa'ina haaromsuu",
-  "LOST": "Dhiifama! Hanga ammaatti badhaasa kana hin injifanne"
+  "LOST": "Dhiifama! Hanga ammaatti badhaasa kana hin injifanne",
+  "LINK_SHARE": "Liinkii rifaralaa keessan saffisa mo'achuu guddisuuf", 
+  "COPY_LINK": "Link waraabuu"
 }

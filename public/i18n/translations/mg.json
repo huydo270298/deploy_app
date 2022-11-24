@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Tsy maintsy manana tarehintsoratra 6 farafahakeliny ny tenimiafina",
   "VALIDATION_PASS_REQUIRED": "Tsy maintsy mamaritra tenimiafina ianao",
   "UPDATE_SUCCESS": "Fanavaozana ny fahombiazana",
-  "LOST": "Miala tsiny! Mbola tsy nahazo ny loka ianao"
+  "LOST": "Miala tsiny! Mbola tsy nahazo ny loka ianao",
+  "LINK_SHARE": "Rohy fanondroanao hampitomboana ny tahan'ny fandresena", 
+  "COPY_LINK": "Mandika rohy"
 }

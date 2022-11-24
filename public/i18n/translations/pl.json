@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Hasło musi mieć co najmniej 6 znaków",
   "VALIDATION_PASS_REQUIRED": "Musisz podać hasło",
   "UPDATE_SUCCESS": "Sukces aktualizacji",
-  "LOST": "Przepraszam! Nie wygrałeś jeszcze nagrody"
+  "LOST": "Przepraszam! Nie wygrałeś jeszcze nagrody",
+  "LINK_SHARE": "Twój link polecający, aby zwiększyć współczynnik wygranych", 
+  "COPY_LINK": "Skopiuj link"
 }

@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Tus password yuav tsum muaj tsawg kawg yog 6 tus cim",
   "VALIDATION_PASS_REQUIRED": "Koj yuav tsum qhia tus password",
   "UPDATE_SUCCESS": "Hloov tshiab ua tiav",
-  "LOST": "Thov txim! Koj tseem tsis tau yeej qhov khoom plig"
+  "LOST": "Thov txim! Koj tseem tsis tau yeej qhov khoom plig",
+  "LINK_SHARE": "Koj qhov kev xa mus txuas kom nce tus nqi yeej", 
+  "COPY_LINK": "Copy link"
 }

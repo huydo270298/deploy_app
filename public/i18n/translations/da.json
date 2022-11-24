@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Adgangskoden skal have mindst 6 tegn",
   "VALIDATION_PASS_REQUIRED": "Du skal angive en adgangskode",
   "UPDATE_SUCCESS": "Opdatering succes",
-  "LOST": "Undskyld! Du har ikke vundet prisen endnu"
+  "LOST": "Undskyld! Du har ikke vundet prisen endnu",
+  "LINK_SHARE": "Dit henvisningslink for at øge gevinstraten",
+  "COPY_LINK": "Kopier link"
 }

@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Parol azyndan 6 simwoldan ybarat bolmaly",
   "VALIDATION_PASS_REQUIRED": "Paroly görkezmeli",
   "UPDATE_SUCCESS": "Üstünligi täzeläň",
-  "LOST": "Bagyşlaň! Siz entek baýragy alyp bilmediňiz"
+  "LOST": "Bagyşlaň! Siz entek baýragy alyp bilmediňiz",
+  "LINK_SHARE": "Winningeňiş derejesini ýokarlandyrmak üçin ugrukdyryjy baglanyşyk", 
+  "COPY_LINK": "Baglanyşygy göçüriň"
 }

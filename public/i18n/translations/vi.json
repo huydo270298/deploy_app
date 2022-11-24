@@ -38,5 +38,7 @@
   "VALIDATION_PASS_LENGTH": "Mật khẩu phải có ít nhất 6 ký tự",
   "VALIDATION_PASS_REQUIRED": "Bạn phải chỉ định một mật khẩu",
   "UPDATE_SUCCESS": "Cập nhật thành công",
-  "LOST": "Xin lỗi! Bạn chưa giành được giải thưởng"
+  "LOST": "Xin lỗi! Bạn chưa giành được giải thưởng",
+  "LINK_SHARE": "Link giới thiệu của bạn để tăng tỷ lệ chiến thắng", 
+  "COPY_LINK": "Sao chép đường dẫn"
 }

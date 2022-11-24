@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Lykilorð verður að vera að minnsta kosti 6 stafir",
   "VALIDATION_PASS_REQUIRED": "Þú verður að tilgreina lykilorð",
   "UPDATE_SUCCESS": "Uppfærsla tókst",
-  "LOST": "Því miður! Þú hefur ekki enn unnið verðlaunin"
+  "LOST": "Því miður! Þú hefur ekki enn unnið verðlaunin",
+  "LINK_SHARE": "Tilvísunartengillinn þinn til að auka vinningshlutfallið", 
+  "COPY_LINK": "Afritaðu tengil"
 }

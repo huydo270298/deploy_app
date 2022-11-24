@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Mot de passe esengeli kozala na ba caractères ata 6",
   "VALIDATION_PASS_REQUIRED": "Esengeli olakisaka mot de passe",
   "UPDATE_SUCCESS": "Mikolo oyo elonga",
-  "LOST": "Bolimbisi! Olongi naino mbano yango te"
+  "LOST": "Bolimbisi! Olongi naino mbano yango te",
+  "LINK_SHARE": "Lien ya référence na yo pona komatisaka taux ya gagner", 
+  "COPY_LINK": "Lien ya kopi"
 }

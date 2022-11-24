@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Password ah hian character 6 tal a awm tur a ni",
   "VALIDATION_PASS_REQUIRED": "Password i specify tur a ni",
   "UPDATE_SUCCESS": "Update hlawhtlinna",
-  "LOST": "Tihpalh! Lawmman i la dawng lo"
+  "LOST": "Tihpalh! Lawmman i la dawng lo",
+  "LINK_SHARE": "I referral link hmangin winning rate tihsan a ni", 
+  "COPY_LINK": "Link copy rawh"
 }

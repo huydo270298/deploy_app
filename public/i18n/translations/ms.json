@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Kata laluan mesti mempunyai sekurang-kurangnya 6 aksara",
   "VALIDATION_PASS_REQUIRED": "Anda mesti menentukan kata laluan",
   "UPDATE_SUCCESS": "Kemas kini kejayaan",
-  "LOST": "Maaf! Anda belum memenangi hadiah lagi"
+  "LOST": "Maaf! Anda belum memenangi hadiah lagi",
+  "LINK_SHARE": "Pautan rujukan anda untuk meningkatkan kadar kemenangan", 
+  "COPY_LINK": "Salin pautan"
 }

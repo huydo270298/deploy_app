@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Yaykuna rimayqa 6 qillqayuqmi kanan",
   "VALIDATION_PASS_REQUIRED": "Yaykuna rimayta churanayki tiyan",
   "UPDATE_SUCCESS": "Allinta musuqyachiy",
-  "LOST": "Llakikunim! Manaraqmi chay premiotaqa ganarqankichu"
+  "LOST": "Llakikunim! Manaraqmi chay premiotaqa ganarqankichu",
+  "LINK_SHARE": "Referencia linkniyki tarifa ganaq yapanaykipaq", 
+  "COPY_LINK": "Copia link nisqa"
 }

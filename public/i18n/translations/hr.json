@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Lozinka mora imati najmanje 6 znakova",
   "VALIDATION_PASS_REQUIRED": "Morate navesti lozinku",
   "UPDATE_SUCCESS": "Ažuriranje uspješno",
-  "LOST": "Oprosti! Još niste osvojili nagradu"
+  "LOST": "Oprosti! Još niste osvojili nagradu",
+  "LINK_SHARE": "Vaša referentna veza za povećanje stope dobitaka", 
+  "COPY_LINK": "Kopiraj link"
 }

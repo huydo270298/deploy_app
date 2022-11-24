@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Lösenordet måste ha minst 6 tecken",
   "VALIDATION_PASS_REQUIRED": "Du måste ange ett lösenord",
   "UPDATE_SUCCESS": "Uppdateringen lyckades",
-  "LOST": "Förlåt! Du har inte vunnit priset än"
+  "LOST": "Förlåt! Du har inte vunnit priset än",
+  "LINK_SHARE": "Din hänvisningslänk för att öka vinstgraden", 
+  "COPY_LINK": "Kopiera länk"
 }

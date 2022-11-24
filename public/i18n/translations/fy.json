@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Wachtwurd moat op syn minst 6 karakters hawwe",
   "VALIDATION_PASS_REQUIRED": "Jo moatte in wachtwurd opjaan",
   "UPDATE_SUCCESS": "Update súkses",
-  "LOST": "Sorry! Jo hawwe de priis noch net wûn"
+  "LOST": "Sorry! Jo hawwe de priis noch net wûn",
+  "LINK_SHARE": "Jo ferwizing link te fergrutsjen it winnende taryf", 
+  "COPY_LINK": "Kopiearje keppeling"
 }

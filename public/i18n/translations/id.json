@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Kata sandi harus memiliki minimal 6 karakter",
   "VALIDATION_PASS_REQUIRED": "Anda harus menentukan kata sandi",
   "UPDATE_SUCCESS": "Perbarui sukses",
-  "LOST": "Maaf! Anda belum memenangkan hadiah"
+  "LOST": "Maaf! Anda belum memenangkan hadiah",
+  "LINK_SHARE": "Tautan rujukan Anda untuk meningkatkan tingkat kemenangan", 
+  "COPY_LINK": "Salin tautan"
 }

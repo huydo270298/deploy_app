@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Password erina okuba n'ennukuta ezitakka wansi wa 6",
   "VALIDATION_PASS_REQUIRED": "Olina okulaga ekigambo ky'okuyingira",
   "UPDATE_SUCCESS": "Update obuwanguzi",
-  "LOST": "Nsonyiwa! Tonnawangula kirabo"
+  "LOST": "Nsonyiwa! Tonnawangula kirabo",
+  "LINK_SHARE": "Enkolagana yo ey'okusindika okwongera ku muwendo gw'obuwanguzi", 
+  "COPY_LINK": "Koppa link"
 }

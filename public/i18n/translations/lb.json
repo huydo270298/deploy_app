@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "Passwuert muss mindestens 6 Zeechen hunn",
   "VALIDATION_PASS_REQUIRED": "Dir musst e Passwuert uginn",
   "UPDATE_SUCCESS": "Update Erfolleg",
-  "LOST": "Et deet mir leed! Dir hutt de Präis nach net gewonnen"
+  "LOST": "Et deet mir leed! Dir hutt de Präis nach net gewonnen",
+  "LINK_SHARE": "Äre Referrallink fir de Gewënnquote ze erhéijen", 
+  "COPY_LINK": "Link kopéieren"
 }

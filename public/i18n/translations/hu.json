@@ -39,5 +39,7 @@
   "VALIDATION_PASS_LENGTH": "A jelszónak legalább 6 karakterből kell állnia",
   "VALIDATION_PASS_REQUIRED": "Meg kell adnia egy jelszót",
   "UPDATE_SUCCESS": "Frissítés sikeres",
-  "LOST": "Sajnálom! Még nem nyerte el a díjat"
+  "LOST": "Sajnálom! Még nem nyerte el a díjat",
+  "LINK_SHARE": "Ajánló linkje a nyerési arány növeléséhez", 
+  "COPY_LINK": "Link másolása"
 }
