@@ -14,6 +14,7 @@ let cx = classNames.bind(styles);
 const Upload = () => {
   const valueTitleVideo = useRef('');
   const valueLinkVideo = useRef('');
+  const valueOrderVideo = useRef('');
   const fileInputRef = useRef();
   const progressRef = useRef();
   const uploadRef = useRef();
@@ -118,6 +119,7 @@ const Upload = () => {
       formData.append("videoName", valueTitleVideo.current.value);
       formData.append("videoDescription", valueLinkVideo.current.value);
       formData.append("idCategory", categoryId);
+      formData.append("orderNo", valueOrderVideo.current.value);
       axios
         .post(`${StorageKeys.PATH}/api/v1/video/upload` , formData,
         {
@@ -187,6 +189,10 @@ const Upload = () => {
         <h4 className={cx('tit')}>Link</h4>
         <div className={cx('cont')}>
           <textarea ref={valueLinkVideo} className={cx('inp_text')} spellCheck="false" defaultValue='' required />
+        </div>
+        <h4 className={cx('tit')}>Order</h4>
+        <div className={cx('cont')}>
+          <input ref={valueOrderVideo} className={cx('inp_text')} spellCheck="false" defaultValue='' />
         </div>
         {showProgress && <div className={cx('progress')}>
           <div className={cx('progress_bar')} ref={progressRef}></div>

@@ -5,9 +5,20 @@
 .box {
   width: calc(100% - 336px);
   margin-left: 23px;
+
+  @media (max-width: 720px) {
+    flex: 1;
+    margin-left: 0;
+    margin-top: 16px;
+    width: 100%;
+  }
 }
 
 .inner {
   display: flex;
   width: 100%;
+
+  @media (max-width: 720px) {
+    flex-direction: column;
+  }
 }

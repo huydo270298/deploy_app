@@ -12,7 +12,12 @@ import styles from './VideoSection.module.scss';
 
 let cx = classNames.bind(styles);
 
+const random = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
 const VideoSection = ({video}) => {
+
   const { t } = useTranslation();
   const dispatch = useDispatch();
   const idUser = useSelector(state => state.user.user);
@@ -93,28 +98,38 @@ const VideoSection = ({video}) => {
     handleCountdownSkip();
   }
 
+  const [prevListVideo, setPrevListVideo] = useState([]);
+
+  const handleAddPrevVideo = () => {
+    setPrevListVideo(prev => [...prev, idVideo]);
+  }
+
   const handlePrev = () => {
-    video.forEach((item, index) => {
-      if(item.id === idVideo && index > 0) {
-        clearInterval(countSkipRef.current);
-        setCountdownSkip(5);
-        dispatch(play(video[index-1].id))
-      } 
-    })
+    console.log(prevListVideo);
+    if(prevListVideo.length > 1) {
+      dispatch(play(prevListVideo[prevListVideo.length-1]))
+      clearInterval(countSkipRef.current);
+      setCountdownSkip(5);
+      setPrevListVideo(prevListVideo.filter((item, index) => {
+        return item !== prevListVideo[prevListVideo.length - 1];
+      }))
+      if(prevListVideo.length === 2) {
+        handleAddPrevVideo();
+      }
+    }
   }
 
   const handleNext = () => {
-    video.forEach((item, index) => {
-      if(item.id === idVideo && index < video.length - 1) {
-        clearInterval(countSkipRef.current);
-        setCountdownSkip(5);
-        handleSpin()
-        dispatch(play(video[index+1].id))
-      } 
-    })
+    let result = random(0, video.length - 1)
+    clearInterval(countSkipRef.current);
+    setCountdownSkip(5);
+    handleSpin();;
+    dispatch(play(video[result].id))
+    handleAddPrevVideo();
   }
 
   const handlePlay = () => {
+    handleAddPrevVideo();
     setAutoPlay(true);
     videoElement.current.play();
   }
@@ -131,6 +146,9 @@ const VideoSection = ({video}) => {
       videoElement.current.requestPictureInPicture();
     }
   }
+
+  
+  
   
   useEffect(() => {
     localStorage.getItem('idVideo', idVideo || video[0]?.id)

@@ -1,6 +1,7 @@
 const StorageKeys = {
   PATH: 'https://221.vn',
-  // PATH: 'http://103.9.76.77:8027',
+  // PATH: 'http://103.186.66.231:8027',
+ 
   AUTH: 'author',
   USER: 'user',
   ADMIN: 'admin',

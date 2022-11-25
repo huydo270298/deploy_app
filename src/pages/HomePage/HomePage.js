@@ -78,7 +78,7 @@ const HomePage = () => {
   
   useEffect(() => {
     countReward.current = setInterval(() => {
-      setNum((countdown) => countdown + 1 );
+      setNum((countdown) => countdown + 123 );
     }, 10);
 
     num > 999999999999999 && clearTimeout(countReward.current);
