@@ -48,6 +48,8 @@ const HomePage = () => {
     setOpenMission(false)
   }
 
+  const [idCategory, setIdCategory] = useState()
+
   // get add video
   useEffect(() => {
     
@@ -56,6 +58,7 @@ const HomePage = () => {
         return reponse.data[0]?.id
       })
       .then((id) => {
+        setIdCategory(id)
         return videoApi.getCategoryItem(id)
       })
       .then((reponse) => {
@@ -91,7 +94,7 @@ const HomePage = () => {
   return (
     <>
       <div className={cx('wrapper')}>
-        <VideoSection video={video} />
+        <VideoSection video={video} idCategory={idCategory}/>
         <div className={cx('group')}>
           <button type='button' className={cx('btn', 'get_spin')} onClick={handleOpenSpinModal}>{t("GET_MORE")}</button>
           <button type='button' className={cx('btn', 'push')} onClick={handleOpenPushModal} >{t("PUSH_ADS")}</button>

@@ -8,8 +8,10 @@ import StorageKeys from '../../../constants/storage-keys';
 let cx = classNames.bind(styles);
 
 const Update = ({videoCurrent}) => {
+  console.log(videoCurrent);
   const valueTitleVideo = useRef('');
   const valueLinkVideo = useRef('');
+  const valueOrderVideo = useRef('');
   const fileInputRef = useRef();
   const progressRef = useRef();
   const uploadRef = useRef();
@@ -25,7 +27,8 @@ const Update = ({videoCurrent}) => {
       .put(`${StorageKeys.PATH}/api/v1/video/update` , {
         id: videoCurrent.id,
         videoName: valueTitleVideo.current.value,
-        videoDescription: valueLinkVideo.current.value,
+        videoLink: valueLinkVideo.current.value,
+        orderNo: valueOrderVideo.current.value
       },
       {
         headers: {
@@ -78,6 +81,10 @@ const Update = ({videoCurrent}) => {
         <h4 className={cx('tit')}>Link</h4>
         <div className={cx('cont')}>
           <textarea ref={valueLinkVideo} className={cx('inp_text')} spellCheck="false" defaultValue={videoCurrent.link} required />
+        </div>
+        <h4 className={cx('tit')}>Order</h4>
+        <div className={cx('cont')}>
+          <textarea ref={valueOrderVideo} className={cx('inp_text')} spellCheck="false" defaultValue={videoCurrent.order} />
         </div>
         {showProgress && <div className={cx('progress')}>
           <div className={cx('progress_bar')} ref={progressRef}></div>

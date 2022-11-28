@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import spinApi from '../../../../api/spinApi';
 import userApi from '../../../../api/userApi';
+import videoApi from '../../../../api/videoApi';
 import { play } from '../../../../app/videoSlice';
 import StorageKeys from '../../../../constants/storage-keys';
 import Controller from '../../Controller';
@@ -12,11 +13,7 @@ import styles from './VideoSection.module.scss';
 
 let cx = classNames.bind(styles);
 
-const random = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
-
-const VideoSection = ({video}) => {
+const VideoSection = ({video, idCategory}) => {
 
   const { t } = useTranslation();
   const dispatch = useDispatch();
@@ -99,13 +96,20 @@ const VideoSection = ({video}) => {
   }
 
   const [prevListVideo, setPrevListVideo] = useState([]);
+  const [playedListVideo, setPlayedListVideo] = useState([]);
+  // useEffect(() => {
+  //   if(!playedListVideo.includes(idVideo)) {
+  //     setPlayedListVideo(prev => [...prev, idVideo]);
+  //   }
+  // });
 
   const handleAddPrevVideo = () => {
     setPrevListVideo(prev => [...prev, idVideo]);
   }
 
+  
+
   const handlePrev = () => {
-    console.log(prevListVideo);
     if(prevListVideo.length > 1) {
       dispatch(play(prevListVideo[prevListVideo.length-1]))
       clearInterval(countSkipRef.current);
@@ -120,11 +124,18 @@ const VideoSection = ({video}) => {
   }
 
   const handleNext = () => {
-    let result = random(0, video.length - 1)
+    videoApi.getCategoryItem(idCategory).then((res) => res.data)
+      .then(data => {
+        for(let i=0; i <= data.length; i++) {
+          if(!playedListVideo.includes(data[i].id)) {
+            dispatch(play(data[i].id));
+            break;
+          }
+        }
+      })
     clearInterval(countSkipRef.current);
     setCountdownSkip(5);
-    handleSpin();;
-    dispatch(play(video[result].id))
+    handleSpin();
     handleAddPrevVideo();
   }
 
@@ -165,7 +176,10 @@ const VideoSection = ({video}) => {
           autopictureinpicture='true'
           // preload='auto'
           className={cx('box')}
-          onPlaying={handleStart}
+          onPlaying={()=> {
+            handleStart();
+            setPlayedListVideo(prev => [...prev, idVideo]);
+          }}
           onDurationChange={(e) => { setDuration(e.target.duration) }}
           onTimeUpdate={(e) => { setPrograssValue(e.target.currentTime) }}
           onEnded={handleSpin}

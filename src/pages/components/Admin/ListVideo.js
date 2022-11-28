@@ -68,7 +68,8 @@ const ListVideo = () => {
           return {
             id: item.id,
             title: item.videoName,
-            link: item.videoDescription,
+            link: item.videoLink || item.videoDescription,
+            order: item.orderNo
           }
         })
         setVideo(listVideo);
