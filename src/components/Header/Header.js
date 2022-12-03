@@ -9,6 +9,7 @@ import { LangIcon, SaveIcon, UserIcon } from '../../assets/Icons';
 // import Countdown from '../../pages/components/Countdown';
 import { Lang } from './Lang'
 import { change } from '../../app/langSlice';
+import logo from '../../assets/logo_v2.png';
 
 let cx = classNames.bind(styles);
 
@@ -36,7 +37,11 @@ const Header = () => {
     <header className={cx('wrapper')}>
       <div className={cx('inner', isLoggedInUser && 'loggedin'
       )}>
-        <h1 className={cx('logo')}><Link to='/' className={cx('link')} ></Link></h1>
+        <h1 className={cx('logo')}>
+          <Link to='/' className={cx('link')} >
+            <img src={logo} alt='221.vn'/>
+          </Link>
+        </h1>
         {/* <Countdown time={'2022-11-23 15:00:00'} /> */}
         {
           isLoggedInUser &&

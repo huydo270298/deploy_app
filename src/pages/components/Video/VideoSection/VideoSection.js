@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import spinApi from '../../../../api/spinApi';
 import userApi from '../../../../api/userApi';
-import videoApi from '../../../../api/videoApi';
+// import videoApi from '../../../../api/videoApi';
 import { play } from '../../../../app/videoSlice';
 import StorageKeys from '../../../../constants/storage-keys';
 import Controller from '../../Controller';
@@ -12,6 +12,10 @@ import Controller from '../../Controller';
 import styles from './VideoSection.module.scss';
 
 let cx = classNames.bind(styles);
+
+const random = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
 
 const VideoSection = ({video, idCategory}) => {
 
@@ -96,7 +100,7 @@ const VideoSection = ({video, idCategory}) => {
   }
 
   const [prevListVideo, setPrevListVideo] = useState([]);
-  const [playedListVideo, setPlayedListVideo] = useState([]);
+  // const [playedListVideo, setPlayedListVideo] = useState([]);
   // useEffect(() => {
   //   if(!playedListVideo.includes(idVideo)) {
   //     setPlayedListVideo(prev => [...prev, idVideo]);
@@ -124,18 +128,20 @@ const VideoSection = ({video, idCategory}) => {
   }
 
   const handleNext = () => {
-    videoApi.getCategoryItem(idCategory).then((res) => res.data)
-      .then(data => {
-        for(let i=0; i <= data.length; i++) {
-          if(!playedListVideo.includes(data[i].id)) {
-            dispatch(play(data[i].id));
-            break;
-          }
-        }
-      })
+    let result = random(0, video.length - 1);
+    handleSpin();
+    dispatch(play(video[result].id))
+    // videoApi.getCategoryItem(idCategory).then((res) => res.data)
+    //   .then(data => {
+    //     for(let i=0; i <= data.length; i++) {
+    //       if(!playedListVideo.includes(data[i].id)) {
+    //         dispatch(play(data[i].id));
+    //         break;
+    //       }
+    //     }
+    //   })
     clearInterval(countSkipRef.current);
     setCountdownSkip(5);
-    handleSpin();
     handleAddPrevVideo();
   }
 
@@ -178,7 +184,7 @@ const VideoSection = ({video, idCategory}) => {
           className={cx('box')}
           onPlaying={()=> {
             handleStart();
-            setPlayedListVideo(prev => [...prev, idVideo]);
+            // setPlayedListVideo(prev => [...prev, idVideo]);
           }}
           onDurationChange={(e) => { setDuration(e.target.duration) }}
           onTimeUpdate={(e) => { setPrograssValue(e.target.currentTime) }}

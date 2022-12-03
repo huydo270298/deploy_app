@@ -64,7 +64,7 @@ const HomePage = () => {
       .then((reponse) => {
         const list = reponse.data.map((item) => {
           return {
-            link: item.videoDescription,
+            link: item.videoLink,
             id: item.id,
           }
         })
