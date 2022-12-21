@@ -10,6 +10,10 @@ import PushModal from '../components/PushModal';
 import SpinModal from '../components/SpinModal';
 import VideoSection from '../components/Video/VideoSection';
 import styles from './HomePage.module.scss';
+import img from '../../assets/home_img.jpg';
+import img2 from '../../assets/home_img2.png';
+import img3 from '../../assets/home_img3.png';
+import img4 from '../../assets/home_img4.png';
 
 let cx = classNames.bind(styles);
 
@@ -112,6 +116,12 @@ const HomePage = () => {
           <button className={cx('btn_help')} onClick={handleOpenHelpModal}>
             <HelpIcon className={cx('icon_help')} />
           </button>
+        </div>
+        <div className={cx('img_area')}>
+          <img src={img} alt=''/>
+          <img src={img2} alt=''/>
+          <img src={img3} alt=''/>
+          <img src={img4} alt=''/>
         </div>
         {/* <p className={cx('note')}>{t("AS_LOW_AS")}</p> */}
       </div>

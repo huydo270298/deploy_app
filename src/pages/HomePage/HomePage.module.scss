@@ -140,3 +140,23 @@
     font-size: 28px;
   }
 }
+
+.img_area {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+
+  @media (max-width: 768px) {
+    margin-top: 18px;
+  }
+
+  img {
+    width: auto;
+    height: 310px;
+
+    @media (max-width: 1440px) {
+      width: auto;
+      height: 21.806vw;
+    }
+  }
+}

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import spinApi from '../../../../api/spinApi';
 import userApi from '../../../../api/userApi';
+import videoApi from '../../../../api/videoApi';
 // import videoApi from '../../../../api/videoApi';
 import { play } from '../../../../app/videoSlice';
 import StorageKeys from '../../../../constants/storage-keys';
@@ -13,9 +14,9 @@ import styles from './VideoSection.module.scss';
 
 let cx = classNames.bind(styles);
 
-const random = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
+// const random = (min, max) => {
+//   return Math.floor(Math.random() * (max - min + 1) + min)
+// }
 
 const VideoSection = ({video, idCategory}) => {
 
@@ -100,12 +101,12 @@ const VideoSection = ({video, idCategory}) => {
   }
 
   const [prevListVideo, setPrevListVideo] = useState([]);
-  // const [playedListVideo, setPlayedListVideo] = useState([]);
-  // useEffect(() => {
-  //   if(!playedListVideo.includes(idVideo)) {
-  //     setPlayedListVideo(prev => [...prev, idVideo]);
-  //   }
-  // });
+  const [playedListVideo, setPlayedListVideo] = useState([]);
+  useEffect(() => {
+    if(!playedListVideo.includes(idVideo)) {
+      setPlayedListVideo(prev => [...prev, idVideo]);
+    }
+  },[playedListVideo, idVideo]);
 
   const handleAddPrevVideo = () => {
     setPrevListVideo(prev => [...prev, idVideo]);
@@ -128,18 +129,25 @@ const VideoSection = ({video, idCategory}) => {
   }
 
   const handleNext = () => {
-    let result = random(0, video.length - 1);
+    // let result = random(0, video.length - 1);
     handleSpin();
-    dispatch(play(video[result].id))
-    // videoApi.getCategoryItem(idCategory).then((res) => res.data)
-    //   .then(data => {
-    //     for(let i=0; i <= data.length; i++) {
-    //       if(!playedListVideo.includes(data[i].id)) {
-    //         dispatch(play(data[i].id));
-    //         break;
-    //       }
-    //     }
-    //   })
+    // dispatch(play(video[result].id))
+    videoApi.getCategoryItem(idCategory).then((res) => res.data)
+      .then(data => {
+        for(let i=0; i < data.length; i++) {
+          // if(!playedListVideo.includes(data[i].id)) {
+          //   dispatch(play(data[i].id));
+          //   break;
+          // }
+          if (data[i].id === idVideo) {
+            if(i === data.length - 1) {
+              dispatch(play(data[0].id))
+            } else {
+              dispatch(play(data[i+1].id))
+            }
+          }
+        }
+      })
     clearInterval(countSkipRef.current);
     setCountdownSkip(5);
     handleAddPrevVideo();
